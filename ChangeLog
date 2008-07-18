@@ -1,2 +1,35 @@
-# Copyright 2008 Chris Gianelloni; Distributed under the GPL v2
+# Copyright 2008-2008 Chris Gianelloni; Distributed under the GPL v2
 # $Id: $
+
+*lm_sensors-3.0.1 (18 Jul 2008)
+*lm_sensors-2.10.6 (18 Jul 2008)
+*cisco-vpnclient-3des-4.8.01.0640 (18 Jul 2008)
+*maya-8.0 (18 Jul 2008)
+*maya-6.5 (18 Jul 2008)
+*civctp-1.2a (18 Jul 2008)
+*ut2004-3369-r5 (18 Jul 2008)
+*ut2004-3369-r4 (18 Jul 2008)
+*ut2004-data-3186-r4 (18 Jul 2008)
+*ut2004-data-3186-r3 (18 Jul 2008)
+*mohaa-1.11_beta3 (18 Jul 2008)
+
+  18 Jul 2008; Chris Gianelloni <wolf31o2@gentoo.org>
+  +sys-apps/lm_sensors/files/lm_sensors-2.10.4-sensors-detect-gentoo.patch,
+  +media-gfx/maya/files/50maya,
+  +net-misc/cisco-vpnclient-3des/files/4.8.01.0640-2.6.24.patch,
+  +net-misc/cisco-vpnclient-3des/files/4.8.01.0640-amd64.patch,
+  +sys-apps/lm_sensors/files/lm_sensors-3.0.1-sensors-detect-gentoo.patch,
+  +sys-apps/lm_sensors/files/lm_sensors-3-init.d,
+  +games-fps/ut2004/files/ut2004.xml, +games-strategy/civctp/metadata.xml,
+  +media-gfx/maya/files/maya-docs, +media-gfx/maya/metadata.xml,
+  +profiles/categories, +profiles/repo_name,
+  +sys-apps/lm_sensors/files/fancontrol-init.d,
+  +sys-apps/lm_sensors/files/lm_sensors-init.d,
+  +sys-apps/lm_sensors/files/sensord-conf.d,
+  +sys-apps/lm_sensors/files/sensord-init.d, mohaa-1.11_beta3.ebuild,
+  ut2004-data-3186-r3.ebuild, ut2004-data-3186-r4.ebuild,
+  ut2004-3369-r4.ebuild, ut2004-3369-r5.ebuild, civctp-1.2a.ebuild,
+  maya-6.5.ebuild, maya-8.0.ebuild, cisco-vpnclient-3des-4.8.01.0640.ebuild,
+  lm_sensors-2.10.6.ebuild, lm_sensors-3.0.1.ebuild:
+  Initial import of files from my SVN overlay.
+

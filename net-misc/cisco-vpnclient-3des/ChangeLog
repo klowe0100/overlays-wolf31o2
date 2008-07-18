@@ -1,0 +1,9 @@
+# ChangeLog for net-misc/cisco-vpnclient-3des
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: $
+
+  02 Jun 2008; Chris Gianelloni <wolf31o2@gentoo.org>
+  cisco-vpnclient-3des-4.8.01.0640.ebuild:
+  Copy some fixes from the in-tree version of this ebuild and perform some
+  general clean-up.
+
