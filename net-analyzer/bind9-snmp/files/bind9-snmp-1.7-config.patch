@@ -1,0 +1,13 @@
+diff -urN bind9-snmp-1.7.orig/bind9-snmp-stats.pl bind9-snmp-1.7/bind9-snmp-stats.pl
+--- bind9-snmp-1.7.orig/bind9-snmp-stats.pl	2007-08-23 10:08:58.000000000 -0700
++++ bind9-snmp-1.7/bind9-snmp-stats.pl	2008-07-18 11:09:16.000000000 -0700
+@@ -17,7 +17,8 @@
+ #
+ # If the location of the config file isn't good enough for you,
+ # feel free to change that here.
+-my $CFG_FILE = "/etc/bind/.bindsnmp";
++#my $CFG_FILE = "/etc/bind/.bindsnmp";
++my $CFG_FILE = "/etc/snmp/bind9-snmp.conf";
+ #
+ #   Optional arguments
+ #	DEBUG=4
