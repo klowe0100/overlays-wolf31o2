@@ -1,6 +1,13 @@
 # Copyright 2008-2008 Chris Gianelloni; Distributed under the GPL v2
 # $Id: $
 
+*percsnmp-4.09 (29 Jul 2008)
+
+  29 Jul 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +net-analyzer/percsnmp/files/percsnmpd.rc, percsnmp-4.09.ebuild:
+  Adding net-analyzer/percsnmp, which is used to get LSI-based Dell PERC
+  controller information via SNMP.
+
 *afasnmp-4.0 (29 Jul 2008)
 
   29 Jul 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>

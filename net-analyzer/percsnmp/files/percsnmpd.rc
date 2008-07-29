@@ -1,0 +1,35 @@
+#!/sbin/runscript
+# Copyright 2008 Quova Inc.
+# Distributed under the terms of the GNU General Public License, v2 or later
+# $Header: $
+
+PIDFILE=/var/run/percagent.pid
+
+depend() {
+	need snmpd
+}
+
+# Most of this is taken from the percsnmpd.deb file from the percsnmp tarball.
+start() {
+	ebegin "Starting Dell PERC SNMP Agent"
+	megamajor=`cat /proc/devices | awk '/megadev/ {print $1}'`
+	# Check for errors
+	if [ -z "${megamajor}" ]
+	then
+		eerror "MegaRAID driver not loaded!"
+		eend 1
+	fi
+	[ -r /etc/percsnmp/megasnmp ] && rm -f /etc/percsnmp/megasnmp
+	mknod /etc/percsnmp/megasnmp c ${megamajor} 0 2>/dev/null
+
+	start-stop-daemon --start -q --exec /usr/sbin/percagent
+	eend $?
+	pidof /usr/sbin/percagent > ${PIDFILE}
+}
+
+stop() {
+	ebegin "Stopping Dell PERC SNMP Agent"
+	start-stop-daemon --stop -q --pidfile /var/run/percagent.pid 
+	eend $?
+	rm -f /etc/percsnmp/megasnmp
+}
