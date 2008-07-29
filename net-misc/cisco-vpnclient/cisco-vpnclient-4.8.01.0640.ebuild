@@ -19,6 +19,8 @@ KEYWORDS="-* ~amd64 ~x86"
 IUSE=""
 RESTRICT="strip"
 
+RDEPEND="~net-misc/cisco-vpnclient-modules-${PV}"
+
 S=${WORKDIR}/vpnclient
 
 VPNDIR="/opt/cisco-vpnclient"
