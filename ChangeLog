@@ -1,6 +1,13 @@
 # Copyright 2008-2008 Chris Gianelloni; Distributed under the GPL v2
 # $Id: $
 
+*afasnmp-4.0 (29 Jul 2008)
+
+  29 Jul 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +net-analyzer/afasnmp/files/afasnmpd.rc, afasnmp-4.0.ebuild:
+  Adding net-analyzer/afasnmp, which is used to get Adaptec-based Dell PERC
+  controller information via SNMP.
+
 *bind9-snmp-1.7 (29 Jul 2008)
 
   29 Jul 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
@@ -23,7 +30,7 @@
 *ut2004-data-3186-r3 (18 Jul 2008)
 *mohaa-1.11_beta3 (18 Jul 2008)
 
-  18 Jul 2008; Chris Gianelloni <wolf31o2@gentoo.org>
+  18 Jul 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
   +sys-apps/lm_sensors/files/lm_sensors-2.10.4-sensors-detect-gentoo.patch,
   +media-gfx/maya/files/50maya,
   +net-misc/cisco-vpnclient-3des/files/4.8.01.0640-2.6.24.patch,

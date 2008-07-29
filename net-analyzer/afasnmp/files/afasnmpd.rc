@@ -1,0 +1,25 @@
+#!/sbin/runscript
+# Copyright 2008 Quova Inc.
+# Distributed under the terms of the GNU General Public License, v2 or later
+# $Header: $
+
+PIDFILE=/var/run/afasnmpd.pid
+
+depend() {
+	need snmpd
+}
+
+# Most of this is taken from the percsnmpd.deb file from the percsnmp tarball.
+start() {
+	ebegin "Starting Dell PERC/Adaptec SNMP Agent"
+
+	start-stop-daemon --start -q --exec /usr/sbin/afasnmpd
+	eend $?
+	pidof /usr/sbin/afasnmpd > ${PIDFILE}
+}
+
+stop() {
+	ebegin "Stopping Dell PERC/Adaptec SNMP Agent"
+	start-stop-daemon --stop -q --pidfile /var/run/afasnmpd.pid
+	eend $?
+}
