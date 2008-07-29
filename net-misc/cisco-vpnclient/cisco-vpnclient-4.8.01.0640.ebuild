@@ -1,8 +1,8 @@
-# Copyright 1999-2008 Gentoo Foundation
+# Copyright 1999-2008 Gentoo Foundation; 2008 Chris Gianelloni
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-misc/cisco-vpnclient-3des/cisco-vpnclient-3des-4.8.00.0490.ebuild,v 1.9 2007/08/28 20:58:08 wolf31o2 Exp $
+# $Header: $
 
-inherit eutils linux-mod
+inherit eutils
 
 MY_PV=${PV}-k9
 TARBALL="vpnclient-linux-x86_64-${MY_PV}.tar.gz"
@@ -32,35 +32,23 @@ QA_EXECSTACK="${VPNDIR:1}/lib/libvpnapi.so
 	${VPNDIR:1}/bin/cisco_cert_mgr
 	${VPNDIR:1}/bin/ipseclog"
 
-MODULE_NAMES="cisco_ipsec(CiscoVPN)"
-BUILD_TARGETS="clean default"
-
-src_unpack () {
-	unpack ${A}
-	cd "${S}"
-
-	epatch "${FILESDIR}"/${PV}-amd64.patch
-	epatch "${FILESDIR}"/${PV}-2.6.24.patch
-}
-
 src_install() {
 	local binaries="vpnclient ipseclog cisco_cert_mgr"
-	linux-mod_src_install
 
 	# Binaries
-	exeinto /opt/cisco-vpnclient/bin
+	into ${VPNDIR}
 	exeopts -m0111
-	doexe ${binaries}
+	dobin ${binaries}
 	exeopts -m4111
-	doexe cvpnd
+	dobin cvpnd
 	# Libraries
-	insinto /opt/cisco-vpnclient/lib
-	doins libvpnapi.so
+	dolib libvpnapi.so
 	# Includes
-	insinto /opt/cisco-vpnclient/include
+	insinto include
 	doins vpnapi.h
 
 	# Configuration files/profiles/etc
+	into /
 	insinto ${CFGDIR}
 	doins vpnclient.ini
 	insinto ${CFGDIR}/Profiles
@@ -77,27 +65,4 @@ src_install() {
 	# Make sure we keep these, even if they're empty.
 	keepdir ${CFGDIR}/Certificates
 	keepdir ${CFGDIR}/Profiles
-}
-
-pkg_postinst() {
-	linux-mod_pkg_postinst
-	if [ -e "${OLDCFG}" ]
-	then
-		elog "Found an old ${OLDCFG} configuration directory."
-		elog "Moving ${OLDCFG} files to ${CFGDIR}."
-		cp -pPR ${OLDCFG}/* ${CFGDIR} && rm -rf ${OLDCFG}
-	fi
-	if [ -e "/etc/init.d/vpnclient" ]
-	then
-		elog "Removing /etc/init.d/vpnclient, which is no longer needed."
-		rm -f /etc/init.d/vpnclient
-	fi
-	runlevels=`rc-update show | grep vpnclient | cut -d\| -f2`
-	if [ -n "$runlevels" ]
-	then
-		elog "Removing 'vpnclient' from all runlevels."
-		rc-update del vpnclient
-	fi
-	elog "You will need to load the cisco_ipsec module before using the Cisco"
-	elog "VPN Client (vpnclient) application."
 }
