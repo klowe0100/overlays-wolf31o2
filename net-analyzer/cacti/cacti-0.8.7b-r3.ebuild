@@ -8,7 +8,7 @@ inherit eutils webapp depend.apache depend.php
 MY_P=${P/_p*/}
 HAS_PATCHES=1
 
-DESCRIPTION="Cacti is a complete frontend to rrdtool"
+DESCRIPTION="a complete frontend to rrdtool"
 HOMEPAGE="http://www.cacti.net/"
 SRC_URI="http://www.cacti.net/downloads/${MY_P}.tar.gz
 	plugins? ( http://cactiusers.org/downloads/cacti-plugin-arch.tar.gz )"
