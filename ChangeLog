@@ -1,6 +1,13 @@
 # Copyright 2008-2008 Chris Gianelloni; Distributed under the GPL v2
 # $Id: $
 
+*cacti-plugins-boost-1.7 (26 Aug 2008)
+
+  26 Aug 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  cacti-plugins-boost-1.7.ebuild:
+  Adding the Boost plugin, which uses the new cacti-plugins.eclass for
+  installing.
+
   26 Aug 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
   +eclass/cacti-plugins.eclass:
   Adding an initial eclass framework for installing Cacti plugins.
