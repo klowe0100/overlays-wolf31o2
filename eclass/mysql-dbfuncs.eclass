@@ -37,6 +37,16 @@ mysql-dbfuncs_drop_database() {
 	mysqladmin ${MYSQL_AUTH} drop ${MYSQL_DBNAME}
 }
 
+# This function drops a MySQL table.
+mysql-dbfuncs_drop_table() {
+	[ -z "${MYSQL_DBNAME}" ] && die "You need to specify a database name!"
+	[ -z "${MYSQL_TABLE}" ] && die "You need to specify a table name!"
+	mysql-dbfuncs_check_auth
+	einfo "Dropping ${MYSQL_TABLE} from ${MYSQL_DBNAME}"
+	echo "DROP TABLE IF EXISTS ${MYSQL_TABLE}" | \
+		mysql ${MYSQL_AUTH} ${MYSQL_DBNAME}
+}
+
 # This function loads a SQL script into the given database.
 mysql-dbfuncs_load_sql() {
 	if [ -z "${MYSQL_SCRIPTS}" ] || [ -z "${MYSQL_DBNAME}" ] ; then
