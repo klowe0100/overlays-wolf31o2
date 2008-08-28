@@ -2,6 +2,11 @@
 # $Id: $
 
   28 Aug 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  eclass/cacti-plugins.eclass, +eclass/mysql-dbfuncs.eclass:
+  Created a new mysql-dbfuncs.eclass to support creating and dropping
+  databases, and also for loading pre-made SQL files into a database.
+
+  28 Aug 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
   net-analyzer/cacti-plugins-boost/files/cacti-boost.rc,
   net-analyzer/cacti-plugins-boost/files/cacti-boost.rc.memory:
   Clean up the init scripts so they actually function correctly.

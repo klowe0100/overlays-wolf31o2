@@ -12,7 +12,7 @@ PLUG_BASE="http://mirror.cactiusers.org/downloads/plugins"
 # We don't actually need webapp-config for this.
 WEBAPP_OPTIONAL="yes"
 
-inherit eutils # webapp
+inherit eutils mysql-dbfuncs # webapp
 
 EXPORT_FUNCTIONS pkg_setup src_install pkg_postinst
 
@@ -38,22 +38,6 @@ S=${WORKDIR}/${PLUG_NAME}
 CACTI_HOME="/var/www/localhost/htdocs/cacti"
 CACTI_SQLADMIN="root"
 
-cacti-plugins_setup_mysql() {
-	if [ -n "${MYSQL_PASS}" ] ; then
-		MYSQL_AUTH="-p${MYSQL_PASS}"
-	else
-		MYSQL_AUTH=""
-	fi
-	if [ -n "${SQL_SCRIPTS}" ] ; then
-		einfo "Installing MySQL code for ${PLUG_NAME}"
-		for sql in ${SQL_SCRIPTS} ; do
-			einfo "Installing ${sql}"
-			mysql -u${CACTI_SQLADMIN} ${MYSQL_AUTH} cacti < \
-				${CACTI_HOME}/plugins/${PLUG_NAME}/$sql
-		done
-	fi
-}
-
 cacti-plugins_add_plugin_to_conf() {
 	# Here, we need to grab the current plugin list and add ours to it.
 	:
@@ -71,5 +55,5 @@ cacti-plugins_src_install() {
 }
 
 cacti-plugins_pkg_postinst() {
-	cacti-plugins_setup_mysql
+	mysql-dbfuncs_load_sql
 }
