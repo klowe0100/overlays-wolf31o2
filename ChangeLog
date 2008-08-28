@@ -3,6 +3,11 @@
 
   28 Aug 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
   eclass/cacti-plugins.eclass:
+  Adding a PLUG_HOME variable, to splify installation and SQL script
+  passing.
+
+  28 Aug 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  eclass/cacti-plugins.eclass:
   Added a check on the existence of an images directory and install it if it
   exists.
 

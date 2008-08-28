@@ -19,8 +19,9 @@ EXPORT_FUNCTIONS pkg_setup src_install pkg_postinst
 # Variables to specify in an ebuild which uses this eclass:
 # TODO: Add this section
 
-# PLUG_NAME
+CACTI_HOME=${CACTI_HOME:-var/www/localhost/htdocs/cacti}
 PLUG_NAME=${PN/cacti-plugins-/}
+PLUG_HOME=${CACTI_HOME}/plugins/${PLUG_NAME}
 
 DESCRIPTION="Cacti plugin: ${PLUG_NAME}"
 
@@ -35,9 +36,6 @@ DEPEND=">=net-analyzer/cacti-0.8.7b-r3"
 
 S=${WORKDIR}/${PLUG_NAME}
 
-CACTI_HOME="/var/www/localhost/htdocs/cacti"
-CACTI_SQLADMIN="root"
-
 cacti-plugins_add_plugin_to_conf() {
 	# Here, we need to grab the current plugin list and add ours to it.
 	:
@@ -50,7 +48,7 @@ cacti-plugins_pkg_setup() {
 }
 
 cacti-plugins_src_install() {
-	insinto ${CACTI_HOME}/plugins/${PLUG_NAME}
+	insinto ${PLUG_HOME}
 	doins *.php *.sql
 	[ -d images ] && doins -r images
 }
