@@ -15,18 +15,18 @@ checkconfig() {
 		eerror "You need to set CACTI_BOOST_HOME in /etc/conf.d/cacti-boost"
 		return 1
 	fi
-	exit 0
+	return 0
 }
 
 start() {
 	checkconfig || return $?
 	ebegin "Starting Cacti Boost Server"
-	start-stop-daemon --start --exec php -q ${CACTI_BOOST_HOME}/boost_server.php
+	start-stop-daemon --start --background --exec /usr/bin/php -q ${CACTI_BOOST_HOME}/boost_server.php
 	eend $?
 }
 
 stop() {
 	ebegin "Stopping Cacti Boost Server"
-	start-stop-daemon --stop --exec php -q ${CACTI_BOOST_HOME}/boost_server.php
+	start-stop-daemon --stop --exec /usr/bin/php -q ${CACTI_BOOST_HOME}/boost_server.php
 	eend $?
 }

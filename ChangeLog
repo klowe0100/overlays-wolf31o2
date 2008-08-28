@@ -1,6 +1,11 @@
 # Copyright 2008-2008 Chris Gianelloni; Distributed under the GPL v2
 # $Id: $
 
+  28 Aug 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  net-analyzer/cacti-plugins-boost/files/cacti-boost.rc,
+  net-analyzer/cacti-plugins-boost/files/cacti-boost.rc.memory:
+  Clean up the init scripts so they actually function correctly.
+
 *cacti-spine-0.8.7a-r1 (28 Aug 2008)
 
   28 Aug 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
