@@ -19,9 +19,10 @@ EXPORT_FUNCTIONS pkg_setup src_install pkg_postinst
 # Variables to specify in an ebuild which uses this eclass:
 # TODO: Add this section
 
-CACTI_HOME=${CACTI_HOME:-var/www/localhost/htdocs/cacti}
+CACTI_HOME=${CACTI_HOME:-/var/www/localhost/htdocs/cacti}
 PLUG_NAME=${PN/cacti-plugins-/}
 PLUG_HOME=${CACTI_HOME}/plugins/${PLUG_NAME}
+MYSQL_DBNAME=${MYSQL_DBNAME:-cacti}
 
 DESCRIPTION="Cacti plugin: ${PLUG_NAME}"
 
