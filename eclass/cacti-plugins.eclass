@@ -52,6 +52,7 @@ cacti-plugins_pkg_setup() {
 cacti-plugins_src_install() {
 	insinto ${CACTI_HOME}/plugins/${PLUG_NAME}
 	doins *.php *.sql
+	[ -d images ] && doins -r images
 }
 
 cacti-plugins_pkg_postinst() {
