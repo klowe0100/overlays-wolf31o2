@@ -1,0 +1,5 @@
+# /etc/conf.d/cacti-boost: config file for /etc/init.d/cacti-boost
+
+# Where is Boost installed
+CACTI_BOOST_HOME="/var/www/localhost/htdocs/cacti/plugins/boost"
+

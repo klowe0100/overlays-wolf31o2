@@ -1,6 +1,15 @@
 # Copyright 2008-2008 Chris Gianelloni; Distributed under the GPL v2
 # $Id: $
 
+  28 Aug 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +net-analyzer/cacti-plugins-boost/files/cacti-boost.confd,
+  +net-analyzer/cacti-plugins-boost/files/cacti-boost.rc,
+  +net-analyzer/cacti-plugins-boost/files/cacti-boost.rc.memory,
+  cacti-plugins-boost-1.7.ebuild:
+  Added an init script for the Boost Server. The memory version of the
+  script forces a flush of the Boost tables during a reboot/shutdown, so no
+  data is lost.
+
 *cacti-plugins-boost-1.7 (26 Aug 2008)
 
   26 Aug 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>

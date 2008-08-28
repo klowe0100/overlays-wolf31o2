@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-inherit cacti-plugins
+inherit eutils cacti-plugins
 
 SRC_URI="${PLUG_BASE}/${PLUG_NAME}-${PV}.tar.gz"
 
@@ -27,5 +27,12 @@ src_install() {
 	keepdir "${dir}"
 	fowners apache:apache "${dir}"
 	fperms 775 "${dir}"
+	edos2unix *.php
+	if use memory ; then
+		newinitd "${FILESDIR}"/cacti-boost.rc.memory cacti-boost
+	else
+		newinitd "${FILESDIR}"/cacti-boost.rc cacti-boost
+	fi
+	newconfd "${FILESDIR}"/cacti-boost.confd cacti-boost
 	cacti-plugins_src_install
 }
