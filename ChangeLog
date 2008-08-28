@@ -1,6 +1,14 @@
 # Copyright 2008-2008 Chris Gianelloni; Distributed under the GPL v2
 # $Id: $
 
+*cacti-spine-0.8.7a-r1 (28 Aug 2008)
+
+  28 Aug 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +net-analyzer/cacti-spine/files/cacti-spine-0.8.7a-script_server_bufsize.p
+  atch, cacti-spine-0.8.7a-r1.ebuild:
+  Adding my modified version of net-analyzer/cacti-spine, which fixes
+  several buffer size problems and works great in my testing.
+
   28 Aug 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
   cacti-0.8.7b-r3.ebuild:
   Switch net-analyzer/cacti to using EAPI=1 so I can enable IUSE defaults
