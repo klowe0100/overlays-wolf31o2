@@ -14,9 +14,9 @@ DEPEND="${DEPEND}
 
 pkg_setup() {
 	if use memory ; then
-		SQL_SCRIPTS="boost_sql_memory.sql"
+		SQL_SCRIPTS=${PLUG_HOME}/boost_sql_memory.sql
 	else
-		SQL_SCRIPTS="boost_sql_myisam.sql"
+		SQL_SCRIPTS=${PLUG_HOME}/boost_sql_myisam.sql
 	fi
 	cacti-plugins_pkg_setup
 }
