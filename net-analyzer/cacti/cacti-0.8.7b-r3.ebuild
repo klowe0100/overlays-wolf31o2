@@ -2,6 +2,8 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: /var/cvsroot/gentoo-x86/net-analyzer/cacti/cacti-0.8.7b-r2.ebuild,v 1.5 2008/04/27 20:01:28 maekke Exp $
 
+EAPI=1
+
 inherit eutils webapp depend.apache depend.php
 
 # Support for _p* in version.
@@ -25,7 +27,7 @@ fi
 
 LICENSE="GPL-2"
 KEYWORDS="~amd64 ~x86"
-IUSE="plugins snmp"
+IUSE="+plugins +snmp"
 
 DEPEND=""
 
