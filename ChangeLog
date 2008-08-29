@@ -1,6 +1,11 @@
 # Copyright 2008-2008 Chris Gianelloni; Distributed under the GPL v2
 # $Id: $
 
+  29 Aug 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  net-analyzer/afasnmp/files/afasnmpd.rc:
+  Updated the init script for afasnmp so it creates the necessary device
+  node on startup.
+
   28 Aug 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
   eclass/cacti-plugins.eclass:
   Improve the directory checking/installing section.
@@ -22,7 +27,7 @@
 
   28 Aug 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
   eclass/cacti-plugins.eclass:
-  Adding a PLUG_HOME variable, to splify installation and SQL script
+  Adding a PLUG_HOME variable, to simplify installation and SQL script
   passing.
 
   28 Aug 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>

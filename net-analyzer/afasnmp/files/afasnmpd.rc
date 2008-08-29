@@ -12,6 +12,14 @@ depend() {
 # Most of this is taken from the percsnmpd.deb file from the percsnmp tarball.
 start() {
 	ebegin "Starting Dell PERC/Adaptec SNMP Agent"
+	afamajor=`cat /proc/devices | awk '/aac/ {print $1}'`
+	# Check for errors
+	if [ -z "${afamajor}" ]
+	then
+		eerror "AACRAID driver not loaded!"
+		eend 1
+	fi
+	mknod /dev/afa0 c ${afamajor} 0 2>/dev/null
 
 	start-stop-daemon --start -q --exec /usr/sbin/afasnmpd
 	eend $?
@@ -22,4 +30,5 @@ stop() {
 	ebegin "Stopping Dell PERC/Adaptec SNMP Agent"
 	start-stop-daemon --stop -q --pidfile /var/run/afasnmpd.pid
 	eend $?
+	rm -f /dev/afa0
 }
