@@ -1,6 +1,11 @@
 # Copyright 2008-2008 Chris Gianelloni; Distributed under the GPL v2
 # $Id: $
 
+  29 Aug 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  eclass/cacti-plugins.eclass:
+  Change how we get PLUG_NAME, since we no longer have cacti-plugins-
+  preceding it.
+
 *discovery-0.8.4 (29 Aug 2008)
 *boost-1.7 (29 Aug 2008)
 

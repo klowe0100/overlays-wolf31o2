@@ -20,7 +20,7 @@ EXPORT_FUNCTIONS pkg_setup src_install pkg_postinst
 # TODO: Add this section
 
 CACTI_HOME=${CACTI_HOME:-/var/www/localhost/htdocs/cacti}
-PLUG_NAME=${PN/cacti-plugins-/}
+PLUG_NAME=${PN}
 PLUG_HOME=${CACTI_HOME}/plugins/${PLUG_NAME}
 MYSQL_DBNAME=${MYSQL_DBNAME:-cacti}
 
