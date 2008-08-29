@@ -1,6 +1,21 @@
 # Copyright 2008-2008 Chris Gianelloni; Distributed under the GPL v2
 # $Id: $
 
+*discovery-0.8.4 (29 Aug 2008)
+*boost-1.7 (29 Aug 2008)
+
+  29 Aug 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +cacti-plugins/boost/files/cacti-boost.confd,
+  +cacti-plugins/boost/files/cacti-boost.rc,
+  +cacti-plugins/boost/files/cacti-boost.rc.memory,
+  -net-analyzer/cacti-plugins-boost/files/cacti-boost.confd,
+  -net-analyzer/cacti-plugins-boost/files/cacti-boost.rc,
+  -net-analyzer/cacti-plugins-boost/files/cacti-boost.rc.memory,
+  profiles/categories, boost-1.7.ebuild, discovery-0.8.4.ebuild,
+  cacti-plugins-boost-1.7.ebuild, cacti-plugins-discovery-0.8.4.ebuild:
+  There's no point in not creating my own category for the cacti-plugins, so
+  do so and move the plugins into the new category.
+
   29 Aug 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
   net-analyzer/afasnmp/files/afasnmpd.rc:
   Updated the init script for afasnmp so it creates the necessary device
