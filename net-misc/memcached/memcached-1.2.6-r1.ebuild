@@ -56,15 +56,20 @@ src_install() {
 
 	dodoc AUTHORS ChangeLog NEWS README TODO doc/{CONTRIBUTORS,*.txt}
 
-	newconfd "${FILESDIR}"/memcached.confd memcached
-	newinitd "${FILESDIR}"/memcached.rc memcached
+	if use repcached; then
+		newconfd "${FILESDIR}"/memcached.confd-repcached memcached
+		newinitd "${FILESDIR}"/memcached.rc-repcached memcached
+	else
+		newconfd "${FILESDIR}"/memcached.confd memcached
+		newinitd "${FILESDIR}"/memcached.rc memcached
+	fi
 }
 
 pkg_postinst() {
 	enewuser memcached -1 -1 /dev/null daemon
 
-	elog "With this version of Memcached Gentoo now supports multiple instances."
-	elog "To enable this you must create a symlink in /etc/init.d/ for each instance"
+	elog "This version of Memcached now supports multiple instances."
+	elog "To enable this, you must create a symlink in /etc/init.d/ for each instance"
 	elog "to /etc/init.d/memcached and create the matching conf files in /etc/conf.d/"
 	elog "Please see Gentoo bug #122246 for more info"
 }

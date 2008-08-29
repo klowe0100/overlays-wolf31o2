@@ -26,16 +26,16 @@ depend() {
 
 checkconfig() {
 	if [ -z "${LISTENON}" ]; then
-		ewarn "You should edit $CONFSRC and specify an address to listen on."
+		ewarn "You should edit ${CONFSRC} and specify an address to listen on."
 		ewarn "Listening on any address (check your firewall!)"
 	fi
 }
 
 start() {
 	if [ -n "${CONF}" ]; then
-		 ebegin "Starting memcached (${CONF})"
+		ebegin "Starting memcached (${CONF})"
 	else
-		 ebegin "Starting memcached"
+		ebegin "Starting memcached"
 	fi
 	checkconfig
 	local dir="$(dirname ${PIDFILE})"
@@ -55,20 +55,28 @@ start() {
 		c_LISTENON="-l ${LISTENON}"
 	fi
 
+	if [ -z "${PEER}" ]; then
+		c_PEER=""
+		c_REPL_PORT=""
+	else
+		c_PEER="-x ${PEER}"
+		c_REPL_PORT="-X ${REPL_PORT}"
+	fi
+
 	/sbin/start-stop-daemon --start --pidfile "${PIDFILE}" \
 		--exec "${MEMCACHED_BINARY}" \
 		--startas "${MEMCACHED_BINARY}" -- \
 		-d -p ${PORT} ${c_LISTENON} -m ${MEMUSAGE} \
 		-c ${MAXCONN} -u ${MEMCACHED_RUNAS} -P "${PIDFILE}" \
-		${MISC_OPTS}
+		${MISC_OPTS} ${c_REPL_PORT} ${c_PEER}
 	eend $?
 }
 
 stop() {
 	if [ -n "${CONF}" ]; then
-		 ebegin "Stopping memcached (${CONF})"
+		ebegin "Stopping memcached (${CONF})"
 	else
-		 ebegin "Stopping memcached"
+		ebegin "Stopping memcached"
 	fi
 	start-stop-daemon --stop --quiet --pidfile "${PIDFILE}"
 	rm -f "${PIDFILE}"

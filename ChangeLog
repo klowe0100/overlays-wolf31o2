@@ -1,6 +1,14 @@
 # Copyright 2008-2008 Chris Gianelloni; Distributed under the GPL v2
 # $Id: $
 
+  29 Aug 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +net-misc/memcached/files/memcached.confd-repcached,
+  net-misc/memcached/files/memcached.rc,
+  +net-misc/memcached/files/memcached.rc-repcached,
+  memcached-1.2.6-r1.ebuild:
+  Added a second init script and matching conf.d file for repcached-enabled
+  memcached.
+
 *memcached-1.2.6 (29 Aug 2008)
 *memcached-1.2.6-r1 (29 Aug 2008)
 *memcached-1.2.5 (29 Aug 2008)
