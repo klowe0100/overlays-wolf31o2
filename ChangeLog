@@ -1,6 +1,18 @@
 # Copyright 2008-2008 Chris Gianelloni; Distributed under the GPL v2
 # $Id: $
 
+*memcached-1.2.6 (29 Aug 2008)
+*memcached-1.2.6-r1 (29 Aug 2008)
+*memcached-1.2.5 (29 Aug 2008)
+
+  29 Aug 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +net-misc/memcached/files/memcached-1.2.2-fbsd.patch,
+  +net-misc/memcached/files/memcached.confd,
+  +net-misc/memcached/files/memcached.rc, memcached-1.2.5.ebuild,
+  memcached-1.2.6-r1.ebuild, memcached-1.2.6.ebuild:
+  Adding my modified version of net-misc/memcached with replication
+  (repcached) support.
+
   29 Aug 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
   eclass/cacti-plugins.eclass:
   Change how we get PLUG_NAME, since we no longer have cacti-plugins-
