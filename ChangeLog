@@ -1,16 +1,25 @@
 # Copyright 2008-2008 Chris Gianelloni; Distributed under the GPL v2
 # $Id: $
 
+*jvm-management-1.32 (31 Aug 2008)
+
+  31 Aug 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  jvm-management-1.32.ebuild:
+  Adding jvm-management to snmp-mibs, so it can be removed from the net-snmp
+  ebuild.
+
 *raid-adapter-1.11 (31 Aug 2008)
 
   31 Aug 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  percsnmp-4.09.ebuild, lsi-raid-1.11.ebuild, raid-adapter-1.11.ebuild:
+  snmp-agents/percsnmp-4.09.ebuild, -snmp-mibs/lsi-raid-1.11.ebuild,
+  +snmp-mibs/raid-adapter-1.11.ebuild:
   Renamed lsi-raid to raid-adapter to match the MIB module name.
 
 *adaptecarraycontroller-4.0 (31 Aug 2008)
 
-  31 Aug 2008; Chris Gianelloni <wolf31o2@wolf31o2.org> afasnmp-4.0.ebuild,
-  adaptec-aac-4.0.ebuild, adaptecarraycontroller-4.0.ebuild:
+  31 Aug 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  snmp-agents/afasnmp-4.0.ebuild, -snmp-mibs/adaptec-aac-4.0.ebuild,
+  +snmp-mibs/adaptecarraycontroller-4.0.ebuild:
   Renamed adaptec-aac to adaptecarraycontroller to match the actual MIB
   module name.
 
