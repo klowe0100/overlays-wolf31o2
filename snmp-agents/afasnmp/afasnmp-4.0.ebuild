@@ -17,7 +17,7 @@ IUSE="minimal"
 RESTRICT="strip mirror test"
 
 RDEPEND="!minimal? (
-	snmp-mibs/adaptec-aac )
+	snmp-mibs/adaptecarraycontroller )
 	amd64? (
 		app-emulation/emul-linux-x86-baselibs
 		app-emulation/emul-linux-x86-compat )

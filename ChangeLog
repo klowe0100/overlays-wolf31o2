@@ -1,6 +1,13 @@
 # Copyright 2008-2008 Chris Gianelloni; Distributed under the GPL v2
 # $Id: $
 
+*adaptecarraycontroller-4.0 (31 Aug 2008)
+
+  31 Aug 2008; Chris Gianelloni <wolf31o2@wolf31o2.org> afasnmp-4.0.ebuild,
+  adaptec-aac-4.0.ebuild, adaptecarraycontroller-4.0.ebuild:
+  Renamed adaptec-aac to adaptecarraycontroller to match the actual MIB
+  module name.
+
 *net-snmp-5.4.1.1-r1 (31 Aug 2008)
 
   31 Aug 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
