@@ -1,6 +1,12 @@
 # Copyright 2008-2008 Chris Gianelloni; Distributed under the GPL v2
 # $Id: $
 
+*bayourcom-1.19 (31 Aug 2008)
+
+  31 Aug 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +snmp-mibs/bayourcom/files/bind94.patch, bayourcom-1.19.ebuild:
+  Added bayourcom to snmp-mibs, which is the MIB for bind9-snmp.
+
   31 Aug 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
   bind9-snmp-1.7.ebuild:
   Adding my bind94 patch.
