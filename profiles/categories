@@ -4,4 +4,5 @@ games-strategy
 media-gfx
 net-analyzer
 net-misc
+snmp-mibs
 sys-apps

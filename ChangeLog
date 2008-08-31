@@ -1,6 +1,13 @@
 # Copyright 2008-2008 Chris Gianelloni; Distributed under the GPL v2
 # $Id: $
 
+*adaptec-aac-4.0 (31 Aug 2008)
+
+  31 Aug 2008; Chris Gianelloni <wolf31o2@wolf31o2.org> profiles/categories,
+  adaptec-aac-4.0.ebuild:
+  Adding a snmp-mibs category and adaptec-aac package for the Adaptec-based
+  RAID controllers.
+
   29 Aug 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
   +net-misc/memcached/files/memcached.confd-repcached,
   net-misc/memcached/files/memcached.rc,
