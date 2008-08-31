@@ -9,10 +9,11 @@ SRC_URI="ftp://ftp.us.dell.com/ide/perc-cerc-apps-6.03-A06.tar.gz"
 LICENSE="Dell"
 SLOT="0"
 KEYWORDS="amd64 x86"
-IUSE=""
+IUSE="minimal"
 
 DEPEND=""
-RDEPEND="net-analyzer/net-snmp"
+RDEPEND="net-analyzer/net-snmp
+	!minimal? ( snmp-mibs/lsi-raid )"
 
 S=${WORKDIR}/etc/percsnmp
 
@@ -29,12 +30,6 @@ src_install() {
 	dosbin percagent percmain
 	doins percsnmpd.conf percsnmptrap.conf
 	dodoc readme.txt
-	insinto /usr/share/snmp/mibs
-	sed \
-		-e 's/not_available/notavailable/' \
-		-e 's/fastest_possible/fastestpossible/' \
-		"${S}"/perc.mib > "${T}"/RAID-Adapter-MIB.txt || die "sed"
-	doins "${T}"/RAID-Adapter-MIB.txt
 	newinitd "${FILESDIR}"/percsnmpd.rc percsnmpd
 }
 

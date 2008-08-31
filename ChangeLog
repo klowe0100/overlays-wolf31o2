@@ -2,6 +2,12 @@
 # $Id: $
 
   31 Aug 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  -net-analyzer/percsnmp/files/percsnmpd.rc,
+  +snmp-agents/percsnmp/files/percsnmpd.rc, percsnmp-4.09.ebuild,
+  percsnmp-4.09.ebuild:
+  Moved net-analyzer/percsnmp to snmp-agents.
+
+  31 Aug 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
   -net-analyzer/afasnmp/files/afasnmpd.rc,
   -net-analyzer/percsnmp/files/percsnmpd.rc, profiles/categories,
   +snmp-agents/afasnmp/files/afasnmpd.rc, afasnmp-4.0.ebuild,
