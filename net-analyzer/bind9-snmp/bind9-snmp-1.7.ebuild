@@ -21,7 +21,7 @@ RDEPEND="dev-lang/perl
 src_unpack() {
 	unpack ${A}
 	cd "${S}"
-#	epatch "${FILESDIR}"/${P}-bind94.patch
+	epatch "${FILESDIR}"/${P}-bind94.patch
 	epatch "${FILESDIR}"/${P}-config.patch
 }
 

@@ -1,6 +1,10 @@
 # Copyright 2008-2008 Chris Gianelloni; Distributed under the GPL v2
 # $Id: $
 
+  31 Aug 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  bind9-snmp-1.7.ebuild:
+  Adding my bind94 patch.
+
 *adaptec-aac-4.0 (31 Aug 2008)
 
   31 Aug 2008; Chris Gianelloni <wolf31o2@wolf31o2.org> profiles/categories,
