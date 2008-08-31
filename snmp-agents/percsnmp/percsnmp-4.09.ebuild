@@ -13,7 +13,7 @@ IUSE="minimal"
 
 DEPEND=""
 RDEPEND="net-analyzer/net-snmp
-	!minimal? ( snmp-mibs/lsi-raid )"
+	!minimal? ( snmp-mibs/raid-adapter )"
 
 S=${WORKDIR}/etc/percsnmp
 
