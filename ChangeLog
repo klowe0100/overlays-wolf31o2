@@ -1,6 +1,26 @@
 # Copyright 2008-2008 Chris Gianelloni; Distributed under the GPL v2
 # $Id: $
 
+*net-snmp-5.4.1.1-r1 (31 Aug 2008)
+
+  31 Aug 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +net-analyzer/net-snmp/files/net-snmp-5.1.2-snmpconf-selinux.patch,
+  +net-analyzer/net-snmp/files/net-snmp-5.4.1-CVE-2008-2292.patch,
+  +net-analyzer/net-snmp/files/net-snmp-5.4.1-clientaddr-fix.patch,
+  +net-analyzer/net-snmp/files/net-snmp-5.4.1-incorrect-hrFSStorageIndex.pat
+  ch,
+  +net-analyzer/net-snmp/files/net-snmp-5.4.1-ipAddressTable-crash-with-doub
+  le-free.patch,
+  +net-analyzer/net-snmp/files/net-snmp-5.4.1-perl-asneeded.patch,
+  +net-analyzer/net-snmp/files/net-snmp-5.4.1-process-count-race.patch,
+  +net-analyzer/net-snmp/files/net-snmp-5.4.1-suppresssuppress-annoying.patc
+  h, +net-analyzer/net-snmp/files/net-snmp-5.4-exec-crash.patch,
+  +net-analyzer/net-snmp/files/snmpd.conf,
+  +net-analyzer/net-snmp/files/snmpd.rc7,
+  +net-analyzer/net-snmp/files/snmptrapd.conf,
+  +net-analyzer/net-snmp/files/snmptrapd.rc7, net-snmp-5.4.1.1-r1.ebuild:
+  Added my hacked-up net-snmp ebuild.
+
   31 Aug 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
   -net-analyzer/percsnmp/files/percsnmpd.rc,
   +snmp-agents/percsnmp/files/percsnmpd.rc, percsnmp-4.09.ebuild,
