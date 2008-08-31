@@ -1,6 +1,6 @@
-# Copyright 1999-2008 Gentoo Foundation
+# Copyright 2008 Chris Gianelloni
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sys-block/afacli/afacli-4.1.ebuild,v 1.1 2008/05/24 10:41:57 wschlich Exp $
+# $Header: $
 
 inherit rpm
 
@@ -11,15 +11,19 @@ SRC_URI="ftp://ftp.dell.com/scsi-raid/afa-apps-snmp.2807420-A04.tar.gz"
 
 LICENSE="Dell"
 SLOT="0"
-# This package can never enter stable, it can't be mirrored and upstream
-# can remove the distfiles from their mirror anytime.
 KEYWORDS="amd64 x86"
-IUSE=""
+IUSE="minimal"
 
 RESTRICT="strip mirror test"
 
-RDEPEND="amd64? ( app-emulation/emul-linux-x86-compat )
-	x86? ( sys-libs/lib-compat )"
+RDEPEND="!minimal? (
+	snmp-mibs/adaptec-aac )
+	amd64? (
+		app-emulation/emul-linux-x86-baselibs
+		app-emulation/emul-linux-x86-compat )
+	x86? (
+		sys-libs/lib-compat
+		sys-libs/ncurses )"
 
 S="${WORKDIR}"
 
@@ -28,13 +32,7 @@ src_unpack() {
 	rpm_unpack "${S}"/afasnmp-${MY_PV}.i386.rpm || die "failed to unpack RPM"
 }
 
-src_compile() {
-	echo "Nothing to compile."
-}
-
 src_install() {
 	dosbin usr/sbin/afasnmpd
-	insinto /usr/share/snmp/mibs
-	newins usr/share/snmp/mibs/afa-MIB.txt AdaptecArrayController-MIB.txt
 	newinitd "${FILESDIR}"/afasnmpd.rc afasnmpd
 }
