@@ -1,6 +1,12 @@
 # Copyright 2008-2008 Chris Gianelloni; Distributed under the GPL v2
 # $Id: $
 
+*lsi-raid-1.11 (31 Aug 2008)
+
+  31 Aug 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  lsi-raid-1.11.ebuild:
+  Adding lsi-raid to snmp-mibs, which is used by percsnmp.
+
 *bayourcom-1.19 (31 Aug 2008)
 
   31 Aug 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
