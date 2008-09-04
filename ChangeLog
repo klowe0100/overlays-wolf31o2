@@ -1,6 +1,16 @@
 # Copyright 2008-2008 Chris Gianelloni; Distributed under the GPL v2
 # $Id: $
 
+*jdbc-oracle-bin-10.2.0.4 (04 Sep 2008)
+*jdbc-oracle-bin-10.2.0.3 (04 Sep 2008)
+
+  04 Sep 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +dev-java/jdbc-oracle-bin/metadata.xml, profiles/categories,
+  jdbc-oracle-bin-10.2.0.3.ebuild, jdbc-oracle-bin-10.2.0.4.ebuild:
+  Adding jdbc-oracle-bin for the 10.2.0.4 version and to fix a minor issue
+  with 10.2.0.3's ebuild. I've submitted this to Gentoo as bug #236725. The
+  10.2.0.4 ebuild is submitted as bug #236727.
+
 *php-5.2.6-r7 (04 Sep 2008)
 
   04 Sep 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
