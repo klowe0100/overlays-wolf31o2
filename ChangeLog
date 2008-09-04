@@ -1,6 +1,20 @@
 # Copyright 2008-2008 Chris Gianelloni; Distributed under the GPL v2
 # $Id: $
 
+*php-5.2.6-r7 (04 Sep 2008)
+
+  04 Sep 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +dev-lang/php/files/20php5-envd,
+  +dev-lang/php/files/70_mod_php.conf-apache2,
+  +dev-lang/php/files/70_mod_php5_concurr.conf-apache2,
+  +dev-lang/php/files/70_mod_php5.conf-apache2,
+  +dev-lang/php/files/70_mod_php_concurr.conf-apache2,
+  +dev-lang/php/files/php5-ldvs, +dev-lang/php/metadata.xml,
+  profiles/categories, php-5.2.6-r7.ebuild:
+  Adding a newer revision of dev-lang/php. This fixes a nasty memory leak in
+  PHP's SNMP support and is taken from Gentoo bug #231528 until this can
+  make its way into the main tree.
+
 *jvm-management-1.32 (31 Aug 2008)
 
   31 Aug 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
