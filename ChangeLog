@@ -1,6 +1,15 @@
 # Copyright 2008-2008 Chris Gianelloni; Distributed under the GPL v2
 # $Id: $
 
+*cacti-spine-0.8.7a-r2 (20 Sep 2008)
+
+  20 Sep 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +net-analyzer/cacti-spine/files/cacti-spine-0.8.7a-spine_bufsize.patch,
+  cacti-spine-0.8.7a-r2.ebuild:
+  I'm trying this again with a different patch that tries to be a little
+  more conservative in increasing the buffer sizes. It seems to work for me
+  at home, but I only have a few hosts to check.
+
 *jdbc-oracle-bin-10.2.0.4 (04 Sep 2008)
 *jdbc-oracle-bin-10.2.0.3 (04 Sep 2008)
 
