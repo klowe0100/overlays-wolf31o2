@@ -1,6 +1,11 @@
 # Copyright 2008-2008 Chris Gianelloni; Distributed under the GPL v2
 # $Id: $
 
+  22 Sep 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  net-snmp-5.4.1.1-r1.ebuild:
+  Removing the installation of the Sun JVM MIB from net-analyzer/net-snmp
+  and switch to pulling in the snmp-mibs/jvm-management package, instead.
+
 *cacti-spine-0.8.7a-r2 (20 Sep 2008)
 
   20 Sep 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>

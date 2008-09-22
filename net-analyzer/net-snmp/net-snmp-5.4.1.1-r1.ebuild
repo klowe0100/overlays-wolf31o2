@@ -61,9 +61,9 @@ DEPEND="${DEPEND}
 
 # Dependency on virtual/jre due to bug #233546
 RDEPEND="${RDEPEND}
-	java? ( virtual/jre )"
+	java? ( virtual/jre snmp-mibs/jvm-management )"
 
-# Dependency on www-apache/mod_ap2_snmp due to bug #
+# Dependency on www-apache/mod_ap2_snmp due to bug #234036
 RDEPEND="${RDEPEND}
 	amd64? (
 		apache2? ( www-apache/mod_ap2_snmp ) )
@@ -279,12 +279,6 @@ src_install () {
 	# bug 113788, install example config
 	insinto /etc/snmp
 	newins "${S}"/EXAMPLE.conf snmpd.conf.example
-
-	# bug 233546
-	if use java ; then
-		insinto /usr/share/snmp/mibs
-		newins "${DISTDIR}"/JVM-MANAGEMENT-MIB.mib JVM-MANAGEMENT-MIB.txt
-	fi
 }
 
 pkg_postrm() {
