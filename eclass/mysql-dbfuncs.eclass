@@ -23,7 +23,13 @@ mysql-dbfuncs_check_auth() {
 
 # This function creates an empty MySQL database.
 mysql-dbfuncs_create_database() {
-	[ -z "${MYSQL_DBNAME}" ] && die "You need to specify a database name!"
+	if [ -z "${MYSQL_DBNAME}" ] ;then
+		if [ -z "${1}" ]; then
+			die "You need to specify a database name!"
+		else
+			MYSQL_DBNAME=${1}
+		fi
+	fi
 	mysql-dbfuncs_check_auth
 	einfo "Creating a new database ${MYSQL_DBNAME}"
 	mysqladmin ${MYSQL_AUTH} create ${MYSQL_DBNAME}

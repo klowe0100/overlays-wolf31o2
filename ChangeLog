@@ -2,6 +2,11 @@
 # $Id: $
 
   24 Sep 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  eclass/mysql-dbfuncs.eclass, cacti-0.8.7b-r3.ebuild:
+  Adding code to allow us to use either the environment or a function
+  parameter when adding a database.
+
+  24 Sep 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
   eclass/mysql-dbfuncs.eclass:
   Fixing the database creation to use mysqladmin.
 
