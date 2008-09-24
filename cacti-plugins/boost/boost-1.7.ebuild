@@ -27,7 +27,7 @@ src_install() {
 	keepdir "${dir}"
 	fowners apache:apache "${dir}"
 	fperms 775 "${dir}"
-	edos2unix *.php
+	edos2unix `find -type f -name '*.php'`
 	if use memory ; then
 		newinitd "${FILESDIR}"/cacti-boost.rc.memory cacti-boost
 	else

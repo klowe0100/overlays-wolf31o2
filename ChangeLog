@@ -1,6 +1,9 @@
 # Copyright 2008-2008 Chris Gianelloni; Distributed under the GPL v2
 # $Id: $
 
+  24 Sep 2008; Chris Gianelloni <wolf31o2@wolf31o2.org> boost-1.7.ebuild:
+  Fixing the edos2unix call in the ebuild.
+
   24 Sep 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
   eclass/cacti-plugins.eclass:
   Add an edos2unix call to the cacti-plugins eclass.
