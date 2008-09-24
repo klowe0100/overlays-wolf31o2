@@ -1,6 +1,10 @@
 # Copyright 2008-2008 Chris Gianelloni; Distributed under the GPL v2
 # $Id: $
 
+  24 Sep 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  eclass/mysql-dbfuncs.eclass:
+  Fixing the database creation to use mysqladmin.
+
   22 Sep 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
   net-snmp-5.4.1.1-r1.ebuild:
   Removing the installation of the Sun JVM MIB from net-analyzer/net-snmp
