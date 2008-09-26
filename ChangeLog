@@ -1,12 +1,23 @@
 # Copyright 2008-2008 Chris Gianelloni; Distributed under the GPL v2
 # $Id: $
 
+  26 Sep 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  -dev-lang/php/files/20php5-envd,
+  -dev-lang/php/files/70_mod_php.conf-apache2,
+  -dev-lang/php/files/70_mod_php5_concurr.conf-apache2,
+  -dev-lang/php/files/70_mod_php5.conf-apache2,
+  -dev-lang/php/files/70_mod_php_concurr.conf-apache2,
+  -dev-lang/php/files/php5-ldvs, -dev-lang/php/metadata.xml,
+  profiles/categories, php-5.2.6-r7.ebuild:
+  Removing dev-lang/php, since Gentoo pulled in this version from the PHP
+  overlay into the tree.
+
 *cacti-0.8.7b-r4 (26 Sep 2008)
 
   26 Sep 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  -net-analyzer/cacti/metadata.xml, cacti-0.8.7b-r3.ebuild,
-  cacti-0.8.7b-r4.ebuild:
-  Renaming cacti-0.8.7b-r3 to cacti-0.8.7b-r4 to reduce confustion with the
+  -net-analyzer/cacti/metadata.xml, -cacti-0.8.7b-r3.ebuild,
+  +cacti-0.8.7b-r4.ebuild:
+  Renaming cacti-0.8.7b-r3 to cacti-0.8.7b-r4 to reduce confusion with the
   Gentoo upstream version.
 
   24 Sep 2008; Chris Gianelloni <wolf31o2@wolf31o2.org> boost-1.7.ebuild:
