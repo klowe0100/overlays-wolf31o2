@@ -1,6 +1,14 @@
 # Copyright 2008-2008 Chris Gianelloni; Distributed under the GPL v2
 # $Id: $
 
+*cacti-0.8.7b-r4 (26 Sep 2008)
+
+  26 Sep 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  -net-analyzer/cacti/metadata.xml, cacti-0.8.7b-r3.ebuild,
+  cacti-0.8.7b-r4.ebuild:
+  Renaming cacti-0.8.7b-r3 to cacti-0.8.7b-r4 to reduce confustion with the
+  Gentoo upstream version.
+
   24 Sep 2008; Chris Gianelloni <wolf31o2@wolf31o2.org> boost-1.7.ebuild:
   Fixing the edos2unix call in the ebuild.
 
