@@ -1,6 +1,13 @@
 # Copyright 2008-2008 Chris Gianelloni; Distributed under the GPL v2
 # $Id: $
 
+*opencryptoki-2.2.6 (12 Oct 2008)
+
+  12 Oct 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +dev-libs/opencryptoki/files/pkcsslotd.init, profiles/categories,
+  opencryptoki-2.2.6.ebuild:
+  Adding dev-libs/opencryptoki and bumping it to 2.2.6.
+
 *openssl-tpm-engine-0.4.1-r1 (12 Oct 2008)
 
   12 Oct 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
