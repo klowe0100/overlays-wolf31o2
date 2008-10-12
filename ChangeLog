@@ -1,6 +1,13 @@
 # Copyright 2008-2008 Chris Gianelloni; Distributed under the GPL v2
 # $Id: $
 
+*openssl-tpm-engine-0.4.1-r1 (12 Oct 2008)
+
+  12 Oct 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  openssl-tpm-engine-0.4.1-r1.ebuild:
+  Adding my own copy of app-crypt/openssl-tpm-engine, which puts the engine
+  library in the same location as OpenSSL puts them on Gentoo.
+
 *seahorse-2.24.0 (12 Oct 2008)
 *seahorse-plugins-2.24.0 (12 Oct 2008)
 
