@@ -1,6 +1,16 @@
 # Copyright 2008-2008 Chris Gianelloni; Distributed under the GPL v2
 # $Id: $
 
+*libusb-0.1.12-r5 (13 Oct 2008)
+
+  13 Oct 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +dev-libs/libusb/files/libusb-0.1.12-fbsd.patch,
+  +dev-libs/libusb/files/libusb-0.1.12-no-infinite-bulk.patch,
+  +dev-libs/libusb/files/libusb-0.1.12-no-poll.patch,
+  +dev-libs/libusb/files/libusb-0.1.12-nocpp.patch, libusb-0.1.12-r5.ebuild:
+  Adding dev-libs/libusb and adding the no-poll patch to keep from polling
+  the USB bus constantly.
+
 *pecl-memcache-3.0.2 (13 Oct 2008)
 *pecl-memcache-2.2.4 (13 Oct 2008)
 *pecl-memcache-2.0.4 (13 Oct 2008)
