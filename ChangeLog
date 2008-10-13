@@ -1,6 +1,16 @@
 # Copyright 2008-2008 Chris Gianelloni; Distributed under the GPL v2
 # $Id: $
 
+*pecl-memcache-3.0.2 (13 Oct 2008)
+*pecl-memcache-2.2.4 (13 Oct 2008)
+*pecl-memcache-2.0.4 (13 Oct 2008)
+
+  13 Oct 2008; Chris Gianelloni <wolf31o2@wolf31o2.org> profiles/categories,
+  pecl-memcache-2.0.4.ebuild, pecl-memcache-2.2.4.ebuild,
+  pecl-memcache-3.0.2.ebuild:
+  Adding dev-php4/pecl-memcache from the main Gentoo tree and version
+  bumping the 2.2 and 3.0 versions.
+
 *pcsc-lite-1.4.4 (13 Oct 2008)
 *pcsc-lite-1.4.102 (13 Oct 2008)
 
