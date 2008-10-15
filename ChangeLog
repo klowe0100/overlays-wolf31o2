@@ -7,7 +7,8 @@
   +dev-libs/libusb/files/libusb-0.1.12-fbsd.patch,
   +dev-libs/libusb/files/libusb-0.1.12-no-infinite-bulk.patch,
   +dev-libs/libusb/files/libusb-0.1.12-no-poll.patch,
-  +dev-libs/libusb/files/libusb-0.1.12-nocpp.patch, libusb-0.1.12-r5.ebuild:
+  +dev-libs/libusb/files/libusb-0.1.12-nocpp.patch,
+  +dev-libs/libusb/libusb-0.1.12-r5.ebuild:
   Adding dev-libs/libusb and adding the no-poll patch to keep from polling
   the USB bus constantly.
 
@@ -16,9 +17,10 @@
 *pecl-memcache-2.0.4 (13 Oct 2008)
 
   13 Oct 2008; Chris Gianelloni <wolf31o2@wolf31o2.org> profiles/categories,
-  pecl-memcache-2.0.4.ebuild, pecl-memcache-2.2.4.ebuild,
-  pecl-memcache-3.0.2.ebuild:
-  Adding dev-php4/pecl-memcache from the main Gentoo tree and version
+  +dev-php5/pecl-memcache/pecl-memcache-2.0.4.ebuild,
+  +dev-php5/pecl-memcache/pecl-memcache-2.2.4.ebuild,
+  +dev-php5/pecl-memcache/pecl-memcache-3.0.2.ebuild:
+  Adding dev-php5/pecl-memcache from the main Gentoo tree and version
   bumping the 2.2 and 3.0 versions.
 
 *pcsc-lite-1.4.4 (13 Oct 2008)
@@ -26,26 +28,27 @@
 
   13 Oct 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
   +sys-apps/pcsc-lite/files/pcscd-confd,
-  +sys-apps/pcsc-lite/files/pcscd-init, pcsc-lite-1.4.102.ebuild,
-  pcsc-lite-1.4.4.ebuild:
+  +sys-apps/pcsc-lite/files/pcscd-init,
+  +sys-apps/pcsc-lite/pcsc-lite-1.4.102.ebuild,
+  +sys-apps/pcsc-lite/pcsc-lite-1.4.4.ebuild:
   Adding sys-apps/pcsc-lite to get my updated init script with a proper
   depend section.
 
   12 Oct 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  seahorse-plugins-2.24.0.ebuild:
+  app-crypt/seahorse-plugins/seahorse-plugins-2.24.0.ebuild:
   Marking seahorse-plugins ~x86 for testing.
 
 *opencryptoki-2.2.6 (12 Oct 2008)
 
   12 Oct 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
   +dev-libs/opencryptoki/files/pkcsslotd.init, profiles/categories,
-  opencryptoki-2.2.6.ebuild:
+  +dev-libs/opencryptoki/opencryptoki-2.2.6.ebuild:
   Adding dev-libs/opencryptoki and bumping it to 2.2.6.
 
 *openssl-tpm-engine-0.4.1-r1 (12 Oct 2008)
 
   12 Oct 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  openssl-tpm-engine-0.4.1-r1.ebuild:
+  +app-crypt/openssl-tpm-engine/openssl-tpm-engine-0.4.1-r1.ebuild:
   Adding my own copy of app-crypt/openssl-tpm-engine, which puts the engine
   library in the same location as OpenSSL puts them on Gentoo.
 
@@ -54,7 +57,8 @@
 
   12 Oct 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
   +app-crypt/seahorse-plugins/files/70-seahorse-agent, profiles/categories,
-  seahorse-plugins-2.24.0.ebuild, seahorse-2.24.0.ebuild:
+  +app-crypt/seahorse-plugins/seahorse-plugins-2.24.0.ebuild,
+  +app-crypt/seahorse/seahorse-2.24.0.ebuild:
   Adding app-crypt/seahorse (and plugins) 2.24.0 for testing.
 
   26 Sep 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
@@ -64,19 +68,20 @@
   -dev-lang/php/files/70_mod_php5.conf-apache2,
   -dev-lang/php/files/70_mod_php_concurr.conf-apache2,
   -dev-lang/php/files/php5-ldvs, -dev-lang/php/metadata.xml,
-  profiles/categories, php-5.2.6-r7.ebuild:
+  profiles/categories, -dev-lang/php/php-5.2.6-r7.ebuild:
   Removing dev-lang/php, since Gentoo pulled in this version from the PHP
   overlay into the tree.
 
 *cacti-0.8.7b-r4 (26 Sep 2008)
 
   26 Sep 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  -net-analyzer/cacti/metadata.xml, -cacti-0.8.7b-r3.ebuild,
-  +cacti-0.8.7b-r4.ebuild:
+  -net-analyzer/cacti/metadata.xml, -net-analyzer/cacti/cacti-0.8.7b-r3.ebuild,
+  +net-analyzer/cacti/cacti-0.8.7b-r4.ebuild:
   Renaming cacti-0.8.7b-r3 to cacti-0.8.7b-r4 to reduce confusion with the
   Gentoo upstream version.
 
-  24 Sep 2008; Chris Gianelloni <wolf31o2@wolf31o2.org> boost-1.7.ebuild:
+  24 Sep 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  cacti-plugins/boost/boost-1.7.ebuild:
   Fixing the edos2unix call in the ebuild.
 
   24 Sep 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
@@ -111,7 +116,8 @@
 
   04 Sep 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
   +dev-java/jdbc-oracle-bin/metadata.xml, profiles/categories,
-  jdbc-oracle-bin-10.2.0.3.ebuild, jdbc-oracle-bin-10.2.0.4.ebuild:
+  +dev-java/jdbc-oracle-bin/jdbc-oracle-bin-10.2.0.3.ebuild,
+  +dev-java/jdbc-oracle-bin/jdbc-oracle-bin-10.2.0.4.ebuild:
   Adding jdbc-oracle-bin for the 10.2.0.4 version and to fix a minor issue
   with 10.2.0.3's ebuild. I've submitted this to Gentoo as bug #236725. The
   10.2.0.4 ebuild is submitted as bug #236727.
@@ -125,7 +131,7 @@
   +dev-lang/php/files/70_mod_php5.conf-apache2,
   +dev-lang/php/files/70_mod_php_concurr.conf-apache2,
   +dev-lang/php/files/php5-ldvs, +dev-lang/php/metadata.xml,
-  profiles/categories, php-5.2.6-r7.ebuild:
+  profiles/categories, +dev-lang/php/php-5.2.6-r7.ebuild:
   Adding a newer revision of dev-lang/php. This fixes a nasty memory leak in
   PHP's SNMP support and is taken from Gentoo bug #231528 until this can
   make its way into the main tree.
@@ -133,22 +139,24 @@
 *jvm-management-1.32 (31 Aug 2008)
 
   31 Aug 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  jvm-management-1.32.ebuild:
+  snmp-mibs/jvm-management/jvm-management-1.32.ebuild:
   Adding jvm-management to snmp-mibs, so it can be removed from the net-snmp
   ebuild.
 
 *raid-adapter-1.11 (31 Aug 2008)
 
   31 Aug 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  snmp-agents/percsnmp-4.09.ebuild, -snmp-mibs/lsi-raid-1.11.ebuild,
-  +snmp-mibs/raid-adapter-1.11.ebuild:
+  snmp-agents/percsnmp/percsnmp-4.09.ebuild,
+  -snmp-mibs/lsi-raid/lsi-raid-1.11.ebuild,
+  +snmp-mibs/raid-adapter/raid-adapter-1.11.ebuild:
   Renamed lsi-raid to raid-adapter to match the MIB module name.
 
 *adaptecarraycontroller-4.0 (31 Aug 2008)
 
   31 Aug 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  snmp-agents/afasnmp-4.0.ebuild, -snmp-mibs/adaptec-aac-4.0.ebuild,
-  +snmp-mibs/adaptecarraycontroller-4.0.ebuild:
+  snmp-agents/afasnmpafasnmp-4.0.ebuild,
+  -snmp-mibs/adaptec-aac/adaptec-aac-4.0.ebuild,
+  +snmp-mibs/adaptecarraycontroller/adaptecarraycontroller-4.0.ebuild:
   Renamed adaptec-aac to adaptecarraycontroller to match the actual MIB
   module name.
 
@@ -164,47 +172,50 @@
   le-free.patch,
   +net-analyzer/net-snmp/files/net-snmp-5.4.1-perl-asneeded.patch,
   +net-analyzer/net-snmp/files/net-snmp-5.4.1-process-count-race.patch,
-  +net-analyzer/net-snmp/files/net-snmp-5.4.1-suppresssuppress-annoying.patc
-  h, +net-analyzer/net-snmp/files/net-snmp-5.4-exec-crash.patch,
+  +net-analyzer/net-snmp/files/net-snmp-5.4.1-suppresssuppress-annoying.patch,
+  +net-analyzer/net-snmp/files/net-snmp-5.4-exec-crash.patch,
   +net-analyzer/net-snmp/files/snmpd.conf,
   +net-analyzer/net-snmp/files/snmpd.rc7,
   +net-analyzer/net-snmp/files/snmptrapd.conf,
-  +net-analyzer/net-snmp/files/snmptrapd.rc7, net-snmp-5.4.1.1-r1.ebuild:
+  +net-analyzer/net-snmp/files/snmptrapd.rc7,
+  +net-analyzer/net-snmp/net-snmp-5.4.1.1-r1.ebuild:
   Added my hacked-up net-snmp ebuild.
 
   31 Aug 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
   -net-analyzer/percsnmp/files/percsnmpd.rc,
-  +snmp-agents/percsnmp/files/percsnmpd.rc, percsnmp-4.09.ebuild,
-  percsnmp-4.09.ebuild:
+  +snmp-agents/percsnmp/files/percsnmpd.rc,
+  -net-analyzer/percsnmp/percsnmp-4.09.ebuild,
+  +snmp-agents/percsnmp/percsnmp-4.09.ebuild:
   Moved net-analyzer/percsnmp to snmp-agents.
 
   31 Aug 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  -net-analyzer/afasnmp/files/afasnmpd.rc,
-  -net-analyzer/percsnmp/files/percsnmpd.rc, profiles/categories,
-  +snmp-agents/afasnmp/files/afasnmpd.rc, afasnmp-4.0.ebuild,
-  percsnmp-4.09.ebuild, afasnmp-4.0.ebuild:
+  -net-analyzer/afasnmp/files/afasnmpd.rc, profiles/categories,
+  +snmp-agents/afasnmp/files/afasnmpd.rc,
+  -net-analyzer/afasnmp/afasnmp-4.0.ebuild,
+  +snmp-agents/afasnmp/afasnmp-4.0.ebuild:
   Moved net-analyzer/afasnmp to snmp-agents/afasnmp.
 
 *lsi-raid-1.11 (31 Aug 2008)
 
   31 Aug 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  lsi-raid-1.11.ebuild:
+  +snmp-mibs/lsi-raid/lsi-raid-1.11.ebuild:
   Adding lsi-raid to snmp-mibs, which is used by percsnmp.
 
 *bayourcom-1.19 (31 Aug 2008)
 
   31 Aug 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  +snmp-mibs/bayourcom/files/bind94.patch, bayourcom-1.19.ebuild:
+  +snmp-mibs/bayourcom/files/bind94.patch,
+  +snmp-mibs/bayourcom/bayourcom-1.19.ebuild:
   Added bayourcom to snmp-mibs, which is the MIB for bind9-snmp.
 
   31 Aug 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  bind9-snmp-1.7.ebuild:
+  net-analyzer/bind9-snmp/bind9-snmp-1.7.ebuild:
   Adding my bind94 patch.
 
 *adaptec-aac-4.0 (31 Aug 2008)
 
   31 Aug 2008; Chris Gianelloni <wolf31o2@wolf31o2.org> profiles/categories,
-  adaptec-aac-4.0.ebuild:
+  +snmp-mibs/adaptec-aac/adaptec-aac-4.0.ebuild:
   Adding a snmp-mibs category and adaptec-aac package for the Adaptec-based
   RAID controllers.
 
@@ -223,8 +234,10 @@
   29 Aug 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
   +net-misc/memcached/files/memcached-1.2.2-fbsd.patch,
   +net-misc/memcached/files/memcached.confd,
-  +net-misc/memcached/files/memcached.rc, memcached-1.2.5.ebuild,
-  memcached-1.2.6-r1.ebuild, memcached-1.2.6.ebuild:
+  +net-misc/memcached/files/memcached.rc,
+  +net-misc/memcached/memcached-1.2.5.ebuild,
+  +net-misc/memcached/memcached-1.2.6-r1.ebuild,
+  +net-misc/memcached/memcached-1.2.6.ebuild:
   Adding my modified version of net-misc/memcached with replication
   (repcached) support.
 
@@ -243,8 +256,10 @@
   -net-analyzer/cacti-plugins-boost/files/cacti-boost.confd,
   -net-analyzer/cacti-plugins-boost/files/cacti-boost.rc,
   -net-analyzer/cacti-plugins-boost/files/cacti-boost.rc.memory,
-  profiles/categories, boost-1.7.ebuild, discovery-0.8.4.ebuild,
-  cacti-plugins-boost-1.7.ebuild, cacti-plugins-discovery-0.8.4.ebuild:
+  profiles/categories, +cacti-plugins/boost/boost-1.7.ebuild,
+  +cacti-plugins/discovery/discovery-0.8.4.ebuild,
+  -net-analyzer/cacti-plugins-boost/cacti-plugins-boost-1.7.ebuild,
+  -net-analyzer/cacti-plugins-boost/cacti-plugins-discovery-0.8.4.ebuild:
   There's no point in not creating my own category for the cacti-plugins, so
   do so and move the plugins into the new category.
 
@@ -260,16 +275,17 @@
 *cacti-plugins-discovery-0.8.4 (28 Aug 2008)
 
   28 Aug 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  cacti-plugins-discovery-0.8.4.ebuild:
+  +net-analyzer/cacti-plugins-discovery/cacti-plugins-discovery-0.8.4.ebuild:
   Adding the Discovery plugin for Cacti.
 
   28 Aug 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  eclass/cacti-plugins.eclass, cacti-plugins-boost-1.7.ebuild:
+  eclass/cacti-plugins.eclass,
+  net-analyzer/cacti-plugins-boost/cacti-plugins-boost-1.7.ebuild:
   Added MYSQL_DBNAME to the cacti-plugins.eclass and fixed the default
   CACTI_HOME variable location.
 
   28 Aug 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  cacti-plugins-boost-1.7.ebuild:
+  net-analyzer/cacti-plugins-boost/cacti-plugins-boost-1.7.ebuild:
   Switch to using the full path for the SQL scripts.
 
   28 Aug 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
@@ -299,13 +315,13 @@
 *cacti-spine-0.8.7a-r1 (28 Aug 2008)
 
   28 Aug 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  +net-analyzer/cacti-spine/files/cacti-spine-0.8.7a-script_server_bufsize.p
-  atch, cacti-spine-0.8.7a-r1.ebuild:
+  +net-analyzer/cacti-spine/files/cacti-spine-0.8.7a-script_server_bufsize.patch,
+  +net-analyzer/cacti-spine/cacti-spine-0.8.7a-r1.ebuild:
   Adding my modified version of net-analyzer/cacti-spine, which fixes
   several buffer size problems and works great in my testing.
 
   28 Aug 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  cacti-0.8.7b-r3.ebuild:
+  net-analyzer/cacti/cacti-0.8.7b-r3.ebuild:
   Switch net-analyzer/cacti to using EAPI=1 so I can enable IUSE defaults
   for plugins and snmp.
 
@@ -313,7 +329,7 @@
   +net-analyzer/cacti-plugins-boost/files/cacti-boost.confd,
   +net-analyzer/cacti-plugins-boost/files/cacti-boost.rc,
   +net-analyzer/cacti-plugins-boost/files/cacti-boost.rc.memory,
-  cacti-plugins-boost-1.7.ebuild:
+  net-analyzer/cacti-pluygins-boost/cacti-plugins-boost-1.7.ebuild:
   Added an init script for the Boost Server. The memory version of the
   script forces a flush of the Boost tables during a reboot/shutdown, so no
   data is lost.
@@ -321,7 +337,7 @@
 *cacti-plugins-boost-1.7 (26 Aug 2008)
 
   26 Aug 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  cacti-plugins-boost-1.7.ebuild:
+  +net-analyzer/cacti-plugins-boost/cacti-plugins-boost-1.7.ebuild:
   Adding the Boost plugin, which uses the new cacti-plugins.eclass for
   installing.
 
@@ -330,11 +346,11 @@
   Adding an initial eclass framework for installing Cacti plugins.
 
   26 Aug 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  cacti-0.8.7b-r3.ebuild:
+  net-analyzer/cacti/cacti-0.8.7b-r3.ebuild:
   Changing the DESCRIPTION on net-analyzer/cacti.
 
   29 Jul 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  cisco-vpnclient-4.8.01.0640.ebuild:
+  net-misc/cisco-vpnclient/cisco-vpnclient-4.8.01.0640.ebuild:
   Add net-misc/cisco-vpnclient-modules to RDEPEND.
 
 *cisco-vpnclient-modules-4.8.01.0640 (29 Jul 2008)
@@ -342,24 +358,24 @@
   29 Jul 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
   +net-misc/cisco-vpnclient-modules/files/4.8.01.0640-2.6.24.patch,
   +net-misc/cisco-vpnclient-modules/files/4.8.01.0640-amd64.patch,
-  cisco-vpnclient-modules-4.8.01.0640.ebuild:
+  +net-misc/cisco-vpnclient-modules/cisco-vpnclient-modules-4.8.01.0640.ebuild:
   Added net-misc/cisco-vpnclient-modules package, split from
-  cisco-vpnclient-3des.
+  cisco-vpnclient.
 
 *cisco-vpnclient-4.8.01.0640 (29 Jul 2008)
 
   29 Jul 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
   -net-misc/cisco-vpnclient-3des/files/4.8.01.0640-2.6.24.patch,
   -net-misc/cisco-vpnclient-3des/files/4.8.01.0640-amd64.patch,
-  cisco-vpnclient-3des-4.8.01.0640.ebuild,
-  cisco-vpnclient-4.8.01.0640.ebuild:
+  -net-misc/cisco-vpnclient-3des/cisco-vpnclient-3des-4.8.01.0640.ebuild,
+  +net-misc/cisco-vpnclient/cisco-vpnclient-4.8.01.0640.ebuild:
   Rename cisco-vpnclient-3des to cisco-vpnclient.
 
 *cacti-0.8.7b-r3 (29 Jul 2008)
 
   29 Jul 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
   +net-analyzer/cacti/files/postinstall-en.txt,
-  +net-analyzer/cacti/metadata.xml, cacti-0.8.7b-r3.ebuild:
+  +net-analyzer/cacti/metadata.xml, +net-analyzer/cacti/cacti-0.8.7b-r3.ebuild:
   Added my own version of net-analyzer/cacti, which adds the 'plugins' USE
   flag to enable adding the Plugin Architecture patch. Since the patch is
   unversioned UPSTREAM, I'm not submitting this to Gentoo. This lays the
@@ -368,14 +384,16 @@
 *percsnmp-4.09 (29 Jul 2008)
 
   29 Jul 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  +net-analyzer/percsnmp/files/percsnmpd.rc, percsnmp-4.09.ebuild:
+  +net-analyzer/percsnmp/files/percsnmpd.rc,
+  +net-analyzer/percsnmp/percsnmp-4.09.ebuild:
   Adding net-analyzer/percsnmp, which is used to get LSI-based Dell PERC
   controller information via SNMP.
 
 *afasnmp-4.0 (29 Jul 2008)
 
   29 Jul 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  +net-analyzer/afasnmp/files/afasnmpd.rc, afasnmp-4.0.ebuild:
+  +net-analyzer/afasnmp/files/afasnmpd.rc,
+  +net-analyzer/asasnmp/afasnmp-4.0.ebuild:
   Adding net-analyzer/afasnmp, which is used to get Adaptec-based Dell PERC
   controller information via SNMP.
 
@@ -385,7 +403,7 @@
   +net-analyzer/bind9-snmp/files/bind9-snmp-1.7-bind94.patch,
   +net-analyzer/bind9-snmp/files/bind9-snmp-1.7-config.patch,
   +net-analyzer/bind9-snmp/files/bind9-snmp.conf, profiles/categories,
-  bind9-snmp-1.7.ebuild:
+  net-analyzer/bind9-snmp/bind9-snmp-1.7.ebuild:
   Added net-analyzer/bind9-snmp package from www.bayour.com/bind9-snmp for
   DNS stats in Cacti.
 
@@ -414,10 +432,16 @@
   +sys-apps/lm_sensors/files/fancontrol-init.d,
   +sys-apps/lm_sensors/files/lm_sensors-init.d,
   +sys-apps/lm_sensors/files/sensord-conf.d,
-  +sys-apps/lm_sensors/files/sensord-init.d, mohaa-1.11_beta3.ebuild,
-  ut2004-data-3186-r3.ebuild, ut2004-data-3186-r4.ebuild,
-  ut2004-3369-r4.ebuild, ut2004-3369-r5.ebuild, civctp-1.2a.ebuild,
-  maya-6.5.ebuild, maya-8.0.ebuild, cisco-vpnclient-3des-4.8.01.0640.ebuild,
-  lm_sensors-2.10.6.ebuild, lm_sensors-3.0.1.ebuild:
+  +sys-apps/lm_sensors/files/sensord-init.d,
+  +games-fps/mohaa/mohaa-1.11_beta3.ebuild,
+  +games-fps/ut2004-data/ut2004-data-3186-r3.ebuild,
+  +games-fps/ut2004-data/ut2004-data-3186-r4.ebuild,
+  +games-fps/ut2004/ut2004-3369-r4.ebuild,
+  +games-fps/ut2004/ut2004-3369-r5.ebuild,
+  +games-strategy/civctp/civctp-1.2a.ebuild, +media-gfx/maya/maya-6.5.ebuild,
+  +media-gfx/maya/maya-8.0.ebuild,
+  +net-misc/cisco-vpnclient-3des/cisco-vpnclient-3des-4.8.01.0640.ebuild,
+  +sys-apps/lm_sensors/lm_sensors-2.10.6.ebuild,
+  +sys-apps/lm_sensors/lm_sensors-3.0.1.ebuild:
   Initial import of files from my SVN overlay.
 
