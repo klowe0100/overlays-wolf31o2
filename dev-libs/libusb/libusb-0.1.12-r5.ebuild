@@ -29,8 +29,8 @@ src_unpack() {
 	sed -i 's:AC_LANG_CPLUSPLUS:AC_PROG_CXX:' configure.in #213800
 	epatch "${FILESDIR}"/${PN}-0.1.12-fbsd.patch
 	use nocxx && epatch "${FILESDIR}"/${PN}-0.1.12-nocpp.patch
-	epatch "${FILESDIR}"/${PN}-0.1.12-no-infinite-bulk.patch
 	epatch "${FILESDIR}"/${PN}-0.1.12-no-poll.patch
+	epatch "${FILESDIR}"/${PN}-0.1.12-no-infinite-bulk.patch
 	eautoreconf
 	elibtoolize
 
