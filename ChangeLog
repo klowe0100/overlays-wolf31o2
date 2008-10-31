@@ -1,6 +1,16 @@
 # Copyright 2008-2008 Chris Gianelloni; Distributed under the GPL v2
 # $Id: $
 
+*catalyst-9999 (31 Oct 2008)
+*catalyst-2.0.6 (31 Oct 2008)
+*catalyst-2.0.6.901 (31 Oct 2008)
+
+  31 Oct 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +dev-util/catalyst/metadata.xml, profiles/categories,
+  catalyst-2.0.6.901.ebuild, catalyst-2.0.6.ebuild, catalyst-9999.ebuild:
+  Adding dev-util/catalyst to version bump to 2.0.6.901, which is the first
+  release for testing since splitting from Gentoo.
+
   31 Oct 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
   genkernel-3.4.10.901.ebuild:
   Fixing KEYWORDS.
