@@ -39,7 +39,7 @@ src_install() {
 	exeinto /etc/acpi
 	newexe "${FILESDIR}"/${P}-default.sh default.sh || die
 	insinto /etc/acpi/events
-	newins "${FILESDIR}"/acpid-1.0.4-default default || die
+	newins "${FILESDIR}"/${P}-default default || die
 
 	dodoc README Changelog TODO
 
