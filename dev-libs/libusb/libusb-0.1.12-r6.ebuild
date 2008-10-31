@@ -31,6 +31,7 @@ src_unpack() {
 	use nocxx && epatch "${FILESDIR}"/${PN}-0.1.12-nocpp.patch
 	epatch "${FILESDIR}"/${PN}-0.1.12-no-poll.patch
 	epatch "${FILESDIR}"/${PN}-0.1.12-no-infinite-bulk.patch
+	epatch "${FILESDIR}"/${PN}-0.1.12-no-writefd.patch
 	eautoreconf
 	elibtoolize
 

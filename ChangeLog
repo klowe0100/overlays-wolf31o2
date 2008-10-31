@@ -1,6 +1,15 @@
 # Copyright 2008-2008 Chris Gianelloni; Distributed under the GPL v2
 # $Id: $
 
+*libusb-0.1.12-r6 (31 Oct 2008)
+
+  31 Oct 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +dev-libs/libusb/files/libusb-0.1.12-no-writefd.patch,
+  libusb-0.1.12-r5.ebuild, libusb-0.1.12-r6.ebuild:
+  Fixing compilation by removing writefd calls. Apparently, I'm missing some
+  other patch that the original no-poll author added, which moved these
+  calls, since that patch removed them.
+
 *catalyst-9999 (31 Oct 2008)
 *catalyst-2.0.6 (31 Oct 2008)
 *catalyst-2.0.6.901 (31 Oct 2008)
