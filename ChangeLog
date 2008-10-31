@@ -1,6 +1,17 @@
 # Copyright 2008-2008 Chris Gianelloni; Distributed under the GPL v2
 # $Id: $
 
+*genkernel-9999 (31 Oct 2008)
+*genkernel-3.4.10.901 (31 Oct 2008)
+*genkernel-3.4.10-r1 (31 Oct 2008)
+
+  31 Oct 2008; Chris Gianelloni <wolf31o2@wolf31o2.org> profiles/categories,
+  +sys-kernel/genkernel/files/genkernel.bash,
+  +sys-kernel/genkernel/metadata.xml, genkernel-3.4.10-r1.ebuild,
+  genkernel-3.4.10.901.ebuild, genkernel-9999.ebuild:
+  -m Adding sys-kernel/genkernel to version bump to 3.4.10.901, which is the
+  first release for testing since splitting from Gentoo.
+
 *evolution-exchange-2.24.1 (31 Oct 2008)
 
   31 Oct 2008; Chris Gianelloni <wolf31o2@wolf31o2.org> profiles/categories,
