@@ -1,6 +1,15 @@
 # Copyright 2008-2008 Chris Gianelloni; Distributed under the GPL v2
 # $Id: $
 
+*acpid-1.0.8 (31 Oct 2008)
+
+  31 Oct 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +sys-power/acpid/files/acpid-1.0.8-conf.d,
+  +sys-power/acpid/files/acpid-1.0.8-default.sh,
+  +sys-power/acpid/files/acpid-1.0.8-init.d, profiles/categories,
+  acpid-1.0.8.ebuild:
+  Adding sys-power/acpid to bump it to 1.0.8 for testing.
+
   31 Oct 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
   catalyst-2.0.6.ebuild, catalyst-9999.ebuild:
   Fixing KEYWORDS. It's probably not the best idea to do this sort of thing

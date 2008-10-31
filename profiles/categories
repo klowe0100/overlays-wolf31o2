@@ -14,3 +14,4 @@ snmp-agents
 snmp-mibs
 sys-apps
 sys-kernel
+sys-power
