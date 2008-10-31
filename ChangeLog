@@ -1,6 +1,11 @@
 # Copyright 2008-2008 Chris Gianelloni; Distributed under the GPL v2
 # $Id: $
 
+  31 Oct 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  catalyst-2.0.6.ebuild, catalyst-9999.ebuild:
+  Fixing KEYWORDS. It's probably not the best idea to do this sort of thing
+  when you're up with insomnia.
+
 *libusb-0.1.12-r6 (31 Oct 2008)
 
   31 Oct 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
