@@ -1,6 +1,12 @@
 # Copyright 2008-2008 Chris Gianelloni; Distributed under the GPL v2
 # $Id: $
 
+*evolution-exchange-2.24.1 (31 Oct 2008)
+
+  31 Oct 2008; Chris Gianelloni <wolf31o2@wolf31o2.org> profiles/categories,
+  evolution-exchange-2.24.1.ebuild:
+  Adding gnome-extra/evolution-exchange to bump it to 2.24.1 for testing.
+
   29 Oct 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
   libusb-0.1.12-r5.ebuild:
   Swap patch order.
