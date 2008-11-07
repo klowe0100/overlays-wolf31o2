@@ -1,0 +1,12 @@
+diff -urN iscsi-initiator-core-tools-2.3.orig/ipyxd/Makefile iscsi-initiator-core-tools-2.3/ipyxd/Makefile
+--- iscsi-initiator-core-tools-2.3.orig/ipyxd/Makefile	2005-04-01 08:35:54.000000000 +0000
++++ iscsi-initiator-core-tools-2.3/ipyxd/Makefile	2008-09-11 17:45:52.000000000 +0000
+@@ -57,7 +57,7 @@
+ 	${CC} ${AUTHFLAGS} -c $<
+ 
+ ${AUTH} : ${SRC}${AUTH}.c
+-	${CC} ${AUTHFLAGS} -o $@ $< ${LOBJECTS} ${AUTHLIBS}
++	${CC} ${AUTHFLAGS} -o $@ $< ${SRC}${MD5}.o ${SRC}${CHAP}.o ${AUTHLIBS}
+ 
+ ${INIT} : ${SRC}${INIT}.c
+ 	${CC} ${DEBUGFLAGS} ${INCLUDE} -o $@ $<
