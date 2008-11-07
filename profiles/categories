@@ -13,5 +13,6 @@ net-misc
 snmp-agents
 snmp-mibs
 sys-apps
+sys-block
 sys-kernel
 sys-power
