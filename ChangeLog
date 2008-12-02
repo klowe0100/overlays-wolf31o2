@@ -1,6 +1,16 @@
 # Copyright 2008-2008 Chris Gianelloni; Distributed under the GPL v2
 # $Id: $
 
+  02 Dec 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  -net-analyzer/bind9-snmp/files/bind9-snmp-1.7-bind94.patch,
+  +snmp-agents/bind9-snmp/files/bind9-snmp-1.7-bind94.patch,
+  -net-analyzer/bind9-snmp/files/bind9-snmp-1.7-config.patch,
+  +snmp-agents/bind9-snmp/files/bind9-snmp-1.7-config.patch,
+  -net-analyzer/bind9-snmp/files/bind9-snmp.conf,
+  +snmp-agents/bind9-snmp/files/bind9-snmp.conf, bind9-snmp-1.7.ebuild,
+  bind9-snmp-1.7.ebuild:
+  Moved bind9-snmp from net-analyzer to snmp-agents.
+
 *python-memcached-1.40 (02 Dec 2008)
 
   02 Dec 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
