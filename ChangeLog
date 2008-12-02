@@ -2,6 +2,10 @@
 # $Id: $
 
   02 Dec 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  snmp-mibs/bayourcom/Manifest:
+  Manifest fix for snmp-mibs/bayourcom.
+
+  02 Dec 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
   media-gfx/maya/Manifest, snmp-mibs/bayourcom/Manifest:
   Manifest fix for media-gfx/maya.
 
