@@ -1,6 +1,13 @@
 # Copyright 2008-2008 Chris Gianelloni; Distributed under the GPL v2
 # $Id: $
 
+*python-memcached-1.40 (02 Dec 2008)
+
+  02 Dec 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +dev-python/python-memcached/metadata.xml, profiles/categories,
+  python-memcached-1.40.ebuild:
+  Importing dev-python/python-memcached from the tree.
+
   02 Dec 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
   snmp-mibs/bayourcom/Manifest:
   Manifest fix for snmp-mibs/bayourcom.
