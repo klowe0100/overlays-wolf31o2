@@ -26,25 +26,26 @@ CTP_LANG=${CTP_LANG:-english}
 
 SRC_URI="x86? (
 		mirror://lokigames/${PN}/${P}-english-unified-x86.run
-		linguas_fr? ( mirror://lokigames/${PN}/${P}-french-unified-x86.run )
-		linguas_de? ( mirror://lokigames/${PN}/${P}-german-unified-x86.run )
-		linguas_it? ( mirror://lokigames/${PN}/${P}-italian-unified-x86.run )
-		linguas_es? ( mirror://lokigames/${PN}/${P}-spanish-unified-x86.run )
-	)
-	ppc? (
-		mirror://lokigames/${PN}/${P}-english-unified-ppc.run
-		linguas_fr? ( mirror://lokigames/${PN}/${P}-french-unified-ppc.run )
-		linguas_de? ( mirror://lokigames/${PN}/${P}-german-unified-ppc.run )
-		linguas_it? ( mirror://lokigames/${PN}/${P}-italian-unified-ppc.run )
-		linguas_es? ( mirror://lokigames/${PN}/${P}-spanish-unified-ppc.run )
-	)
-	langpatch? (
-		mirror://lokigames/${PN}/${P}-${CTP_LANG}.run
 	)"
+#		linguas_fr? ( mirror://lokigames/${PN}/${P}-french-unified-x86.run )
+#		linguas_de? ( mirror://lokigames/${PN}/${P}-german-unified-x86.run )
+#		linguas_it? ( mirror://lokigames/${PN}/${P}-italian-unified-x86.run )
+#		linguas_es? ( mirror://lokigames/${PN}/${P}-spanish-unified-x86.run )
+#	)
+#	ppc? (
+#		mirror://lokigames/${PN}/${P}-english-unified-ppc.run
+#		linguas_fr? ( mirror://lokigames/${PN}/${P}-french-unified-ppc.run )
+#		linguas_de? ( mirror://lokigames/${PN}/${P}-german-unified-ppc.run )
+#		linguas_it? ( mirror://lokigames/${PN}/${P}-italian-unified-ppc.run )
+#		linguas_es? ( mirror://lokigames/${PN}/${P}-spanish-unified-ppc.run )
+#	)
+#	langpatch? (
+#		mirror://lokigames/${PN}/${P}-${CTP_LANG}.run
+#	)"
 
 LICENSE="LOKI-EULA"
 SLOT="0"
-RESTRICT="nostrip nomirror"
+RESTRICT="strip mirror"
 
 S=${WORKDIR}
 
