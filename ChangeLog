@@ -1,6 +1,12 @@
 # Copyright 2008-2008 Chris Gianelloni; Distributed under the GPL v2
 # $Id: $
 
+*genkernel-3.4.10.902 (04 Dec 2008)
+
+  04 Dec 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  -sys-kernel/genkernel/metadata.xml, genkernel-3.4.10.902.ebuild:
+  Version bumping genkernel for the new pre-release version.
+
 *catalyst-2.0.6.902 (04 Dec 2008)
 
   04 Dec 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
