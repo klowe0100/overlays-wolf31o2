@@ -1,6 +1,13 @@
 # Copyright 2008-2008 Chris Gianelloni; Distributed under the GPL v2
 # $Id: $
 
+*net-snmp-5.4.2.1-r1 (09 Dec 2008)
+
+  09 Dec 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  net-snmp-5.4.2.1-r1.ebuild:
+  Version bump to 5.4.2.1 to catch up with the Gentoo tree. Removing the
+  mod_ap2_snmp support, as it tended to cause crashes on my servers.
+
 *genkernel-3.4.10.902 (04 Dec 2008)
 
   04 Dec 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
