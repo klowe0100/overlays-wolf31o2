@@ -14,7 +14,7 @@ SRC_URI="mirror://sourceforge/${PN}/${P}.tar.gz"
 
 LICENSE="as-is BSD"
 SLOT="0"
-KEYWORDS="~amd64 ~ppc ~ppc64 ~x86"
+KEYWORDS="amd64 ~ppc ~ppc64 x86"
 # Kernel USE-expand, add Solaris and FreeBSD here when adding support
 KERNEL_IUSE="kernel_linux"
 IUSE="${KERNEL_IUSE} +bzip2 +diskio doc elf +extensible ipv6 java kerberos lm_sensors mfd-rewrites minimal perl python rpm selinux +sendmail +smux ssl tcpd X +zlib"
