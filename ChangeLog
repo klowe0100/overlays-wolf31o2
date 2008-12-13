@@ -1,6 +1,25 @@
 # Copyright 2008-2008 Chris Gianelloni; Distributed under the GPL v2
 # $Id: $
 
+*apcupsd-3.14.4 (13 Dec 2008)
+*apcupsd-3.14.3 (13 Dec 2008)
+
+  13 Dec 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +sys-power/apcupsd/files/3.14.3/apcupsd.in.patch,
+  +sys-power/apcupsd/files/3.14.3/etc.patch,
+  +sys-power/apcupsd/files/3.14.3/no-parallel.patch,
+  +sys-power/apcupsd/files/3.14.3/apcupsd.initd,
+  +sys-power/apcupsd/files/3.14.3/hal-ups-policy.patch,
+  +sys-power/apcupsd/files/3.14.4/apcupsd.in.patch,
+  +sys-power/apcupsd/files/3.14.4/apcupsd.initd,
+  +sys-power/apcupsd/files/3.14.4/etc.patch,
+  +sys-power/apcupsd/files/3.14.4/hal-ups-policy.patch,
+  +sys-power/apcupsd/files/3.14.4/no-parallel.patch, apcupsd-3.14.3.ebuild,
+  apcupsd-3.14.4.ebuild:
+  Version bump to 3.14.4 and removing the webapp eclass from inherit until I
+  can think up a better way to keep from pulling in all of the web
+  dependencies when we are not building the CGI scripts.
+
   10 Dec 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
   net-snmp-5.4.2.1-r1.ebuild:
   Marking stable on amd64/x86 for my production systems.
