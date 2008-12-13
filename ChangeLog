@@ -1,6 +1,15 @@
 # Copyright 2008-2008 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*cisco-vpnclient-4.8.02.0030 (13 Dec 2008)
+
+  13 Dec 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  cisco-vpnclient-4.8.01.0640.ebuild, cisco-vpnclient-4.8.02.0030.ebuild:
+  Version bumping cisco-vpnclient to 4.8.02.0030 for testing. Thanks to
+  Andreas Simon <asmodis.666@web.de> and Rolando J. Zappacosta
+  <zappacor@yahoo.com.ar> in Gentoo bug #234361 for everything I needed to
+  bump this.
+
 *cisco-vpnclient-modules-4.8.02.0030 (13 Dec 2008)
 
   13 Dec 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
