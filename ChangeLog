@@ -1,5 +1,9 @@
-# Copyright 2008-2008 Chris Gianelloni; Distributed under the GPL v2
+# Copyright 2008-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
+
+  01 Jan 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  synergy-1.3.1-r1.ebuild:
+  Shorten DESCRIPTION and switch extra elogs to einfos.
 
   20 Dec 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
   +catalyst-2.0.6.903.ebuild:

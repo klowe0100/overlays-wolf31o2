@@ -4,7 +4,7 @@
 
 inherit eutils autotools
 
-DESCRIPTION="Lets you easily share a single mouse and keyboard between multiple computers."
+DESCRIPTION="share a single mouse and keyboard between multiple computers."
 SRC_URI="mirror://sourceforge/${PN}2/${P}.tar.gz"
 HOMEPAGE="http://synergy2.sourceforge.net/"
 LICENSE="GPL-2"
@@ -51,8 +51,8 @@ src_install () {
 }
 
 pkg_postinst() {
-	elog
+	einfo
 	elog "${PN} can also be used to connect to computers running Windows."
 	elog "Visit ${HOMEPAGE} to find the Windows client."
-	elog
+	einfo
 }
