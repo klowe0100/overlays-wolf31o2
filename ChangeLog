@@ -1,6 +1,17 @@
 # Copyright 2008-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*libpcap-1.0.0-r2 (02 Jan 2009)
+
+  02 Jan 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +net-libs/libpcap/files/libpcap-1.0.0-LDFLAGS.patch,
+  +net-libs/libpcap/files/libpcap-1.0.0-cross-linux.patch,
+  +net-libs/libpcap/files/libpcap-1.0.0-install-bindir.patch,
+  +net-libs/libpcap/files/libpcap-1.0.0-install-headers.patch,
+  +net-libs/libpcap/files/libpcap-1.0.0-optional-bluetooth.patch,
+  profiles/categories, libpcap-1.0.0-r2.ebuild:
+  Revision bump to allow bluez to fill bluetooth dependency.
+
 *totem-2.24.3-r1 (02 Jan 2009)
 
   02 Jan 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> profiles/categories,
