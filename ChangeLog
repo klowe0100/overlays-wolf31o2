@@ -1,6 +1,12 @@
 # Copyright 2008-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*genkernel-3.4.10.903 (05 Jan 2009)
+
+  05 Jan 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  genkernel-3.4.10.903.ebuild:
+  Version bump to 3.4.10.903 for testing.
+
 *autokernconf-20081204 (02 Jan 2009)
 
   02 Jan 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
