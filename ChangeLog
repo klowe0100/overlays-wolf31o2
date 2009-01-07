@@ -1,13 +1,20 @@
 # Copyright 2008-2008 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+
+*catalyst-2.0.6.903 (19 Dec 2008)
+
   20 Dec 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  +catalyst-2.0.6.903.ebuild:
+  +dev-util/catalyst/catalyst-2.0.6.903.ebuild:
   Version bump to 2.0.6.903 for testing.
 
-  19 Dec 2008; Chris Gianelloni <cgianelloni@quova.com>
-  +synergy-1.3.1-dpms.patch, +synergy-1.3.1-gcc-4.3.patch,
-  +synergy-1.3.1-stuttered-delay-fix.patch, categories:
+*x11-misc/synergy-1.3.1-r1 (19 Dec 2008)
+
+19 Dec 2008; Chris Gianelloni <cgianelloni@quova.com>
+  +x11-misc/synergy/files/synergy-1.3.1-dpms.patch,
+  +x11-misc/synergy/files/synergy-1.3.1-gcc-4.3.patch,
+  +x11-misc/synergy/files/synergy-1.3.1-stuttered-delay-fix.patch,
+  +x11-misc/synergy/synergy-1.3.1-r1.ebuild, profiles/categories:
   Revision bump to add a couple fixes, namely 1947351 and 2141567, which fixes
   DPMS blanking and the stuttering problem with newer X.org servers,
   respectively.
@@ -15,7 +22,7 @@
 *cisco-vpnclient-4.8.02.0030 (13 Dec 2008)
 
   13 Dec 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  cisco-vpnclient-4.8.01.0640.ebuild, cisco-vpnclient-4.8.02.0030.ebuild:
+  net-misc/cisco-vpnclient-cisco-vpnclient-4.8.02.0030.ebuild:
   Version bumping cisco-vpnclient to 4.8.02.0030 for testing. Thanks to
   Andreas Simon <asmodis.666@web.de> and Rolando J. Zappacosta
   <zappacor@yahoo.com.ar> in Gentoo bug #234361 for everything I needed to
@@ -25,15 +32,14 @@
 
   13 Dec 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
   +net-misc/cisco-vpnclient-modules/files/4.8.02.0030-amd64.patch,
-  cisco-vpnclient-modules-4.8.02.0030.ebuild,
-  cisco-vpnclient-4.8.01.0640.ebuild:
+  +net-misc/cisco-vpnclient-modules/cisco-vpnclient-modules-4.8.02.0030.ebuild:
   Version bumping cisco-vpnclient-modules to 4.8.02.0030 for testing. Thanks
   to Andreas Simon <asmodis.666@web.de> and Rolando J. Zappacosta
   <zappacor@yahoo.com.ar> in Gentoo bug #234361 for everything I needed to
   bump this.
 
   13 Dec 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  +profiles/updates/4Q-2008, cisco-vpnclient-4.8.01.0640.ebuild:
+  +profiles/updates/4Q-2008:
   Adding an updates directory to profiles for anything that I move from
   where it may reside in Gentoo's tree.
 
@@ -50,20 +56,21 @@
   +sys-power/apcupsd/files/3.14.4/apcupsd.initd,
   +sys-power/apcupsd/files/3.14.4/etc.patch,
   +sys-power/apcupsd/files/3.14.4/hal-ups-policy.patch,
-  +sys-power/apcupsd/files/3.14.4/no-parallel.patch, apcupsd-3.14.3.ebuild,
-  apcupsd-3.14.4.ebuild:
+  +sys-power/apcupsd/files/3.14.4/no-parallel.patch,
+  +sys-power/apcupsd/apcupsd-3.14.3.ebuild,
+  +sys-power/apcupsd/apcupsd-3.14.4.ebuild:
   Version bump to 3.14.4 and removing the webapp eclass from inherit until I
   can think up a better way to keep from pulling in all of the web
   dependencies when we are not building the CGI scripts.
 
   10 Dec 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  net-snmp-5.4.2.1-r1.ebuild:
+  net-analyzer/net-snmp/net-snmp-5.4.2.1-r1.ebuild:
   Marking stable on amd64/x86 for my production systems.
 
 *net-snmp-5.4.2.1-r1 (09 Dec 2008)
 
   09 Dec 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  net-snmp-5.4.2.1-r1.ebuild:
+  net-analyzer/net-snmp/net-snmp-5.4.2.1-r1.ebuild:
   Version bump to 5.4.2.1 to catch up with the Gentoo tree. Removing the
   mod_ap2_snmp support, as it tended to cause crashes on my servers.
 
