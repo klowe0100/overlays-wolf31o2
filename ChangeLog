@@ -1,6 +1,135 @@
-# Copyright 2008-2008 Chris Gianelloni; Distributed under the GPL v2
+# Copyright 2008-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  06 Jan 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  -sys-apps/dbus/metadata.xml, -sys-apps/dbus/dbus-1.0.2-r2.ebuild,
+  -sys-apps/dbus/dbus-1.1.20.ebuild, -sys-apps/dbus/dbus-1.1.4.ebuild,
+  -sys-apps/dbus/dbus-1.2.1.ebuild, -sys-apps/dbus/dbus-1.2.3-r1.ebuild,
+  -sys-apps/dbus/dbus-1.2.3.ebuild:
+  Add my revision to the Manifest and remove older versions and support
+  files.
+
+*iasl-20081204 (06 Jan 2009)
+*iasl-20080701 (06 Jan 2009)
+*iasl-20080514 (06 Jan 2009)
+*iasl-20060912 (06 Jan 2009)
+
+  06 Jan 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +sys-power/iasl/files/acpica-unix-20051216-buildfixup.patch,
+  +sys-power/iasl/files/acpica-unix-20060512-buildfixup.patch,
+  +sys-power/iasl/files/iasl-20080701-fix-missing-types.patch,
+  +sys-power/iasl/files/iasl-20080701-parallelmake.patch,
+  +sys-power/iasl/metadata.xml, +sys-power/iasl/iasl-20060912.ebuild,
+  +sys-power/iasl/iasl-20080514.ebuild, +sys-power/iasl/iasl-20080701.ebuild,
+  +sys-power/iasl/iasl-20081204.ebuild:
+  Version bumping iASL, so I can fix the stupid broken DSDT on my laptop.
+
+*genkernel-3.4.10.903 (05 Jan 2009)
+
+  05 Jan 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +sys-kernel/genkernel/genkernel-3.4.10.903.ebuild:
+  Version bump to 3.4.10.903 for testing.
+
+*autokernconf-20081204 (02 Jan 2009)
+
+  02 Jan 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +sys-kernel/autokernconf/autokernconf-20081204.ebuild:
+  Adding sys-kernel/autokernconf for testing.
+
+*gnome-vfs-obexftp-0.4-r1 (02 Jan 2009)
+
+  02 Jan 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +gnome-extra/gnome-vfs-obexftp/gnome-vfs-obexftp-0.4-r1.ebuild:
+  Revision bump to allow bluez to fill bluetooth dependency.
+
+*gvfs-1.0.3-r1 (02 Jan 2009)
+
+  02 Jan 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> profiles/categories,
+  +gnome-base/gvfs/gvfs-1.0.3-r1.ebuild:
+  Revision bump to allow bluez to fill bluetooth dependency.
+
+*libpcap-1.0.0-r2 (02 Jan 2009)
+
+  02 Jan 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +net-libs/libpcap/files/libpcap-1.0.0-LDFLAGS.patch,
+  +net-libs/libpcap/files/libpcap-1.0.0-cross-linux.patch,
+  +net-libs/libpcap/files/libpcap-1.0.0-install-bindir.patch,
+  +net-libs/libpcap/files/libpcap-1.0.0-install-headers.patch,
+  +net-libs/libpcap/files/libpcap-1.0.0-optional-bluetooth.patch,
+  profiles/categories, +net-libs/libpcap/libpcap-1.0.0-r2.ebuild:
+  Revision bump to allow bluez to fill bluetooth dependency.
+
+*totem-2.24.3-r1 (02 Jan 2009)
+
+  02 Jan 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> profiles/categories,
+  +media-video/totem/totem-2.24.3-r1.ebuild:
+  Revision bump to allow bluez to fill bluetooth dependency.
+
+*libbtctl-0.10.0-r1 (02 Jan 2009)
+
+  02 Jan 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +net-wireless/libbtctl/libbtctl-0.10.0-r1.ebuild:
+  Revision bump to allow bluez to fill bluetooth dependency.
+
+*gnome-bluetooth-0.11.0 (02 Jan 2009)
+
+  02 Jan 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +net-wireless/gnome-bluetooth/gnome-bluetooth-0.11.0.ebuild:
+  Revision bump to allow bluez to fill bluetooth dependency.
+
+*bluez-4.25 (02 Jan 2009)
+
+  02 Jan 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +net-wireless/bluez/files/bluez-4.18-udev.rules,
+  +net-wireless/bluez/files/bluez-4.18-udev.script,
+  +net-wireless/bluez/files/4.18/bluetooth-conf.d,
+  +net-wireless/bluez/files/4.18/bluetooth-init.d,
+  +net-wireless/bluez/files/4.18/conf.d-hidd,
+  +net-wireless/bluez/files/4.18/cups-location.patch,
+  +net-wireless/bluez/files/4.18/init.d-hidd, profiles/categories,
+  +net-wireless/bluez/bluez-4.25.ebuild:
+  Adding net-wireless/bluez 4.25 for testing.
+
+*obexftp-0.22-r1 (02 Jan 2009)
+
+  02 Jan 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +app-mobilephone/obexftp/files/obexftp-0.22-bluetooth.patch,
+  +app-mobilephone/obexftp/files/obexftp-0.22-ruby-libpath.patch,
+  profiles/categories, +app-mobilephone/obexftp/obexftp-0.22-r1.ebuild:
+  Adding app-mobilephone/obexftp to fix bluez dependency.
+
+*dbus-1.2.3 (01 Jan 2009)
+*dbus-1.2.3-r2 (01 Jan 2009)
+*dbus-1.2.3-r1 (01 Jan 2009)
+*dbus-1.2.1 (01 Jan 2009)
+*dbus-1.1.4 (01 Jan 2009)
+*dbus-1.1.20 (01 Jan 2009)
+*dbus-1.0.2-r2 (01 Jan 2009)
+
+  01 Jan 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +sys-apps/dbus/files/dbus.init-1.0,
+  +sys-apps/dbus/files/dbus-1.0.1-fixfilecreation.patch,
+  +sys-apps/dbus/files/dbus-1.1.4-xdisplay_null.patch,
+  +sys-apps/dbus/files/dbus-1.1.20-fix-build.patch,
+  +sys-apps/dbus/files/dbus-1.2.3-panic-from-dbus_signature_validate.patch,
+  +sys-apps/dbus/files/30-dbus,
+  +sys-apps/dbus/files/dbus-1.2.3-race-fix.patch,
+  +sys-apps/dbus/metadata.xml, +sys-apps/dbus/dbus-1.0.2-r2.ebuild,
+  +sys-apps/dbus/dbus-1.1.20.ebuild, +sys-apps/dbus/dbus-1.1.4.ebuild,
+  +sys-apps/dbus/dbus-1.2.1.ebuild, +sys-apps/dbus/dbus-1.2.3-r1.ebuild,
+  +sys-apps/dbus/dbus-1.2.3-r2.ebuild, +sys-apps/dbus/dbus-1.2.3.ebuild:
+  Add a race fix.
+
+*dmraid-1.0.0_rc14-r1 (01 Jan 2009)
+
+  01 Jan 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +sys-fs/dmraid/files/dmraid-destdir-fix.patch,
+  +sys-fs/dmraid/dmraid-1.0.0_rc14-r1.ebuild:
+  Adding sys-fs/dmraid with dynamic library support.
+
+  01 Jan 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  x11-misc/synergy/synergy-1.3.1-r1.ebuild:
+  Shorten DESCRIPTION and switch extra elogs to einfos.
 
 *catalyst-2.0.6.903 (19 Dec 2008)
 
@@ -8,16 +137,16 @@
   +dev-util/catalyst/catalyst-2.0.6.903.ebuild:
   Version bump to 2.0.6.903 for testing.
 
-*x11-misc/synergy-1.3.1-r1 (19 Dec 2008)
+*synergy-1.3.1-r1 (19 Dec 2008)
 
-19 Dec 2008; Chris Gianelloni <cgianelloni@quova.com>
+  19 Dec 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
   +x11-misc/synergy/files/synergy-1.3.1-dpms.patch,
   +x11-misc/synergy/files/synergy-1.3.1-gcc-4.3.patch,
   +x11-misc/synergy/files/synergy-1.3.1-stuttered-delay-fix.patch,
   +x11-misc/synergy/synergy-1.3.1-r1.ebuild, profiles/categories:
-  Revision bump to add a couple fixes, namely 1947351 and 2141567, which fixes
-  DPMS blanking and the stuttering problem with newer X.org servers,
-  respectively.
+  Revision bump to add a couple fixes, namely 1947351 and 2141567 from
+  upstream, which fixes DPMS blanking and the stuttering problem with newer
+  X.org servers, respectively.
 
 *cisco-vpnclient-4.8.02.0030 (13 Dec 2008)
 
