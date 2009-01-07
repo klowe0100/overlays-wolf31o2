@@ -1,6 +1,10 @@
 # Copyright 2008-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  07 Jan 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> categories:
+  Adding sys-fs to the list of categories as it must have slipped past me when
+  I was adding the packages.
+
   06 Jan 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   -sys-apps/dbus/metadata.xml, -sys-apps/dbus/dbus-1.0.2-r2.ebuild,
   -sys-apps/dbus/dbus-1.1.20.ebuild, -sys-apps/dbus/dbus-1.1.4.ebuild,
