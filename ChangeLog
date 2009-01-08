@@ -1,6 +1,10 @@
 # Copyright 2008-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  08 Jan 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> -metadata.xml:
+  Bump the revision on jdbc-oracle-bin so we don't end up with the same
+  version as Gentoo's tree.
+
   08 Jan 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   jdbc-oracle-bin-10.2.0.4.ebuild:
   Updated ebuild header.
