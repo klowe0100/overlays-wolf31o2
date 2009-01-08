@@ -3,8 +3,9 @@
 # $Header: /var/cvsroot/gentoo-x86/sys-power/apcupsd/apcupsd-3.14.3.ebuild,v 1.2 2008/09/03 07:25:44 opfer Exp $
 
 WEBAPP_MANUAL_SLOT="yes"
-# I have removed webapp from inherit so we don't pull in webapp-config
-inherit eutils
+WEBAPP_OPTIONAL="yes"
+
+inherit eutils webapp
 
 DESCRIPTION="APC UPS daemon with integrated tcp/ip remote shutdown"
 HOMEPAGE="http://www.apcupsd.org/"
@@ -16,7 +17,7 @@ KEYWORDS="~alpha ~amd64 ~ppc ~sparc ~x86 ~x86-fbsd"
 IUSE="doc snmp usb cgi ncurses nls gnome"
 
 DEPEND="doc? ( virtual/latex-base dev-tex/latex2html )
-	cgi? ( >=media-libs/gd-1.8.4 )
+	cgi? ( >=media-libs/gd-1.8.4 ${WEBAPP_DEPEND} )
 	ncurses? ( sys-libs/ncurses )
 	nls? ( sys-devel/gettext )
 	snmp? ( net-analyzer/net-snmp )
@@ -35,7 +36,7 @@ src_unpack() {
 	cd "${S}"
 	epatch "${FILESDIR}"/${PV}/apcupsd.in.patch
 	epatch "${FILESDIR}"/${PV}/etc.patch
-	epatch "${FILESDIR}"/${PV}/hal-ups-policy.patch
+#	epatch "${FILESDIR}"/${PV}/hal-ups-policy.patch
 }
 
 src_compile() {
@@ -107,13 +108,13 @@ pkg_postinst() {
 		webapp_pkg_postinst
 	fi
 
-	elog ""
+	einfo
 	elog "Since version 3.14.0 you can use multiple apcupsd instances to"
 	elog "control more than one UPS in a single box."
 	elog "To do this, create a link between /etc/init.d/apcupsd to a new"
 	elog "/etc/init.d/apcupsd.something, and it will then load the"
 	elog "configuration file at /etc/apcupsd/something.conf."
-	elog ""
+	einfo
 }
 
 pkg_prerm() {

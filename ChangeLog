@@ -1,6 +1,12 @@
 # Copyright 2008-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  08 Jan 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> -apcupsd.in.patch,
+  -apcupsd.initd, -etc.patch, -hal-ups-policy.patch, -hal-ups-policy.patch,
+  -no-parallel.patch:
+  Removed the HAL patch, since it was broken, and adding back webapp support,
+  since the eclass now has WEBAPP_OPTIONAL.
+
   08 Jan 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> -metadata.xml:
   Bump the revision on jdbc-oracle-bin so we don't end up with the same
   version as Gentoo's tree.
