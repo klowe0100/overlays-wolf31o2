@@ -1,6 +1,9 @@
 # Copyright 2008-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  13 Jan 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> +nvidia-169.07:
+  Adding nvidia-169.07 file, which I apparently had forgotten to add.
+
   13 Jan 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   +NVIDIA_glx-defines.patch, +NVIDIA_glx-glheader.patch,
   +NVIDIA_i2c-hwmon.patch, categories, +donvidia.eblit, +libGL.la-r2,
