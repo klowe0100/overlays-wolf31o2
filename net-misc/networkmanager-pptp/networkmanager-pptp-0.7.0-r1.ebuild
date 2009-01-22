@@ -18,7 +18,7 @@ IUSE="gnome"
 
 RDEPEND="
 	>=net-misc/networkmanager-0.7.0
-	net-misc/pptpclient
+	net-dialup/pptpclient
 	gnome? (
 		>=gnome-base/gconf-2.20
 		>=gnome-base/gnome-keyring-2.20
