@@ -1,2 +1,4 @@
+move net-analyzer/afasnmp snmp-agents/afasnmp
+move net-analyzer/percsnmp snmp-agents/percsnmp
 move net-wireless/bluez-libs net-wireless/bluez
 move net-wireless/bluez-utils net-wireless/bluez
