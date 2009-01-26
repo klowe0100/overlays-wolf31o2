@@ -40,7 +40,7 @@ SRC_URI="
 	examples? ( ${file_demo} )
 	nls? ( ${file_nls} )
 	ons? ( ${file_ons} )"
-KEYWORDS="amd64 ~ppc x86"
+KEYWORDS="~amd64 ~ppc ~x86"
 LICENSE="oracle-jdbc"
 SLOT="10.2"
 DEPEND="doc? ( app-arch/unzip )"
