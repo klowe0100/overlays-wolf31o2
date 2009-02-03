@@ -57,7 +57,7 @@ src_unpack() {
 		unpack ${MY_P}.tar.gz
 	fi
 	if use plugins; then
-		unpack cacti-plugin-${PV}-PA-v${PAV}.zip
+		unpack cacti-plugin-arch.tar.gz
 		cd "${S}"
 		epatch "${WORKDIR}"/cacti-plugin-arch/cacti-plugin-${PV}-PA-v${PAV}.diff
 		cp -f "${WORKDIR}"/cacti-plugin-arch/pa.sql "${S}"
