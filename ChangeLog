@@ -1,6 +1,12 @@
 # Copyright 2008-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  03 Feb 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> cacti-0.8.7c.ebuild,
+  cacti-0.8.7c-r1.ebuild:
+  Switching back to using the unversioned tarball, since upstream has a
+  whacked out ZIP distribution and I cannot find a versioned tarball. Sorry,
+  folks.
+
   03 Feb 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   +cacti-spine-0.8.7c.ebuild:
   Adding matching Spine 0.8.7c for Cacti.
