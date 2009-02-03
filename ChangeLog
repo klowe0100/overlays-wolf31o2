@@ -2,6 +2,10 @@
 # $Id$
 
   03 Feb 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +cacti-spine-0.8.7c.ebuild:
+  Adding matching Spine 0.8.7c for Cacti.
+
+  03 Feb 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   +cacti-0.8.7c.ebuild, +cacti-0.8.7c-r1.ebuild:
   Adding two Cacti 0.8.7c ebuilds for testing, one is EAPI=1 and one is
   EAPI=0, but both versions include the Plugin Architecture.
