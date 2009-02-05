@@ -17,6 +17,7 @@ net-analyzer
 net-libs
 net-misc
 net-wireless
+perl-modules
 snmp-agents
 snmp-mibs
 sys-apps
