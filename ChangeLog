@@ -2,6 +2,10 @@
 # $Id$
 
   09 Feb 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +DBD-Oracle-1.21.ebuild:
+  Adding initial version of perl-modules/DBD-Oracle for testing.
+
+  09 Feb 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   CGI-Apache2-Wrapper-0.215.ebuild:
   Updating the DESCRIPTION to CGI-Apache2-Wrapper and making it use the
   primary URI for fetches.
