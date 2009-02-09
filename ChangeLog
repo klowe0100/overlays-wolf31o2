@@ -1,6 +1,11 @@
 # Copyright 2008-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  09 Feb 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  CGI-Apache2-Wrapper-0.215.ebuild:
+  Updating the DESCRIPTION to CGI-Apache2-Wrapper and making it use the
+  primary URI for fetches.
+
   05 Feb 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   +Class-Gomor-1.01.ebuild:
   Adding an ebuild for Class::Gomor to the tree.

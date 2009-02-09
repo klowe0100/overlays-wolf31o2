@@ -4,17 +4,15 @@
 
 inherit perl-module
 
-S=${WORKDIR}/CGI-Apache2-Wrapper-0.215
-
-DESCRIPTION="No description available"
+DESCRIPTION="CGI.pm-compatible wrapper for mod_perl"
 HOMEPAGE="http://search.cpan.org/search?query=CGI-Apache2-Wrapper&mode=dist"
-SRC_URI="mirror://cpan/authors/id/R/RK/RKOBES/CGI-Apache2-Wrapper-0.215.tar.gz"
+SRC_URI="mirror://cpan/authors/id/R/RK/RKOBES/${P}.tar.gz"
 
 SLOT="0"
 LICENSE="|| ( Artistic GPL-2 )"
 KEYWORDS="amd64 x86"
+RESTRICT="primaryuri"
 IUSE=""
-RESTRICT=""
 
 DEPEND="dev-lang/perl
 	www-apache/mod_perl
