@@ -1,6 +1,12 @@
 # Copyright 2008-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  10 Feb 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> +90vmware-tools,
+  categories, +vmware-esx-tools.rc, +xorg.conf:
+  Adding a new revision of the vmware-esx-tools package from the VMware
+  overlay. If I get this working, I'll see about pushing it back into the
+  Gentoo VMware overlay.
+
   09 Feb 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   +DBD-Oracle-1.21.ebuild:
   Adding initial version of perl-modules/DBD-Oracle for testing.
