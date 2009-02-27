@@ -2,6 +2,12 @@
 # $Id$
 
   27 Feb 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  -net-analyzer/cacti-spine/files/cacti-spine-0.8.7a-script_server_bufsize.p
+  atch,
+  -net-analyzer/cacti-spine/files/cacti-spine-0.8.7a-spine_bufsize.patch:
+  Removing patches that are no longer used.
+
+  27 Feb 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   cacti-spine-0.8.7a-r1.ebuild, cacti-spine-0.8.7a-r2.ebuild:
   Removing older version of cacti-spine.
 
