@@ -2,6 +2,10 @@
 # $Id$
 
   05 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +Log-Dispatch-FileRotate-1.19.ebuild:
+  Adding Log-Dispatch-FileRotate to the tree.
+
+  05 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   +Date-Manip-5.54.ebuild:
   Adding Date-Manip to the tree.
 
