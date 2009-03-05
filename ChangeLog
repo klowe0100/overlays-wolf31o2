@@ -2,6 +2,11 @@
 # $Id$
 
   05 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +vmware-esx-tools-3.5.0.143128-r1.ebuild:
+  Adding another revision of vmware-esx-tools for testing to pull in the
+  any-any-update patches, to fix compilation on 2.6.26 kernels.
+
+  05 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   +Log-Dispatch-FileRotate-1.19.ebuild:
   Adding Log-Dispatch-FileRotate to the tree.
 
