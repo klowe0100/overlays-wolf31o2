@@ -4,9 +4,11 @@
 
 inherit eutils vmware
 
+ANY_ANY="vmware-any-any-update117d"
+
 DESCRIPTION="Guest-os tools for VMware ESX"
 HOMEPAGE="http://www.vmware.com/"
-SRC_URI=""
+SRC_URI="http://vmkernelnewbies.googlegroups.com/web/${ANY_ANY}.tar.gz"
 
 LICENSE="vmware"
 SLOT="0"
@@ -23,7 +25,6 @@ RUN_UPDATE="no"
 dir=/opt/vmware/esx/tools
 Ddir=${D}/${dir}
 
-ANY_ANY="vmware-any-any-update117d"
 TARBALL="VMwareTools-3.5.0-143128.tar.gz"
 MY_P=${TARBALL/.tar.gz/}
 
