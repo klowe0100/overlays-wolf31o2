@@ -2,6 +2,10 @@
 # $Id$
 
   12 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +Math-Round-0.06.ebuild:
+  Adding perl-modules/Math-Round to the tree.
+
+  12 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   +Math-Base85-0.2.ebuild:
   Adding perl-modules/Math-Base85 to the tree.
 
