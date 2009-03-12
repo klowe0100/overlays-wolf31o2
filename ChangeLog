@@ -2,6 +2,10 @@
 # $Id$
 
   12 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +Net-Packet-3.26.ebuild:
+  Adding perl-modules/Net-Packet to the tree.
+
+  12 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   +Net-Write-1.04.ebuild:
   Adding perl-modules/Net-Write to the tree.
 
