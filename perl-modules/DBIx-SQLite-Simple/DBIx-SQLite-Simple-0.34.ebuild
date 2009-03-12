@@ -16,7 +16,7 @@ LICENSE="|| ( Artistic GPL-2 )"
 KEYWORDS="amd64 x86"
 RESTRICT="primaryuri"
 
-DEPEND="perl-gcpan/Class-Gomor
+DEPEND="perl-modules/Class-Gomor
 	dev-perl/DBD-SQLite
 	dev-lang/perl"
 

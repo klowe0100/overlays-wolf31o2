@@ -2,6 +2,10 @@
 # $Id$
 
   12 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  DBIx-SQLite-Simple-0.34.ebuild:
+  Fixing dependencies on DBIx-SQLite-Simple to not reference perl-gcpan category.
+
+  12 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   +Net-SinFP-2.06.ebuild:
   Adding perl-modules/Net-SinFP to the tree.
 
