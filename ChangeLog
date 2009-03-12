@@ -2,6 +2,10 @@
 # $Id$
 
   12 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +Net-IPv6Addr-0.2.ebuild:
+  Adding perl-modules/Net-IPv6Addr to the tree.
+
+  12 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   +Net-IPv4Addr-0.10.ebuild:
   Adding perl-modules/Net-IPv4Addr to the tree.
 
