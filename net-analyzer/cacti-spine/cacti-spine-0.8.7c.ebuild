@@ -26,6 +26,7 @@ src_unpack() {
 	sed -i -e 's/^bin_PROGRAMS/sbin_PROGRAMS/' Makefile.am
 	sed -i -e 's/wwwroot\/cacti\/log/var\/log/g' spine.h
 	eautoreconf
+	chmod +x configure
 }
 
 src_compile() {
@@ -35,7 +36,8 @@ src_compile() {
 
 src_install() {
 	exeinto usr/sbin ; doexe "${S}"/spine
-	insinto etc/ ; insopts -m0640 -o root ; doins "${S}"/spine.conf
+	insinto etc/ ; insopts -m0640 -o root
+	newins "${S}"/spine.conf.dist spine.conf || die
 	dodoc ChangeLog INSTALL README
 }
 
