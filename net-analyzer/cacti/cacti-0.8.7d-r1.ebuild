@@ -47,6 +47,7 @@ RDEPEND="snmp? ( net-analyzer/net-snmp )
 	virtual/cron"
 
 src_unpack() {
+	unpack ${MY_P}.tar.gz
 	if use plugins; then
 	#	unpack cacti-plugin-arch.tar.gz
 		unpack cacti-plugin-${PV}-PA-v${PAV}.zip
@@ -56,14 +57,11 @@ src_unpack() {
 		cp -f "${WORKDIR}"/pa.sql "${S}"
 	fi
 	if [ "${HAS_PATCHES}" == "1" ] ; then
-		unpack ${MY_P}.tar.gz
 		[ ! ${MY_P} == ${P} ] && mv ${MY_P} ${P}
 		# patches
 		for i in ${UPSTREAM_PATCHES} ; do
 			EPATCH_OPTS="-p1 -d ${S} -N" epatch "${DISTDIR}"/${i}.patch
 		done ;
-	else
-		unpack ${MY_P}.tar.gz
 	fi
 
 	sed -i -e \

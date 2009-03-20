@@ -3,6 +3,10 @@
 
   20 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   cacti-0.8.7d-r1.ebuild:
+  Moving unpacking of cacti tarball to before trying to patch it.
+
+  20 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  cacti-0.8.7d-r1.ebuild:
   Swap PA and UPSTREAM patches.
 
   20 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
