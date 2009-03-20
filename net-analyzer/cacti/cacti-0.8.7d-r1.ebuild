@@ -22,8 +22,8 @@ SRC_URI="http://www.cacti.net/downloads/${MY_P}.tar.gz
 if [ "${HAS_PATCHES}" == "1" ] ; then
 	UPSTREAM_PATCHES="ping_timeout
 					graph_search
-					page_length_graph_view
 					snmp_string_issue_with_rrdtool_creation"
+				#	page_length_graph_view # before snmp_string_issue
 	for i in $UPSTREAM_PATCHES ; do
 		SRC_URI="${SRC_URI} http://www.cacti.net/downloads/patches/${PV/_p*}/${i}.patch"
 	done

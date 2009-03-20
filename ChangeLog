@@ -3,6 +3,11 @@
 
   20 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   cacti-0.8.7d-r1.ebuild:
+  Comment out the page_length_graph_view patch, since it will need to be
+  modified to work with the PA patch.
+
+  20 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  cacti-0.8.7d-r1.ebuild:
   Moving unpacking of cacti tarball to before trying to patch it.
 
   20 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
