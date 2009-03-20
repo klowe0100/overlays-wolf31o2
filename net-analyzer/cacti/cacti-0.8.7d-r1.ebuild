@@ -47,6 +47,14 @@ RDEPEND="snmp? ( net-analyzer/net-snmp )
 	virtual/cron"
 
 src_unpack() {
+	if use plugins; then
+	#	unpack cacti-plugin-arch.tar.gz
+		unpack cacti-plugin-${PV}-PA-v${PAV}.zip
+		cd "${S}"
+		sed -i -e '370 d' "${WORKDIR}"/cacti-plugin-${PV}-PA-v${PAV}.diff 
+		epatch "${WORKDIR}"/cacti-plugin-${PV}-PA-v${PAV}.diff
+		cp -f "${WORKDIR}"/pa.sql "${S}"
+	fi
 	if [ "${HAS_PATCHES}" == "1" ] ; then
 		unpack ${MY_P}.tar.gz
 		[ ! ${MY_P} == ${P} ] && mv ${MY_P} ${P}
@@ -56,14 +64,6 @@ src_unpack() {
 		done ;
 	else
 		unpack ${MY_P}.tar.gz
-	fi
-	if use plugins; then
-	#	unpack cacti-plugin-arch.tar.gz
-		unpack cacti-plugin-${PV}-PA-v${PAV}.zip
-		cd "${S}"
-		sed -i -e '370 d' "${WORKDIR}"/cacti-plugin-${PV}-PA-v${PAV}.diff 
-		epatch "${WORKDIR}"/cacti-plugin-${PV}-PA-v${PAV}.diff
-		cp -f "${WORKDIR}"/pa.sql "${S}"
 	fi
 
 	sed -i -e \
