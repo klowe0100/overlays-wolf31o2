@@ -1,6 +1,16 @@
 # Copyright 2008-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*wolf-sources-2.6.28-r3 (20 Mar 2009)
+*wolf-sources-2.6.28-r2 (20 Mar 2009)
+
+  20 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  wolf-sources-2.6.28-r2.ebuild, wolf-sources-2.6.28-r3.ebuild:
+  Finally adding my personal sources set. It is currently the same as
+  tuxonice-sources + an AHCI patch for the ICH7-M chipset in my Dell D620 to
+  quirk it to AHCI mode. Unfortunately, this kills access to the optical
+  drive, but I rarely use it, anyway.
+
   20 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   cacti-0.8.7d-r1.ebuild:
   Comment out the page_length_graph_view patch, since it will need to be
