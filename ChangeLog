@@ -1,6 +1,10 @@
 # Copyright 2008-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  20 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +cacti-0.8.7d-r1.ebuild:
+  Adding a new revision with patches from upstream.
+
   17 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   cacti-spine-0.8.7c.ebuild:
   This just needed us to set configure executable.
