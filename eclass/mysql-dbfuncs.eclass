@@ -7,7 +7,7 @@
 # Purpose: Provide a framework for creating, dropping, and modifying MySQL
 # databases via the package manager.
 
-EXPORT_FUNCTIONS pkg_postinst
+#EXPORT_FUNCTIONS pkg_postinst
 
 # Variables to specify in an ebuild which uses this eclass:
 # TODO: Add this section
