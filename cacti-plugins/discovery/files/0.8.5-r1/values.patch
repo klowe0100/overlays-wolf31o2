@@ -1,5 +1,5 @@
---- findhosts.php	2009-03-19 12:06:33.000000000 -0700
-+++ fh.php	2009-03-19 12:39:25.000000000 -0700
+--- findhosts.php.orig	2009-03-19 12:06:33.000000000 -0700
++++ findhosts.php	2009-03-19 12:39:25.000000000 -0700
 @@ -355,7 +355,7 @@
  								. sql_sanitize($device['snmp_sysDescr']) . "', '"
  								. sql_sanitize($device['snmp_sysUptime']) . "', '"
