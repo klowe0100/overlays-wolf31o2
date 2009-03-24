@@ -2,6 +2,12 @@
 # $Id$
 
   24 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +000_all_initd-scripts.patch, 90vmware-tools:
+  Adding a new revision of the vmware-esx-tools ebuild, pulling in the
+  000_all_initd-scripts.patch, and fixing the environment variables in
+  90vmware-tools.
+
+  24 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   discovery-0.8.5-r1.ebuild:
   Explicitly adding the .patch suffix to the epatch call and wrapping it in
   die, for troubleshooting.
