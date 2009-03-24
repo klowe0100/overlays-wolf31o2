@@ -13,5 +13,5 @@ MYSQL_SCRIPTS="${PLUG_HOME}/discover.sql"
 src_unpack() {
 	unpack ${A}
 	cd "${S}"
-	epatch "${FILESDIR}"/${PVR}
+	epatch "${FILESDIR}"/${PVR}/*.patch || die
 }

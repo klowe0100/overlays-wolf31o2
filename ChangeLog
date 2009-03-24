@@ -2,6 +2,11 @@
 # $Id$
 
   24 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  discovery-0.8.5-r1.ebuild:
+  Explicitly adding the .patch suffix to the epatch call and wrapping it in
+  die, for troubleshooting.
+
+  24 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   add_description.patch, values.patch:
   Swapped the add_description patch back to original order and fixed the
   headers on both patches.
