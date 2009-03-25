@@ -30,7 +30,7 @@ TARBALL="VMwareTools-3.5.0-143128.tar.gz"
 MY_P=${TARBALL/.tar.gz/}
 
 pkg_setup() {
-	groupadd ${VMWARE_GROUP}
+	enewgroup ${VMWARE_GROUP}
 	vmware_pkg_setup
 }
 

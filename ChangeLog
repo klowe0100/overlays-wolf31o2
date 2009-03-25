@@ -1,6 +1,10 @@
 # Copyright 2008-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  25 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  vmware-esx-tools-3.5.0.143128-r2.ebuild:
+  Switch to using enewuser, which is what I had meant to do from the beginning.
+
   24 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   +000_all_initd-scripts.patch, 90vmware-tools:
   Adding a new revision of the vmware-esx-tools ebuild, pulling in the
