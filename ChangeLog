@@ -2,6 +2,10 @@
 # $Id$
 
   29 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  eclass/cacti-plugins.eclass, boost-1.7.ebuild, boost-2.4.ebuild:
+  Final cleanup.
+
+  29 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   eclass/cacti-plugins.eclass:
   Cleaning up some more variables.
 
