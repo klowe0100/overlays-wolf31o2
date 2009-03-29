@@ -1,11 +1,11 @@
-# Copyright 2008 Chris Gianelloni
+# Copyright 2008-2009 Chris Gianelloni
 # Distributed under the terms of the GNU General Public License v2
-# $Header: $
+# $Id$
 
 inherit eutils cacti-plugins
 
-SRC_URI="${PLUG_BASE}/${PLUG_NAME}-${PV}.tar.gz"
+SRC_URI="${CACTI_PLUG_BASE}/${CACTI_PLUG_NAME}-${PV}.tar.gz"
 
 LICENSE="GPL-2"
 
-MYSQL_SCRIPTS="${PLUG_HOME}/discover.sql"
+MYSQL_SCRIPTS="${CACTI_PLUG_HOME}/discover.sql"
