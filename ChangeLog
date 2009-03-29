@@ -1,6 +1,11 @@
 # Copyright 2008-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*settings-0.5 (29 Mar 2009)
+
+  29 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> settings-0.5.ebuild:
+  Adding an initial Settings plugin ebuild.
+
   29 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   -discovery-0.8.4.ebuild, -discovery-0.8.5.ebuild:
   Remove 0.8.4 and 0.8.5 ebuilds.
