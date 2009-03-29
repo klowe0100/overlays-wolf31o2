@@ -3,12 +3,16 @@
 
   29 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   eclass/cacti-plugins.eclass:
+  Cleaning up some more variables.
+
+  29 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  eclass/cacti-plugins.eclass:
   Add CACTI_ prefix to variables and remove the plugin adding stub.
 
 *clog-1.21 (29 Mar 2009)
 
   29 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> clog-1.21.ebuild:
-  Adding the Clog plugin for testing.
+  Adding the CLog plugin for testing.
 
   29 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   eclass/cacti-plugins.eclass:
