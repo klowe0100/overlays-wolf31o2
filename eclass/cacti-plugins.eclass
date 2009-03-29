@@ -51,12 +51,7 @@ cacti-plugins_pkg_setup() {
 cacti-plugins_src_install() {
 	insinto ${PLUG_HOME}
 	edos2unix `find -type f -name '*.php'`
-	doins *.php *.sql
-	for source_dir in html images include lib ; do
-		if [ -d ${source_dir} ] ; then
-			doins -r ${source_dir} || die "Failed installing ${source_dir}!"
-		fi
-	done
+	doins -r * || die "Failed installing"
 }
 
 cacti-plugins_pkg_postinst() {

@@ -1,6 +1,12 @@
 # Copyright 2008-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  29 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  eclass/cacti-plugins.eclass:
+  I really do not know why I thought that it was a good idea to only install
+  certain files, but I am switching it to install everything, as I need a
+  few extra directories for a couple plugins.
+
   25 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   vmware-esx-tools-3.5.0.143128-r2.ebuild:
   Switch to using enewuser, which is what I had meant to do from the beginning.
