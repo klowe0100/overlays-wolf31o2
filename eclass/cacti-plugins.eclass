@@ -23,6 +23,7 @@ CACTI_HOME=${CACTI_HOME:-/var/www/localhost/htdocs/cacti}
 CACTI_PLUG_NAME=${PN}
 CACTI_PLUG_HOME=${CACTI_HOME}/plugins/${CACTI_PLUG_NAME}
 CACTI_SQL_DBNAME=${CACTI_SQL_DBNAME:-cacti}
+MYSQL_DBNAME=${CACTI_SQL_DBNAME}
 
 DESCRIPTION="Cacti plugin: ${CACTI_PLUG_NAME}"
 HOMEPAGE="http://cactiusers.org/downloads"
@@ -52,5 +53,5 @@ cacti-plugins_src_install() {
 }
 
 cacti-plugins_pkg_postinst() {
-	mysql-dbfuncs_load_sql
+	[ -n "${MYSQL_SCRIPTS}" ] && mysql-dbfuncs_load_sql
 }
