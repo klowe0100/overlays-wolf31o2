@@ -14,6 +14,14 @@ DEPEND="${DEPEND}
 
 pkg_setup() {
 	if use memory ; then
+		ebegin "Flushing Boost Poller Tables"
+		if [ -e "${CACTI_PLUG_BASE}/${CACTI_PLUG_NAME}" ]
+		then
+			/usr/bin/php -q \
+				${CACTI_PLUG_BASE}/${CACTI_PLUG_NAME}/poller_boost.php -f > \
+				/dev/null 2>&1
+		fi
+		eend $?
 		MYSQL_SCRIPTS=${CACTI_PLUG_HOME}/boost_sql_memory.sql
 	else
 		MYSQL_SCRIPTS=${CACTI_PLUG_HOME}/boost_sql_myisam.sql
