@@ -2,6 +2,10 @@
 # $Id$
 
   29 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  cacti-plugins.eclass:
+  Only run the SQL code when necessary.
+
+  29 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   +boost-2.4-r1.ebuild:
   Moving the poller table flush to run no matter what.
 
