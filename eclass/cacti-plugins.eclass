@@ -46,7 +46,7 @@ cacti-plugins_pkg_setup() {
 }
 
 cacti-plugins_src_install() {
-	insinto ${CACTI_PLUG_HOME}/${CACTI_PLUG_NAME}
+	insinto ${CACTI_PLUG_HOME}
 	edos2unix `find -type f -name '*.php'`
 	doins -r * || die "Failed installing"
 }
