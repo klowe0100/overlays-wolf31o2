@@ -2,6 +2,10 @@
 # $Id$
 
   29 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  -discovery-0.8.4.ebuild, -discovery-0.8.5.ebuild:
+  Remove 0.8.4 and 0.8.5 ebuilds.
+
+  29 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   cacti-plugins.eclass, -discovery-0.8.4.ebuild:
   Fix the MySQL code.
 
