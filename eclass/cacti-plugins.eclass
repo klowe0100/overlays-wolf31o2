@@ -7,8 +7,6 @@
 # Purpose: Provide a framework for installing Cacti plugins via the unofficial
 # Cacti Plugin Architecture patch.
 
-CACTI_PLUG_BASE="http://mirror.cactiusers.org/downloads/plugins"
-
 # We don't actually need webapp-config for this.
 WEBAPP_OPTIONAL="yes"
 
@@ -17,20 +15,22 @@ inherit eutils mysql-dbfuncs # webapp
 EXPORT_FUNCTIONS pkg_setup src_install pkg_postinst
 
 # Variables to specify in an ebuild which uses this eclass:
-# TODO: Add this section
-
+# TODO: Add this section's docs
 CACTI_HOME=${CACTI_HOME:-/var/www/localhost/htdocs/cacti}
-CACTI_PLUG_NAME=${PN}
-CACTI_PLUG_HOME=${CACTI_HOME}/plugins/${CACTI_PLUG_NAME}
 CACTI_SQL_DBNAME=${CACTI_SQL_DBNAME:-cacti}
+
+CACTI_PLUG_BASE_URI="http://mirror.cactiusers.org/downloads/plugins"
+CACTI_PLUG_HOME=${CACTI_HOME}/plugins/${CACTI_PLUG_NAME}
+CACTI_PLUG_NAME=${PN}
+
 MYSQL_DBNAME=${CACTI_SQL_DBNAME}
 
 DESCRIPTION="Cacti plugin: ${CACTI_PLUG_NAME}"
 HOMEPAGE="http://cactiusers.org/downloads"
 
 SLOT="0"
-LICENSE="freedist"
-KEYWORDS="-* amd64 x86"
+LICENSE="GPL-2"
+KEYWORDS="-* ~amd64 ~x86"
 IUSE=""
 RESTRICT=""
 

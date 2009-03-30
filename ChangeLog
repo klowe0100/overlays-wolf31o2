@@ -3,6 +3,11 @@
 
   30 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   cacti-plugins.eclass:
+  Actually doing the git add eclass/cacti-plugins.eclass helps before doing
+  the commit.
+
+  30 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  cacti-plugins.eclass:
   Rearrange a few variables in the eclass, change the default license to
   GPL-2, since most plugins seem to use it, and change default KEYWORDS to use
   testing instead of stable KEYWORDS.
