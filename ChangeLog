@@ -1,6 +1,12 @@
 # Copyright 2008-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  30 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  cacti-plugins.eclass:
+  Rearrange a few variables in the eclass, change the default license to
+  GPL-2, since most plugins seem to use it, and change default KEYWORDS to use
+  testing instead of stable KEYWORDS.
+
 *weathermap-0.95b (29 Mar 2009)
 
   29 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
