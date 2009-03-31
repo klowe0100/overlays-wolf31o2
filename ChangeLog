@@ -1,6 +1,11 @@
 # Copyright 2008-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  31 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> 1Q-2009,
+  cacti-plugins.eclass:
+  Adding all of the perl modules which I moved from perl-gcpan to perl-modules
+  into 1Q-2009. (Does this even work with overlays?)
+
   30 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   cacti-plugins.eclass:
   Actually doing the git add eclass/cacti-plugins.eclass helps before doing
