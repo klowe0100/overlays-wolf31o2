@@ -19,7 +19,7 @@ EXPORT_FUNCTIONS pkg_setup src_install pkg_postinst
 CACTI_HOME=${CACTI_HOME:-/var/www/localhost/htdocs/cacti}
 CACTI_SQL_DBNAME=${CACTI_SQL_DBNAME:-cacti}
 
-CACTI_PLUG_BASE_URI="http://mirror.cactiusers.org/downloads/plugins"
+CACTI_PLUG_BASE="http://mirror.cactiusers.org/downloads/plugins"
 CACTI_PLUG_HOME=${CACTI_HOME}/plugins/${CACTI_PLUG_NAME}
 CACTI_PLUG_NAME=${PN}
 
@@ -32,7 +32,7 @@ SLOT="0"
 LICENSE="GPL-2"
 KEYWORDS="-* ~amd64 ~x86"
 IUSE=""
-RESTRICT=""
+RESTRICT="primaryuri"
 
 # We require Cacti with USE=plugins
 DEPEND=">=net-analyzer/cacti-0.8.7b-r3"
