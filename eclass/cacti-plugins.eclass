@@ -20,8 +20,8 @@ CACTI_HOME=${CACTI_HOME:-/var/www/localhost/htdocs/cacti}
 CACTI_SQL_DBNAME=${CACTI_SQL_DBNAME:-cacti}
 
 CACTI_PLUG_BASE="http://mirror.cactiusers.org/downloads/plugins"
-CACTI_PLUG_HOME=${CACTI_HOME}/plugins/${CACTI_PLUG_NAME}
 CACTI_PLUG_NAME=${PN}
+CACTI_PLUG_HOME=${CACTI_HOME}/plugins/${CACTI_PLUG_NAME}
 
 MYSQL_DBNAME=${CACTI_SQL_DBNAME}
 
@@ -35,7 +35,7 @@ IUSE=""
 RESTRICT="primaryuri"
 
 # We require Cacti with USE=plugins
-DEPEND=">=net-analyzer/cacti-0.8.7b-r3"
+DEPEND=">=net-analyzer/cacti-0.8.7b-r4"
 RDEPEND="${DEPEND}"
 
 S=${WORKDIR}/${CACTI_PLUG_NAME}
