@@ -47,8 +47,11 @@ cacti-plugins_pkg_setup() {
 }
 
 cacti-plugins_src_install() {
+	local __phpfiles=`find -type f -name '*.php'`
 	insinto ${CACTI_PLUG_HOME}
-	edos2unix `find -type f -name '*.php'`
+
+	edos2unix ${__phpfiles}
+	cacti-plugins_cleanup_adodb_includes ${__phpfiles}
 	doins -r * || die "Failed installing"
 }
 
@@ -59,6 +62,6 @@ cacti-plugins_pkg_postinst() {
 cacti-plugins_cleanup_adodb_includes() {
 	sed -i -e \
 		's:$config\["library_path"\] . "/adodb/adodb.inc.php":"adodb/adodb.inc.php":' \
-		"${1}" || die"FAIL!"
+		"$@" || die"FAIL!"
 #		"${S}"/include/global.php
 }
