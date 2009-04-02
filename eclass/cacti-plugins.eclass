@@ -55,3 +55,10 @@ cacti-plugins_src_install() {
 cacti-plugins_pkg_postinst() {
 	[ -n "${MYSQL_SCRIPTS}" ] && mysql-dbfuncs_load_sql
 }
+
+cacti-plugins_cleanup_adodb_includes() {
+	sed -i -e \
+		's:$config\["library_path"\] . "/adodb/adodb.inc.php":"adodb/adodb.inc.php":' \
+		"${1}" || die"FAIL!"
+#		"${S}"/include/global.php
+}
