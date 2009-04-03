@@ -2,34 +2,38 @@
 # Copyright 2008-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  03 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> M:
+  Clean up the ChangeLog.
+
   02 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   eclass/cacti-plugins.eclass:
   Adding a call to clean up the ADOdb location on any plugins.
 
   02 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   eclass/cacti-plugins.eclass:
-  Add a (semi)stub function for sanitizing any adodb include calls.
+  Add a (semi-)stub function for sanitizing any adodb include calls.
 
   01 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   eclass/cacti-plugins.eclass:
   Swapping variables so we define CACTI_PLUG_NAME before we use it.
 
-  31 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> M,
-  cacti-plugins.eclass:
+  31 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  eclass/cacti-plugins.eclass:
   Reverting back to the CACTI_PLUG_BASE variable, so I do not need to change
   every plugin ebuild.
 
-  31 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> 1Q-2009:
+  31 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  profiles/update/1Q-2009:
   Adding all of the perl modules which I moved from perl-gcpan to perl-modules
   into 1Q-2009. (Does this even work with overlays?)
 
   30 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  cacti-plugins.eclass:
+  eclass/cacti-plugins.eclass:
   Actually doing the git add eclass/cacti-plugins.eclass helps before doing
   the commit.
 
   30 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  cacti-plugins.eclass:
+  eclass/cacti-plugins.eclass:
   Rearrange a few variables in the eclass, change the default license to
   GPL-2, since most plugins seem to use it, and change default KEYWORDS to use
   testing instead of stable KEYWORDS.
@@ -37,68 +41,79 @@
 *weathermap-0.95b (29 Mar 2009)
 
   29 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  weathermap-0.95b.ebuild:
+  cacti-plugins/weathermap/weathermap-0.95b.ebuild:
   Initial import of the WeatherMap plugin.
 
 *settings-0.5 (29 Mar 2009)
 
-  29 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> settings-0.5.ebuild:
+  29 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  cacti-plugins/settings/settings-0.5.ebuild:
   Adding an initial Settings plugin ebuild.
 
   29 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  -discovery-0.8.4.ebuild, -discovery-0.8.5.ebuild:
+  -cacti-plugins/discovery/discovery-0.8.4.ebuild,
+  -cacti-plugins/discovery/discovery-0.8.5.ebuild:
   Remove 0.8.4 and 0.8.5 ebuilds.
 
   29 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  cacti-plugins.eclass, -discovery-0.8.4.ebuild:
+  eclass/cacti-plugins.eclass:
   Fix the MySQL code.
 
   29 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  cacti-plugins.eclass:
+  eclass/cacti-plugins.eclass:
   Only run the SQL code when necessary.
 
   29 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  +boost-2.4-r1.ebuild:
+  +cacti-plugins/boost/boost-2.4-r1.ebuild:
   Moving the poller table flush to run no matter what.
 
-  29 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> -boost-1.7.ebuild,
-  boost-2.4.ebuild:
+  29 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  -cacti-plugins/boost/boost-1.7.ebuild,
+  cacti-plugins/boost/boost-2.4.ebuild:
   Remove the 1.7 ebuild and add table flushing into the ebuild before we drop
   the tables.
 
   29 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  cacti-plugins.eclass:
+  eclass/cacti-plugins.eclass:
   Fix PATHs.
 
   29 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  discovery-0.8.4.ebuild, discovery-0.8.5.ebuild, discovery-0.8.5-r1.ebuild:
+  cacti-plugins/discovery/discovery-0.8.4.ebuild,
+  cacti-plugins/discovery/discovery-0.8.5.ebuild,
+  cacti-plugins/discovery/discovery-0.8.5-r1.ebuild:
   Update to use the new eclass variables.
 
 *update-0.4 (29 Mar 2009)
 
-  29 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> update-0.4.ebuild:
+  29 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  cacti-plugins/update/update-0.4.ebuild:
   Adding initial version of the Update plugin.
 
 *tools-0.3 (29 Mar 2009)
 
-  29 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> tools-0.3.ebuild:
+  29 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  cacti-plugins/tools/tools-0.3.ebuild:
   Adding initial version of the Tools plugin.
 
 *cycle-0.7 (29 Mar 2009)
 
-  29 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> cycle-0.7.ebuild:
+  29 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  cacti-plugins/cycle/cycle-0.7.ebuild:
   Adding initial version of the Cycle plugin.
 
 *docs-0.1 (29 Mar 2009)
 
-  29 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> docs-0.1.ebuild:
+  29 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  cacti-plugins/docs/docs-0.1.ebuild:
   Adding initial version of the Docs plugin.
 
-  29 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> clog-1.21.ebuild:
+  29 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  cacti-plugins/clog/clog-1.21.ebuild:
   Update to use the new eclass variables.
 
-  29 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> boost-1.7.ebuild,
-  boost-2.4.ebuild:
+  29 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  cacti-plugins/boost/boost-1.7.ebuild,
+  cacti-plugins/boost/boost-2.4.ebuild:
   Update to use the new eclass variables.
 
   29 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
@@ -115,7 +130,8 @@
 
 *clog-1.21 (29 Mar 2009)
 
-  29 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> clog-1.21.ebuild:
+  29 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +cacti-plugins/clog/clog-1.21.ebuild:
   Adding the CLog plugin for testing.
 
   29 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
@@ -125,27 +141,31 @@
   few extra directories for a couple plugins.
 
   25 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  vmware-esx-tools-3.5.0.143128-r2.ebuild:
-  Switch to using enewuser, which is what I had meant to do from the beginning.
+  app-emulation/vmware-esx-tools/vmware-esx-tools-3.5.0.143128-r2.ebuild:
+  Switch to using enewgroup, which is what I had meant to do from the
+  beginning.
 
   24 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  +000_all_initd-scripts.patch, 90vmware-tools:
+  +app-emulation/vmware-esx-tools/files/3.5.0.143128/000_all_initd-scripts.patch,
+  app-emulation/vmware-esx-tools/files/90vmware-tools:
   Adding a new revision of the vmware-esx-tools ebuild, pulling in the
   000_all_initd-scripts.patch, and fixing the environment variables in
   90vmware-tools.
 
   24 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  discovery-0.8.5-r1.ebuild:
+  cacti-plugins/discovery/files/0.8.5-r1/discovery-0.8.5-r1.ebuild:
   Explicitly adding the .patch suffix to the epatch call and wrapping it in
   die, for troubleshooting.
 
   24 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  add_description.patch, values.patch:
+  cacti-plugins/discovery/files/0.8.5-r1/add_description.patch,
+  cacti-plugins/discovery/files/0.8.5-r1/values.patch:
   Swapped the add_description patch back to original order and fixed the
   headers on both patches.
 
   23 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  add_description.patch, values.patch:
+  cacti-plugins/discovery/files/0.8.5-r1/add_description.patch,
+  cacti-plugins/discovery/files/0.8.5-r1/values.patch:
   Fixing the patches. The first was reversed, while the second used another
   file name, so it never actually applied.
 
@@ -158,137 +178,143 @@
   22 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   +cacti-plugins/discovery/files/0.8.5-r1/add_description.patch,
   +cacti-plugins/discovery/files/0.8.5-r1/values.patch,
-  discovery-0.8.5-r1.ebuild:
+  +cacti-plugins/discovery/discovery-0.8.5-r1.ebuild:
   Added two patches from Joshua Jackson <tsunam@gentoo.org> to fix some SQL
   errors in the Discovery plugin.
 
 *nagios-plugins-snmp-perl-1.1.1 (21 Mar 2009)
 
   21 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  nagios-plugins-snmp-perl-1.1.1.ebuild:
+  net-analyzer/nagios-plugin-snmp-perl/nagios-plugins-snmp-perl-1.1.1.ebuild:
   Adding nagios-plugins-snmp-perl.
 
 *wolf-sources-2.6.28-r3 (20 Mar 2009)
 *wolf-sources-2.6.28-r2 (20 Mar 2009)
 
   20 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  wolf-sources-2.6.28-r2.ebuild, wolf-sources-2.6.28-r3.ebuild:
+  +sys-kernel/wolf-sources/wolf-sources-2.6.28-r2.ebuild,
+  +sys-kernel/wolf-sources/wolf-sources-2.6.28-r3.ebuild:
   Finally adding my personal sources set. It is currently the same as
   tuxonice-sources + an AHCI patch for the ICH7-M chipset in my Dell D620 to
   quirk it to AHCI mode. Unfortunately, this kills access to the optical
   drive, but I rarely use it, anyway.
 
   20 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  cacti-0.8.7d-r1.ebuild:
+  net-analyzer/cacti/cacti-0.8.7d-r1.ebuild:
   Comment out the page_length_graph_view patch, since it will need to be
   modified to work with the PA patch.
 
   20 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  cacti-0.8.7d-r1.ebuild:
+  net-analyzer/cacti/cacti-0.8.7d-r1.ebuild:
   Moving unpacking of cacti tarball to before trying to patch it.
 
   20 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  cacti-0.8.7d-r1.ebuild:
+  net-analyzer/cacti/cacti-0.8.7d-r1.ebuild:
   Swap PA and UPSTREAM patches.
 
   20 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  +cacti-0.8.7d-r1.ebuild:
+  +net-analyzer/cacti/cacti-0.8.7d-r1.ebuild:
   Adding a new revision with patches from upstream.
 
   17 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  cacti-spine-0.8.7c.ebuild:
+  net-analyzer/cacti/cacti-spine-0.8.7c.ebuild:
   This just needed us to set configure executable.
 
   17 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  cacti-0.8.7d.ebuild:
+  net-analyzer/cacti/cacti-0.8.7d.ebuild:
   Fixing Plugin Architecture patching for Cacti 0.8.7d ebuild.
 
   12 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  -cacti-0.8.7b-r4.ebuild, -cacti-0.8.7c.ebuild, -cacti-0.8.7c-r1.ebuild:
+  -net-analyzer/cacti/cacti-0.8.7b-r4.ebuild,
+  -net-analyzer/cacti/cacti-0.8.7c.ebuild,
+  -net-analyzer/cacti/cacti-0.8.7c-r1.ebuild:
   Removing older versions of Cacti from the tree.
 
   12 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  +discovery-0.8.5.ebuild:
+  +cacti-plugins/discovery/discovery-0.8.5.ebuild:
   Adding a new version of the Discovery Cacti plugin for testing.
 
-  12 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> +boost-2.4.ebuild:
+  12 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  cacti-plugins/boost/+boost-2.4.ebuild:
   Adding a new version of the Boost Cacti plugin for testing.
 
-  12 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> cacti-0.8.7d.ebuild:
+  12 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  net-analyzer/cacti/cacti-0.8.7d.ebuild:
   Fixing Cacti ebuild when using USE=plugins.
 
   12 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  DBIx-SQLite-Simple-0.34.ebuild:
-  Fixing dependencies on DBIx-SQLite-Simple to not reference perl-gcpan category.
+  perl-modules/DBIx-SQLite-Simple/DBIx-SQLite-Simple-0.34.ebuild:
+  Fixing dependencies on DBIx-SQLite-Simple to not reference perl-gcpan
+  category.
 
   12 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  +Net-SinFP-2.06.ebuild:
+  +perl-modules/Net-SinFP/Net-SinFP-2.06.ebuild:
   Adding perl-modules/Net-SinFP to the tree.
 
   12 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  +Net-Packet-Target-1.01.ebuild:
+  +perl-modules/Net-Packet-Target/Net-Packet-Target-1.01.ebuild:
   Adding perl-modules/Net-Packet-Target to the tree.
 
   12 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  +Net-Packet-3.26.ebuild:
+  +perl-modules/Net-Packet/Net-Packet-3.26.ebuild:
   Adding perl-modules/Net-Packet to the tree.
 
   12 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  +Net-Write-1.04.ebuild:
+  +perl-modules/Net-Write/Net-Write-1.04.ebuild:
   Adding perl-modules/Net-Write to the tree.
 
   12 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  +Net-Libdnet-0.91.ebuild:
+  +perl-modules/Net-Libdnet/Net-Libdnet-0.91.ebuild:
   Adding perl-modules/Net-Libdnet to the tree.
 
   12 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  +Net-IPv6Addr-0.2.ebuild:
+  +perl-modules/Net-IPv6Addr/Net-IPv6Addr-0.2.ebuild:
   Adding perl-modules/Net-IPv6Addr to the tree.
 
   12 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  +Net-IPv4Addr-0.10.ebuild:
+  +perl-modules/Net-IPv4Addr/Net-IPv4Addr-0.10.ebuild:
   Adding perl-modules/Net-IPv4Addr to the tree.
 
   12 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  +Math-Round-0.06.ebuild:
+  +perl-modules/Math-Round/Math-Round-0.06.ebuild:
   Adding perl-modules/Math-Round to the tree.
 
   12 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  +Math-Base85-0.2.ebuild:
+  +perl-modules/Math-Base85/Math-Base85-0.2.ebuild:
   Adding perl-modules/Math-Base85 to the tree.
 
   06 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  vmware-esx-tools-3.5.0.143128-r1.ebuild:
+  app-emulation/vmware-esx-tools/vmware-esx-tools-3.5.0.143128-r1.ebuild:
   Updating the testing version of the tools with the latest
   vmware-any-any-update patches for kernel 2.6.26 support.
 
   05 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  vmware-esx-tools-3.5.0.143128.ebuild:
+  app-emulation/vmware-esx-tools/vmware-esx-tools-3.5.0.143128.ebuild:
   Marking 3.5.0.143128 stable on amd64/x86.
 
   05 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  +vmware-esx-tools-3.5.0.143128-r1.ebuild:
+  +app-emulation/vmware-esx-tools/vmware-esx-tools-3.5.0.143128-r1.ebuild:
   Adding another revision of vmware-esx-tools for testing to pull in the
   any-any-update patches, to fix compilation on 2.6.26 kernels.
 
   05 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  +Log-Dispatch-FileRotate-1.19.ebuild:
+  +perl-modules/Log-Dispatch-FileRotate/Log-Dispatch-FileRotate-1.19.ebuild:
   Adding Log-Dispatch-FileRotate to the tree.
 
   05 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  +Date-Manip-5.54.ebuild:
+  +perl-modules/Date-Manip/Date-Manip-5.54.ebuild:
   Adding Date-Manip to the tree.
 
   05 Mar 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  +DBIx-SQLite-Simple-0.34.ebuild:
+  +perl-modules/DBIx-SQLite-Simple/DBIx-SQLite-Simple-0.34.ebuild:
   Adding DBIx-SQLite-Simple to the tree.
 
-  27 Feb 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> cacti-0.8.7d.ebuild:
+  27 Feb 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  net-analyzer/cacti/cacti-0.8.7d.ebuild:
   It helps if I remove the old tarball name.
 
   27 Feb 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  -net-analyzer/cacti-spine/files/cacti-spine-0.8.7a-script_server_bufsize.p
-  atch,
+  -net-analyzer/cacti-spine/files/cacti-spine-0.8.7a-script_server_bufsize.patch,
   -net-analyzer/cacti-spine/files/cacti-spine-0.8.7a-spine_bufsize.patch:
   Removing patches that are no longer used.
 
@@ -298,54 +324,62 @@
 
 *cacti-0.8.7d (27 Feb 2009)
 
-  27 Feb 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> cacti-0.8.7d.ebuild:
+  27 Feb 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +net-analyzer/cacti/cacti-0.8.7d.ebuild:
   Version bump to 0.8.7d and PluginArchitecture 2.4 patch.
 
-  10 Feb 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> +90vmware-tools,
-  categories, +vmware-esx-tools.rc, +xorg.conf:
+  10 Feb 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +app-emulation/vmware-esx-tools/files/90vmware-tools,
+  +app-emulation/vmware-esx-tools/files/vmware-esx-tools.rc,
+  profiles/categories, +app-emulation/vmware-esx-tools/files/xorg.conf,
+  +app-emulation/vmware-esx-tools/vmware-esx-tools-3.5.0.143128.ebuild:
   Adding a new revision of the vmware-esx-tools package from the VMware
   overlay. If I get this working, I'll see about pushing it back into the
   Gentoo VMware overlay.
 
   09 Feb 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  +DBD-Oracle-1.21.ebuild:
+  +perl-modules/DBD-Oracle/DBD-Oracle-1.21.ebuild:
   Adding initial version of perl-modules/DBD-Oracle for testing.
 
   09 Feb 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  CGI-Apache2-Wrapper-0.215.ebuild:
+  perl-modules/CGI-Apache2-Wrapper/CGI-Apache2-Wrapper-0.215.ebuild:
   Updating the DESCRIPTION to CGI-Apache2-Wrapper and making it use the
   primary URI for fetches.
 
   05 Feb 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  +Class-Gomor-1.01.ebuild:
+  +perl-modules/Class-Gomor/Class-Gomor-1.01.ebuild:
   Adding an ebuild for Class::Gomor to the tree.
 
-  05 Feb 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> categories:
+  05 Feb 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> categories,
+  +perl-modules/CGI-Apache2-Wrapper/CGI-Apache2-Wrapper-0.215.ebuild:
   Adding a new perl-modules category to add some modules I use, so I don't
   have to resort to using g-cpan. Also, adding an ebuild for
   CGI::Apache2::Wrapper.
 
-  03 Feb 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> cacti-0.8.7c.ebuild,
-  cacti-0.8.7c-r1.ebuild:
+  03 Feb 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  net-analyzer/cacti/cacti-0.8.7c.ebuild,
+  net-analyzer/cacti/cacti-0.8.7c-r1.ebuild:
   It helps if I change the unpack, too.
 
-  03 Feb 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> cacti-0.8.7c.ebuild,
-  cacti-0.8.7c-r1.ebuild:
+  03 Feb 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  net-analyzer/cacti/cacti-0.8.7c.ebuild,
+  net-analyzer/cacti/cacti-0.8.7c-r1.ebuild:
   Switching back to using the unversioned tarball, since upstream has a
   whacked out ZIP distribution and I cannot find a versioned tarball. Sorry,
   folks.
 
   03 Feb 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  +cacti-spine-0.8.7c.ebuild:
+  +net-analyzer/cacti-spine/cacti-spine-0.8.7c.ebuild:
   Adding matching Spine 0.8.7c for Cacti.
 
   03 Feb 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  +cacti-0.8.7c.ebuild, +cacti-0.8.7c-r1.ebuild:
+  +net-analyzer/cacti/cacti-0.8.7c.ebuild,
+  +net-analyzer/cacti/cacti-0.8.7c-r1.ebuild:
   Adding two Cacti 0.8.7c ebuilds for testing, one is EAPI=1 and one is
   EAPI=0, but both versions include the Plugin Architecture.
 
   26 Jan 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  jdbc-oracle-bin-10.2.0.4-r1.ebuild:
+  dev-java/jdbc-oracle-bin/jdbc-oracle-bin-10.2.0.4-r1.ebuild:
   Changing jdbc-10.2.0.4-r1 to ~amd64 ~x86 so it doesn't get pulled onto
   stable boxes.
 
@@ -354,48 +388,61 @@
   Adding package moves for afasnmp and percsnmp.
 
   22 Jan 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  networkmanager-pptp-0.7.0-r1.ebuild:
+  net-misc/networkmanager-pptp/networkmanager-pptp-0.7.0-r1.ebuild:
   Oops. It is supposed to be net-dialup.
 
 *networkmanager-pptp-0.7.0-r1 (22 Jan 2009)
 
   22 Jan 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  networkmanager-pptp-0.7.0-r1.ebuild:
+  +net-misc/networkmanager-pptp/networkmanager-pptp-0.7.0-r1.ebuild:
   Revision bump to include net-dialup/pptpclient in RDEPEND, which is a hard
   requirement for this package to work.
 
 *rescan-scsi-bus-1.29 (21 Jan 2009)
 
   21 Jan 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  rescan-scsi-bus-1.29.ebuild:
+  +sys-apps/rescan-scsi-bus/rescan-scsi-bus-1.29.ebuild:
   Version bumping rescan-scsi-bus so I can see my shiny new LUNs.
 
   16 Jan 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   +profiles/updates/1Q-2009:
   Adding a 1Q-2009 file to move bluez-{libs,utils} to bluez.
 
-  13 Jan 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> +nvidia-169.07:
+  13 Jan 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +x11-drivers/nvidia-drivers/files/nvidia-169.07:
   Adding nvidia-169.07 file, which I apparently had forgotten to add.
 
   13 Jan 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  +NVIDIA_glx-defines.patch, +NVIDIA_glx-glheader.patch,
-  +NVIDIA_i2c-hwmon.patch, categories, +donvidia.eblit, +libGL.la-r2,
-  +mtrr_check.eblit, +nvidia, +paravirt_check.eblit,
-  +src_install-libs.eblit, +want_tls.eblit:
+  +x11-drivers/nvidia-drivers/files/NVIDIA_glx-defines.patch,
+  +x11-drivers/nvidia-drivers/files/NVIDIA_glx-glheader.patch,
+  +x11-drivers/nvidia-drivers/files/NVIDIA_i2c-hwmon.patch, categories,
+  +x11-drivers/nvidia-drivers/files/eblits/donvidia.eblit,
+  +x11-drivers/nvidia-drivers/files/libGL.la-r2,
+  +x11-drivers/nvidia-drivers/files/eblits/mtrr_check.eblit,
+  +x11-drivers/nvidia-drivers/files/nvidia,
+  +x11-drivers/nvidia-drivers/nvidia-drivers-180.22.ebuild,
+  +x11-drivers/nvidia-drivers/files/eblits/paravirt_check.eblit,
+  +x11-drivers/nvidia-drivers/files/eblits/src_install-libs.eblit,
+  +x11-drivers/nvidia-drivers/files/eblits/want_tls.eblit:
   Adding x11-drivers/nvidia-drivers to get the latest version for testing.
 
-  08 Jan 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> -apcupsd.in.patch,
-  -apcupsd.initd, -etc.patch, -hal-ups-policy.patch, -hal-ups-policy.patch,
-  -no-parallel.patch:
+  08 Jan 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  -sys-power/apcupsd/files/apcupsd.in.patch,
+  -sys-power/apcupsd/files/apcupsd.initd,
+  -sys-power/apcupsd/files/etc.patch,
+  -sys-power/apcupsd/files/hal-ups-policy.patch,
+  -sys-power/apcupsd/files/no-parallel.patch,
+  sys-power/apcupsd/apcupsd-3.14.4.ebuild:
   Removed the HAL patch, since it was broken, and adding back webapp support,
   since the eclass now has WEBAPP_OPTIONAL.
 
-  08 Jan 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> -metadata.xml:
+  08 Jan 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> -metadata.xml,
+  +dev-java/jdbc-oracle-bin/jdbc-oracle-bin-10.2.0.4-r1.ebuild:
   Bump the revision on jdbc-oracle-bin so we don't end up with the same
   version as Gentoo's tree.
 
   08 Jan 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  jdbc-oracle-bin-10.2.0.4.ebuild:
+  dev-java/jdbc-oracle-bin/jdbc-oracle-bin-10.2.0.4.ebuild:
   Updated ebuild header.
 
   07 Jan 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> categories:
@@ -552,7 +599,7 @@
 *cisco-vpnclient-4.8.02.0030 (13 Dec 2008)
 
   13 Dec 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  net-misc/cisco-vpnclient-cisco-vpnclient-4.8.02.0030.ebuild:
+  +net-misc/cisco-vpnclient-cisco-vpnclient-4.8.02.0030.ebuild:
   Version bumping cisco-vpnclient to 4.8.02.0030 for testing. Thanks to
   Andreas Simon <asmodis.666@web.de> and Rolando J. Zappacosta
   <zappacor@yahoo.com.ar> in Gentoo bug #234361 for everything I needed to
@@ -600,20 +647,22 @@
 *net-snmp-5.4.2.1-r1 (09 Dec 2008)
 
   09 Dec 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  net-analyzer/net-snmp/net-snmp-5.4.2.1-r1.ebuild:
+  +net-analyzer/net-snmp/net-snmp-5.4.2.1-r1.ebuild:
   Version bump to 5.4.2.1 to catch up with the Gentoo tree. Removing the
   mod_ap2_snmp support, as it tended to cause crashes on my servers.
 
 *genkernel-3.4.10.902 (04 Dec 2008)
 
   04 Dec 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  -sys-kernel/genkernel/metadata.xml, genkernel-3.4.10.902.ebuild:
+  -sys-kernel/genkernel/metadata.xml,
+  +sys-kernel/genkernel/genkernel-3.4.10.902.ebuild:
   Version bumping genkernel for the new pre-release version.
 
 *catalyst-2.0.6.902 (04 Dec 2008)
 
   04 Dec 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  -dev-util/catalyst/metadata.xml, catalyst-2.0.6.902.ebuild:
+  -dev-util/catalyst/metadata.xml,
+  +dev-util/catalyst/catalyst-2.0.6.902.ebuild:
   Version bumping catalyst for the new pre-release version.
 
   02 Dec 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
@@ -622,15 +671,16 @@
   -net-analyzer/bind9-snmp/files/bind9-snmp-1.7-config.patch,
   +snmp-agents/bind9-snmp/files/bind9-snmp-1.7-config.patch,
   -net-analyzer/bind9-snmp/files/bind9-snmp.conf,
-  +snmp-agents/bind9-snmp/files/bind9-snmp.conf, bind9-snmp-1.7.ebuild,
-  bind9-snmp-1.7.ebuild:
+  +snmp-agents/bind9-snmp/files/bind9-snmp.conf,
+  -net-analyzer/bind9-snmp/bind9-snmp-1.7.ebuild,
+  +snmp-agents/bind9-snmp/bind9-snmp-1.7.ebuild:
   Moved bind9-snmp from net-analyzer to snmp-agents.
 
 *python-memcached-1.40 (02 Dec 2008)
 
   02 Dec 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
   +dev-python/python-memcached/metadata.xml, profiles/categories,
-  python-memcached-1.40.ebuild:
+  +dev-python/python-memcached/python-memcached-1.40.ebuild:
   Importing dev-python/python-memcached from the tree.
 
   02 Dec 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
@@ -638,10 +688,11 @@
   Manifest fix for snmp-mibs/bayourcom.
 
   02 Dec 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  media-gfx/maya/Manifest, snmp-mibs/bayourcom/Manifest:
+  media-gfx/maya/Manifest:
   Manifest fix for media-gfx/maya.
 
-  02 Dec 2008; Chris Gianelloni <wolf31o2@wolf31o2.org> civctp-1.2a.ebuild:
+  02 Dec 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +games-strategy/civctp/civctp-1.2a.ebuild:
   Adding Manifest for civctp WIP ebuild.
 
 *pbzip2-1.0.3 (02 Dec 2008)
@@ -650,7 +701,8 @@
   02 Dec 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
   +app-arch/pbzip2/files/pbzip2-1.0.2-uclibc.patch,
   +app-arch/pbzip2/files/pbzip2-1.0.3-uclibc.patch, profiles/categories,
-  pbzip2-1.0.3-r1.ebuild, pbzip2-1.0.3.ebuild, civctp-1.2a.ebuild:
+  +app-arch/pbzip2/pbzip2-1.0.3-r1.ebuild,
+  +app-arch/pbzip2/pbzip2-1.0.3.ebuild:
   Adding app-arch/pbzip2 from the tree, adding pbzcat symlink, and marking
   stable on amd64/x86.
 
@@ -658,7 +710,8 @@
 
   07 Nov 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
   +sys-block/open-iscsi/files/initiatorname.iscsi,
-  +sys-block/open-iscsi/files/iscsid-init.d, open-iscsi-2.0.865.12.ebuild:
+  +sys-block/open-iscsi/files/iscsid-init.d,
+  +sys-block/open-iscsi/open-iscsi-2.0.865.12.ebuild:
   Importing sys-block/open-iscsi from Quova's internal overlay, since
   there's no need for it to be internal.
 
@@ -667,14 +720,14 @@
   07 Nov 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
   +sys-block/iscsi-initiator-core-tools/files/makefile.patch,
   +sys-block/iscsi-initiator-core-tools/metadata.xml,
-  iscsi-initiator-core-tools-2.3-r1.ebuild:
+  +sys-block/iscsi-initiator-core-tools/iscsi-initiator-core-tools-2.3-r1.ebuild:
   Importing sys-block/iscsi-initiator-core-tools from Quova's internal
   overlay, since there's no need for it to be internal.
 
 *megacli-1.01.40 (07 Nov 2008)
 
   07 Nov 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  +sys-block/megacli/metadata.xml, megacli-1.01.40.ebuild:
+  +sys-block/megacli/metadata.xml, +sys-block/megacli/megacli-1.01.40.ebuild:
   Importing sys-block/megacli from Quova's internal overlay, since there's
   no need for it to be internal.
 
@@ -683,8 +736,8 @@
 
   07 Nov 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
   +sys-block/dellmgr/files/dellmgr, +sys-block/dellmgr/files/dellmgr-r1,
-  +sys-block/dellmgr/metadata.xml, dellmgr-5.31-r1.ebuild,
-  dellmgr-5.31.ebuild:
+  +sys-block/dellmgr/metadata.xml, +sys-block/dellmgr/dellmgr-5.31-r1.ebuild,
+  +sys-block/dellmgr/dellmgr-5.31.ebuild:
   Importing sys-block/dellmgr from Quova's internal overlay, since there's
   no need for it to be internal.
 
@@ -692,12 +745,13 @@
 
   07 Nov 2008; Chris Gianelloni <wolf31o2@wolf31o2.org> profiles/categories,
   +sys-block/afacli/files/afacli, +sys-block/afacli/metadata.xml,
-  afacli-4.1.ebuild:
+  +sys-block/afacli/afacli-4.1.ebuild:
   Importing sys-block/afacli from Quova's internal overlay, since there's no
-  need for it to be internal.
+  need for it to be restricted to internal.
 
   31 Oct 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  +sys-power/acpid/files/acpid-1.0.8-default, acpid-1.0.8.ebuild:
+  +sys-power/acpid/files/acpid-1.0.8-default,
+  sys-power/acpid/acpid-1.0.8.ebuild:
   Adding the default file back into FILESDIR and renaming it to match the
   current version.
 
@@ -707,11 +761,12 @@
   +sys-power/acpid/files/acpid-1.0.8-conf.d,
   +sys-power/acpid/files/acpid-1.0.8-default.sh,
   +sys-power/acpid/files/acpid-1.0.8-init.d, profiles/categories,
-  acpid-1.0.8.ebuild:
+  +sys-power/acpid/acpid-1.0.8.ebuild:
   Adding sys-power/acpid to bump it to 1.0.8 for testing.
 
   31 Oct 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  catalyst-2.0.6.ebuild, catalyst-9999.ebuild:
+  dev-util/catalyst/catalyst-2.0.6.ebuild,
+  dev-util/catalyst/catalyst-9999.ebuild:
   Fixing KEYWORDS. It's probably not the best idea to do this sort of thing
   when you're up with insomnia.
 
@@ -719,7 +774,8 @@
 
   31 Oct 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
   +dev-libs/libusb/files/libusb-0.1.12-no-writefd.patch,
-  libusb-0.1.12-r5.ebuild, libusb-0.1.12-r6.ebuild:
+  dev-libs/libusb/libusb-0.1.12-r5.ebuild,
+  dev-libs/libusb/libusb-0.1.12-r6.ebuild:
   Fixing compilation by removing writefd calls. Apparently, I'm missing some
   other patch that the original no-poll author added, which moved these
   calls, since that patch removed them.
@@ -730,12 +786,14 @@
 
   31 Oct 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
   +dev-util/catalyst/metadata.xml, profiles/categories,
-  catalyst-2.0.6.901.ebuild, catalyst-2.0.6.ebuild, catalyst-9999.ebuild:
+  +dev-util/catalyst/catalyst-2.0.6.901.ebuild,
+  +dev-util/catalyst/catalyst-2.0.6.ebuild,
+  +dev-util/catalyst/catalyst-9999.ebuild:
   Adding dev-util/catalyst to version bump to 2.0.6.901, which is the first
   release for testing since splitting from Gentoo.
 
   31 Oct 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  genkernel-3.4.10.901.ebuild:
+  sys-kernel/genkernel/genkernel-3.4.10.901.ebuild:
   Fixing KEYWORDS.
 
 *genkernel-9999 (31 Oct 2008)
@@ -744,19 +802,21 @@
 
   31 Oct 2008; Chris Gianelloni <wolf31o2@wolf31o2.org> profiles/categories,
   +sys-kernel/genkernel/files/genkernel.bash,
-  +sys-kernel/genkernel/metadata.xml, genkernel-3.4.10-r1.ebuild,
-  genkernel-3.4.10.901.ebuild, genkernel-9999.ebuild:
+  +sys-kernel/genkernel/metadata.xml,
+  +sys-kernel/genkernel/genkernel-3.4.10-r1.ebuild,
+  +sys-kernel/genkernel/genkernel-3.4.10.901.ebuild,
+  +sys-kernel/genkernel/genkernel-9999.ebuild:
   Adding sys-kernel/genkernel to version bump to 3.4.10.901, which is the
   first release for testing since splitting from Gentoo.
 
 *evolution-exchange-2.24.1 (31 Oct 2008)
 
   31 Oct 2008; Chris Gianelloni <wolf31o2@wolf31o2.org> profiles/categories,
-  evolution-exchange-2.24.1.ebuild:
+  +gnome-extra/evolution-exchange/evolution-exchange-2.24.1.ebuild:
   Adding gnome-extra/evolution-exchange to bump it to 2.24.1 for testing.
 
   29 Oct 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  libusb-0.1.12-r5.ebuild:
+  dev-libs/libusb/libusb-0.1.12-r5.ebuild:
   Swap patch order.
 
   29 Oct 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
@@ -861,7 +921,7 @@
   Fixing the database creation to use mysqladmin.
 
   22 Sep 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  net-snmp-5.4.1.1-r1.ebuild:
+  net-analyzer/net-snmp/net-snmp-5.4.1.1-r1.ebuild:
   Removing the installation of the Sun JVM MIB from net-analyzer/net-snmp
   and switch to pulling in the snmp-mibs/jvm-management package, instead.
 
@@ -869,7 +929,7 @@
 
   20 Sep 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
   +net-analyzer/cacti-spine/files/cacti-spine-0.8.7a-spine_bufsize.patch,
-  cacti-spine-0.8.7a-r2.ebuild:
+  net-analyzer/cacti-spine/cacti-spine-0.8.7a-r2.ebuild:
   I'm trying this again with a different patch that tries to be a little
   more conservative in increasing the buffer sizes. It seems to work for me
   at home, but I only have a few hosts to check.
@@ -1001,8 +1061,8 @@
   +net-misc/memcached/memcached-1.2.5.ebuild,
   +net-misc/memcached/memcached-1.2.6-r1.ebuild,
   +net-misc/memcached/memcached-1.2.6.ebuild:
-  Adding my modified version of net-misc/memcached with replication
-  (repcached) support.
+  Adding my modified version of net-misc/memcached with the repcached patch to
+  provide replication support.
 
   29 Aug 2008; Chris Gianelloni <wolf31o2@wolf31o2.org>
   eclass/cacti-plugins.eclass:
@@ -1092,7 +1152,7 @@
   +net-analyzer/cacti-plugins-boost/files/cacti-boost.confd,
   +net-analyzer/cacti-plugins-boost/files/cacti-boost.rc,
   +net-analyzer/cacti-plugins-boost/files/cacti-boost.rc.memory,
-  net-analyzer/cacti-pluygins-boost/cacti-plugins-boost-1.7.ebuild:
+  net-analyzer/cacti-plugins-boost/cacti-plugins-boost-1.7.ebuild:
   Added an init script for the Boost Server. The memory version of the
   script forces a flush of the Boost tables during a reboot/shutdown, so no
   data is lost.
