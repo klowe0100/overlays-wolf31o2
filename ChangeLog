@@ -2,7 +2,7 @@
 # Copyright 2008-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
-  03 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> M:
+  03 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> ChangeLog:
   Clean up the ChangeLog.
 
   02 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
@@ -350,7 +350,7 @@
   +perl-modules/Class-Gomor/Class-Gomor-1.01.ebuild:
   Adding an ebuild for Class::Gomor to the tree.
 
-  05 Feb 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> categories,
+  05 Feb 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> profiles/categories,
   +perl-modules/CGI-Apache2-Wrapper/CGI-Apache2-Wrapper-0.215.ebuild:
   Adding a new perl-modules category to add some modules I use, so I don't
   have to resort to using g-cpan. Also, adding an ebuild for
@@ -436,7 +436,7 @@
   Removed the HAL patch, since it was broken, and adding back webapp support,
   since the eclass now has WEBAPP_OPTIONAL.
 
-  08 Jan 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> -metadata.xml,
+  08 Jan 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   +dev-java/jdbc-oracle-bin/jdbc-oracle-bin-10.2.0.4-r1.ebuild:
   Bump the revision on jdbc-oracle-bin so we don't end up with the same
   version as Gentoo's tree.
@@ -445,7 +445,7 @@
   dev-java/jdbc-oracle-bin/jdbc-oracle-bin-10.2.0.4.ebuild:
   Updated ebuild header.
 
-  07 Jan 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> categories:
+  07 Jan 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> profiles/categories:
   Adding sys-fs to the list of categories as it must have slipped past me when
   I was adding the packages.
 
