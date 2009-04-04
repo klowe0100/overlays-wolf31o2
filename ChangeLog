@@ -2,6 +2,13 @@
 # Copyright 2008-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  04 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  profiles/updates/1Q-2009, CGI-Apache2-Wrapper-0.215.ebuild:
+  Updating perl-modules/CGI-Apache2-Wrapper to EAPI=2 as a workaround for
+  portage not supporting package updates via profiles/updates/* files.
+  Instead, we block the old location and change dependencies to the new
+  category, which gives the same net effect.
+
   03 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> ChangeLog:
   Clean up the ChangeLog.
 

@@ -2,7 +2,6 @@ move net-analyzer/afasnmp snmp-agents/afasnmp
 move net-analyzer/percsnmp snmp-agents/percsnmp
 move net-wireless/bluez-libs net-wireless/bluez
 move net-wireless/bluez-utils net-wireless/bluez
-move perl-gcpan/CGI-Apache2-Wrapper perl-modules/CGI-Apache2-Wrapper
 move perl-gcpan/Class-Gomor perl-modules/Class-Gomor
 move perl-gcpan/Date-Manip perl-modules/Date-Manip
 move perl-gcpan/DBD-Oracle perl-modules/DBD-Oracle
