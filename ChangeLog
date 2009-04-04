@@ -2,6 +2,9 @@
 # Copyright 2008-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  04 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> M:
+  Revision bump perl-modules/CGI-Apache2-Wrapper to force a reinstall.
+
   04 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   profiles/updates/1Q-2009, CGI-Apache2-Wrapper-0.215.ebuild:
   Updating perl-modules/CGI-Apache2-Wrapper to EAPI=2 as a workaround for
