@@ -2,11 +2,18 @@
 # Copyright 2008-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*Date-Manip-5.54-r1 (05 Apr 2009)
+
+  05 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  Date-Manip-5.54-r1.ebuild:
+  Port to EAPI=2 and revision bump to force a reinstall.
+
   04 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   -Class-Gomor-1.01.ebuild, +Class-Gomor-1.01-r1.ebuild:
-  Port to EAPI=2.
+  Port to EAPI=2 and revision bump to force a reinstall.
 
-  04 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> M:
+  04 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  -CGI-Apache2-Wrapper-0.215.ebuild, +CGI-Apache2-Wrapper-0.215.ebuild:
   Revision bump perl-modules/CGI-Apache2-Wrapper to force a reinstall.
 
   04 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
