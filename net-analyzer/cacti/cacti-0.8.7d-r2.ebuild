@@ -1,4 +1,4 @@
-# Copyright 1999-2008 Gentoo Foundation; 2009 Quova, Inc.
+# Copyright 1999-2008 Gentoo Foundation ; 2009-2009 Chris Gianelloni
 # Distributed under the terms of the GNU General Public License v2
 # $Id$
 

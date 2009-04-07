@@ -2,6 +2,32 @@
 # Copyright 2008-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  07 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> +A,
+  vmware-esx-tools-3.5.0.143128.ebuild, jdbc-oracle-bin-10.2.0.3.ebuild,
+  catalyst-2.0.6.901.ebuild, catalyst-2.0.6.902.ebuild,
+  catalyst-2.0.6.903.ebuild, catalyst-2.0.6.ebuild, catalyst-9999.ebuild,
+  mohaa-1.11_beta3.ebuild, ut2004-data-3186-r3.ebuild,
+  ut2004-data-3186-r4.ebuild, ut2004-3369-r4.ebuild, ut2004-3369-r5.ebuild,
+  civctp-1.2a.ebuild, gvfs-1.0.3-r1.ebuild, maya-6.5.ebuild,
+  maya-8.0.ebuild, cacti-spine-0.8.7c.ebuild,
+  nagios-plugins-snmp-perl-1.1.1.ebuild, net-snmp-5.4.1.1-r1.ebuild,
+  net-snmp-5.4.2.1-r1.ebuild, libpcap-1.0.0-r2.ebuild,
+  cisco-vpnclient-modules-4.8.01.0640.ebuild,
+  cisco-vpnclient-modules-4.8.02.0030.ebuild, memcached-1.2.5.ebuild,
+  memcached-1.2.6-r1.ebuild, memcached-1.2.6.ebuild,
+  networkmanager-pptp-0.7.0-r1.ebuild, bluez-4.25.ebuild,
+  gnome-bluetooth-0.11.0.ebuild, libbtctl-0.10.0-r1.ebuild,
+  afasnmp-4.0.ebuild, bind9-snmp-1.7.ebuild, percsnmp-4.09.ebuild,
+  adaptecarraycontroller-4.0.ebuild, bayourcom-1.19.ebuild,
+  jvm-management-1.32.ebuild, raid-adapter-1.11.ebuild, afacli-4.1.ebuild,
+  dellmgr-5.31-r1.ebuild, dellmgr-5.31.ebuild,
+  iscsi-initiator-core-tools-2.3-r1.ebuild, megacli-1.01.40.ebuild,
+  open-iscsi-2.0.865.12.ebuild, acpid-1.0.8.ebuild, apcupsd-3.14.4.ebuild,
+  iasl-20060912.ebuild, iasl-20080514.ebuild, iasl-20080701.ebuild,
+  iasl-20081204.ebuild:
+  Adding a .gitattributes file and cleaning up the header in the
+  net-analyzer/cacti ebuilds.
+
   07 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   +sys-kernel/wolf-sources/wolf-sources-2.6.28-r4.ebuild:
   Version bump to the latest version of genpatches from upstream. This
