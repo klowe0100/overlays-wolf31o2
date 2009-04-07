@@ -2,6 +2,11 @@
 # Copyright 2008-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  07 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +sys-kernel/wolf-sources/wolf-sources-2.6.28-r4.ebuild:
+  Version bump to the latest version of genpatches from upstream. This
+  *should* work, but I have not tested it, yet.
+
   07 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> cacti-0.8.7d.ebuild,
   cacti-0.8.7d-r1.ebuild, cacti-0.8.7d-r2.ebuild:
   Changing USE=plugins to USE=pluginarch to better represent what the USE flag
@@ -97,16 +102,21 @@
   Date-Manip-5.54-r1.ebuild:
   Port to EAPI=2 and revision bump to force a reinstall.
 
+*Class-Gomor-1.01-r1 (04 Apr 2009)
+
   04 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  -Class-Gomor-1.01.ebuild, +Class-Gomor-1.01-r1.ebuild:
+  -perl-modules/Class-Gomor/Class-Gomor-1.01.ebuild,
+  +perl-modules/Class-Gomor/Class-Gomor-1.01-r1.ebuild:
   Port to EAPI=2 and revision bump to force a reinstall.
 
   04 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  -CGI-Apache2-Wrapper-0.215.ebuild, +CGI-Apache2-Wrapper-0.215.ebuild:
+  -perl-modules/CGI-Apache2-Wrapper/CGI-Apache2-Wrapper-0.215.ebuild,
+  +perl-modules/CGI-Apache2-Wrapper/CGI-Apache2-Wrapper-0.215-r1.ebuild:
   Revision bump perl-modules/CGI-Apache2-Wrapper to force a reinstall.
 
   04 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  profiles/updates/1Q-2009, CGI-Apache2-Wrapper-0.215.ebuild:
+  perl-modules/CGI-Apache2-Wrapper/CGI-Apache2-Wrapper-0.215.ebuild,
+  profiles/updates/1Q-2009:
   Updating perl-modules/CGI-Apache2-Wrapper to EAPI=2 as a workaround for
   portage not supporting package updates via profiles/updates/* files.
   Instead, we block the old location and change dependencies to the new
