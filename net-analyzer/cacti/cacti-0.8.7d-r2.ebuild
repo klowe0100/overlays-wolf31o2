@@ -32,7 +32,7 @@ fi
 LICENSE="GPL-2"
 KEYWORDS="~amd64 ~x86"
 RESTRICT=""
-IUSE="+plugins +snmp"
+IUSE="+pluginarch +snmp"
 
 DEPEND=""
 

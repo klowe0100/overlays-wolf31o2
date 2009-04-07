@@ -60,7 +60,7 @@ src_unpack() {
 	#	unpack cacti-plugin-arch.tar.gz
 		unpack cacti-plugin-${PV}-PA-v${PAV}.zip
 		cd "${S}"
-		sed -i -e '370 d' "${WORKDIR}"/cacti-plugin-${PV}-PA-v${PAV}.diff 
+		sed -i -e '370 d' "${WORKDIR}"/cacti-plugin-${PV}-PA-v${PAV}.diff
 		epatch "${WORKDIR}"/cacti-plugin-${PV}-PA-v${PAV}.diff
 		cp -f "${WORKDIR}"/pa.sql "${S}"
 	fi

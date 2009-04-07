@@ -2,6 +2,11 @@
 # Copyright 2008-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  07 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> cacti-0.8.7d.ebuild,
+  cacti-0.8.7d-r1.ebuild, cacti-0.8.7d-r2.ebuild:
+  Changing USE=plugins to USE=pluginarch to better represent what the USE flag
+  does and performing some minor QA whitespace cleanup.
+
   07 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> +cacti-poller.crond:
   Adding back the page_length_graph_view patch from upstream, and changing
   around the EPATCH_OPTS to get the Plugin Architecture patch to apply. Thanks
