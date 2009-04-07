@@ -2,6 +2,11 @@
 # Copyright 2008-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  07 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> +cacti-poller.crond:
+  Adding back the page_length_graph_view patch from upstream, and changing
+  around the EPATCH_OPTS to get the Plugin Architecture patch to apply. Thanks
+  for the fix goes to d0nni3q on http://forums.cacti.net/about31443.html...
+
 *Net-Libdnet6-0.23 (05 Apr 2009)
 
   05 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
