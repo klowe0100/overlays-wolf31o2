@@ -3,6 +3,10 @@
 # $Id$
 
   07 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> ChangeLog,
+  net-analyzer/cacti/Manifest:
+  Fix the Manifest and clean up the ChangeLog a bit.
+
+  07 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> ChangeLog,
   sys-kernel/wolf-sources/Manifest:
   Fix the Manifest and clean up the ChangeLog a bit.
 
