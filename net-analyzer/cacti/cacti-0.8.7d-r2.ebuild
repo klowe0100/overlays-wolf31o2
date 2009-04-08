@@ -32,7 +32,7 @@ fi
 LICENSE="GPL-2"
 KEYWORDS="~amd64 ~x86"
 RESTRICT=""
-IUSE="+pluginarch +snmp"
+IUSE="ldap +pluginarch +snmp"
 
 DEPEND=""
 
@@ -40,9 +40,11 @@ need_php_cli
 need_httpd_cgi
 need_php_httpd
 
-RDEPEND="snmp? ( net-analyzer/net-snmp )
+RDEPEND="
 	net-analyzer/rrdtool
 	dev-php/adodb
+	snmp? ( net-analyzer/net-snmp )
+	ldap? ( net-nds/openldap )
 	virtual/mysql
 	virtual/cron"
 
@@ -117,9 +119,30 @@ src_unpack() {
 }
 
 pkg_setup() {
+	local __extra_php_flags= __default_php_flags="cli mysql xml session pcre sockets"
 	webapp_pkg_setup
 	has_php
-	require_php_with_use cli mysql xml session pcre sockets
+
+	# Check if SNMP support is requested
+	if use snmp; then
+		__extra_php_flags="snmp"
+		einfo "Enabling built-in SNMP support (recommended)"
+	else
+		ewarn "Disabling built-in SNMP support (not recommended)"
+	fi
+
+	# Check if LDAP authentication is requested
+	if use ldap; then
+		__extra_php_flags="$__extra_php_flags ldap"
+		einfo "Enabling built-in LDAP authentication support"
+	else
+		ewarn "Disabling built-in LDAP authentication support"
+		ewarn "You can still use LDAP authentication via Web Basic"
+		ewarn "authentication on your web server."
+	fi
+
+	# Now, check if our PHP has everything that it needs
+	require_php_with_use $_default_php_flags $__extra_php_flags
 }
 
 src_install() {

@@ -3,6 +3,11 @@
 # $Id$
 
   08 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> M:
+  Adding checks for SNMP and LDAP into the ebuild and enforce PHP being built
+  with the proper extensions to support them.
+
+  08 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  net-analyzer/cacti/cacti-0.8.7d-r2.ebuild:
   Changing the USE=plugins calls to USE=pluginarch so things actually work as
   expected (and actually git add the changes, this time).
 
