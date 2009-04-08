@@ -2,6 +2,10 @@
 # Copyright 2008-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  08 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  net-analyzer/cacti/Manifest:
+  Manifest fix.
+
   08 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> M,
   cacti-0.8.7d-r2.ebuild:
   Move the Plugin Architecture patch to after the official patches, as
