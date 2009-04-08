@@ -1,21 +1,28 @@
 # Copyright 1999-2008 Gentoo Foundation ; 2008-2009 Chris Gianelloni
 # Distributed under the terms of the GNU General Public License v2
-# $Id$
+# $Id: bc4c71762197f349daa6dc41180894ebfaf3b0ac $
 
 EAPI=1
 
 inherit eutils webapp depend.php
 
-# Support for _p* in version.
+# Support for _p* in version
 MY_P=${P/_p*/}
+MY_PV=${PV/_p*/}
+
 # This is the Plugin Architecture version
-PAV=2.4
+PIA_V=2.4
+
+# Are there any official patches?
 HAS_PATCHES=1
+
+CACTI_BASE_URI="http://www.cacti.net/downloads"
+CACTI_PLUG_URI="http://mirror.cactiusers.org/downloads"
 
 DESCRIPTION="a complete frontend to rrdtool"
 HOMEPAGE="http://www.cacti.net/"
-SRC_URI="http://www.cacti.net/downloads/${MY_P}.tar.gz
-	pluginarch? ( http://mirror.cactiusers.org/downloads/plugins/${PN}-plugin-${PV}-PA-v${PAV}.zip )"
+SRC_URI="${CACTI_BASE_URI}/${MY_P}.tar.gz
+	pluginarch? ( ${CACTI_PLUG_URI}/plugins/${PN}-plugin-${MY_PV}-PA-v${PIA_V}.zip )"
 
 # patches
 if [ "${HAS_PATCHES}" == "1" ] ; then
@@ -23,8 +30,8 @@ if [ "${HAS_PATCHES}" == "1" ] ; then
 					graph_search
 					page_length_graph_view
 					snmp_string_issue_with_rrdtool_creation"
-	for i in $UPSTREAM_PATCHES ; do
-		SRC_URI="${SRC_URI} http://www.cacti.net/downloads/patches/${PV/_p*}/${i}.patch"
+	for i in ${UPSTREAM_PATCHES} ; do
+		SRC_URI="${SRC_URI} ${CACTI_BASE_URI}/patches/${PV/_p*}/${i}.patch"
 	done
 fi
 
@@ -105,15 +112,15 @@ src_unpack() {
 
 	# Add the Plugin Architecture
 	if use pluginarch; then
-		unpack cacti-plugin-${PV}-PA-v${PAV}.zip
+		unpack cacti-plugin-${MY_PV}-PA-v${PIA_V}.zip
 		cd "${S}"
-		sed -i -e '370 d' "${WORKDIR}"/cacti-plugin-${PV}-PA-v${PAV}.diff
+		sed -i -e '370 d' "${WORKDIR}"/cacti-plugin-${MY_PV}-PA-v${PIA_V}.diff
 		EPATCH_OPTS="-p1 -N -F3" \
-			epatch "${WORKDIR}"/cacti-plugin-${PV}-PA-v${PAV}.diff
+			epatch "${WORKDIR}"/cacti-plugin-${MY_PV}-PA-v${PIA_V}.diff
 		cp -f "${WORKDIR}"/pa.sql "${S}"
 	fi
 
-	# Use our sed-fu to use our system's adodb, rather than the bundled version
+	# Use sed-fu to use the system adodb, rather than the bundled one
 	sed -i -e \
 		's:$config\["library_path"\] . "/adodb/adodb.inc.php":"adodb/adodb.inc.php":' \
 		"${S}"/include/global.php

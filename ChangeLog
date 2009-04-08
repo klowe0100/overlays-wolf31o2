@@ -2,6 +2,11 @@
 # Copyright 2008-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  08 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> .gitattributes,
+  cacti-0.8.7d-r2.ebuild:
+  Adding variables MY_PV, CACTI_BASE_URI and CACTI_PLUG_URI variables (and
+  remembering to git add).
+
   08 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   cacti-0.8.7d-r2.ebuild:
   Adding variables MY_PV, CACTI_BASE_URI and CACTI_PLUG_URI variables.
