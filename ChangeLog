@@ -2,6 +2,10 @@
 # Copyright 2008-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  08 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  cacti-0.8.7d-r2.ebuild:
+  Adding variables MY_PV, CACTI_BASE_URI and CACTI_PLUG_URI variables.
+
   08 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> M:
   Actually doing the commit for the ebuild changes to move the Plugin
   Architecture patch to after the official patches, inlining the EPATCH_OPTS
