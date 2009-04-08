@@ -1,4 +1,4 @@
-# Copyright 1999-2008 Gentoo Foundation ; 2009-2009 Chris Gianelloni
+# Copyright 1999-2008 Gentoo Foundation ; 2008-2009 Chris Gianelloni
 # Distributed under the terms of the GNU General Public License v2
 # $Id$
 
@@ -16,7 +16,6 @@ DESCRIPTION="a complete frontend to rrdtool"
 HOMEPAGE="http://www.cacti.net/"
 SRC_URI="http://www.cacti.net/downloads/${MY_P}.tar.gz
 	pluginarch? ( http://mirror.cactiusers.org/downloads/plugins/${PN}-plugin-${PV}-PA-v${PAV}.zip )"
-#	pluginarch? ( http://cactiusers.org/downloads/cacti-plugin-arch.tar.gz )
 
 # patches
 if [ "${HAS_PATCHES}" == "1" ] ; then
@@ -40,9 +39,8 @@ need_php_cli
 need_httpd_cgi
 need_php_httpd
 
-RDEPEND="
+RDEPEND="dev-php/adodb
 	net-analyzer/rrdtool
-	dev-php/adodb
 	snmp? ( net-analyzer/net-snmp )
 	ldap? ( net-nds/openldap )
 	virtual/mysql
@@ -94,31 +92,38 @@ newcron() {
 }
 
 src_unpack() {
+	# The first thing we do is unpack our sources
 	unpack ${MY_P}.tar.gz
-	if use pluginarch; then
-	#	unpack cacti-plugin-arch.tar.gz
-		unpack cacti-plugin-${PV}-PA-v${PAV}.zip
-		cd "${S}"
-		sed -i -e '370 d' "${WORKDIR}"/cacti-plugin-${PV}-PA-v${PAV}.diff
-		EPATCH_OPTS="-p1 -N -F3"
-		epatch "${WORKDIR}"/cacti-plugin-${PV}-PA-v${PAV}.diff
-		cp -f "${WORKDIR}"/pa.sql "${S}"
-	fi
+	# Add any official patches from upstream
 	if [ "${HAS_PATCHES}" == "1" ] ; then
 		[ ! ${MY_P} == ${P} ] && mv ${MY_P} ${P}
 		# patches
-		EPATCH_OPTS="-p1 -N"
 		for i in ${UPSTREAM_PATCHES} ; do
-			epatch "${DISTDIR}"/${i}.patch
+			EPATCH_OPTS="-p1 -N" epatch "${DISTDIR}"/${i}.patch
 		done ;
 	fi
 
+	# Add the Plugin Architecture
+	if use pluginarch; then
+		unpack cacti-plugin-${PV}-PA-v${PAV}.zip
+		cd "${S}"
+		sed -i -e '370 d' "${WORKDIR}"/cacti-plugin-${PV}-PA-v${PAV}.diff
+		EPATCH_OPTS="-p1 -N -F3" \
+			epatch "${WORKDIR}"/cacti-plugin-${PV}-PA-v${PAV}.diff
+		cp -f "${WORKDIR}"/pa.sql "${S}"
+	fi
+
+	# Use our sed-fu to use our system's adodb, rather than the bundled version
 	sed -i -e \
 		's:$config\["library_path"\] . "/adodb/adodb.inc.php":"adodb/adodb.inc.php":' \
 		"${S}"/include/global.php
 }
 
 pkg_setup() {
+	### TODO:
+	### - check for USE=sharedext for PHP and act accordingly
+	### - check for SSL/SASL and act accordingly (including LDAP!)
+
 	local __extra_php_flags= __default_php_flags="cli mysql xml session pcre sockets"
 	webapp_pkg_setup
 	has_php
@@ -137,8 +142,8 @@ pkg_setup() {
 		einfo "Enabling built-in LDAP authentication support"
 	else
 		ewarn "Disabling built-in LDAP authentication support"
-		ewarn "You can still use LDAP authentication via Web Basic"
-		ewarn "authentication on your web server."
+		einfo "You can still use LDAP authentication via Web Basic"
+		einfo "authentication on your web server."
 	fi
 
 	# Now, check if our PHP has everything that it needs
