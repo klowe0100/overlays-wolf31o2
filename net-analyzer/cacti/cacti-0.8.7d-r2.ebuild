@@ -15,8 +15,8 @@ HAS_PATCHES=1
 DESCRIPTION="a complete frontend to rrdtool"
 HOMEPAGE="http://www.cacti.net/"
 SRC_URI="http://www.cacti.net/downloads/${MY_P}.tar.gz
-	plugins? ( http://mirror.cactiusers.org/downloads/plugins/${PN}-plugin-${PV}-PA-v${PAV}.zip )"
-#	plugins? ( http://cactiusers.org/downloads/cacti-plugin-arch.tar.gz )
+	pluginarch? ( http://mirror.cactiusers.org/downloads/plugins/${PN}-plugin-${PV}-PA-v${PAV}.zip )"
+#	pluginarch? ( http://cactiusers.org/downloads/cacti-plugin-arch.tar.gz )
 
 # patches
 if [ "${HAS_PATCHES}" == "1" ] ; then
@@ -93,7 +93,7 @@ newcron() {
 
 src_unpack() {
 	unpack ${MY_P}.tar.gz
-	if use plugins; then
+	if use pluginarch; then
 	#	unpack cacti-plugin-arch.tar.gz
 		unpack cacti-plugin-${PV}-PA-v${PAV}.zip
 		cd "${S}"

@@ -2,10 +2,9 @@
 # Copyright 2008-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
-  08 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  cacti-0.8.7d-r2.ebuild:
+  08 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> M:
   Changing the USE=plugins calls to USE=pluginarch so things actually work as
-  expected.
+  expected (and actually git add the changes, this time).
 
   07 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> ChangeLog,
   net-analyzer/cacti/Manifest:
