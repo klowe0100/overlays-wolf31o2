@@ -115,7 +115,7 @@ src_unpack() {
 		unpack cacti-plugin-${MY_PV}-PA-v${PIA_V}.zip
 		cd "${S}"
 		sed -i -e '370 d' "${WORKDIR}"/cacti-plugin-${MY_PV}-PA-v${PIA_V}.diff
-		EPATCH_OPTS="-p1 -N -d ${S} -F3" \
+		EPATCH_OPTS="-p1 -N -d ${S} -F4" \
 			epatch "${WORKDIR}"/cacti-plugin-${MY_PV}-PA-v${PIA_V}.diff
 		cp -f "${WORKDIR}"/pa.sql "${S}"
 	fi

@@ -4,6 +4,10 @@
 
   10 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   cacti-0.8.7d-r2.ebuild:
+  Increasing fuzz to 4 for testing.
+
+  10 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  cacti-0.8.7d-r2.ebuild:
   Adding explicit switching to S to the Plugin Architecture call, too. The
   main problem with these patches is upstream doesn't know how to properly
   create a patch, or test them.
