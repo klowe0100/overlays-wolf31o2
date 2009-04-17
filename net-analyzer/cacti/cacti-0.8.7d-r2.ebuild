@@ -28,8 +28,8 @@ SRC_URI="${CACTI_BASE_URI}/${MY_P}.tar.gz
 if [ "${HAS_PATCHES}" == "1" ] ; then
 	UPSTREAM_PATCHES="ping_timeout
 					graph_search
-					page_length_graph_view
 					snmp_string_issue_with_rrdtool_creation"
+					# page_length_graph_view (before snmp_string...)
 	for i in ${UPSTREAM_PATCHES} ; do
 		SRC_URI="${SRC_URI} ${CACTI_BASE_URI}/patches/${PV/_p*}/${i}.patch"
 	done
