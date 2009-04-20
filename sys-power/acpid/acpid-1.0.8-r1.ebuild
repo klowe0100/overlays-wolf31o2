@@ -1,6 +1,8 @@
-# Copyright 1999-2008 Gentoo Foundation
+# Copyright 1999-2008 Gentoo Foundation ; 2008-2009 Chris Gianelloni
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sys-power/acpid/acpid-1.0.6-r1.ebuild,v 1.5 2008/06/14 09:00:57 flameeyes Exp $
+# $Id$
+
+EAPI=2
 
 inherit eutils toolchain-funcs flag-o-matic
 
@@ -10,8 +12,8 @@ SRC_URI="mirror://sourceforge/acpid/${P}.tar.gz"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="~alpha amd64 ia64 -ppc x86"
-IUSE=""
+KEYWORDS="amd64 x86"
+IUSE="+syslog"
 
 DEPEND="sys-apps/sed"
 RDEPEND=""
@@ -34,6 +36,7 @@ src_compile() {
 }
 
 src_install() {
+	local __syslog=
 	emake INSTPREFIX="${D}" install || die "emake install failed"
 
 	exeinto /etc/acpi
@@ -44,7 +47,14 @@ src_install() {
 	dodoc README Changelog TODO
 
 	newinitd "${FILESDIR}"/${P}-init.d acpid
-	newconfd "${FILESDIR}"/${P}-conf.d acpid
+	# Enable syslog support, by default
+	if use syslog ; then
+		__syslog='--logevents'
+	fi
+	sed \
+		"s/%%SYSLOG%%/$_syslog/" \
+		"${FILESDIR}"/${P}-conf.d > "${T}"/${P}-conf.d
+	newconfd "${T}"/${P}-conf.d acpid
 
 	docinto examples
 	dodoc samples/{acpi_handler.sh,sample.conf}
