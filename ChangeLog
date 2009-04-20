@@ -2,6 +2,10 @@
 # Copyright 2008-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  20 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> +A:
+  Adding a README for the repository, which will likely be expanded/modified
+  as I make changes in the repository.
+
   20 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   +oracle-instantclient-basic-10.2.0.3-makefile.patch,
   +50oracle-instantclient-basic, categories:
