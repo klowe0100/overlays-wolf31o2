@@ -3,6 +3,7 @@ app-crypt
 app-emulation
 app-mobilephone
 cacti-plugins
+dev-db
 dev-java
 dev-libs
 dev-php5

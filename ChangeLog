@@ -3,6 +3,13 @@
 # $Id$
 
   20 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +oracle-instantclient-basic-10.2.0.3-makefile.patch,
+  +50oracle-instantclient-basic, categories:
+  Adding a new revision of the 10.2.0.3 Oracle Instant Client ebuild. I still
+  need to clean this up a good bit, add a 10.2.0.4 version, and move some code
+  into an eclass, but this is my starting point.
+
+  20 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   +mailx-support-20060102-respect-ldflags.patch, categories:
   Adding mail-client/mailx-support without the bindnow-flags function for
   testing to remove a QA warning.

@@ -1,0 +1,4 @@
+ORACLE_HOME=/usr/%%LIBDIR%%/oracle/%%PV%%/client
+LDPATH=/usr/%%LIBDIR%%/oracle/%%PV%%/client/lib
+C_INCLUDE_PATH=/usr/%%LIBDIR%%/oracle/%%PV%%/client/include
+TNS_ADMIN=/etc/oracle/
