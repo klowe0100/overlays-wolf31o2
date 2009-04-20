@@ -2,27 +2,39 @@
 # Copyright 2008-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
-  20 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> M:
+  20 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> +01cacti.envd, M:
+  Adding 01cacti.envd to setup the default CACTI_HOME variable and database
+  connectivity.
+
+  20 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> .gitattributes:
   Updating attributes to set ident for the README.
 
-  20 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> +A:
+  20 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> +README:
   Adding a README for the repository, which will likely be expanded/modified
   as I make changes in the repository.
 
+*oracle-instantclient-basic (20 Apr 2009)
+
   20 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  +oracle-instantclient-basic-10.2.0.3-makefile.patch,
-  +50oracle-instantclient-basic, categories:
+  +dev-db/oracle-instantclient-basic/oracle-instantclient-basic-10.2.0.3-r2.ebuild,
+  +dev-db/oracle-instantclient-basic/files/oracle-instantclient-basic-10.2.0.3-makefile.patch,
+  +dev-db/oracle-instantclient-basic/files/50oracle-instantclient-basic,
+  profiles/categories:
   Adding a new revision of the 10.2.0.3 Oracle Instant Client ebuild. I still
   need to clean this up a good bit, add a 10.2.0.4 version, and move some code
   into an eclass, but this is my starting point.
 
+*mailx-support-20060102-r2 (20 Apr 2009)
+
   20 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  +mailx-support-20060102-respect-ldflags.patch, categories:
+  +mail-client/mailx-support/mailx-support-20060102-r2.ebuild,
+  +mail-client/mailx-support/files/mailx-support-20060102-respect-ldflags.patch,
+  profiles/categories:
   Adding mail-client/mailx-support without the bindnow-flags function for
   testing to remove a QA warning.
 
   17 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  cacti-0.8.7d-r2.ebuild:
+  net-analyzer/cacti/cacti-0.8.7d-r2.ebuild:
   Removing the page_length_graph_view upstream patch from the list, since it
   interferes with the Plugin Architecture patch, and I do not have the time to
   properly diagnose the issue, currently. I will revisit this later, once I've
@@ -30,37 +42,38 @@
   testing.
 
   16 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  cacti-spine-0.8.7c.ebuild:
+  net-analyzer/cacti-spine/cacti-spine-0.8.7c.ebuild:
   Adding the apache group to spine's configuration. I need to make this
   smarter, but this will work, for now.
 
   10 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  cacti-0.8.7d-r2.ebuild:
+  net-analyzer/cacti/cacti-0.8.7d-r2.ebuild:
   Increasing fuzz to 4 for testing.
 
   10 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  cacti-0.8.7d-r2.ebuild:
+  net-analyzer/cacti/cacti-0.8.7d-r2.ebuild:
   Adding explicit switching to S to the Plugin Architecture call, too. The
   main problem with these patches is upstream doesn't know how to properly
   create a patch, or test them.
 
   10 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  cacti-0.8.7d-r2.ebuild:
+  net-analyzer/cacti/cacti-0.8.7d-r2.ebuild:
   Fixing the epatch call (hopefully).
 
-  08 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> M:
+  08 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> .gitattributes:
   Fix .gitattributes to not set ident for ebuilds until I fix up how that works.
 
   08 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> .gitattributes,
-  cacti-0.8.7d-r2.ebuild:
+  net-analyzer/cacti/cacti-0.8.7d-r2.ebuild:
   Adding variables MY_PV, CACTI_BASE_URI and CACTI_PLUG_URI variables (and
   remembering to git add).
 
   08 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  cacti-0.8.7d-r2.ebuild:
+  net-analyzer/cacti/cacti-0.8.7d-r2.ebuild:
   Adding variables MY_PV, CACTI_BASE_URI and CACTI_PLUG_URI variables.
 
-  08 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> M:
+  08 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  net-analyzer/cacti/cacti-0.8.7d-r2.ebuild:
   Actually doing the commit for the ebuild changes to move the Plugin
   Architecture patch to after the official patches, inlining the EPATCH_OPTS
   settings into the epatch calls, and cleaning up the comments and such.
