@@ -4,10 +4,12 @@
 
   21 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> M,
   cacti-plugins.eclass:
+  Trivial comment updates.
+
+  21 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> -boost-2.4.ebuild:
   Removing the original Boost plugin ebuild.
 
-  21 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> +boost-2.4-r2.ebuild,
-  -boost-2.4.ebuild:
+  21 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> +boost-2.4-r2.ebuild:
   Revision bumping the Boost plugin to add a dirty little hack to only install
   the SQL on boxes with MYSQL_PASS set. This *definitely* needs to be cleaned
   up, quite a bit.

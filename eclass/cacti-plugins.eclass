@@ -34,7 +34,7 @@ KEYWORDS="-* ~amd64 ~x86"
 IUSE=""
 RESTRICT="primaryuri"
 
-# We require Cacti with USE=plugins
+# We require Cacti with USE=plugins or USE=pluginarch
 DEPEND=">=net-analyzer/cacti-0.8.7b-r4"
 RDEPEND="${DEPEND}"
 
@@ -58,12 +58,12 @@ cacti-plugins_src_install() {
 }
 
 cacti-plugins_pkg_postinst() {
+	### TODO: make this *way* smarter
 	[ -n "${MYSQL_SCRIPTS}" ] && mysql-dbfuncs_load_sql
 }
 
 cacti-plugins_cleanup_adodb_includes() {
 	sed -i -e \
 		's:$config\["library_path"\] . "/adodb/adodb.inc.php":"adodb/adodb.inc.php":' \
-		"$@" || die"FAIL!"
-#		"${S}"/include/global.php
+		"$@" || die "FAIL!"
 }
