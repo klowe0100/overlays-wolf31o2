@@ -54,7 +54,7 @@ RDEPEND="dev-php/adodb
 	virtual/cron"
 
 # Most code shamelessly stolen from dobin and newbin
-docron() {
+docrond() {
 	source "${PORTAGE_BIN_PATH:-/usr/lib/portage/bin}"/isolated-functions.sh
 
 	if [[ $# -lt 1 ]] ; then
@@ -82,7 +82,7 @@ docron() {
 	return ${ret}
 }
 
-newcron() {
+newcrond() {
 	if [[ -z ${T} ]] || [[ -z ${2} ]] ; then
 		echo "$0: Need two arguments, old file and new file" 1>&2
 		exit 1
@@ -95,7 +95,7 @@ newcron() {
 
 	rm -rf "${T}/${2}" && \
 	cp -f "${1}" "${T}/${2}" && \
-	exec docron "${T}/${2}"
+	exec docrond "${T}/${2}"
 }
 
 src_unpack() {
@@ -169,7 +169,7 @@ src_install() {
 	edos2unix `find -type f -name '*.php'`
 
 	dodir ${MY_HTDOCSDIR}
-	newcron "${FILESDIR}"/cacti-poller.crond cacti-poller
+	newcrond "${FILESDIR}"/cacti-poller.crond cacti-poller
 	cp -r . "${D}"${MY_HTDOCSDIR}
 
 	webapp_serverowned ${MY_HTDOCSDIR}/rra

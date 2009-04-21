@@ -3,6 +3,11 @@
 # $Id$
 
   21 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> M:
+  Rename docron to docrond, since cron.eclass from Gentoo's tree already uses
+  docron as a function to install the cron executable, rather than using
+  something like docronbin.
+
+  21 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> ChangeLog:
   Manifest/ChangeLog fix.
 
 *acpid-1.0.8-r1 (20 Apr 2009)
