@@ -62,16 +62,16 @@ docrond() {
 		exit 1
 	fi
 
-	if [[ ! -d ${D}${DESTTREE}/etc/cron.d ]] ; then
-		install -d "${D}${DESTTREE}/etc/cron.d" || exit 2
+	if [[ ! -d ${D}/etc/cron.d ]] ; then
+		install -d "${D}/etc/cron.d" || exit 2
 	fi
 
 	ret=0
 
 	for x in "$@" ; do
 		if [[ -e ${x} ]] ; then
-			install -m0644 -o ${PORTAGE_INST_UID:-0} -g ${PORTAGE_INST_GID:-0}
-			"${x}" "${D}${DESTTREE}/etc/cron.d"
+			install -m0644 -o ${PORTAGE_INST_UID:-0} -g ${PORTAGE_INST_GID:-0} \
+			"${x}" "${D}/etc/cron.d"
 		else
 			echo "!!! ${0##*/}: $x does not exist" 1>&2
 			false
