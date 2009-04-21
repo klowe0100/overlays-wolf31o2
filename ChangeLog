@@ -2,6 +2,11 @@
 # Copyright 2008-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  21 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> -boost-2.4.ebuild:
+  I really suck at this whole remembering to 'git add' before doing my
+  commits. I should probably just enhance Gentoo's tools to work with git
+  properly.
+
   21 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   cacti-plugins.eclass, cacti-0.8.7d-r2.ebuild:
   Check for both USE=plugins and USE=pluginarch before installing.

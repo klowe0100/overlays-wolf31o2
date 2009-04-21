@@ -162,7 +162,7 @@ src_install() {
 
 	rm LICENSE README
 	dodoc docs/{CHANGELOG,CONTRIB,INSTALL,README,REQUIREMENTS,UPGRADE,text/manual.txt}
-	dohtml -r docs/html
+	dohtml -r docs/html/*
 	rm -rf docs
 	rm -rf lib/adodb
 
@@ -172,8 +172,8 @@ src_install() {
 	newcrond "${FILESDIR}"/cacti-poller.crond cacti-poller
 	cp -r . "${D}"${MY_HTDOCSDIR}
 
-	webapp_serverowned ${MY_HTDOCSDIR}/rra
-	webapp_serverowned ${MY_HTDOCSDIR}/log/cacti.log
+	webapp_serverowned -R ${MY_HTDOCSDIR}/rra
+	webapp_serverowned -R ${MY_HTDOCSDIR}/log
 	webapp_configfile ${MY_HTDOCSDIR}/include/config.php
 	webapp_postinst_txt en "${FILESDIR}"/postinstall-en.txt
 
