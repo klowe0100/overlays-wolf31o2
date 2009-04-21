@@ -4,6 +4,11 @@
 
   21 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   cacti-plugins.eclass:
+  Switch to using USE deps. Who cares if Gentoo doesn't allow eclasses to
+  require a certain EAPI. This solution is simple and works for the near-term.
+
+  21 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  cacti-plugins.eclass:
   Switch to using -o for built_with_use, at least until I setup proper USE
   dependencies.
 

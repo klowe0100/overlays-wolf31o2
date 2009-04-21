@@ -12,7 +12,7 @@ WEBAPP_OPTIONAL="yes"
 
 inherit eutils mysql-dbfuncs # webapp
 
-EXPORT_FUNCTIONS pkg_setup src_install pkg_postinst
+EXPORT_FUNCTIONS src_install pkg_postinst
 
 # Variables to specify in an ebuild which uses this eclass:
 # TODO: Add this section's docs
@@ -34,17 +34,18 @@ KEYWORDS="-* ~amd64 ~x86"
 IUSE=""
 RESTRICT="primaryuri"
 
-# We require Cacti with USE=plugins or USE=pluginarch
-DEPEND=">=net-analyzer/cacti-0.8.7b-r4"
+# We require Cacti with USE=pluginarch and eclasses aren't supposed to require
+# a certain EAPI... meh
+DEPEND=">=net-analyzer/cacti-0.8.7d-r2[pluginarch]"
 RDEPEND="${DEPEND}"
 
 S=${WORKDIR}/${CACTI_PLUG_NAME}
 
-cacti-plugins_pkg_setup() {
-	if ! built_with_use -o net-analyzer/cacti plugins pluginarch ; then
-		die "Need net-anaylzer/cacti with USE=plugins"
-	fi
-}
+#cacti-plugins_pkg_setup() {
+#	if ! built_with_use -o net-analyzer/cacti pluginarch ; then
+#		die "Need net-anaylzer/cacti with USE=pluginarch"
+#	fi
+#}
 
 cacti-plugins_src_install() {
 	local __phpfiles=`find -type f -name '*.php'`
