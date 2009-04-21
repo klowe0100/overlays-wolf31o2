@@ -42,7 +42,9 @@ S=${WORKDIR}/${CACTI_PLUG_NAME}
 
 cacti-plugins_pkg_setup() {
 	if ! built_with_use net-analyzer/cacti plugins; then
-		die "Need net-anaylzer/cacti with USE=plugins"
+		if ! built_with_use net-analyzer/cacti pluginarch ; then
+			die "Need net-anaylzer/cacti with USE=plugins"
+		fi
 	fi
 }
 

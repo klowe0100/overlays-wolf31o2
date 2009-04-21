@@ -3,6 +3,10 @@
 # $Id$
 
   21 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  cacti-plugins.eclass, cacti-0.8.7d-r2.ebuild:
+  Check for both USE=plugins and USE=pluginarch before installing.
+
+  21 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   cacti-0.8.7d-r2.ebuild:
   Fix HTML documentation installation and change the webapp_serverowned calls
   to be recursive.
