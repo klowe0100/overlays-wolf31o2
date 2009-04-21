@@ -2,8 +2,14 @@
 # Copyright 2008-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
-  20 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> acpid-1.0.8-conf.d,
-  M:
+  21 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> M:
+  Manifest/ChangeLog fix.
+
+*acpid-1.0.8-r1 (20 Apr 2009)
+
+  20 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  sys-power/acpid/files/acpid-1.0.8-conf.d,
+  -sys-power/acpid/acpid-1.0.8.ebuild, +sys-power/acpid/acpid-1.0.8.ebuild:
   Revision bump to indicate that this is a custom revision, versus an upstream
   pull.
 
