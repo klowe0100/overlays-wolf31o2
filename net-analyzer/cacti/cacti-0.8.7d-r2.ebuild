@@ -95,7 +95,7 @@ newcrond() {
 
 	rm -rf "${T}/${2}" && \
 	cp -f "${1}" "${T}/${2}" && \
-	exec docrond "${T}/${2}"
+	docrond "${T}/${2}"
 }
 
 src_unpack() {
