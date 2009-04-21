@@ -2,6 +2,11 @@
 # Copyright 2008-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  21 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  cacti-plugins.eclass:
+  Switch to using -o for built_with_use, at least until I setup proper USE
+  dependencies.
+
   21 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> M,
   cacti-plugins.eclass:
   Trivial comment updates.
