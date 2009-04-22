@@ -12,8 +12,8 @@ SRC_URI="http://www.cacti.net/downloads/spine/${PN}-${MY_PV}.tar.gz"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="~amd64 ~ppc ~ppc64 ~sparc ~x86"
-RESTRICT="primaryuri"
+KEYWORDS="amd64 x86"
+RESTRICT=""
 IUSE=""
 
 DEPEND="net-analyzer/net-snmp

@@ -2,6 +2,11 @@
 # Copyright 2008-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  22 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> M:
+  Marking 0.8.7c-r1 stable and removing non-x86 KEYWORDS, since I don't
+  support other architectures and make no guarantees that any of this works on
+  anything else.
+
   22 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   cacti-0.8.7d-r2.ebuild, +cacti-0.8.7d-r3.ebuild:
   Marking 0.8.7d-r2 stable for Cacti, and creating a new ebuild with empty
@@ -9,7 +14,7 @@
 
   22 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   cacti-plugins.eclass:
-  Wrap the EXTPORT_FUNCTIONS in an EAPI check and only export pkg_setup for
+  Wrap the EXPORT_FUNCTIONS in an EAPI check and only export pkg_setup for
   EAPI!=2, since EAPI=2 features USE dependencies.
 
   22 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
