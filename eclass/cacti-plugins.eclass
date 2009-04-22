@@ -4,15 +4,19 @@
 
 #
 # Original Author: Chris Gianelloni <wolf31o2@wolf31o2.org>
-# Purpose: Provide a framework for installing Cacti plugins via the unofficial
-# Cacti Plugin Architecture patch.
+# Purpose: Provide a framework for installing Cacti plugins via the Cacti
+# Plugin Architecture patch.
 
 # We don't actually need webapp-config for this.
 WEBAPP_OPTIONAL="yes"
 
 inherit eutils mysql-dbfuncs # webapp
 
-EXPORT_FUNCTIONS src_install pkg_postinst
+if [ ${EAPI} -eq 2 ] ; then
+	EXPORT_FUNCTIONS src_install pkg_postinst
+else
+	EXPORT_FUNCTIONS pkg_setup src_install pkg_postinst
+fi
 
 # Variables to specify in an ebuild which uses this eclass:
 # TODO: Add this section's docs
