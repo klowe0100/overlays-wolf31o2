@@ -4,6 +4,11 @@
 
   22 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   cacti-plugins.eclass:
+  Clean up the EAPI-specific code to only trigger when the proper EAPI is
+  used, which fixes EAPI versions prior to 2.
+
+  22 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  cacti-plugins.eclass:
   Switch to using a case statement for EAPI checking, versus if ... then ...
   else.
 
