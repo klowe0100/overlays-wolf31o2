@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Id: bc4c71762197f349daa6dc41180894ebfaf3b0ac $
 
-EAPI=1
+EAPI=2
 
 inherit eutils webapp depend.php
 
@@ -36,7 +36,7 @@ if [ "${HAS_PATCHES}" == "1" ] ; then
 fi
 
 LICENSE="GPL-2"
-KEYWORDS="amd64 x86"
+KEYWORDS=""
 RESTRICT=""
 IUSE="ldap +pluginarch +snmp"
 

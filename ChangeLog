@@ -3,6 +3,11 @@
 # $Id$
 
   22 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  cacti-0.8.7d-r2.ebuild, +cacti-0.8.7d-r3.ebuild:
+  Marking 0.8.7d-r2 stable for Cacti, and creating a new ebuild with empty
+  KEYWORDS for further development and changes.
+
+  22 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   cacti-plugins.eclass:
   Wrap the EXTPORT_FUNCTIONS in an EAPI check and only export pkg_setup for
   EAPI!=2, since EAPI=2 features USE dependencies.
