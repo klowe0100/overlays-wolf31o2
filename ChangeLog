@@ -2,6 +2,11 @@
 # Copyright 2008-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  22 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  cacti-plugins.eclass:
+  Switch to using a case statement for EAPI checking, versus if ... then ...
+  else.
+
   22 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> M:
   Marking 0.8.7c-r1 stable and removing non-x86 KEYWORDS, since I don't
   support other architectures and make no guarantees that any of this works on

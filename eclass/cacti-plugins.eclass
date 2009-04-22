@@ -12,11 +12,10 @@ WEBAPP_OPTIONAL="yes"
 
 inherit eutils mysql-dbfuncs # webapp
 
-if [ ${EAPI} -eq 2 ] ; then
-	EXPORT_FUNCTIONS src_install pkg_postinst
-else
-	EXPORT_FUNCTIONS pkg_setup src_install pkg_postinst
-fi
+case ${EAPI} in
+	2) EXPORT_FUNCTIONS src_install pkg_postinst ;;
+	*) EXPORT_FUNCTIONS pkg_setup src_install pkg_postinst
+esac
 
 # Variables to specify in an ebuild which uses this eclass:
 # TODO: Add this section's docs
