@@ -2,6 +2,11 @@
 # Copyright 2008-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  24 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  cacti-spine-0.8.7c-r1.ebuild:
+  Adding sed-fu to fix a typo when a host returns from a downed state while
+  using SPINE.
+
 *genkernel-3.4.10.904 (24 Apr 2009)
 
   24 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
