@@ -2,6 +2,13 @@
 # Copyright 2008-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*catalyst-2.0.6.904 (23 Apr 2009)
+
+  24 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +dev-util/catalyst/catalyst-2.0.6.904.ebuild,
+  -dev-util/catalyst/catalyst-2.0.6.ebuild:
+  Version bumping catalyst to 2.0.6.904 for testing.
+
   24 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   cacti-plugins.eclass:
   Uncomment pkg_setup for older ebuilds and make DEPEND conditional on EAPI of
