@@ -10,7 +10,7 @@ SRC_URI="http://compression.ca/${PN}/${P}.tar.gz"
 
 LICENSE="PBZIP2"
 SLOT="0"
-KEYWORDS="~alpha amd64 ~arm ~hppa ~ia64 ~m68k ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc x86"
+KEYWORDS="amd64 x86"
 IUSE="static"
 
 DEPEND="app-arch/bzip2"
