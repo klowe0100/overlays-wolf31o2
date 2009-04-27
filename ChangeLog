@@ -3,6 +3,13 @@
 # $Id$
 
   27 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  -app-mobilephone/obexftp/files/obexftp-0.22-bluetooth.patch,
+  -app-mobilephone/obexftp/files/obexftp-0.22-ruby-libpath.patch,
+  obexftp-0.22-r1.ebuild:
+  Removing app-mobilephone/obexftp, since a newer/better version is already
+  in the upstream Gentoo tree.
+
+  27 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   openssl-tpm-engine-0.4.1-r1.ebuild:
   Fixing S, adding ~amd64 KEYWORDS, and shortening DESCRIPTION.
 
