@@ -3,6 +3,10 @@
 # $Id$
 
   27 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  openssl-tpm-engine-0.4.1-r1.ebuild:
+  Fixing S, adding ~amd64 KEYWORDS, and shortening DESCRIPTION.
+
+  27 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   -app-crypt/seahorse-plugins/files/70-seahorse-agent,
   seahorse-plugins-2.24.0.ebuild:
   Removing app-crypt/seahorse-plugins, since a newer/better version is
