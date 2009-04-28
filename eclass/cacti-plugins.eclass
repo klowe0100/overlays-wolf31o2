@@ -66,7 +66,7 @@ cacti-plugins_src_install() {
 
 cacti-plugins_pkg_postinst() {
 	### TODO: make this *way* smarter
-	[ -n "${MYSQL_SCRIPTS}" ] && mysql-dbfuncs_load_sql
+	[ -n "${DO_MYSQL_INSTALL} ] && [ -n "${MYSQL_SCRIPTS}" ] && mysql-dbfuncs_load_sql
 }
 
 cacti-plugins_cleanup_adodb_includes() {
