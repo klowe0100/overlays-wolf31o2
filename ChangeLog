@@ -3,6 +3,11 @@
 # $Id$
 
   28 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  cacti-0.8.7d-r3.ebuild:
+  Cleaning up variable assignment and adding a TODO for moving the config to
+  /etc/cacti to be under CONFIG_PROTECT.
+
+  28 Apr 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   cacti-plugins.eclass:
   Adding DO_MYSQL_INSTALL to prevent automatic SQL installation.
 

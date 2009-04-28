@@ -131,7 +131,8 @@ pkg_setup() {
 	### - check for USE=sharedext for PHP and act accordingly
 	### - check for SSL/SASL and act accordingly (including LDAP!)
 
-	local __extra_php_flags= __default_php_flags="cli mysql xml session pcre sockets"
+	local __extra_php_flags=
+	local __default_php_flags="cli mysql xml session pcre sockets"
 	webapp_pkg_setup
 	has_php
 
@@ -174,8 +175,13 @@ src_install() {
 
 	webapp_serverowned -R ${MY_HTDOCSDIR}/rra
 	webapp_serverowned -R ${MY_HTDOCSDIR}/log
-	webapp_configfile ${MY_HTDOCSDIR}/include/config.php
 	webapp_postinst_txt en "${FILESDIR}"/postinstall-en.txt
+
+	### TODO: replace this with code similar to comments
+	#	dodir /etc/mailman
+	#	mv "${D}/${INSTALLDIR}/Mailman/mm_cfg.py" "${D}/etc/mailman"
+	#	dosym /etc/mailman/mm_cfg.py ${INSTALLDIR}/Mailman/mm_cfg.py
+	webapp_configfile ${MY_HTDOCSDIR}/include/config.php
 
 	webapp_src_install
 }
