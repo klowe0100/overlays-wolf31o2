@@ -171,6 +171,7 @@ src_install() {
 
 	dodir ${MY_HTDOCSDIR}
 	newcrond "${FILESDIR}"/cacti-poller.crond cacti-poller
+	newenvd "${FILESDIR}"/cacti.envd 01cacti
 	cp -r . "${D}"${MY_HTDOCSDIR}
 
 	webapp_serverowned -R ${MY_HTDOCSDIR}/rra
