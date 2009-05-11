@@ -2,6 +2,12 @@
 # Copyright 2008-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*arno-iptables-firewall-1.9.0b (11 May 2009)
+
+  11 May 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  arno-iptables-firewall-1.9.0b.ebuild:
+  Version bumping to 1.9.0b for Gentoo bug #261507.
+
   11 May 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   arno-iptables-firewall-1.9.0.ebuild:
   Add comments about the use of @system packages in *DEPEND as some people
