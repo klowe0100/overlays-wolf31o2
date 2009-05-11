@@ -3,6 +3,10 @@
 # $Id$
 
   11 May 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  arno-iptables-firewall-1.9.0b.ebuild:
+  Add the missing environment file and fix the man PATH at install.
+
+  11 May 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   +profiles/package.mask:
   Does package.mask work from an overlay? I guess we will find out.
 

@@ -41,6 +41,9 @@ src_install() {
 	dobin bin/arno-fwfilter
 	dosbin bin/arno-iptables-firewall
 
+	insinto /usr/share/arno-iptables-firewall
+	doins share/arno-iptables-firewall/environment
+
 	if use plugins
 	then
 		insinto /etc/arno-iptables-firewall/plugins
@@ -55,7 +58,7 @@ src_install() {
 
 	dodoc CHANGELOG README
 
-	doman man/arno-fwfilter.1 man/arno-iptables-firewall.8
+	doman share/man/arno-fwfilter.1 share/man/arno-iptables-firewall.8
 }
 
 pkg_postinst () {
