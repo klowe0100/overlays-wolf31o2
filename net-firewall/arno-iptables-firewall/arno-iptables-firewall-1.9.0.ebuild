@@ -14,6 +14,7 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE="+plugins"
 
+# @system packages are listed on purpose, full dependency tries are a good thing
 RDEPEND=">=net-firewall/iptables-1.2.5
 	sys-apps/sed
 	sys-apps/gawk
@@ -22,6 +23,8 @@ RDEPEND=">=net-firewall/iptables-1.2.5
 	sys-apps/module-init-tools
 	sys-process/procps
 	app-arch/gzip"
+# However, we will assume that our PM can unpack a tarball... ;]
+DEPEND=""
 
 S=${WORKDIR}/${PN}_${MY_PV}
 

@@ -2,6 +2,11 @@
 # Copyright 2008-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  11 May 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  arno-iptables-firewall-1.9.0.ebuild:
+  Add comments about the use of @system packages in *DEPEND as some people
+  seem to forget that your @system isn't necessarily the same as my @system.
+
 *arno-iptables-firewall-1.9.0_beta3 (11 May 2009)
 *arno-iptables-firewall-1.9.0 (11 May 2009)
 
