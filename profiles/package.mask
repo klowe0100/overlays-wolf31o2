@@ -1,0 +1,4 @@
+# Jeremy Olexa <darkside@gentoo.org> (14 Apr 2009)
+# Masked for removal in 60 days. Security issues that warrant removal.
+# Non-vulnerable version exist, just needs a maintainer. bug 261507
+-net-firewall/arno-iptables-firewall

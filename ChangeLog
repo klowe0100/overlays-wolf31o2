@@ -2,6 +2,10 @@
 # Copyright 2008-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  11 May 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +profiles/package.mask:
+  Does package.mask work from an overlay? I guess we will find out.
+
 *arno-iptables-firewall-1.9.0b (11 May 2009)
 
   11 May 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
