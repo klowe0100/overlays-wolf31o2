@@ -2,6 +2,13 @@
 # Copyright 2008-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*nagios-plugins-snmp-0.6.0-r2 (12 May 2009)
+
+  12 May 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  nagios-plugins-snmp-0.6.0-r2.ebuild:
+  Adding nagios-plugins-snmp from the Gentoo tree, and bumping the revision
+  so the correct version installs for the Nagios 3.x ebuilds.
+
   11 May 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   arno-iptables-firewall-1.9.0b.ebuild:
   Add the missing environment file and fix the man PATH at install.
