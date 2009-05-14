@@ -86,4 +86,6 @@ src_install() {
 	dodoc AUTHORS ChangeLog NICETOHAVES README* TODO doc/*
 	newinitd "${FILESDIR}/tcsd.initd" tcsd
 	newconfd "${FILESDIR}/tcsd.confd" tcsd
+	insinto /etc/udev/permissions.d
+	doins "${FILESDIR}"/62-tpm.rules
 }

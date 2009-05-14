@@ -3,6 +3,11 @@
 # $Id$
 
   14 May 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +app-crypt/trousers/files/62-tpm.rules, trousers-0.3.1-r1.ebuild:
+  Adding a udev rules file so users in the tss group can see what's in my
+  TrouSerS.
+
+  14 May 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   trousers-0.3.1-r1.ebuild:
   Move openssl-tpm-engine to PDEPEND, since it isn't required to build
   trousers.
