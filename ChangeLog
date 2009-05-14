@@ -2,6 +2,39 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*openssl-0.9.8k-r1 (14 May 2009)
+*openssl-0.9.8k (14 May 2009)
+*openssl-0.9.8j (14 May 2009)
+*openssl-0.9.8i (14 May 2009)
+*openssl-0.9.8h-r1 (14 May 2009)
+
+  14 May 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +dev-libs/openssl/files/openssl-0.9.7-alpha-default-gcc.patch,
+  +dev-libs/openssl/files/openssl-0.9.7e-gentoo.patch,
+  +dev-libs/openssl/files/gentoo.config-0.9.8,
+  +dev-libs/openssl/files/openssl-0.9.8-make-engines-dir.patch,
+  +dev-libs/openssl/files/openssl-0.9.8-makedepend.patch,
+  +dev-libs/openssl/files/openssl-0.9.8-toolchain.patch,
+  +dev-libs/openssl/files/openssl-0.9.8b-doc-updates.patch,
+  +dev-libs/openssl/files/openssl-0.9.8b-parallel-build.patch,
+  +dev-libs/openssl/files/openssl-0.9.8e-PKCS11_engine.patch,
+  +dev-libs/openssl/files/openssl-0.9.8e-bsd-sparc64.patch,
+  +dev-libs/openssl/files/openssl-0.9.8e-make.patch,
+  +dev-libs/openssl/files/openssl-0.9.8g-sslv3-no-tlsext.patch,
+  openssl-0.9.8h-r1.ebuild,
+  +dev-libs/openssl/files/openssl-0.9.8h-ldflags.patch,
+  +dev-libs/openssl/files/openssl-0.9.8h-pkcs12.patch,
+  openssl-0.9.8i.ebuild, openssl-0.9.8j.ebuild,
+  +dev-libs/openssl/files/openssl-0.9.8j-ia64.patch,
+  +dev-libs/openssl/files/openssl-0.9.8j-parallel-build.patch,
+  openssl-0.9.8k.ebuild, openssl-0.9.8k-r1.ebuild,
+  +dev-libs/openssl/files/openssl-0.9.8k-toolchain.patch:
+  Adding my own revision of openssl, to add the openssl_pkcs11 engine from
+  the opencryptoki project
+  (http://opencryptoki.cvs.sourceforge.net/viewvc/opencryptoki/openssl_pkcs1
+  1/). I have no idea if this patch will work, so I would definitely call
+  this experimental.
+
 *opencryptoki-2.2.8 (14 May 2009)
 
   14 May 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
