@@ -3,6 +3,11 @@
 # $Id$
 
   14 May 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  trousers-0.3.1-r1.ebuild:
+  Move openssl-tpm-engine to PDEPEND, since it isn't required to build
+  trousers.
+
+  14 May 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   dev-libs/openssl/files/openssl-0.9.8e-PKCS11_engine.patch:
   Un-DOS-ify the patch file, so maybe when it fails this time, I can
   actually read the output, easily.

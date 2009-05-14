@@ -16,11 +16,12 @@ IUSE="+gmp +gtk ssl"
 
 RDEPEND=">=dev-libs/glib-2
 	>=dev-libs/openssl-0.9.7
-	ssl? ( app-crypt/openssl-tpm-engine )
 	gtk? ( >=x11-libs/gtk+-2 )"
 
 DEPEND="${RDEPEND}
 	dev-util/pkgconfig"
+
+PDEPEND="ssl? ( app-crypt/openssl-tpm-engine )"
 
 PATCHES=(	"${FILESDIR}/${PN}-0.2.3-nouseradd.patch"
 		"${FILESDIR}/${P}-qa.patch"
