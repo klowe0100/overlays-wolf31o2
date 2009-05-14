@@ -10,7 +10,7 @@ SRC_URI="mirror://openssl/source/${P}.tar.gz"
 
 LICENSE="openssl"
 SLOT="0"
-KEYWORDS="-* alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc ~sparc-fbsd x86 ~x86-fbsd"
+KEYWORDS="~amd64 ~x86"
 IUSE="bindist gmp kerberos pkcs11 sse2 test zlib"
 
 RDEPEND="gmp? ( dev-libs/gmp )
@@ -29,7 +29,7 @@ src_unpack() {
 
 	epatch "${FILESDIR}"/${PN}-0.9.7e-gentoo.patch
 	epatch "${FILESDIR}"/${PN}-0.9.7-alpha-default-gcc.patch
-	#Forward port of the -b patch. Parallel make fails though.
+	# Forward port of the -b patch. Parallel make fails though.
 	epatch "${FILESDIR}"/${PN}-0.9.8j-parallel-build.patch
 	epatch "${FILESDIR}"/${PN}-0.9.8-make-engines-dir.patch
 	epatch "${FILESDIR}"/${PN}-0.9.8k-toolchain.patch
@@ -39,7 +39,6 @@ src_unpack() {
 	# This is from:
 	# http://opencryptoki.cvs.sourceforge.net/viewvc/opencryptoki/openssl_pkcs11
 	use pkcs11 && epatch "${FILESDIR}"/${PN}-0.9.8e-PKCS11_engine.patch
-	#epatch "${FILESDIR}"/${PN}-0.9.8e-bsd-sparc64.patch
 	epatch "${FILESDIR}"/${PN}-0.9.8g-sslv3-no-tlsext.patch
 	#epatch "${FILESDIR}"/${PN}-0.9.8h-ldflags.patch #181438
 	sed -i -e '/DIRS/ s/ fips / /g' Makefile{,.org} \
