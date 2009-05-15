@@ -27,7 +27,7 @@ Ddir=${D}/${dir}
 
 ANY_ANY=
 #ANY_ANY="vmware-any-any-update117d"
-TARBALL="VMwareTools-3.5.0-153875.tar.gz"
+TARBALL="VMwareTools-3.5.0-158874.tar.gz"
 MY_P=${TARBALL/.tar.gz/}
 
 pkg_setup() {
