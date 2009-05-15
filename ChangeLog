@@ -3,6 +3,10 @@
 # $Id$
 
   15 May 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  nagios-plugins-snmp-perl-1.1.1-r1.ebuild:
+  Change to ~arch, since I've not yet upgraded to Nagios 3.x in production.
+
+  15 May 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   vmware-esx-tools-3.5.0.158874.ebuild:
   I forgot to change the tarball name inside the ebuild.
 
