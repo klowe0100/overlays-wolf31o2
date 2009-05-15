@@ -2,6 +2,13 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*vmware-esx-tools-3.5.0.158874 (15 May 2009)
+
+  15 May 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  vmware-esx-tools-3.5.0.143128-r1.ebuild,
+  vmware-esx-tools-3.5.0.158874.ebuild:
+  Version bump to support the latest ESX patches.
+
   14 May 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   +app-crypt/trousers/files/62-tpm.rules, trousers-0.3.1-r1.ebuild:
   Adding a udev rules file so users in the tss group can see what's in my

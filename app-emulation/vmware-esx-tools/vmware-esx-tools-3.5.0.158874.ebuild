@@ -4,7 +4,6 @@
 
 inherit eutils vmware
 
-ANY_ANY="vmware-any-any-update117d"
 
 DESCRIPTION="Guest-os tools for VMware ESX"
 HOMEPAGE="http://www.vmware.com/"
@@ -14,6 +13,7 @@ LICENSE="vmware"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE="X"
+PROPERTIES="interactive"
 RESTRICT=""
 
 RDEPEND="sys-apps/pciutils"
@@ -25,8 +25,15 @@ RUN_UPDATE="no"
 dir=/opt/vmware/esx/tools
 Ddir=${D}/${dir}
 
-TARBALL="VMwareTools-3.5.0-143128.tar.gz"
+ANY_ANY=
+#ANY_ANY="vmware-any-any-update117d"
+TARBALL="VMwareTools-3.5.0-153875.tar.gz"
 MY_P=${TARBALL/.tar.gz/}
+
+pkg_setup() {
+	enewgroup ${VMWARE_GROUP}
+	vmware_pkg_setup
+}
 
 src_install() {
 	vmware_src_install
