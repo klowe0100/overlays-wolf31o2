@@ -2,6 +2,17 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*networkmanager-0.7.1-r4 (16 May 2009)
+
+  16 May 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +net-misc/networkmanager/files/networkmanager-0.7.0-gentoo-dhclient.patch,
+  networkmanager-0.7.1-r4.ebuild,
+  +net-misc/networkmanager/files/networkmanager-0.7.1-bad-link.patch,
+  +net-misc/networkmanager/files/networkmanager-0.7.1-confchanges.patch,
+  +net-misc/networkmanager/files/nm-system-settings.conf:
+  Revision bumping net-misc/networkmanager to add USE=applet to pull in
+  gnome-extra/nm-applet.
+
   15 May 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   nagios-plugins-snmp-perl-1.1.1-r1.ebuild:
   Change to ~arch, since I've not yet upgraded to Nagios 3.x in production.
