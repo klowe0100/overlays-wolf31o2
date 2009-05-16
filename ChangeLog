@@ -2,6 +2,10 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  16 May 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  eclass/cacti-plugins.eclass:
+  Fixing the has_version call.
+
 *networkmanager-0.7.1-r4 (16 May 2009)
 
   16 May 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>

@@ -48,7 +48,7 @@ RDEPEND="${DEPEND}"
 S=${WORKDIR}/${CACTI_PLUG_NAME}
 
 cacti-plugins_pkg_setup() {
-	if has_version / <net-analyzer/cacti-0.8.7d-r2 ; then
+	if has_version \<net-analyzer/cacti-0.8.7d-r2 ; then
 		if ! built_with_use net-analyzer/cacti plugins ; then
 			die "Need net-anaylzer/cacti with USE=pluginarch"
 		fi
