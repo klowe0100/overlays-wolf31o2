@@ -25,14 +25,14 @@ esac
 
 # Variables to specify in an ebuild which uses this eclass:
 # TODO: Add this section's docs
-CACTI_HOME=${CACTI_HOME:-/var/www/localhost/htdocs/cacti}
-CACTI_SQL_DBNAME=${CACTI_SQL_DBNAME:-cacti}
+export CACTI_HOME=${CACTI_HOME:-/var/www/localhost/htdocs/cacti}
+export CACTI_SQL_DBNAME=${CACTI_SQL_DBNAME:-cacti}
 
-CACTI_PLUG_BASE="http://mirror.cactiusers.org/downloads/plugins"
-CACTI_PLUG_NAME=${PN}
-CACTI_PLUG_HOME=${CACTI_HOME}/plugins/${CACTI_PLUG_NAME}
+export CACTI_PLUG_BASE="http://mirror.cactiusers.org/downloads/plugins"
+export CACTI_PLUG_NAME=${PN}
+export CACTI_PLUG_HOME=${CACTI_HOME}/plugins/${CACTI_PLUG_NAME}
 
-MYSQL_DBNAME=${CACTI_SQL_DBNAME}
+export MYSQL_DBNAME=${CACTI_SQL_DBNAME}
 
 DESCRIPTION="Cacti plugin: ${CACTI_PLUG_NAME}"
 HOMEPAGE="http://cactiusers.org/downloads"
