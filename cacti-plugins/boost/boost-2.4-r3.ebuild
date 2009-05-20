@@ -43,10 +43,12 @@ src_install() {
 	keepdir "${dir}"
 	fowners apache:apache "${dir}"
 	fperms 775 "${dir}"
-	newinitd "${FILESDIR}"/cacti-boost.rc cacti-boost
+	newinitd "${FILESDIR}"/cacti-boost.rc-merged cacti-boost
 	newconfd "${FILESDIR}"/cacti-boost.confd cacti-boost
 	for i in boost_rrdupdate.php boost_server.php poller_boost.php ; do
 		fperms 755 boost/$i
+		# Boost README tells us to do this... yeah, right
+		#fperms 4755 boost/$i
 	done
 	cacti-plugins_src_install
 }
