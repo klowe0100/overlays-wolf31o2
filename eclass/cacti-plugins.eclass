@@ -49,7 +49,9 @@ S=${WORKDIR}/${CACTI_PLUG_NAME}
 
 cacti-plugins_pkg_setup() {
 	if has_version \<net-analyzer/cacti-0.8.7d-r2 ; then
-		if ! built_with_use net-analyzer/cacti plugins ; then
+		if built_with_use --missing ok \>=net-analyzer/cacti-0.8.7d-r2 plugins pluginarch; then
+			einfo "Found Cacti Plugin Architecture"
+		else
 			die "Need net-anaylzer/cacti with USE=pluginarch"
 		fi
 	fi
