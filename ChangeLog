@@ -2,6 +2,15 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*boost-2.4-r3 (20 May 2009)
+
+  20 May 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> boost-2.4-r3.ebuild,
+  cacti-plugins/boost/files/cacti-boost.confd,
+  cacti-plugins/boost/files/cacti-boost.rc,
+  cacti-plugins/boost/files/cacti-boost.rc.memory:
+  Updating cacti-plugins/boost with a new revision, which I'll be using for
+  improvements to the ebuild.
+
   16 May 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   eclass/cacti-plugins.eclass:
   Fixing the has_version call.

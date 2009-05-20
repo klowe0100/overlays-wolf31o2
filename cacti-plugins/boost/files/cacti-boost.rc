@@ -6,8 +6,8 @@
 # Most of this is taken directly from the cacti_rrdsvc script by Larry Adams.
 
 depend() {
+	after mysql
 	before apache2
-	need mysql
 	use logger
 }
 
