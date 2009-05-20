@@ -46,14 +46,14 @@ src_unpack() {
 
 src_install() {
 	local dir=${CACTI_HOME}/cache/png
-	dodir "${dir}"
-	keepdir "${dir}"
-	fowners apache:apache "${dir}"
-	fperms 775 "${dir}"
-	newinitd "${FILESDIR}"/cacti-boost.rc-merged cacti-boost
-	newconfd "${FILESDIR}"/cacti-boost.confd cacti-boost
+	dodir "${dir}" || die "dodir"
+	keepdir "${dir}" || die "keepdir"
+	fowners apache:apache "${dir}" || die "fowners"
+	fperms 775 "${dir}" || die "fperms"
+	newinitd "${FILESDIR}"/cacti-boost.rc-merged cacti-boost || die "newinitd"
+	newconfd "${FILESDIR}"/cacti-boost.confd cacti-boost || die "newconfd"
 	for i in boost_rrdupdate.php boost_server.php poller_boost.php ; do
-		fperms 755 boost/$i
+		fperms 755 $i || die "fperms $i"
 		# Boost README tells us to do this... yeah, right
 		#fperms 4755 boost/$i
 	done
