@@ -12,14 +12,14 @@ WEBAPP_OPTIONAL="yes"
 
 inherit eutils mysql-dbfuncs # webapp
 
-case ${EAPI} in
-	2)
-		EXPORT_FUNCTIONS src_install pkg_postinst
-		DEPEND=">=net-analyzer/cacti-0.8.7d-r2[pluginarch]"
-		;;
-	*)
+case "${EAPI:-0}" in
+	0|1)
 		EXPORT_FUNCTIONS pkg_setup src_install pkg_postinst
 		DEPEND=">=net-analyzer/cacti-0.8.7b-r4"
+		;;
+	*)
+		EXPORT_FUNCTIONS src_install pkg_postinst
+		DEPEND=">=net-analyzer/cacti-0.8.7d-r2[pluginarch]"
 		;;
 esac
 
