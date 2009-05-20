@@ -3,6 +3,10 @@
 # $Id$
 
   20 May 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> boost-2.4-r3.ebuild,
+  +cacti-plugins/boost/files/boost-2.4-defaults.patch:
+  Adding a small patch to set sane defaults.
+
+  20 May 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> boost-2.4-r3.ebuild,
   +cacti-plugins/boost/files/cacti-boost.rc-merged:
   Updated with a new merged init script.
 

@@ -1,0 +1,39 @@
+diff -u boost.orig/setup.php boost/setup.php
+--- boost.orig/setup.php	2009-02-22 07:29:25.000000000 -0800
++++ boost/setup.php	2009-05-20 12:25:54.000000000 -0700
+@@ -1625,7 +1625,7 @@
+ 			"friendly_name" => "RRDUpdate Path",
+ 			"description" => "If you are using the Multiprocess Boost server, it is best to utilize the 'rrdupdate' binary to update your RRDs.  Specify it's path here.  Otherwise, boost will use the 'rrdtool' binary.",
+ 			"method" => "textbox",
+-			"default" => "",
++			"default" => "/usr/bin/rrdupdate",
+ 			"max_length" => "255"
+ 		),
+ 		"boost_server_hostname" => array(
+@@ -1671,7 +1671,7 @@
+ 			"description" => "Specify the location where Boost should place your image files.  These files will be automatically purged by the poller when they expire.",
+ 			"method" => "textbox",
+ 			"max_length" => "255",
+-			"default" => ""
++			"default" => "/var/www/localhost/htdocs/cacti/cache/png"
+ 		),
+ 		"boost_process_header" => array(
+ 			"friendly_name" => "Process Interlocking",
+@@ -1681,7 +1681,7 @@
+ 			"friendly_name" => "Path to lockfile for On Demand RRD Updating",
+ 			"description" => "This lock file will assist the boost poller from detecting overrun conditions.",
+ 			"method" => "textbox",
+-			"default" => "",
++			"default" => "/var/lock/subsys/boost_server.php",
+ 			"max_length" => "255"
+ 		),
+ 		"boost_log_header" => array(
+@@ -1693,7 +1693,7 @@
+ 			"description" => "If this field is non-blank, Boost will log RRDupdate output from the boost
+ 			poller process.",
+ 			"method" => "filepath",
+-			"default" => "",
++			"default" => "/var/www/localhost/htdocs/cacti/log/boost.log",
+ 			"max_length" => "255"
+ 		)
+ 	);

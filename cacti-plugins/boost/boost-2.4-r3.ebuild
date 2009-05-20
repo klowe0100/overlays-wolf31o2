@@ -37,6 +37,11 @@ pkg_postinst() {
 	fi
 }
 
+src_unpack() {
+	default_src_unpack
+	epatch "${FILESDIR}"/${P}-defaults.patch
+}
+
 src_install() {
 	local dir=${CACTI_HOME}/cache/png
 	dodir "${dir}"
