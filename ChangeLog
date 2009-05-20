@@ -2,6 +2,9 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  20 May 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> boost-2.4-r3.ebuild:
+  Adding EAPI=2 to cacti-plugins/boost.
+
   20 May 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   eclass/cacti-plugins.eclass:
   I always hated built_with_use... Let's see if this is the correct syntax.
