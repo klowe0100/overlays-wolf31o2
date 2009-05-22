@@ -17,9 +17,9 @@ checkconfig() {
 	if [ ! -e ${CACTI_BOOST_HOME} ] ; then
 		eerror "You need to set CACTI_BOOST_HOME in /etc/conf.d/cacti-boost"
 		return 1
-	elif [ ! -x ${CACTI_BOOST_HOME}/boost_server.php ] ; then
-		eerror "Cannot execute boost_server.php, Aborting"
-		return 1
+#	elif [ ! -x ${CACTI_BOOST_HOME}/boost_server.php ] ; then
+#		eerror "Cannot execute boost_server.php, Aborting"
+#		return 1
 	elif [ ! -w ${CACTI_BOOST_LOG} ] ; then
 		eerror "Boost log is not writeable"
 		return 1
@@ -46,7 +46,7 @@ start() {
 		eerror "Cacti Boost is currently processing, Aborting"
 		eend 1
 	else
-		start-stop-daemon --start --background --pidfile /var/run/boost_server.php.pid --make-pidfile --exec /usr/bin/php -- -q ${CACTI_BOOST_HOME}/boost_server.php > ${CACTI_BOOST_LOGS} 2>&1
+		start-stop-daemon --start --background --pidfile /var/run/boost_server.php.pid --make-pidfile --exec /usr/bin/php -- -q ${CACTI_BOOST_HOME}/boost_server.php > ${CACTI_BOOST_LOG} 2>&1
 		ret=$?
 		touch /var/lock/subsys/boost_server.php
 	fi

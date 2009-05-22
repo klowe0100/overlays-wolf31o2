@@ -2,6 +2,10 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  22 May 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  cacti-plugins/boost/files/cacti-boost.rc-merged:
+  Don't check if boost_server.php is executable (yet) and fix a typo.
+
   20 May 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> boost-2.4-r3.ebuild:
   Removing debugging and adding some error handling.
 
