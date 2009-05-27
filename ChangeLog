@@ -2,6 +2,13 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*nagios-check_hpasm-3.5 (27 May 2009)
+
+  27 May 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  nagios-check_hpasm-3.5.ebuild:
+  Adding an initial nagios-check_hpasm ebuild. It was copied from
+  nagios-check_logfiles, and has not been tested, at all.
+
 *nagios-check_logfiles-2.5.6.1 (27 May 2009)
 *nagios-check_logfiles-2.5.5.1 (27 May 2009)
 
