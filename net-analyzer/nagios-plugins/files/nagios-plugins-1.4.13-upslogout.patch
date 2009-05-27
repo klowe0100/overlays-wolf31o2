@@ -1,0 +1,31 @@
+--- plugins/check_ups.c.orig	2008-10-23 14:19:36.000000000 +0200
++++ plugins/check_ups.c	2008-10-23 14:49:18.000000000 +0200
+@@ -397,13 +397,13 @@
+ 	/*  char command[MAX_INPUT_BUFFER]; */
+ 	char temp_buffer[MAX_INPUT_BUFFER];
+ 	char send_buffer[MAX_INPUT_BUFFER];
+-	char *ptr;
++	char *ptr, *end = NULL;
+ 	int len;
+ 
+ 	*buf=0;
+ 	
+ 	/* create the command string to send to the UPS daemon */
+-	sprintf (send_buffer, "GET VAR %s %s\n", ups_name, varname);
++	sprintf (send_buffer, "GET VAR %s %s\nLOGOUT\n", ups_name, varname);
+ 
+ 	/* send the command to the daemon and get a response back */
+ 	if (process_tcp_request
+@@ -414,8 +414,11 @@
+ 	}
+ 
+ 	ptr = temp_buffer;
++	end = strchr(ptr, '\n');
++	if (end) 
++		*end = 0;
+ 	len = strlen(ptr);
+-	if (len > 0 && ptr[len-1] == '\n') ptr[len-1]=0;
++
+ 	if (strcmp (ptr, "ERR UNKNOWN-UPS") == 0) {
+ 		printf (_("CRITICAL - no such ups '%s' on that host\n"), ups_name);
+ 		return ERROR;

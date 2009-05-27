@@ -1,0 +1,46 @@
+--- nagios-plugins-1.4.13/plugins/check_mysql.c	2008-08-16 00:47:32.000000000 -0400
++++ nagios-plugins-1.4.13-no_pass/plugins/check_mysql.c	2009-01-23 18:10:48.000000000 -0500
+@@ -265,7 +265,7 @@
+ 		return ERROR;
+ 
+ 	while (1) {
+-		c = getopt_long (argc, argv, "hvVSP:p:u:d:H:s:c:w:", longopts, &option);
++		c = getopt_long (argc, argv, "hvVSP:p::u:d:H:s:c:w:", longopts, &option);
+ 
+ 		if (c == -1 || c == EOF)
+ 			break;
+@@ -289,12 +289,16 @@
+ 			db_user = optarg;
+ 			break;
+ 		case 'p':									/* authentication information: password */
+-			db_pass = strdup(optarg);
+-
+-			/* Delete the password from process list */
+-			while (*optarg != '\0') {
+-				*optarg = 'X';
+-				optarg++;
++			if (optarg == NULL)
++				db_pass = strdup("");
++			else
++			{
++				db_pass = strdup(optarg);
++				/* Delete the password from process list */
++				while (*optarg != '\0') {
++					*optarg = 'X';
++					optarg++;
++				}
+ 			}
+ 			break;
+ 		case 'P':									/* critical time threshold */
+@@ -361,9 +365,6 @@
+ 	if (db_host == NULL)
+ 		db_host = strdup("");
+ 
+-	if (db_pass == NULL)
+-		db_pass = strdup("");
+-
+ 	if (db == NULL)
+ 		db = strdup("");
+ 
+
+ 	  	 

@@ -2,6 +2,18 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*nagios-plugins-1.4.13-r4 (27 May 2009)
+
+  27 May 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +net-analyzer/nagios-plugins/files/nagios-plugins-1.4.10-contrib.patch,
+  +net-analyzer/nagios-plugins/files/nagios-plugins-1.4.10-noradius.patch,
+  +net-analyzer/nagios-plugins/files/nagios-plugins-1.4.12-pgsqlconfigure.pa
+  tch, nagios-plugins-1.4.13-r4.ebuild,
+  +net-analyzer/nagios-plugins/files/nagios-plugins-1.4.13-mysqlpass.patch,
+  +net-analyzer/nagios-plugins/files/nagios-plugins-1.4.13-upslogout.patch:
+  Importing from the Gentoo tree and adding UPS logout and MySQL password
+  patches.
+
   22 May 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   cacti-plugins/boost/files/cacti-boost.rc-merged:
   Don't check if boost_server.php is executable (yet) and fix a typo.
