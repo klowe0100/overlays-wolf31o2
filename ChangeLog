@@ -2,6 +2,10 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  30 May 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> boost-2.4-r3.ebuild,
+  cacti-plugins/boost/files/cacti-boost.rc-merged:
+  Adding testing KEYWORDS.
+
   30 May 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   cacti-0.8.7d-r3.ebuild:
   Adding testing KEYWORDS.

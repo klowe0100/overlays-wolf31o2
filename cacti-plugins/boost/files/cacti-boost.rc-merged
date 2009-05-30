@@ -46,7 +46,7 @@ start() {
 		eerror "Cacti Boost is currently processing, Aborting"
 		eend 1
 	else
-		start-stop-daemon --start --background --pidfile /var/run/boost_server.php.pid --make-pidfile --exec /usr/bin/php -- -q ${CACTI_BOOST_HOME}/boost_server.php > ${CACTI_BOOST_LOG} 2>&1
+		start-stop-daemon --start --background --pidfile /var/run/cacti/boost_server.pid --make-pidfile --exec /usr/bin/php -- -q ${CACTI_BOOST_HOME}/boost_server.php > ${CACTI_BOOST_LOG} 2>&1
 		ret=$?
 		touch /var/lock/subsys/boost_server.php
 	fi
@@ -59,7 +59,7 @@ stop() {
 	if [ -e /var/lock/subsys/boost_server.php ] ; then
 		flush || return $?
 		ebegin "Stopping Cacti Boost Server"
-		start-stop-daemon --stop --pidfile /var/run/boost_server.php.pid
+		start-stop-daemon --stop --pidfile /var/run/cacti/boost_server.pid
 		ret=$?
 		rm -f /var/lock/subsys/boost_server.php > /dev/null 2>&1
 	fi

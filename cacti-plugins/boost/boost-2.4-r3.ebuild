@@ -10,7 +10,7 @@ SRC_URI="${CACTI_PLUG_BASE}/${CACTI_PLUG_NAME}-${PV}.tar.gz"
 
 LICENSE="GPL-2"
 IUSE="memory"
-KEYWORDS=""
+KEYWORDS="~amd64 ~x86"
 
 DEPEND="${DEPEND}
 	memory? ( >=virtual/mysql-5 )"
