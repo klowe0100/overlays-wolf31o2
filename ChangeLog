@@ -2,6 +2,11 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*mobile-0.1 (30 May 2009)
+
+  30 May 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> mobile-0.1.ebuild:
+  Adding mobile plugin. Upstream uses unversioned tarballs. Oh, well.
+
   30 May 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   discovery-0.9.ebuild:
   Version bumping to the latest version.
