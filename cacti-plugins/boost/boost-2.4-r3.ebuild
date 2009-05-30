@@ -45,10 +45,10 @@ src_unpack() {
 }
 
 src_install() {
-	local dir=${CACTI_HOME}/cache/png
-	dodir "${dir}" || die "dodir"
-	keepdir "${dir}" || die "keepdir"
-	fowners apache:apache "${dir}" || die "fowners"
+	local _cachedir=${CACTI_HOME}/cache/png _piddir=/var/run/cacti
+	dodir "${_cachedir}" "${_piddir}" || die "dodir"
+	keepdir "${_cachedir}" "${_piddir}" || die "keepdir"
+	fowners apache:apache "${_cachedir}" || die "fowners"
 	fperms 775 "${dir}" || die "fperms"
 	newinitd "${FILESDIR}"/cacti-boost.rc-merged cacti-boost || die "newinitd"
 	newconfd "${FILESDIR}"/cacti-boost.confd cacti-boost || die "newconfd"

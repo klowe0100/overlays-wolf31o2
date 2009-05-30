@@ -24,7 +24,7 @@ diff -u boost.orig/setup.php boost/setup.php
  			"description" => "This lock file will assist the boost poller from detecting overrun conditions.",
  			"method" => "textbox",
 -			"default" => "",
-+			"default" => "/var/lock/subsys/boost_server.php",
++			"default" => "/var/lock/subsys/boost_server.lock",
  			"max_length" => "255"
  		),
  		"boost_log_header" => array(
