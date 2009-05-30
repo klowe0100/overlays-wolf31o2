@@ -2,6 +2,10 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  30 May 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  net-analyzer/cacti/files/cacti.envd:
+  Fix the env.d file.
+
 *nagios-check_hpasm-3.5 (27 May 2009)
 
   27 May 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
