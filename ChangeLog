@@ -2,6 +2,11 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*settings-0.6 (30 May 2009)
+
+  30 May 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> settings-0.6.ebuild:
+  Version bumping the settings plugin.
+
 *rrdclean-0.38 (30 May 2009)
 
   30 May 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
