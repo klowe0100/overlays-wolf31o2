@@ -10,8 +10,8 @@ LICENSE="GPL-2"
 
 MYSQL_SCRIPTS="${CACTI_PLUG_HOME}/discover.sql"
 
-src_unpack() {
-	unpack ${A}
-	cd "${S}"
-	epatch "${FILESDIR}"/${PVR}/*.patch || die
-}
+#src_unpack() {
+#	unpack ${A}
+#	cd "${S}"
+#	epatch "${FILESDIR}"/${PVR}/*.patch || die
+#}
