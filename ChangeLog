@@ -2,6 +2,12 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*discovery-0.9 (30 May 2009)
+
+  30 May 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  discovery-0.9.ebuild:
+  Version bumping discovery plugin.
+
   30 May 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> boost-2.4-r3.ebuild:
   I forgot to update one of the variables.
 
