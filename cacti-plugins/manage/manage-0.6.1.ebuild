@@ -4,7 +4,6 @@
 
 inherit eutils cacti-plugins
 
-SRC_URI="http://gilles.boulon.free.fr/manage/manage-0.6.1.zip"
-# ${CACTI_PLUG_BASE}/${CACTI_PLUG_NAME}-${PV}.tar.gz"
-
+SRC_URI="http://gilles.boulon.free.fr/manage/${P}.zip"
+HOMEPAGE="http://gilles.boulon.free.fr/manage/"
 LICENSE="GPL-2"
