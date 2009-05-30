@@ -36,7 +36,7 @@ if [ "${HAS_PATCHES}" == "1" ] ; then
 fi
 
 LICENSE="GPL-2"
-KEYWORDS=""
+KEYWORDS="~amd64 ~x86"
 RESTRICT=""
 IUSE="ldap +pluginarch +snmp"
 

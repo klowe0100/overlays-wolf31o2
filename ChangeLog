@@ -3,6 +3,10 @@
 # $Id$
 
   30 May 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  cacti-0.8.7d-r3.ebuild:
+  Adding testing KEYWORDS.
+
+  30 May 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   net-analyzer/cacti/files/cacti.envd:
   Fix the env.d file.
 
