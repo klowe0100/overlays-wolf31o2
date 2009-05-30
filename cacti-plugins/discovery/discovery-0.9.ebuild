@@ -12,7 +12,7 @@ LICENSE="GPL-2"
 
 MYSQL_SCRIPTS="${CACTI_PLUG_HOME}/discover.sql"
 
-S=${WORKDIR}/${PN}_v${PV}.tar.gz
+S=${WORKDIR}/${PN}_v${PV}
 
 #src_unpack() {
 #	unpack ${A}
