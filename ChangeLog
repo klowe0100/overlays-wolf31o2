@@ -3,7 +3,7 @@
 # $Id$
 
   31 May 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
-  weathermap-0.96a.ebuild, eclass/cacti-plugins.eclass:
+  weathermap-0.96a.ebuild:
   Adding a note about fixing some perms.
 
   30 May 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> flowview-0.6.ebuild:
