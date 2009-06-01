@@ -3,6 +3,10 @@
 # $Id$
 
   01 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  eclass/cacti-plugins.eclass:
+  Removing S from the eclass.
+
+  01 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   spikekill-1.1.ebuild:
   Adding S variable to the ebuild.
 
