@@ -3,6 +3,9 @@
 # $Id$
 
   01 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> thold-0.41.ebuild:
+  Actually git add the files.
+
+  01 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> thold-0.41.ebuild:
   Updated SRC_URI and fixed RDEPEND.
 
 *syslog-0.53 (01 Jun 2009)
