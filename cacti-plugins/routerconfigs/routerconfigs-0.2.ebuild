@@ -6,6 +6,6 @@ EAPI="2"
 
 inherit eutils cacti-plugins
 
-SRC_URI="http://docs.cacti.net/_media/plugin:routerconfigs-latest.tgz -> ${PN}_v${PV}.tar.gz"
+SRC_URI="http://docs.cacti.net/_media/plugin:${PN}-latest.tgz -> ${P}.tar.gz"
 
-LICENSE="GPL-2"
+RDEPEND="${RDEPEND} virtual/tftp"
