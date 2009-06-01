@@ -2,6 +2,11 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  01 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  eclass/cacti-plugins.eclass:
+  Adding cacti-plugins_cleanup_php_eol_style and using it for the DOS to
+  UNIX conversion.
+
 *transporter-0.2 (01 Jun 2009)
 
   01 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>

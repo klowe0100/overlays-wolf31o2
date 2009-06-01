@@ -63,6 +63,11 @@ cacti-plugins_cleanup_php_config_includes() {
 		"$@" || die "Failed sed for config.php"
 }
 
+cacti-plugins_cleanup_php_eol_style() {
+	## TODO:  check if we have options passed
+	edos2unix "$@"
+}
+
 cacti-plugins_cleanup_svn_leftovers() {
 	einfo "Removing useless .svn directories."
 	__svndirs=`find "${D}" -type d -name .svn`
@@ -83,7 +88,7 @@ cacti-plugins_src_install() {
 	local __phpfiles=`find -type f -name '*.php'`
 	insinto ${CACTI_PLUG_HOME}
 
-	edos2unix ${__phpfiles}
+	cacti-plugins_cleanup_php_eol_style ${__phpfiles}
 	cacti-plugins_cleanup_php_adodb_includes ${__phpfiles}
 	doins -r * || die "Failed installing"
 	cacti-plugins_cleanup_svn_leftovers
