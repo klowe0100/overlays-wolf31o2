@@ -7,15 +7,6 @@ EAPI="2"
 inherit eutils cacti-plugins
 
 SRC_URI="http://docs.cacti.net/_media/plugin:${PN}_v${PV}.tar.gz -> ${PN}_v${PV}.tar.gz"
-
-LICENSE="GPL-2"
-
-MYSQL_SCRIPTS="${CACTI_PLUG_HOME}/discover.sql"
-
 S=${WORKDIR}/${PN}_v${PV}
 
-#src_unpack() {
-#	unpack ${A}
-#	cd "${S}"
-#	epatch "${FILESDIR}"/${PVR}/*.patch || die
-#}
+LICENSE="GPL-2"
