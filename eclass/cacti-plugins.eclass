@@ -45,6 +45,12 @@ RESTRICT="primaryuri"
 
 RDEPEND="${DEPEND}"
 
+cacti-plugins_cleanup_adodb_includes() {
+	einfo "Switching to system adodb"
+	sed -i -e \
+		's:$config\["library_path"\] . "/adodb/adodb.inc.php":"adodb/adodb.inc.php":' \
+		"$@" || die "Failed sed for adodb"
+}
 cacti-plugins_pkg_setup() {
 	if has_version \<net-analyzer/cacti-0.8.7d-r2 ; then
 		if built_with_use --missing ok \>=net-analyzer/cacti-0.8.7d-r2 plugins pluginarch; then
@@ -69,9 +75,3 @@ cacti-plugins_pkg_postinst() {
 	[ -n "${DO_MYSQL_INSTALL}" ] && [ -n "${MYSQL_SCRIPTS}" ] && mysql-dbfuncs_load_sql
 }
 
-cacti-plugins_cleanup_adodb_includes() {
-	einfo "Switching to system adodb"
-	sed -i -e \
-		's:$config\["library_path"\] . "/adodb/adodb.inc.php":"adodb/adodb.inc.php":' \
-		"$@" || die "Failed sed for adodb"
-}
