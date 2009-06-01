@@ -2,6 +2,13 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*mactrack-2.0_pre20090601 (01 Jun 2009)
+
+  01 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  mactrack-2.0_pre20090601.ebuild:
+  Adding the mactrack plugin. The version upstream isn't very clear, so I've
+  tagged it with today's date, instead.
+
 *loginmod-1.0 (01 Jun 2009)
 
   01 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> loginmod-1.0.ebuild:
