@@ -2,6 +2,9 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  01 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> thold-0.41.ebuild:
+  Updated SRC_URI and fixed RDEPEND.
+
 *syslog-0.53 (01 Jun 2009)
 
   01 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> syslog-0.53.ebuild:
