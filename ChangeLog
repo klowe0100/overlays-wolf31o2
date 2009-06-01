@@ -2,6 +2,10 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  01 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> docs-0.1.ebuild,
+  docs-0.2.ebuild:
+  Cleaning up SRC_URI and removing older ebuilds.
+
   01 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   discovery-0.8.5-r1.ebuild, discovery-0.9.ebuild:
   Clean up the discovery ebuild and remove older versions.
