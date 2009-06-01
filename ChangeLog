@@ -3,6 +3,10 @@
 # $Id$
 
   01 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  rrdclean-0.38.ebuild:
+  Clean up SRC_URI.
+
+  01 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   routerconfigs-0.2.ebuild:
   Cleaning up SRC_URI and adding virtual/tftp to RDEPEND.
 
