@@ -10,3 +10,4 @@ SRC_URI="http://docs.cacti.net/_media/plugin:monitor-latest.tgz -> ${PN}_v${PV}.
 # ${CACTI_PLUG_BASE}/${CACTI_PLUG_NAME}-${PV}.tar.gz"
 
 LICENSE="GPL-2"
+S=${WORKDIR}/${PN}_v${PV}
