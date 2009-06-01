@@ -2,6 +2,12 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*ssh-1.0 (01 Jun 2009)
+
+  01 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> ssh-1.0.ebuild:
+  Adding the ssh plugin from http://forums.cacti.net/about25386.html for
+  testing.
+
   01 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> thold-0.41.ebuild:
   Actually git add the files.
 
