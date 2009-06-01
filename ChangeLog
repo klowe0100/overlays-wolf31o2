@@ -2,6 +2,9 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  01 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> flowview-0.6.ebuild:
+  Reverting the S addition, since it is the default.
+
   01 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   eclass/cacti-plugins.eclass:
   Removing S from the eclass.

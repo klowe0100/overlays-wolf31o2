@@ -9,4 +9,3 @@ inherit eutils cacti-plugins
 SRC_URI="http://docs.cacti.net/_media/plugin:${PN}-latest.tgz -> ${PN}_v${PV}.tar.gz"
 
 LICENSE="GPL-2"
-S=${WORKDIR}/${PN}_v${PV}
