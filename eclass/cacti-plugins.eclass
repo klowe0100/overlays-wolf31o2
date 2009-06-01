@@ -9,6 +9,7 @@
 
 # We don't actually need webapp-config for this.
 WEBAPP_OPTIONAL="yes"
+WEBAPP_MANUAL_SLOT="yes"
 
 inherit eutils mysql-dbfuncs webapp
 
