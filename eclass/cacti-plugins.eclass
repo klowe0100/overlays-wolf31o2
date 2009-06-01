@@ -52,6 +52,13 @@ cacti-plugins_cleanup_php_adodb_includes() {
 		's:$config\["library_path"\] . "/adodb/adodb.inc.php":"adodb/adodb.inc.php":' \
 		"$@" || die "Failed sed for adodb"
 }
+
+cacti-plugins_cleanup_svn_leftovers{} {
+	echo "Removing useless .svn directories."
+	__svndirs=`find "${D}" -type d -name .svn`
+	rm -f ${__svndirs} || die "Cannot clean .svn directories"
+}
+
 cacti-plugins_pkg_setup() {
 	if has_version \<net-analyzer/cacti-0.8.7d-r2 ; then
 		if built_with_use --missing ok \>=net-analyzer/cacti-0.8.7d-r2 plugins pluginarch; then
