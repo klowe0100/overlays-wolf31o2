@@ -3,6 +3,10 @@
 # $Id$
 
   01 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  spikekill-1.1.ebuild:
+  Fixing S.
+
+  01 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   aggregate-0.71.ebuild:
   Removing LICENSE.
 
