@@ -2,6 +2,13 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  01 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> boost-2.4-r1.ebuild,
+  boost-2.4-r2.ebuild, boost-2.4-r3.ebuild,
+  cacti-plugins/boost/files/cacti-boost.rc,
+  -cacti-plugins/boost/files/cacti-boost.rc.memory,
+  -cacti-plugins/boost/files/cacti-boost.rc-merged:
+  Clean up the boost plugin ebuild and remove the older versions.
+
   01 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> flowview-0.6.ebuild:
   Replacing HEAP with MEMORY for table creation.
 
