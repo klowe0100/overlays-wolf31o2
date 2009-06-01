@@ -4,6 +4,10 @@
 
   01 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   eclass/cacti-plugins.eclass:
+  Rename ADOdb cleanup function.
+
+  01 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  eclass/cacti-plugins.eclass:
   Uncomment the webapp eclass.
 
   01 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>

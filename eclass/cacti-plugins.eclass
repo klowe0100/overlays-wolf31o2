@@ -45,7 +45,7 @@ RESTRICT="primaryuri"
 
 RDEPEND="${DEPEND}"
 
-cacti-plugins_cleanup_adodb_includes() {
+cacti-plugins_cleanup_php_adodb_includes() {
 	einfo "Switching to system adodb"
 	sed -i -e \
 		's:$config\["library_path"\] . "/adodb/adodb.inc.php":"adodb/adodb.inc.php":' \
@@ -66,7 +66,7 @@ cacti-plugins_src_install() {
 	insinto ${CACTI_PLUG_HOME}
 
 	edos2unix ${__phpfiles}
-	cacti-plugins_cleanup_adodb_includes ${__phpfiles}
+	cacti-plugins_cleanup_php_adodb_includes ${__phpfiles}
 	doins -r * || die "Failed installing"
 }
 
