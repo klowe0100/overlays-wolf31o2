@@ -2,6 +2,10 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  01 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  discovery-0.9.ebuild:
+  Updating to use the default SRC_URI.
+
 *cycle-0.7-r1 (01 Jun 2009)
 
   01 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> cycle-0.7-r1.ebuild:
