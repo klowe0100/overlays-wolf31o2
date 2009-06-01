@@ -2,6 +2,14 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*aggregate-0.71 (01 Jun 2009)
+
+  01 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  aggregate-0.71.ebuild:
+  Adding an ebuild for the aggregate plugin. Once again, they've changed the
+  layotu for where the files are located and didn't use a versioned tarball.
+  Go, UPSTREAM...
+
   01 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   eclass/cacti-plugins.eclass:
   Add a default SRC_URI to the eclass, since most of the plugins will be
