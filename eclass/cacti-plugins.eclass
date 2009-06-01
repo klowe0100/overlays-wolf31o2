@@ -56,6 +56,13 @@ cacti-plugins_cleanup_php_adodb_includes() {
 		"$@" || die "Failed sed for adodb"
 }
 
+cacti-plugins_cleanup_php_config_includes() {
+	einfo "Switching from config.php to global.php"
+	sed -i -e \
+		's:/include/config.php:/include/global.php:' \
+		"$@" || die "Failed sed for config.php"
+}
+
 cacti-plugins_cleanup_svn_leftovers() {
 	einfo "Removing useless .svn directories."
 	__svndirs=`find "${D}" -type d -name .svn`
