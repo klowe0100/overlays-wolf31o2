@@ -4,6 +4,11 @@
 
   01 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   eclass/cacti-plugins.eclass:
+  Adding more TODO sections and adding error handling to
+  cacti-plugins_cleanup_php_eol_style.
+
+  01 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  eclass/cacti-plugins.eclass:
   Adding cacti-plugins_cleanup_php_eol_style and using it for the DOS to
   UNIX conversion.
 

@@ -50,13 +50,15 @@ RESTRICT="primaryuri"
 RDEPEND="${DEPEND}"
 
 cacti-plugins_cleanup_php_adodb_includes() {
-	einfo "Switching to system adodb"
+	## TODO:  check if we have options passed
+	einfo "Switching to system ADOdb"
 	sed -i -e \
 		's:$config\["library_path"\] . "/adodb/adodb.inc.php":"adodb/adodb.inc.php":' \
 		"$@" || die "Failed sed for adodb"
 }
 
 cacti-plugins_cleanup_php_config_includes() {
+	## TODO:  check if we have options passed
 	einfo "Switching from config.php to global.php"
 	sed -i -e \
 		's:/include/config.php:/include/global.php:' \
@@ -65,7 +67,7 @@ cacti-plugins_cleanup_php_config_includes() {
 
 cacti-plugins_cleanup_php_eol_style() {
 	## TODO:  check if we have options passed
-	edos2unix "$@"
+	edos2unix "$@" || die "Failed dos2unix conversion"
 }
 
 cacti-plugins_cleanup_svn_leftovers() {
