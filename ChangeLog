@@ -2,6 +2,11 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*loginmod-1.0 (01 Jun 2009)
+
+  01 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> loginmod-1.0.ebuild:
+  Adding the loginmod plugin.
+
   01 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> flowview-0.6.ebuild:
   Clean up SRC_URI, remove LICENSE, and switch our sed from src_configure to
   src_prepare.
