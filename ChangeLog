@@ -2,6 +2,10 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  01 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> boost-2.4-r3.ebuild:
+  Revert the switch in tarballs for the boost plugin and make the use of the
+  MEMORY table default.
+
 *cacti-spine-0.8.7d (01 Jun 2009)
 
   01 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>

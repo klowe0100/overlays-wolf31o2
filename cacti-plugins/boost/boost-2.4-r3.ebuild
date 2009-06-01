@@ -6,19 +6,21 @@ EAPI="2"
 
 inherit eutils cacti-plugins
 
-SRC_URI="http://docs.cacti.net/_media/plugin:${PN}_v${PV}.tar.gz -> ${P}.tar.gz"
-S=${WORKDIR}/${PN}_v${PV}
+#SRC_URI="http://docs.cacti.net/_media/plugin:${PN}_v${PV}.tar.gz -> ${P}.tar.gz"
+SRC_URI="${CACTI_PLUG_BASE}/${P}.tar.gz"
 
 LICENSE="GPL-2"
-IUSE="memory"
+IUSE="+memory"
 KEYWORDS="~amd64 ~x86"
 
 DEPEND="${DEPEND}
 	memory? ( >=virtual/mysql-5 )"
 RDEPEND="${DEPEND}"
 
+S=${WORKDIR}/${PN}
+
 pkg_preinst() {
-	if [ -e "${CACTI_PLUG_BASE}/${CACTI_PLUG_NAME}" ]
+	if [ -e "${CACTI_PLUG_HOME}/${CACTI_PLUG_NAME}" ]
 	then
 		ebegin "Flushing Boost Poller Tables"
 		/usr/bin/php -q \
