@@ -75,6 +75,7 @@ cacti-plugins_src_install() {
 
 	edos2unix ${__phpfiles}
 	cacti-plugins_cleanup_php_adodb_includes ${__phpfiles}
+	cacti-plugins_cleanup_svn_leftovers
 	doins -r * || die "Failed installing"
 }
 
