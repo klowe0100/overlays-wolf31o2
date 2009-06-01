@@ -37,6 +37,8 @@ export MYSQL_DBNAME=${CACTI_SQL_DBNAME}
 
 DESCRIPTION="Cacti plugin: ${CACTI_PLUG_NAME}"
 HOMEPAGE="http://docs.cacti.net/plugins"
+
+if [ -z "${MY_P}" ] ; then MY_P="${PN}_v${PV}" ; fi
 SRC_URI="http://docs.cacti.net/_media/plugin:${PN}_v${PV}.tar.gz -> ${P}.tar.gz"
 
 SLOT="0"
