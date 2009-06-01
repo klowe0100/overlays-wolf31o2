@@ -4,6 +4,10 @@
 
   01 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   eclass/cacti-plugins.eclass:
+  Uncomment the webapp eclass.
+
+  01 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  eclass/cacti-plugins.eclass:
   Moving helper function above the exported eclass functions.
 
 *thold-0.41 (01 Jun 2009)

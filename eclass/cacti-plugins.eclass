@@ -10,7 +10,7 @@
 # We don't actually need webapp-config for this.
 WEBAPP_OPTIONAL="yes"
 
-inherit eutils mysql-dbfuncs # webapp
+inherit eutils mysql-dbfuncs webapp
 
 case "${EAPI:-0}" in
 	0|1)
