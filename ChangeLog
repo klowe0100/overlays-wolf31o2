@@ -2,6 +2,9 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  01 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> settings-0.6.ebuild:
+  Clean up SRC_URI.
+
   01 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   rrdclean-0.38.ebuild:
   Clean up SRC_URI.
