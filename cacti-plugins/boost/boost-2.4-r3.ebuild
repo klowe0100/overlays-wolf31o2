@@ -52,7 +52,7 @@ src_install() {
 	keepdir "${_cachedir}" "${_piddir}" || die "keepdir"
 	fowners apache:apache "${_cachedir}" || die "fowners"
 	fperms 775 "${_cachedir}" || die "fperms"
-	newinitd "${FILESDIR}"/cacti-boost.rc-merged cacti-boost || die "newinitd"
+	newinitd "${FILESDIR}"/cacti-boost.rc cacti-boost || die "newinitd"
 	newconfd "${FILESDIR}"/cacti-boost.confd cacti-boost || die "newconfd"
 	for i in boost_rrdupdate.php boost_server.php poller_boost.php ; do
 		fperms 755 $i || die "fperms $i"
