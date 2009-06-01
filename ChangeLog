@@ -2,6 +2,11 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*thold-0.41 (01 Jun 2009)
+
+  01 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> thold-0.41.ebuild:
+  Adding a thold plugin ebuild.
+
   01 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   routerconfigs-0.2.ebuild:
   Remove S setting.
