@@ -3,6 +3,10 @@
 # $Id$
 
   01 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  cacti-spine-0.8.7d.ebuild:
+  Fix the epatch call, since we don't need it for 0.8.7d of SPINE.
+
+  01 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   spikekill-1.1.ebuild:
   Fixing S.
 

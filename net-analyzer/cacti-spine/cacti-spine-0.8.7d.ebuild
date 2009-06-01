@@ -28,7 +28,7 @@ src_configure() {
 	sed -i -e 's/^bin_PROGRAMS/sbin_PROGRAMS/' Makefile.am
 	sed -i -e 's/wwwroot\/cacti\/log/var\/log/g' spine.h
 	sed -i -e 's/Hostnanme/Hostname/g' ping.c
-	epatch "${DISTDIR}"/${P}-phpscript.patch
+#	epatch "${DISTDIR}"/${P}-phpscript.patch
 	eautoreconf
 	chmod +x configure
 }
