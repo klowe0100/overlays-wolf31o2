@@ -56,7 +56,7 @@ cacti-plugins_cleanup_php_adodb_includes() {
 cacti-plugins_cleanup_svn_leftovers{} {
 	echo "Removing useless .svn directories."
 	__svndirs=`find "${D}" -type d -name .svn`
-	rm -f ${__svndirs} || die "Cannot clean .svn directories"
+	rm -rf ${__svndirs} || die "Cannot clean .svn directories"
 }
 
 cacti-plugins_pkg_setup() {
