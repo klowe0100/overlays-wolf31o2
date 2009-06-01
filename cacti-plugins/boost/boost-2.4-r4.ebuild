@@ -6,17 +6,17 @@ EAPI="2"
 
 inherit eutils cacti-plugins
 
-#SRC_URI="http://docs.cacti.net/_media/plugin:${PN}_v${PV}.tar.gz -> ${P}.tar.gz"
-SRC_URI="${CACTI_PLUG_BASE}/${P}.tar.gz"
+SRC_URI="http://docs.cacti.net/_media/plugin:${PN}_v${PV}.tar.gz -> ${P}-r1.tar.gz"
 
 LICENSE="GPL-2"
 IUSE="+memory"
+KEYWORDS=""
 
 DEPEND="${DEPEND}
 	memory? ( >=virtual/mysql-5 )"
 RDEPEND="${DEPEND}"
 
-S=${WORKDIR}/${PN}
+S=${WORKDIR}/${PN}_v${PV}
 
 pkg_preinst() {
 	if [ -e "${CACTI_PLUG_HOME}/${CACTI_PLUG_NAME}" ]
