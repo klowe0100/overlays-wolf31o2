@@ -3,6 +3,10 @@
 # $Id$
 
   01 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  rrdclean-0.38.ebuild:
+  Adding S variable to the ebuild.
+
+  01 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   routerconfigs-0.2.ebuild:
   Adding S variable to the ebuild.
 
