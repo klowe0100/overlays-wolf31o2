@@ -4,4 +4,4 @@
 CACTI_BOOST_HOME="/var/www/localhost/htdocs/cacti/plugins/boost"
 CACTI_BOOST_LOG="/var/www/localhost/htdocs/cacti/log/boost.log"
 CACTI_BOOST_CACHE="/var/www/localhost/htdocs/cacti/cache/png"
-
+CACTI_BOOST_LOCKFILE="/var/lock/subsys/boost_server.php"
