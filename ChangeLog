@@ -2,6 +2,10 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  01 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> settings-0.5.ebuild,
+  settings-0.6.ebuild:
+  Fixing SRC_URI and removing the old ebuild.
+
   01 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> thold-0.41.ebuild:
   Adding settings plugin as a runtime dependency for thold.
 
