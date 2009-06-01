@@ -36,7 +36,8 @@ export CACTI_PLUG_HOME=${CACTI_HOME}/plugins/${CACTI_PLUG_NAME}
 export MYSQL_DBNAME=${CACTI_SQL_DBNAME}
 
 DESCRIPTION="Cacti plugin: ${CACTI_PLUG_NAME}"
-HOMEPAGE="http://cactiusers.org/downloads"
+HOMEPAGE="http://docs.cacti.net/plugins"
+SRC_URI="http://docs.cacti.net/_media/plugin:${PN}_v${PV}.tar.gz -> ${P}.tar.gz"
 
 SLOT="0"
 LICENSE="GPL-2"

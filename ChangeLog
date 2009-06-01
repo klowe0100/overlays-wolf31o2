@@ -3,6 +3,11 @@
 # $Id$
 
   01 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  eclass/cacti-plugins.eclass:
+  Add a default SRC_URI to the eclass, since most of the plugins will be
+  coming from the official sources.
+
+  01 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   discovery-0.9.ebuild:
   Change discovery to use a more standardized tarball name.
 
