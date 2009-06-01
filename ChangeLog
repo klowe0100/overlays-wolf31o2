@@ -2,6 +2,11 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*syslog-0.53 (01 Jun 2009)
+
+  01 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> syslog-0.53.ebuild:
+  Adding the syslog plugin.
+
   01 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   spikekill-1.1.ebuild:
   Clean up SRC_URI.
