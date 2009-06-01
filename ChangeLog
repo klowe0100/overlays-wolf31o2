@@ -4,6 +4,10 @@
 
   01 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   eclass/cacti-plugins.eclass:
+  Perform .svn cleanup after copy, so we do not affect the source.
+
+  01 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  eclass/cacti-plugins.eclass:
   Call function to cleanup .svn directories.
 
   01 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> settings-0.5.ebuild,
