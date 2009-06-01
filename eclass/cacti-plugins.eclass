@@ -53,7 +53,7 @@ cacti-plugins_cleanup_php_adodb_includes() {
 		"$@" || die "Failed sed for adodb"
 }
 
-cacti-plugins_cleanup_svn_leftovers{} {
+cacti-plugins_cleanup_svn_leftovers() {
 	echo "Removing useless .svn directories."
 	__svndirs=`find "${D}" -type d -name .svn`
 	rm -rf ${__svndirs} || die "Cannot clean .svn directories"
