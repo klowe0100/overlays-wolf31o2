@@ -2,9 +2,10 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
-  01 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> mobile-0.1.ebuild,
-  routerconfigs-0.2.ebuild, flowview-0.6.ebuild, settings-0.6.ebuild,
-  monitor-0.9.ebuild, rrdclean-0.38.ebuild, spikekill-1.1.ebuild,
+  01 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> mobile-0.1.ebuild:
+  Adding S variable to the ebuild.
+
+  01 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   cacti-plugins/boost/files/cacti-boost.confd:
   Adding lock file location to configuration file.
 
