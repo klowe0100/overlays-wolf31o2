@@ -4,7 +4,8 @@
 
 inherit eutils cacti-plugins
 
+CACTI_PLUG_SUPPORTED="yes"
+
 SRC_URI="${CACTI_PLUG_BASE}/${CACTI_PLUG_NAME}-${PV}.tar.gz"
 
 LICENSE="GPL-2"
-S=${WORKDIR}/${PN}

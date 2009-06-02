@@ -2,6 +2,17 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  02 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> mobile-0.1.ebuild,
+  docs-0.2.ebuild, routerconfigs-0.2.ebuild, flowview-0.6.ebuild,
+  settings-0.6.ebuild, cycle-0.7.ebuild, cycle-0.7-r1.ebuild,
+  discovery-0.9.ebuild, monitor-0.9.ebuild, realtime-0.36.ebuild,
+  rrdclean-0.38.ebuild, thold-0.41.ebuild, syslog-0.53.ebuild,
+  aggregate-0.71.ebuild, loginmod-1.0.ebuild, spikekill-1.1.ebuild,
+  clog-1.21.ebuild, mactrack-2.0_pre20090601.ebuild, boost-2.4-r3.ebuild,
+  boost-2.4-r4.ebuild:
+  Added a CACTI_PLUG_SUPPORTED variable to denote plugins supported by the
+  Cacti Group.
+
   01 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   cacti-spine-0.8.7d.ebuild:
   Fix the epatch call, since we don't need it for 0.8.7d of SPINE.

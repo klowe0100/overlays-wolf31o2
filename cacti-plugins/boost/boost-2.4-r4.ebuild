@@ -4,6 +4,8 @@
 
 EAPI="2"
 
+CACTI_PLUG_SUPPORTED="yes"
+
 inherit eutils cacti-plugins
 
 SRC_URI="http://docs.cacti.net/_media/plugin:${PN}_v${PV}.tar.gz -> ${P}-r1.tar.gz"
