@@ -4,6 +4,11 @@
 
   05 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> boost-2.4-r3.ebuild,
   boost-2.4-r4.ebuild:
+  Another typo fix in the upstream code. Someone should get TheWitness a
+  spell checker.
+
+  05 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> boost-2.4-r3.ebuild,
+  boost-2.4-r4.ebuild:
   Fix an annoying typo in the interface.
 
   05 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>

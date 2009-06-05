@@ -47,7 +47,10 @@ src_unpack() {
 	default_src_unpack
 	epatch "${FILESDIR}"/${P}-defaults.patch
 	# Typo fix
-	sed -i 's/Cacing/Caching/g' *.php
+	sed -i \
+		-e 's/Cacing/Caching/g' \
+		-e 's/Performane/Performance/g' \
+		*.php
 }
 
 src_install() {
