@@ -50,7 +50,7 @@ src_unpack() {
 	sed -i \
 		-e 's/Cacing/Caching/g' \
 		-e 's/Performane/Performance/g' \
-		*.php
+		"${S}"/*.php || die "sed"
 }
 
 src_install() {
