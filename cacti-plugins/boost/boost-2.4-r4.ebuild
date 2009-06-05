@@ -45,7 +45,7 @@ pkg_postinst() {
 
 src_unpack() {
 	default_src_unpack
-	epatch "${FILESDIR}"/${P}-defaults.patch
+#	epatch "${FILESDIR}"/${P}-defaults.patch
 	# Typo fix
 	sed -i \
 		-e 's/Cacing/Caching/g' \

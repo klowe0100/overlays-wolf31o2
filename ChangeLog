@@ -3,6 +3,9 @@
 # $Id$
 
   05 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> boost-2.4-r4.ebuild:
+  Commenting out the defaults patch.
+
+  05 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> boost-2.4-r4.ebuild:
   Adding testing KEYWORDS.
 
   05 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> boost-2.4-r3.ebuild,
