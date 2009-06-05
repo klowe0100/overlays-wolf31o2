@@ -2,6 +2,14 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*cacti-0.8.7d-r4 (05 Jun 2009)
+
+  05 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  cacti-0.8.7d-r4.ebuild,
+  +net-analyzer/cacti/files/cacti-0.8.7d-rrd_error_checking.patch:
+  Adding a patch from SVN to clean up graph exporting error handling and
+  improve poller performance.
+
   05 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   -cacti-plugins/discovery/files/0.8.5-r1/add_description.patch,
   -cacti-plugins/discovery/files/0.8.5-r1/values.patch,
