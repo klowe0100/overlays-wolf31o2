@@ -3,6 +3,13 @@
 # $Id$
 
   05 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  cacti-0.8.7d-r4.ebuild:
+  OK, I've added back the doc USE flag, but I'm using it to actually choose
+  whether to install the documentation into MY_HTDOCSROOT or /usr/share,
+  which will lay the groundwork for allowing for context-sensitive help
+  within Cacti.
+
+  05 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   net-analyzer/cacti/files/cacti-0.8.7d-rrd_error_checking.patch:
   It looks like UPSTREAM made a second change with that commit, so removing
   that change from the patch, so it'll apply cleanly.

@@ -38,7 +38,7 @@ fi
 LICENSE="GPL-2"
 KEYWORDS="~amd64 ~x86"
 RESTRICT=""
-IUSE="ldap +pluginarch +snmp"
+IUSE="doc ldap +pluginarch +snmp"
 
 DEPEND=""
 
@@ -163,16 +163,20 @@ pkg_setup() {
 
 src_install() {
 	webapp_src_preinst
+	dodir ${MY_HTDOCSDIR}
 
 	rm LICENSE README
 	dodoc docs/{CHANGELOG,CONTRIB,INSTALL,README,REQUIREMENTS,UPGRADE,text/manual.txt}
+	if use doc ; then
+		einfo "Installing HTML Cacti manual into ${MY_HTDOCSDIR}/manual"
+		docinto ${MY_HTDOCSDIR}/manual
+	fi
 	dohtml -r docs/html/*
 	rm -rf docs
 	rm -rf lib/adodb
 
 	edos2unix `find -type f -name '*.php'`
 
-	dodir ${MY_HTDOCSDIR}
 	newcrond "${FILESDIR}"/cacti-poller.crond cacti-poller
 	newenvd "${FILESDIR}"/cacti.envd 01cacti
 	cp -r . "${D}"${MY_HTDOCSDIR}
