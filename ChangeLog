@@ -2,6 +2,10 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  05 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  cacti-0.8.7d-r4.ebuild:
+  Typo fix.
+
 *cacti-0.8.7d-r4 (05 Jun 2009)
 
   05 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>

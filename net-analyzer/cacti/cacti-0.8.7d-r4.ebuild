@@ -25,7 +25,7 @@ SRC_URI="${CACTI_BASE_URI}/${MY_P}.tar.gz
 	pluginarch? ( ${CACTI_PLUG_URI}/plugins/${PN}-plugin-${MY_PV}-PA-v${PIA_V}.zip )"
 
 # patches
-if [ "${UPSTERAM_HAS_PATCHES}" == "1" ] ; then
+if [ "${UPSTREAM_HAS_PATCHES}" == "1" ] ; then
 	UPSTREAM_PATCHES="ping_timeout
 					graph_search
 					snmp_string_issue_with_rrdtool_creation"
