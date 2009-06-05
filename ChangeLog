@@ -2,6 +2,13 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  05 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  -cacti-plugins/discovery/files/0.8.5-r1/add_description.patch,
+  -cacti-plugins/discovery/files/0.8.5-r1/values.patch,
+  +cacti-plugins/discovery/files/0.9/add_description.patch,
+  +cacti-plugins/discovery/files/0.9/values.patch:
+  Adding the SQL patches back in for testing.
+
   02 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> mobile-0.1.ebuild,
   docs-0.2.ebuild, routerconfigs-0.2.ebuild, flowview-0.6.ebuild,
   settings-0.6.ebuild, cycle-0.7.ebuild, cycle-0.7-r1.ebuild,
