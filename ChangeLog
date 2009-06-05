@@ -2,6 +2,10 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  05 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> boost-2.4-r3.ebuild,
+  boost-2.4-r4.ebuild:
+  Fix an annoying typo in the interface.
+
   05 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   cacti-0.8.7d-r4.ebuild:
   OK, I've added back the doc USE flag, but I'm using it to actually choose

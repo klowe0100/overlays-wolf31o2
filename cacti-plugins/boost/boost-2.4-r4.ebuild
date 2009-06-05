@@ -46,6 +46,8 @@ pkg_postinst() {
 src_unpack() {
 	default_src_unpack
 	epatch "${FILESDIR}"/${P}-defaults.patch
+	# Typo fix
+	sed -i 's/Cacing/Caching/g' *.php
 }
 
 src_install() {
