@@ -2,6 +2,9 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  05 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> boost-2.4-r4.ebuild:
+  Adding testing KEYWORDS.
+
   05 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> boost-2.4-r3.ebuild,
   boost-2.4-r4.ebuild:
   Force sed to operate on S.
