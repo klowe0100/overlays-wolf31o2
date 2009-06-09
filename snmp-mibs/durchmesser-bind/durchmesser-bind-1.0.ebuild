@@ -8,8 +8,7 @@ SRC_URI_BASE="http://svn.durchmesser.ch/trac/bindagentx/export/27/tags/bindagent
 
 DESCRIPTION="MIB definitions for snmp-agents/bindagentx"
 HOMEPAGE="http://svn.durchmesser.ch/trac/bindagentx/wiki/MIB"
-SRC_URI="${SRC_URI_BASE}/mibs/DURCHMESSER-BIND-MIB -> DURCHMESSER-BIND-MIB.txt
-	${SRC_URI_BASE}/mibs/DURCHMESSER-MIB -> DURCHMESSER-MIB.txt"
+SRC_URI="http://svn.durchmesser.ch/trac/bindagentx/changeset/27/tags/${P}?old_path=%2F&format=zip -> bindagentx-${PV}.zip"
 
 LICENSE="GPL-2"
 SLOT="0"
@@ -19,8 +18,12 @@ IUSE=""
 DEPEND=""
 RDEPEND=""
 
+S=${WORKDIR}/tags/bindagentx-${PV}/mibs
+
 src_install() {
 	insinto /usr/share/snmp/mibs
-	doins "${DISTDIR}"/DURCHMESSER-MIB.txt \
-		"${DISTDIR}"/DURCHMESSER-BIND-MIB.txt || die "Cannot install files"
+	newins "${S}"/DURCHMESSER-MIB \
+		DURCHMESSER-MIB.txt || die "Cannot install files"
+	newins "${S}"/DURCHMESSER-BIND-MIB \
+		DURCHMESSER-BIND-MIB.txt || die "Cannot install files"
 }
