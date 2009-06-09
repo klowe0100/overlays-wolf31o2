@@ -3,6 +3,10 @@
 # $Id$
 
   09 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  bindagentx-1.0.ebuild:
+  No + needed.
+
+  09 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   durchmesser-bind-1.0.ebuild:
   Switch to using our shiny new ZIP file, versus pulling individual files.
 

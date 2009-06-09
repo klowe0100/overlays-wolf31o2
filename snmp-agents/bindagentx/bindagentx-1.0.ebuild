@@ -16,7 +16,7 @@ IUSE="+mib"
 DEPEND=""
 RDEPEND="dev-lang/perl
 	virtual/perl-Sys-Syslog
-	net-analyzer/net-snmp[+perl]
+	net-analyzer/net-snmp[perl]
 	>=net-dns/bind-9.5
 	mib? ( ~snmp-mibs/durchmesser-bind-${PV} )"
 
