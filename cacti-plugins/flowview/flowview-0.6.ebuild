@@ -10,6 +10,8 @@ inherit eutils cacti-plugins
 
 SRC_URI="http://docs.cacti.net/_media/plugin:${PN}-latest.tgz -> ${P}.tar.gz"
 
+RDEPEND="${RDEPEND} virtual/tftp"
+
 src_prepare() {
 	sed -i -e 's/HEAP/MEMORY/g' flowview.sql setup.php || die "sed"
 }
