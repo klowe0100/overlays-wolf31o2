@@ -2,6 +2,12 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*bindagentx-1.0 (09 Jun 2009)
+
+  09 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  bindagentx-1.0.ebuild:
+  Initial ebuild for BindAgentX SNMP sub-agent.
+
 *durchmesser-bind-1.0 (09 Jun 2009)
 
   09 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
