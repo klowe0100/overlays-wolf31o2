@@ -3,6 +3,10 @@
 # $Id$
 
   09 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  routerconfigs-0.2.ebuild:
+  Adding MYSQL_SCRIPTS, since this plugin requires a manual import.
+
+  09 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   aggregate-0.71.ebuild:
   Fixing S.
 
