@@ -9,3 +9,4 @@ CACTI_PLUG_SUPPORTED="yes"
 inherit eutils cacti-plugins
 
 SRC_URI="http://docs.cacti.net/_media/plugin:${PN}-latest.tgz -> ${P}.tar.gz"
+S=${WORKDIR}/${PN}-2.0
