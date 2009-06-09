@@ -7,3 +7,4 @@ EAPI="2"
 inherit eutils cacti-plugins
 
 SRC_URI="http://forums.cacti.net/download.php?id=8695 -> ${P}.tar.gz"
+S=${WORKDIR}/${PN}
