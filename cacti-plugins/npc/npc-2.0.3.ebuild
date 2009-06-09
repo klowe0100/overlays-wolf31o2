@@ -5,10 +5,7 @@
 inherit eutils cacti-plugins
 
 SRC_URI="http://www.constructaegis.com/downloads/${P}.tar.gz"
-# ${CACTI_PLUG_BASE}/${CACTI_PLUG_NAME}-${PV}.tar.gz"
-
-LICENSE="GPL-2"
-IUSE=""
+S=${WORKDIR}/${PN}
 # Requires JSON and PDO for PHP
 # Requires Nagios and NDOUtils
 
