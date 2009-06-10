@@ -4,6 +4,11 @@
 
   10 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   discovery-0.9-r1.ebuild:
+  I forget the exact formatting for the filenames, so simply give it all the
+  patches as a list.
+
+  10 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  discovery-0.9-r1.ebuild:
   Arguments to epatch must be absolute.
 
 *discovery-0.9-r1 (10 Jun 2009)
