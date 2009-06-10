@@ -1,0 +1,32 @@
+diff -urN discovery_v0.9.orig/findhosts.php discovery_v0.9/findhosts.php
+--- discovery_v0.9.orig/findhosts.php	2007-12-23 21:50:51.000000000 -0800
++++ discovery_v0.9/findhosts.php	2009-06-10 13:14:22.000000000 -0700
+@@ -353,7 +353,7 @@
+ 								. sql_sanitize($device['snmp_sysDescr']) . "', '"
+ 								. sql_sanitize($device['snmp_sysUptime']) . "', '"
+ 								. sql_sanitize($device['os']) . "', "
+-								. "1, 1,".time() . ')' );
++								. "'1', '1', '" .time() . "')'" );
+ 						}
+ 					}
+ 				} else {
+@@ -379,9 +379,9 @@
+ 								. sql_sanitize($device['snmp_sysName']) . "', '"
+ 								. sql_sanitize($device['snmp_sysLocation']) . "', '"
+ 								. sql_sanitize($device['snmp_sysContact']) . "', '"
+-								. sql_sanitize($device['snmp_sysDescr']) . "', "
+-								. sql_sanitize($device['snmp_sysUptime']) . ", "
+-								. "'', 0, 1,".time() . ')' );
++								. sql_sanitize($device['snmp_sysDescr']) . "', '"
++								. sql_sanitize($device['snmp_sysUptime']) . "'"
++								. ",'0','1','" .time() . "')" );
+ 							discover_debug(" - Host is alive but no SNMP!");
+ 						} else {
+ 						}
+@@ -1167,4 +1167,4 @@
+ 	print "-v --version  - Display this help message\n";
+ 	print "-h --help     - display this help message\n";
+ }
+-?>
+\ No newline at end of file
++?>

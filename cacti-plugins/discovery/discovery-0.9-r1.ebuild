@@ -12,5 +12,5 @@ S=${WORKDIR}/${PN}_v${PV}
 
 src_prepare() {
 	default_src_prepare
-	epatch "${FILESDIR}"/${PV}/values.patch
+	epatch "${FILESDIR}"/${PV}
 }
