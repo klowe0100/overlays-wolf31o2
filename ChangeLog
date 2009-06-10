@@ -2,6 +2,10 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  10 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  reportit-0.7.1.ebuild:
+  Fixing S.
+
   09 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   bindagentx-1.0.ebuild:
   No + needed.
