@@ -3,6 +3,10 @@
 # $Id$
 
   10 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  discovery-0.9-r1.ebuild:
+  This is getting old. I might actually have to break out the documentation.
+
+  10 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   +cacti-plugins/discovery/files/0.9/001_all_add_description.patch,
   discovery-0.9-r1.ebuild,
   +cacti-plugins/discovery/files/0.9/002_all_values_quotes.patch,
