@@ -2,6 +2,28 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*lvm2-2.02.47 (11 Jun 2009)
+*lvm2-2.02.45-r2 (11 Jun 2009)
+
+  11 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +sys-fs/lvm2/files/1.02.22-dmeventd.initd,
+  +sys-fs/lvm2/files/device-mapper.conf-1.02.22-r3,
+  +sys-fs/lvm2/files/device-mapper.rc-1.02.22-r3,
+  +sys-fs/lvm2/files/64-device-mapper.rules-1.02.22-r5,
+  +sys-fs/lvm2/files/lvm.confd-2.02.28-r2, +sys-fs/lvm2/files/dm-start.sh,
+  +sys-fs/lvm2/files/lvm.rc-2.02.28-r2,
+  +sys-fs/lvm2/files/lvm2-start.sh-2.02.28-r2,
+  +sys-fs/lvm2/files/clvmd.rc-2.02.28-r3, +sys-fs/lvm2/files/dmtab,
+  +sys-fs/lvm2/files/lvm2-stop.sh-2.02.37,
+  +sys-fs/lvm2/files/clvmd.confd-2.02.39,
+  +sys-fs/lvm2/files/clvmd.rc-2.02.39, lvm2-2.02.45-r2.ebuild,
+  +sys-fs/lvm2/files/lvm2-2.02.45-device-mapper-export-format.patch,
+  +sys-fs/lvm2/files/lvm2-2.02.45-dmeventd.patch,
+  +sys-fs/lvm2/files/lvm.conf-2.02.45.patch, lvm2-2.02.47.ebuild:
+  Importing sys-fs/lvm2 from the Gentoo tree and version bumping it to
+  2.02.47, which will need to be verified for the continued necessity of the
+  supplied patches. Setting empty KEYWORDS until that can be done.
+
   10 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   discovery-0.9-r1.ebuild:
   This is getting old. I might actually have to break out the documentation.
