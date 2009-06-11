@@ -2,6 +2,13 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*cdpr-2.3 (11 Jun 2009)
+
+  11 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> cdpr-2.3.ebuild:
+  Adding an ebuild for cdpr, which is a tool for decoding CDP packets. I
+  still need to add the server-side support, but the client binary is good
+  enough for now.
+
 *lvm2-2.02.47 (11 Jun 2009)
 *lvm2-2.02.45-r2 (11 Jun 2009)
 
