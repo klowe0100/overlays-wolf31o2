@@ -5,7 +5,8 @@
 EAPI="2"
 
 CACTI_PLUG_SUPPORTED="yes"
-MYSQL_SCRIPTS="routerconfigs.sql"
+PLUGIN_NEEDS_SQL="yes"
+MYSQL_SCRIPTS="${PN}.sql"
 
 inherit eutils cacti-plugins
 
