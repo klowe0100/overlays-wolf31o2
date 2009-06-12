@@ -2,6 +2,10 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  12 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> monitor-0.9.ebuild:
+  Adding PLUGIN_NEEDS_SQL and MYSQL_SCRIPTS for proper support of this
+  plugin.
+
   12 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> flowview-0.6.ebuild:
   Adding PLUGIN_NEEDS_SQL and MYSQL_SCRIPTS for proper support of this
   plugin.
