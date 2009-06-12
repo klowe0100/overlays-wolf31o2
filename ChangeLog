@@ -2,6 +2,10 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  12 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  eclass/cacti-plugins.eclass:
+  Wrapping SQL import code in PLUGIN_NEEDS_SQL variable.
+
 *cdpr-2.3 (11 Jun 2009)
 
   11 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> cdpr-2.3.ebuild:

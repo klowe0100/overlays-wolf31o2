@@ -98,9 +98,13 @@ cacti-plugins_src_install() {
 
 cacti-plugins_pkg_postinst() {
 	### TODO: make this *way* smarter
-#	if [ -n "${PLUGIN_NEEDS_SQL}" ] ; then
-	[ -n "${DO_MYSQL_INSTALL}" ] && [ -n "${MYSQL_SCRIPTS}" ] && mysql-dbfuncs_load_sql
-#	fi
+	if [ -n "${PLUGIN_NEEDS_SQL}" ] ; then
+		if [ -n "${DO_MYSQL_INSTALL}" ] ; then
+			if [ -n "${MYSQL_SCRIPTS}" ] ; then
+				mysql-dbfuncs_load_sql
+			fi
+		fi
+	fi
 	if [ -n "${PLUGIN_NEEDS_CONFIG}" ] ; then
 		elog "You need to add ${PN} to your plugins variable."
 	fi
