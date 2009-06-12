@@ -3,6 +3,11 @@
 # $Id$
 
   12 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  discovery-0.9-r1.ebuild:
+  Adding PLUGIN_NEEDS_SQL and MYSQL_SCRIPTS for proper support of this
+  plugin.
+
+  12 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   eclass/cacti-plugins.eclass:
   Adding code to inform the user that they need to import the SQL scripts,
   since DO_MYSQL_INSTALL is not set.
