@@ -101,6 +101,7 @@ cacti-plugins_pkg_postinst() {
 	if [ -n "${PLUGIN_NEEDS_SQL}" ] ; then
 		if [ -n "${DO_MYSQL_INSTALL}" ] ; then
 			if [ -n "${MYSQL_SCRIPTS}" ] ; then
+				MYSQL_SCRIPTS="${CACTI_PLUG_HOME}/${MYSQL_SCRIPTS}"
 				mysql-dbfuncs_load_sql
 			else
 				eerror "MYSQL_SCRIPTS is empty!"

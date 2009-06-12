@@ -2,6 +2,10 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  12 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  eclass/cacti-plugins.eclass:
+  Prefix MYSQL_SCRIPTS with CACTI_PLUG_HOME, which is configurable.
+
   12 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> thold-0.41.ebuild:
   Adding PLUGIN_NEEDS_SQL and MYSQL_SCRIPTS for proper support of this
   plugin.
