@@ -4,6 +4,11 @@
 
   12 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   eclass/cacti-plugins.eclass:
+  Adding code to inform the user that they need to import the SQL scripts,
+  since DO_MYSQL_INSTALL is not set.
+
+  12 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  eclass/cacti-plugins.eclass:
   Wrapping SQL import code in PLUGIN_NEEDS_SQL variable.
 
 *cdpr-2.3 (11 Jun 2009)
