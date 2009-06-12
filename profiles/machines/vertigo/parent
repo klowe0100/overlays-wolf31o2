@@ -1,0 +1,5 @@
+../../base
+../../default/linux
+../../arch/amd64
+../../targets/desktop
+../../targets/server
