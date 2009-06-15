@@ -2,6 +2,14 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*phpsyslogng-2.9.8m-r1 (15 Jun 2009)
+
+  15 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  phpsyslogng-2.9.8m-r1.ebuild, +app-admin/phpsyslogng/files/logrotate.php,
+  +app-admin/phpsyslogng/files/postinstall-en.txt, profiles/categories:
+  Pulling in phpsyslogng from the main Gentoo, then fixing it so it actually
+  works.
+
 *superlinks-0.8 (13 Jun 2009)
 
   13 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
