@@ -2,6 +2,12 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*pbzip2-1.0.5-r2 (16 Jun 2009)
+
+  16 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  pbzip2-1.0.5-r2.ebuild:
+  Version bump to 1.0.5, to match Gentoo's tree.
+
 *phpsyslogng-2.9.8m-r1 (15 Jun 2009)
 
   15 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
