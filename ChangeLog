@@ -1,6 +1,21 @@
-# ChangeLog for overlays/wolf31o2
+# ChangeLog for layman/wolf31o2
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
+
+*planner-0.14.4 (17 Jun 2009)
+*planner-0.14.3-r2 (17 Jun 2009)
+*planner-0.14.3-r1 (17 Jun 2009)
+
+  17 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  planner-0.14.3-r1.ebuild, planner-0.14.3-r2.ebuild,
+  +app-office/planner/files/planner-0.14.3-build-failure.patch,
+  +app-office/planner/files/planner-0.14.3-configure.patch,
+  +app-office/planner/files/planner-0.14.3-eds-plugin.patch,
+  +app-office/planner/files/planner-0.14.3-parallel-build.patch,
+  planner-0.14.4.ebuild, +app-office/planner/metadata.xml,
+  profiles/categories:
+  Pulled app-office/planner from the Gentoo tree thanks to the wonderful QA
+  of the x86 team during stabilization.
 
 *nagiosmib-1.0.1 (17 Jun 2009)
 
