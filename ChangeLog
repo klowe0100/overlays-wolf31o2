@@ -3,6 +3,11 @@
 # $Id$
 
   29 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +profiles/machines/inertia/make.defaults:
+  Copied /etc/make.conf to make.defaults, as a starting point for my
+  machine-based profiles.
+
+  29 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   +profiles/machines/inertia/parent:
   Adding Gentoo parents for inertia.
 
