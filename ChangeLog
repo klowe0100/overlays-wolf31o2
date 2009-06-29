@@ -2,6 +2,10 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  29 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +profiles/machines/inertia/parent:
+  Adding Gentoo parents for inertia.
+
 *livecd-tools-1.0.42 (29 Jun 2009)
 *livecd-tools-1.0.41 (29 Jun 2009)
 *livecd-tools-1.0.40 (29 Jun 2009)
