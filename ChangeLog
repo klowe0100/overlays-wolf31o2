@@ -1,6 +1,15 @@
-# ChangeLog for layman/wolf31o2
+# ChangeLog for overlays/wolf31o2
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
+
+*livecd-tools-1.0.42 (29 Jun 2009)
+*livecd-tools-1.0.41 (29 Jun 2009)
+*livecd-tools-1.0.40 (29 Jun 2009)
+
+  29 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  livecd-tools-1.0.40.ebuild, livecd-tools-1.0.41.ebuild,
+  livecd-tools-1.0.42.ebuild, profiles/categories:
+  Version bumping to add the new versions.
 
 *planner-0.14.4 (17 Jun 2009)
 *planner-0.14.3-r2 (17 Jun 2009)
