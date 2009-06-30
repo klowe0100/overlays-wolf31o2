@@ -1,3 +1,4 @@
 ChangeLog ident
 README ident
+make.defaults ident
 *.ebuild ident=Unset
