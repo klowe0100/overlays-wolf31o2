@@ -2,6 +2,13 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  07 Jul 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +eclass/cacti.eclass:
+  Initial creation of cacti.eclass for setting up Cacti, and its dependents.
+  I hope to provide a generic usable framework to give the most flexibility
+  to the user, while still providing sane and usable defaults, rather than
+  relying on upstream to do it.
+
   07 Jul 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> -README,
   +README.txt:
   Rename README for the double-click crowd.
