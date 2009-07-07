@@ -2,6 +2,13 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*catalyst-2.0.6.905 (07 Jul 2009)
+
+  07 Jul 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  catalyst-2.0.6.905.ebuild:
+  Version bumping catalyst to 2.0.6.905 for testing. This should hopefully
+  be the last 2.0 release before 2.0.7, luck permitting.
+
   30 Jun 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> .gitattributes:
   Add make.defaults to the list for Ident.
 
