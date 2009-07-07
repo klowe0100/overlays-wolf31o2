@@ -2,6 +2,11 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  07 Jul 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> ChangeLog,
+  +skel.ChangeLog:
+  Adding skel.ChangeLog to attempt to keep echangelog from screwing with my
+  headers.
+
 *catalyst-2.0.6.905 (07 Jul 2009)
 
   07 Jul 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
