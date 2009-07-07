@@ -1,6 +1,12 @@
 # ChangeLog for overlays/wolf31o2
-# Copyright 2003-2009 Chris Gianelloni; Distributed under the GPL v2
+# Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
+
+*genkernel-3.4.10.905 (07 Jul 2009)
+
+  07 Jul 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  genkernel-3.4.10.905.ebuild:
+  Version bumping genkernel to 3.4.10.905 for testing.
 
   07 Jul 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> ChangeLog,
   +skel.ChangeLog:
