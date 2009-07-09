@@ -2,6 +2,12 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*cacti-spine-0.8.7e (09 Jul 2009)
+
+  09 Jul 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  cacti-spine-0.8.7e.ebuild:
+  Version bump.
+
 *cacti-0.8.7e (09 Jul 2009)
 
   09 Jul 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> cacti-0.8.7e.ebuild:
