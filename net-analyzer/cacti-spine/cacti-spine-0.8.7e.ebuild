@@ -8,9 +8,9 @@ WANT_AUTOCONF="latest"
 inherit autotools eutils
 
 MY_PV=${PV/_p/-}
-DESCRIPTION="Spine is a fast poller for Cacti (formerly known as Cactid)"
+DESCRIPTION="a fast poller for Cacti, written in C"
 HOMEPAGE="http://cacti.net/spine_info.php"
-SRC_URI="http://forums.cacti.net/download.php?id=17107 -> ${P}.tar.gz"
+SRC_URI="http://cacti.net/downloads/spine/${P}.tar.gz"
 
 LICENSE="GPL-2"
 SLOT="0"
