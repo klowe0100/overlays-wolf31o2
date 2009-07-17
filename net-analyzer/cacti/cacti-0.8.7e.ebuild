@@ -1,6 +1,6 @@
 # Copyright 1999-2008 Gentoo Foundation ; 2008-2009 Chris Gianelloni
 # Distributed under the terms of the GNU General Public License v2
-# $Id: bc4c71762197f349daa6dc41180894ebfaf3b0ac $
+# $Id$
 
 EAPI=2
 
@@ -26,10 +26,7 @@ SRC_URI="${CACTI_BASE_URI}/${MY_P}.tar.gz
 
 # patches
 if [ "${UPSTREAM_HAS_PATCHES}" == "1" ] ; then
-	UPSTREAM_PATCHES="ping_timeout
-					graph_search
-					snmp_string_issue_with_rrdtool_creation"
-					# page_length_graph_view (before snmp_string...)
+	UPSTREAM_PATCHES=""
 	for i in ${UPSTREAM_PATCHES} ; do
 		SRC_URI="${SRC_URI} ${CACTI_BASE_URI}/patches/${PV/_p*}/${i}.patch"
 	done

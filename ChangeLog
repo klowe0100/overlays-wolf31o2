@@ -2,6 +2,11 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  17 Jul 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> cacti-0.8.7e.ebuild:
+  Empty out UPSTREAM_PATCHES, even though it should *not* be getting used. I
+  will check on this a bit more when I have some time to try to figure out
+  why epatch is running.
+
   16 Jul 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   cacti-spine-0.8.7e.ebuild:
   This is completely my fault for not checking that SRC_URI would work
