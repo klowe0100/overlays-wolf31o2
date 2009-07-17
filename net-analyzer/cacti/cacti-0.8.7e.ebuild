@@ -117,9 +117,6 @@ src_unpack() {
 		cp -f "${WORKDIR}"/pa.sql "${S}"
 	fi
 
-	# The Cacti Group is great at error checking their code... ::rolleyes::
-	epatch "${FILESDIR}"/${P}-rrd_error_checking.patch
-
 	# Use sed-fu to use the system adodb, rather than the bundled one
 	sed -i -e \
 		's:$config\["library_path"\] . "/adodb/adodb.inc.php":"adodb/adodb.inc.php":' \

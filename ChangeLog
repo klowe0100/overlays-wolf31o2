@@ -2,6 +2,10 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  17 Jul 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> cacti-0.8.7e.ebuild:
+  Remove the patch from the ebuild, since it came from upstream SVN, and is
+  merged in 0.8.7e, already.
+
   17 Jul 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   cacti-spine-0.8.7c-r1.ebuild, cacti-spine-0.8.7c-r2.ebuild:
   Removing older ebuilds.
