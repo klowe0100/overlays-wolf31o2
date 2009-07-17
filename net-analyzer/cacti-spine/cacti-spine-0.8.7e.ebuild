@@ -41,7 +41,7 @@ src_compile() {
 src_install() {
 	exeinto usr/sbin ; doexe "${S}"/spine
 	insinto etc/ ; insopts -m0640 -o root -g apache
-	newins "${S}"/spine.conf.dist spine.conf || die
+	doins "${S}"/spine.conf || die
 	dodoc ChangeLog INSTALL README
 }
 
