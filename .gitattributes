@@ -1,4 +1,6 @@
 ChangeLog ident
 README ident
+README.txt ident
 make.defaults ident
 *.ebuild ident=Unset
+*.eclass ident

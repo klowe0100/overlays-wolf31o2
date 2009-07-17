@@ -2,6 +2,9 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  17 Jul 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> .gitattributes:
+  Adding README.txt and *.eclass to .gitattributes to enable ident.
+
   17 Jul 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   cacti-spine-0.8.7e.ebuild:
   The build now uses spine.conf rather than spine.conf.dist, so adjusting
