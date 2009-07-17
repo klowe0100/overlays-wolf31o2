@@ -23,19 +23,13 @@ DEPEND="net-analyzer/net-snmp
 RDEPEND="${DEPEND}
 	>=net-analyzer/cacti-0.8.7c"
 
-src_configure() {
+src_prepare() {
 	cd "${S}"
 	sed -i -e 's/^bin_PROGRAMS/sbin_PROGRAMS/' Makefile.am
 	sed -i -e 's/wwwroot\/cacti\/log/var\/log/g' spine.h
 	sed -i -e 's/Hostnanme/Hostname/g' ping.c
 #	epatch "${DISTDIR}"/${P}-phpscript.patch
 	eautoreconf
-	chmod +x configure
-}
-
-src_compile() {
-	econf || die "econf failed"
-	emake || die "emake failed"
 }
 
 src_install() {
