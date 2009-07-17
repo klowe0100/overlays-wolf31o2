@@ -3,6 +3,10 @@
 # $Id$
 
   17 Jul 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  cacti-spine-0.8.7c-r1.ebuild, cacti-spine-0.8.7c-r2.ebuild:
+  Removing older ebuilds.
+
+  17 Jul 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   cacti-0.8.7d-r2.ebuild, cacti-0.8.7d-r3.ebuild:
   Removing older ebuilds.
 
