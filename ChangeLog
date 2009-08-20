@@ -2,6 +2,12 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*cacti-0.8.7e-r1 (20 Aug 2009)
+
+  20 Aug 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  cacti-0.8.7e-r1.ebuild:
+  Revision bumping Cacti to pull in the released upstream patches.
+
   17 Jul 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> cacti-0.8.7e.ebuild:
   Remove the patch from the ebuild, since it came from upstream SVN, and is
   merged in 0.8.7e, already.
