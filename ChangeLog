@@ -2,6 +2,15 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*nagios-core-3.2.0 (20 Aug 2009)
+
+  20 Aug 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +net-analyzer/nagios-core/files/99_nagios3.conf, nagios-core-3.2.0.ebuild,
+  +net-analyzer/nagios-core/files/conf.d,
+  +net-analyzer/nagios-core/files/lighttpd_nagios3-r1.conf,
+  +net-analyzer/nagios-core/files/nagios3:
+  Import the latest Nagios ebuild from Gentoo's tree and mark it stable.
+
 *nagios-3.2.0 (20 Aug 2009)
 
   20 Aug 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> nagios-3.2.0.ebuild:
