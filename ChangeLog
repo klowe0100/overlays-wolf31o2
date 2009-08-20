@@ -2,6 +2,11 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*nagios-3.2.0 (20 Aug 2009)
+
+  20 Aug 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> nagios-3.2.0.ebuild:
+  Import the latest Nagios ebuild from Gentoo's tree and mark it stable.
+
 *genkernel-3.4.10.906 (20 Aug 2009)
 
   20 Aug 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
