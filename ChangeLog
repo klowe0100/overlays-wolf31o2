@@ -2,6 +2,10 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  20 Aug 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  cacti-0.8.7e-r1.ebuild:
+  Move all patching to src_prepare for EAPI=2 QA.
+
 *cacti-spine-0.8.7e-r1 (20 Aug 2009)
 
   20 Aug 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>

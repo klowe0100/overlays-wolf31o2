@@ -98,6 +98,9 @@ newcrond() {
 src_unpack() {
 	# The first thing we do is unpack our sources
 	unpack ${MY_P}.tar.gz
+}
+
+src_prepare() {
 	# Add any official patches from upstream
 	if [ "${UPSTREAM_HAS_PATCHES}" == "1" ] ; then
 		[ ! ${MY_P} == ${P} ] && mv ${MY_P} ${P}
