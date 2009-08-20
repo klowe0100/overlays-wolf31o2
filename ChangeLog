@@ -3,6 +3,10 @@
 # $Id$
 
   20 Aug 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  nagios-plugins-snmp-0.6.0-r2.ebuild:
+  Marking this stable for production use.
+
+  20 Aug 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   nagios-plugins-1.4.13-r4.ebuild:
   Marking this stable for production use.
 

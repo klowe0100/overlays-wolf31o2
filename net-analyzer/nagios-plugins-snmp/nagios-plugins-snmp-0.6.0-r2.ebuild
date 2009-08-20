@@ -1,6 +1,6 @@
-# Copyright 1999-2009 Gentoo Foundation
+# Copyright 1999-2008 Gentoo Foundation ; 2008-2009 Chris Gianelloni
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-analyzer/nagios-plugins-snmp/nagios-plugins-snmp-0.6.0.ebuild,v 1.4 2009/04/15 19:50:40 ranger Exp $
+# $Id$
 
 inherit eutils autotools
 
@@ -10,11 +10,12 @@ SRC_URI="http://nagios.manubulon.com/${P}.tgz"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="amd64 ~ppc64 x86"
-IUSE=""
+KEYWORDS="amd64 x86"
+IUSE="perl"
 
 DEPEND="net-analyzer/net-snmp"
-RDEPEND="${DEPEND}"
+RDEPEND="${DEPEND}
+	perl? ( net-analyzer/nagios-plugins-snmp-perl )"
 
 S=${WORKDIR}/nagios-plugins-snmp
 
@@ -41,8 +42,8 @@ src_compile() {
 src_install() {
 	emake DESTDIR="${D}" install || die "make install failed"
 
-	chown -R root:nagios "${D}"/usr/$(get_libdir)/nagios/plugins || die "Failed Chown of ${D}usr/$(get_libdir)/nagios/plugins"
-	chmod -R o-rwx "${D}"/usr/$(get_libdir)/nagios/plugins || die "Failed Chmod of ${D}usr/$(get_libdir)/nagios/plugins"
+	chown -R root:nagios "${D}"/usr/$(get_libdir)/nagios/plugins || die "Failed chown of ${D}usr/$(get_libdir)/nagios/plugins"
+	chmod -R o-rwx "${D}"/usr/$(get_libdir)/nagios/plugins || die "Failed chmod of ${D}usr/$(get_libdir)/nagios/plugins"
 
 	dodoc README NEWS AUTHORS
 }
