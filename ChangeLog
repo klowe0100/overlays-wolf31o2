@@ -2,6 +2,13 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*genkernel-3.4.10.906 (20 Aug 2009)
+
+  20 Aug 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  genkernel-3.4.10.906.ebuild:
+  Version bumping to 3.4.10.906 because Andrew didn't do it when he released
+  the new version.
+
   20 Aug 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   cacti-0.8.7e-r1.ebuild:
   Move all patching to src_prepare for EAPI=2 QA.
