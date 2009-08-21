@@ -3,6 +3,10 @@
 # $Id$
 
   21 Aug 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  cacti-spine-0.8.7e-r1.ebuild:
+  Marking net-analyzer/cacti-spine stable for production.
+
+  21 Aug 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   cacti-0.8.7e-r1.ebuild:
   Marking net-analyzer/cacti stable for production.
 
