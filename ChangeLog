@@ -2,6 +2,13 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*pecl-memcache-3.0.4 (21 Aug 2009)
+
+  21 Aug 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  pecl-memcache-3.0.4.ebuild:
+  Import dev-php5/pecl-memcache from Gentoo's tree and mark it stable for
+  production.
+
 *adodb-ext-504 (21 Aug 2009)
 
   21 Aug 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
