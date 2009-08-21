@@ -4,6 +4,10 @@
 
   21 Aug 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   reportit-0.7.1.ebuild:
+  I forgot to git add.
+
+  21 Aug 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  reportit-0.7.1.ebuild:
   Marking cacti-plugins/reportit stable for production.
 
   21 Aug 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> cycle-0.7-r1.ebuild:
