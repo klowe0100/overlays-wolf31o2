@@ -98,6 +98,9 @@ newcrond() {
 src_unpack() {
 	# The first thing we do is unpack our sources
 	unpack ${MY_P}.tar.gz
+	if use pluginarch; then
+		unpack cacti-plugin-${MY_PV}-PA-v${PIA_V}.zip
+	fi
 }
 
 src_prepare() {
@@ -112,7 +115,6 @@ src_prepare() {
 
 	# Add the Plugin Architecture
 	if use pluginarch; then
-		unpack cacti-plugin-${MY_PV}-PA-v${PIA_V}.zip
 		cd "${S}"
 		sed -i -e '370 d' "${WORKDIR}"/cacti-plugin-${MY_PV}-PA-v${PIA_V}.diff
 		EPATCH_OPTS="-p1 -N -d ${S} -F4" \
