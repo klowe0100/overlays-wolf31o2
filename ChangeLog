@@ -2,6 +2,13 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*adodb-ext-504 (21 Aug 2009)
+
+  21 Aug 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  adodb-ext-504.ebuild:
+  Import dev-php5/adodb-ext from Gentoo's tree and mark it stable for
+  production.
+
   21 Aug 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   cacti-spine-0.8.7e-r1.ebuild:
   Marking net-analyzer/cacti-spine stable for production.
