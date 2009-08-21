@@ -10,3 +10,4 @@ inherit eutils cacti-plugins
 
 SRC_URI="http://docs.cacti.net/_media/plugin:${PN}_v${PV}.tar.gz -> ${P}-r1.tar.gz"
 S=${WORKDIR}/${PN}_v${PV}
+KEYWORDS="amd64 x86"
