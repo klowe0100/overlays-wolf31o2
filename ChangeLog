@@ -2,6 +2,10 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  21 Aug 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> boost-2.4-r4.ebuild:
+  Explicitly adding KEYWORDS, since the eclass uses testing KEYWORDS, by
+  default.
+
 *net-snmp-5.4.2.1-r2 (21 Aug 2009)
 
   21 Aug 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>

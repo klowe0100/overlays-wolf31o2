@@ -12,6 +12,7 @@ SRC_URI="http://docs.cacti.net/_media/plugin:${PN}_v${PV}.tar.gz -> ${P}-r1.tar.
 
 LICENSE="GPL-2"
 IUSE="+memory"
+KEYWORDS="amd64 x86"
 
 DEPEND="${DEPEND}
 	memory? ( >=virtual/mysql-5 )"
