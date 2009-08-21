@@ -2,6 +2,14 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*ndoutils-1.4_beta8 (21 Aug 2009)
+
+  21 Aug 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +net-analyzer/ndoutils/files/ndo2db.init-nagios3,
+  ndoutils-1.4_beta8.ebuild:
+  Import net-analyzer/ndoutils from Gentoo's tree and marking it stable for
+  production.
+
   21 Aug 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   cacti-0.8.7e-r1.ebuild:
   Move the unpacking of the Plugin Architecture patch to src_unpack.
