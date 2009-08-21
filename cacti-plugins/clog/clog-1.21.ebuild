@@ -9,3 +9,4 @@ CACTI_PLUG_SUPPORTED="yes"
 inherit eutils cacti-plugins
 
 S=${WORKDIR}/${PN}_v${PV}
+KEYWORDS="amd64 x86"

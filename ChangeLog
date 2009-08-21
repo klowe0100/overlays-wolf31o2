@@ -2,6 +2,9 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  21 Aug 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> clog-1.21.ebuild:
+  Marking cacti-plugins/clog stable for production.
+
 *ndoutils-1.4_beta8 (21 Aug 2009)
 
   21 Aug 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
