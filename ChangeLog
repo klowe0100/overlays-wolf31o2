@@ -2,6 +2,13 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*net-snmp-5.4.2.1-r2 (21 Aug 2009)
+
+  21 Aug 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  net-snmp-5.4.2.1-r2.ebuild,
+  +net-analyzer/net-snmp/files/CVE-2008-6123.patch:
+  Revision bumping to add a patch for CVE-2008-6123 from Gentoo's tree.
+
   21 Aug 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> boost-2.4-r4.ebuild:
   Marking cacti-plugins/boost stable for production.
 
