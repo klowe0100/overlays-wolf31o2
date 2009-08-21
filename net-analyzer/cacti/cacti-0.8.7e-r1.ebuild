@@ -33,7 +33,7 @@ if [ "${UPSTREAM_HAS_PATCHES}" == "1" ] ; then
 fi
 
 LICENSE="GPL-2"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="amd64 x86"
 RESTRICT=""
 IUSE="doc ldap +pluginarch +snmp"
 

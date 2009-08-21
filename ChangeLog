@@ -2,6 +2,10 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  21 Aug 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  cacti-0.8.7e-r1.ebuild:
+  Marking net-analyzer/cacti stable for production.
+
   21 Aug 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> settings-0.6.ebuild:
   Marking cacti-plugins/settings stable for production.
 
