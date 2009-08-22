@@ -11,3 +11,4 @@ MYSQL_SCRIPTS="${PN}.sql"
 inherit eutils cacti-plugins
 
 SRC_URI="http://docs.cacti.net/_media/plugin:${PN}-latest.tgz -> ${P}.tar.gz"
+KEYWORDS="amd64 x86"
