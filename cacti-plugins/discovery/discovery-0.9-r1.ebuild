@@ -11,6 +11,7 @@ MYSQL_SCRIPTS="discover.sql"
 inherit eutils cacti-plugins
 
 S=${WORKDIR}/${PN}_v${PV}
+KEYWORDS="amd64 x86"
 
 src_prepare() {
 	default_src_prepare
