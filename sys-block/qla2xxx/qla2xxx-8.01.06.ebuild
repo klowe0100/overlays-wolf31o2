@@ -34,5 +34,5 @@ src_prepare() {
 }
 
 src_compile() {
-	extras/build.sh || die "Build failed."
+	extras/build.sh || die "Build failed." || die "failed compile"
 }
