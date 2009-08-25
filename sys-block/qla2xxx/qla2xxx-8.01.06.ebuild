@@ -23,3 +23,11 @@ src_unpack() {
 	cd ${WORKDIR}/qlogic
 	unpack ${WORKDIR}/qlogic/${PN}-src-v${PV}.tar.gz
 }
+
+src_prepare() {
+	echo "TODO: Fix detection of kernel"
+}
+
+src_compile() {
+	extras/build.sh || die "Build failed."
+}

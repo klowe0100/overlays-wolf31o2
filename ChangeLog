@@ -2,6 +2,12 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  25 Aug 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  qla2xxx-8.01.06.ebuild:
+  Adding a src_prepare section to remind myself to fix the automagic kernel
+  version detection in the build script, and adding a src_compile section to
+  run extras/build.sh from the distribution.
+
 *qla2xxx-8.01.06 (25 Aug 2009)
 
   25 Aug 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
