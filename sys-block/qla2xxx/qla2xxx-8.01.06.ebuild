@@ -4,6 +4,8 @@
 
 EAPI="2"
 
+inherit linux-info
+
 DESCRIPTION="drivers for QLogic HBAs"
 HOMEPAGE="http://driverdownloads.qlogic.com/QLogicDriverDownloads_UI/default.aspx"
 SRC_URI="qla2xxx-v${PV}-dist.tgz"
