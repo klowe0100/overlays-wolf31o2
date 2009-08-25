@@ -2,6 +2,15 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*qla2xxx-8.01.06 (25 Aug 2009)
+
+  25 Aug 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  qla2xxx-8.01.06.ebuild:
+  Creating a qla2xxx ebuild to use the upstream QLogic drivers, which are
+  better tested and vendor supported. This is the initial version of the
+  ebuild, and it needs work to actually compile, but rather than track my
+  changes locally, I am pushing it to the repository to track changes there.
+
 *trousers-0.3.2-r1 (25 Aug 2009)
 
   25 Aug 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
