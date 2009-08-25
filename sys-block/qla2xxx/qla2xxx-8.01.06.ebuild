@@ -21,11 +21,14 @@ S=${WORKDIR}/qlogic/${P}
 src_unpack() {
 	unpack ${A}
 	cd ${WORKDIR}/qlogic
-	unpack ${PN}-src-v${PV}.tar.gz
+	unpack ./${PN}-src-v${PV}.tar.gz
 }
 
 src_prepare() {
-	echo "TODO: Fix detection of kernel"
+	# KV_FULL == full version
+	# KERNEL_DIR == path to sources
+	sed -i "s:\`uname -r\`:${KV_FULL}:" extras/build.sh || die "sed uname"
+	sed -i "s:pci_module_init:pci_register_driver:" *.c || die "sed *.c"
 }
 
 src_compile() {
