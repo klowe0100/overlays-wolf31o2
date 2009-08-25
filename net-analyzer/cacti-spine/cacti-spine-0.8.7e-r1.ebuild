@@ -45,7 +45,8 @@ src_prepare() {
 		[ ! ${MY_P} == ${P} ] && mv ${MY_P} ${P}
 		# patches
 		for i in ${UPSTREAM_PATCHES} ; do
-			EPATCH_OPTS="-d ${S} -N" epatch "${DISTDIR}"/${i}.patch
+		#	EPATCH_OPTS="-p1 -d ${S} -N" epatch "${DISTDIR}"/${i}.patch
+			epatch "${DISTDIR}"/${i}.patch
 		done ;
 	fi
 

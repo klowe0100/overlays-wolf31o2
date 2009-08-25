@@ -4,6 +4,10 @@
 
   25 Aug 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   cacti-spine-0.8.7e-r1.ebuild:
+  Test using no EPATCH_OPTS.
+
+  25 Aug 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  cacti-spine-0.8.7e-r1.ebuild:
   Remove the explicit -p1 from EPATCH_OPTS.
 
 *qla2xxx-8.02.23 (25 Aug 2009)
