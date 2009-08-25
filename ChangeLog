@@ -2,6 +2,13 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*qla2xxx-8.02.23 (25 Aug 2009)
+
+  25 Aug 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  qla2xxx-8.02.23.ebuild:
+  Adding an ebuild for the latest version of the driver. Perhaps this one
+  will build with 2.6.19 or newer.
+
   25 Aug 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   qla2xxx-8.02.14.ebuild:
   Fixing the unpack for the second tarball.
