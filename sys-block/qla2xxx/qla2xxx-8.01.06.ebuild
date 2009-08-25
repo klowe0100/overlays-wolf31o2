@@ -21,7 +21,7 @@ S=${WORKDIR}/qlogic/${P}
 src_unpack() {
 	unpack ${A}
 	cd ${WORKDIR}/qlogic
-	unpack ${WORKDIR}/qlogic/${PN}-src-v${PV}.tar.gz
+	unpack ${PN}-src-v${PV}.tar.gz
 }
 
 src_prepare() {
