@@ -2,6 +2,10 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  31 Aug 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> profiles/categories:
+  Remove app-mobilephone, since I no longer have any packages in this
+  category.
+
 *nvidia-drivers-185.18.36 (31 Aug 2009)
 
   31 Aug 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
