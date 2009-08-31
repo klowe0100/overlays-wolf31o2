@@ -2,6 +2,13 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*cmemcache-0.91 (31 Aug 2009)
+
+  31 Aug 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  cmemcache-0.91.ebuild:
+  Import dev-python/cmemcahe from Sunrise and Gentoo bug #210306 into my
+  overlay.
+
   31 Aug 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   bindagentx-1.0.ebuild:
   Fix another typo in the bindagentx script.
