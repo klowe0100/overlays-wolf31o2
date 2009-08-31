@@ -23,8 +23,11 @@ RDEPEND="dev-lang/perl
 S=${WORKDIR}/tags/${P}
 
 src_prepare() {
-	# Typo fix
-	sed -i 's/startet/started/' bindagentx.pl
+	# Typo fixes
+	sed -i \
+		-e 's/startet/started/' \
+		-e 's/Shuting/Shutting/' \
+		bindagentx.pl
 }
 
 src_install() {
