@@ -22,8 +22,15 @@ RDEPEND="dev-lang/perl
 
 S=${WORKDIR}/tags/${P}
 
+src_prepare() {
+	# Typo fix
+	sed -i 's/startet/started/' bindagentx.pl
+}
+
 src_install() {
+	# This is the daemon script
 	dosbin bindagentx.pl
+	# Install Cacti code
 	docinto cacti/resource
 	dodoc -r cacti/snmp_queries
 	docinto cacti/templates

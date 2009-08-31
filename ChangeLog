@@ -2,6 +2,10 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  31 Aug 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  bindagentx-1.0.ebuild:
+  Fix a typo in the bindagentx script and add a couple code comments.
+
   25 Aug 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   cacti-spine-0.8.7e-r1.ebuild:
   Test using no EPATCH_OPTS.
