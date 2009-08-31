@@ -2,6 +2,13 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*nvidia-drivers-185.18.36 (31 Aug 2009)
+
+  31 Aug 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  nvidia-drivers-185.18.36.ebuild:
+  Version bump to 185.18.36 and sync with Gentoo's tree. This fixes a major
+  bug in the drivers on my laptop, which causes a kernel panic.
+
 *cmemcache-0.95 (31 Aug 2009)
 
   31 Aug 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
