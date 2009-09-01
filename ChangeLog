@@ -3,6 +3,10 @@
 # $Id$
 
   01 Sep 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  cmemcache-0.95.ebuild:
+  Marking stable on amd64/x86 for production.
+
+  01 Sep 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   nvidia-drivers-185.18.36.ebuild:
   I forgot to add man1 to the second man page.
 
