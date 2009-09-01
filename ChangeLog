@@ -2,6 +2,13 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*libmemcache-1.4.0_rc2-r1 (01 Sep 2009)
+
+  01 Sep 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  libmemcache-1.4.0_rc2-r1.ebuild:
+  Import dev-libs/libmemcache from Gentoo's tree and mark it stable for
+  production.
+
   01 Sep 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   cmemcache-0.95.ebuild:
   Marking stable on amd64/x86 for production.
