@@ -2,6 +2,11 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  01 Sep 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  trousers-0.3.2-r1.ebuild,
+  +app-crypt/trousers/files/trousers-0.3.2-nouseradd.patch:
+  Adding an updated nouseradd patch.
+
 *snmptt-1.2 (01 Sep 2009)
 
   01 Sep 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> snmptt-1.2.ebuild,

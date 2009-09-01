@@ -23,9 +23,10 @@ DEPEND="${RDEPEND}
 
 PDEPEND="ssl? ( app-crypt/openssl-tpm-engine )"
 
-PATCHES=(	"${FILESDIR}/${PN}-0.2.3-nouseradd.patch"
-		"${FILESDIR}/${P}-qa.patch"
-		"${FILESDIR}/${P}-gcc43.patch"	)
+PATCHES=(
+	"${FILESDIR}/${P}-nouseradd.patch"
+	"${FILESDIR}/${PN}-0.3.1-qa.patch"
+	"${FILESDIR}/${PN}-0.3.1-gcc43.patch"	)
 
 pkg_setup() {
 	# Check for driver (not sure it can be an rdep, because ot depends on the
