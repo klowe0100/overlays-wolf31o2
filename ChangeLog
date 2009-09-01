@@ -2,6 +2,10 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  01 Sep 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  nvidia-drivers-185.18.36.ebuild:
+  I forgot to add man1 to the second man page.
+
   31 Aug 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> profiles/categories:
   Remove app-mobilephone, since I no longer have any packages in this
   category.

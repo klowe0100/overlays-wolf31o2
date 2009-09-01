@@ -365,7 +365,8 @@ src_install() {
 
 	# Adding man pages per Gentoo bug #281895
 	# Man pages
-	doman ${NV_MAN}/man1/nvidia-smi.1.gz ${NV_MAN}/nvidia-xconfig.1.gz || die
+	doman ${NV_MAN}/man1/nvidia-smi.1.gz \
+		${NV_MAN}/man1/nvidia-xconfig.1.gz || die
 }
 
 # Install nvidia library:
