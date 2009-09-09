@@ -2,6 +2,21 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*fence-2.03.09-r1 (09 Sep 2009)
+
+  09 Sep 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  fence-2.03.09-r1.ebuild,
+  +sys-cluster/fence/files/fence-2.03.09-ipmi_fix_help_typo_RH_BZ_210687.pat
+  ch,
+  +sys-cluster/fence/files/fence-2.03.09-ipmi_fix_parameters_RH_BZ_447964.pa
+  tch, +sys-cluster/fence/files/fence-2.03.09-ipmi_fix_shell.patch,
+  +sys-cluster/fence/files/fence-2.03.09-ipmi_lan_timeout_adjusted_and_confi
+  gurable.patch, +sys-cluster/fence/files/fence_xen,
+  +sys-cluster/fence/files/fenced.conf, +sys-cluster/fence/files/fenced.rc:
+  Importing sys-cluster/fence from Gentoo's tree to save it due to it being
+  scheduled for removal on 2009-10-06. See Gentoo bug #274922 for more
+  information.
+
 *openais-0.82 (09 Sep 2009)
 *openais-0.80.3-r1 (09 Sep 2009)
 
