@@ -2,6 +2,14 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*gfs2-2.03.09 (09 Sep 2009)
+
+  09 Sep 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +sys-fs/gfs2/files/gfs2.rc, gfs2-2.03.09.ebuild:
+  Importing sys-fs/gfs2 from Gentoo's tree to save it due to it being
+  scheduled for removal on 2009-10-06. See Gentoo bug #274922 for more
+  information.
+
 *fence-2.03.09-r1 (09 Sep 2009)
 
   09 Sep 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
