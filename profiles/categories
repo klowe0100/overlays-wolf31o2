@@ -28,6 +28,7 @@ snmp-agents
 snmp-mibs
 sys-apps
 sys-block
+sys-cluster
 sys-fs
 sys-kernel
 sys-power
