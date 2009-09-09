@@ -2,6 +2,27 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*openais-0.82 (09 Sep 2009)
+*openais-0.80.3-r1 (09 Sep 2009)
+
+  09 Sep 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  openais-0.80.3-r1.ebuild,
+  +sys-cluster/openais/files/openais-0.80.3-Makefile.inc-FLAGS.patch,
+  +sys-cluster/openais/files/openais-0.80.3-Makefile.inc-VARS.patch,
+  +sys-cluster/openais/files/openais-0.80.3-Makefile-ARCH.patch,
+  +sys-cluster/openais/files/openais-0.80.3-Makefile-LIBDIR.patch,
+  +sys-cluster/openais/files/openais-0.80.3-Makefile-VARS.patch,
+  +sys-cluster/openais/files/openais-0.80.3-r1661.patch,
+  openais-0.82.ebuild, +sys-cluster/openais/files/Makefile.inc-FLAGS.patch,
+  +sys-cluster/openais/files/Makefile-ARCH.patch,
+  +sys-cluster/openais/files/Makefile-LIBDIR.patch,
+  +sys-cluster/openais/files/Makefile-install.patch,
+  +sys-cluster/openais/files/ais.initd,
+  +sys-cluster/openais/files/openais.conf:
+  Importing sys-cluster/openais from Gentoo's tree to save it due to it
+  being scheduled for removal on 2009-10-06. See Gentoo bug #274922 for more
+  information.
+
 *cman-lib-2.03.09 (09 Sep 2009)
 
   09 Sep 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
