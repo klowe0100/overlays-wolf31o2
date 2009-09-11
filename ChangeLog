@@ -2,6 +2,11 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*maatkit-4623 (11 Sep 2009)
+
+  11 Sep 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> maatkit-4623.ebuild:
+  Import dev-db/maatkit from Gentoo's tree and version bump it to 4623.
+
 *percona-5.0.75_p11 (10 Sep 2009)
 
   10 Sep 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
