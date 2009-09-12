@@ -2,6 +2,13 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*ibmasm-xinput-2.1 (12 Sep 2009)
+
+  12 Sep 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  ibmasm-xinput-2.1.ebuild, profiles/categories:
+  Initial ebuild for the IBM ASM XInput userspace tools. This is untested.
+  You have been warned.
+
 *ibmasm-3.0_p12 (12 Sep 2009)
 
   12 Sep 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
