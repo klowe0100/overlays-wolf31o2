@@ -1,0 +1,47 @@
+diff -urN nagios-3.2.0.orig/cgi/tac.c nagios-3.2.0/cgi/tac.c
+--- nagios-3.2.0.orig/cgi/tac.c	2008-11-30 09:44:20.000000000 -0800
++++ nagios-3.2.0/cgi/tac.c	2009-09-18 08:56:24.000000000 -0700
+@@ -1355,13 +1355,13 @@
+ 	printf("<table border=0 width=100%%>\n");
+ 
+ 	if(services_warning_unacknowledged>0)
+-		printf("<tr><td width=100%% class='serviceImportantProblem'><a href='%s?host=all&type=detail&servicestatustypes=%d&hoststatustypes=%d&serviceprops=%d'>%d Unhandled Problems</a></td></tr>\n",STATUS_CGI,SERVICE_WARNING,HOST_UP|HOST_PENDING,SERVICE_NO_SCHEDULED_DOWNTIME|SERVICE_STATE_UNACKNOWLEDGED|SERVICE_CHECKS_ENABLED,services_warning_unacknowledged);
++		printf("<tr><td width=100%% class='warningserviceImportantProblem'><a href='%s?host=all&type=detail&servicestatustypes=%d&hoststatustypes=%d&serviceprops=%d'>%d Unhandled Problems</a></td></tr>\n",STATUS_CGI,SERVICE_WARNING,HOST_UP|HOST_PENDING,SERVICE_NO_SCHEDULED_DOWNTIME|SERVICE_STATE_UNACKNOWLEDGED|SERVICE_CHECKS_ENABLED,services_warning_unacknowledged);
+ 
+ 	if(services_warning_host_problem>0)
+-		printf("<tr><td width=100%% class='serviceUnimportantProblem'><a href='%s?host=all&type=detail&servicestatustypes=%d&hoststatustypes=%d'>%d on Problem Hosts</a></td></tr>\n",STATUS_CGI,SERVICE_WARNING,HOST_DOWN|HOST_UNREACHABLE,services_warning_host_problem);
++		printf("<tr><td width=100%% class='warningserviceUnimportantProblem'><a href='%s?host=all&type=detail&servicestatustypes=%d&hoststatustypes=%d'>%d on Problem Hosts</a></td></tr>\n",STATUS_CGI,SERVICE_WARNING,HOST_DOWN|HOST_UNREACHABLE,services_warning_host_problem);
+ 
+ 	if(services_warning_scheduled>0)
+-		printf("<tr><td width=100%% class='serviceUnimportantProblem'><a href='%s?host=all&type=detail&servicestatustypes=%d&serviceprops=%d'>%d Scheduled</a></td></tr>\n",STATUS_CGI,SERVICE_WARNING,SERVICE_SCHEDULED_DOWNTIME,services_warning_scheduled);
++		printf("<tr><td width=100%% class='warningserviceImportantProblem'><a href='%s?host=all&type=detail&servicestatustypes=%d&serviceprops=%d'>%d Scheduled</a></td></tr>\n",STATUS_CGI,SERVICE_WARNING,SERVICE_SCHEDULED_DOWNTIME,services_warning_scheduled);
+ 
+ 	if(services_warning_acknowledged>0)
+ 		printf("<tr><td width=100%% class='serviceUnimportantProblem'><a href='%s?host=all&type=detail&servicestatustypes=%d&serviceprops=%d'>%d Acknowledged</a></td></tr>\n",STATUS_CGI,SERVICE_WARNING,SERVICE_STATE_ACKNOWLEDGED,services_warning_acknowledged);
+@@ -1390,13 +1390,13 @@
+ 	printf("<table border=0 width=100%%>\n");
+ 
+ 	if(services_unknown_unacknowledged>0)
+-		printf("<tr><td width=100%% class='serviceImportantProblem'><a href='%s?host=all&type=detail&servicestatustypes=%d&hoststatustypes=%d&serviceprops=%d'>%d Unhandled Problems</a></td></tr>\n",STATUS_CGI,SERVICE_UNKNOWN,HOST_UP|HOST_PENDING,SERVICE_NO_SCHEDULED_DOWNTIME|SERVICE_STATE_UNACKNOWLEDGED|SERVICE_CHECKS_ENABLED,services_unknown_unacknowledged);
++		printf("<tr><td width=100%% class='unknownserviceImportantProblem'><a href='%s?host=all&type=detail&servicestatustypes=%d&hoststatustypes=%d&serviceprops=%d'>%d Unhandled Problems</a></td></tr>\n",STATUS_CGI,SERVICE_UNKNOWN,HOST_UP|HOST_PENDING,SERVICE_NO_SCHEDULED_DOWNTIME|SERVICE_STATE_UNACKNOWLEDGED|SERVICE_CHECKS_ENABLED,services_unknown_unacknowledged);
+ 
+ 	if(services_unknown_host_problem>0)
+-		printf("<tr><td width=100%% class='serviceUnimportantProblem'><a href='%s?host=all&type=detail&servicestatustypes=%d&hoststatustypes=%d'>%d on Problem Hosts</a></td></tr>\n",STATUS_CGI,SERVICE_UNKNOWN,HOST_DOWN|HOST_UNREACHABLE,services_unknown_host_problem);
++		printf("<tr><td width=100%% class='unknownserviceImportantProblem'><a href='%s?host=all&type=detail&servicestatustypes=%d&hoststatustypes=%d'>%d on Problem Hosts</a></td></tr>\n",STATUS_CGI,SERVICE_UNKNOWN,HOST_DOWN|HOST_UNREACHABLE,services_unknown_host_problem);
+ 
+ 	if(services_unknown_scheduled>0)
+-		printf("<tr><td width=100%% class='serviceUnimportantProblem'><a href='%s?host=all&type=detail&servicestatustypes=%d&serviceprops=%d'>%d Scheduled</a></td></tr>\n",STATUS_CGI,SERVICE_UNKNOWN,SERVICE_SCHEDULED_DOWNTIME,services_unknown_scheduled);
++		printf("<tr><td width=100%% class='unknownserviceImportantProblem'><a href='%s?host=all&type=detail&servicestatustypes=%d&serviceprops=%d'>%d Scheduled</a></td></tr>\n",STATUS_CGI,SERVICE_UNKNOWN,SERVICE_SCHEDULED_DOWNTIME,services_unknown_scheduled);
+ 
+ 	if(services_unknown_acknowledged>0)
+ 		printf("<tr><td width=100%% class='serviceUnimportantProblem'><a href='%s?host=all&type=detail&servicestatustypes=%d&serviceprops=%d'>%d Acknowledged</a></td></tr>\n",STATUS_CGI,SERVICE_UNKNOWN,SERVICE_STATE_ACKNOWLEDGED,services_unknown_acknowledged);
+diff -urN nagios-3.2.0.orig/html/stylesheets/tac.css nagios-3.2.0/html/stylesheets/tac.css
+--- nagios-3.2.0.orig/html/stylesheets/tac.css	2004-10-30 21:16:04.000000000 -0700
++++ nagios-3.2.0/html/stylesheets/tac.css	2009-09-18 08:27:13.000000000 -0700
+@@ -87,3 +87,6 @@
+ .serviceImportantProblem { text-align: left;  font-family: arial;  font-size: 8pt;  background-color: #ff0000;  color: black; }
+ .serviceUnimportantProblem { text-align: left;  font-family: arial;  font-size: 8pt;  background-color: #ffcccc;  color: black; }
+ 
++.warningserviceImportantProblem { text-align: left; font-family: arial; font-size: 8pt;background-color: #FFFF00; color: black; }
++.unknownserviceImportantProblem { text-align: left; font-family: arial; font-size: 8pt;background-color: #FF9966; color: black; }
++

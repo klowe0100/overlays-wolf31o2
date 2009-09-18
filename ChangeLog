@@ -2,6 +2,12 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  18 Sep 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +net-analyzer/nagios-core/files/nagios3-taccolors.patch,
+  nagios-core-3.2.0-r1.ebuild:
+  Adding a patch to add warning and unknown colors to the tactical overview
+  page.
+
 *nagios-core-3.2.0-r1 (18 Sep 2009)
 
   18 Sep 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>

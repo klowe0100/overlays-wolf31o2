@@ -41,7 +41,10 @@ src_prepare() {
 	local strip="$(echo '$(MAKE) strip-post-install')"
 	sed -i -e "s:${strip}::" {cgi,base}/Makefile.in || die "sed failed in Makefile.in"
 	cd "${S}"/cgi
+	# Adds service state colors to status map
 	epatch "${DISTDIR}"/nagios3-statusmap.patch
+	# Adds warning/unknown colors to tac
+	epatch "${FILESDIR}"/nagios3-taccolors.patch
 }
 
 src_configure() {
