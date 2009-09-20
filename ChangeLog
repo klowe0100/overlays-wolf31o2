@@ -2,6 +2,14 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*pnp4nagios-0.4.14 (20 Sep 2009)
+*pnp4nagios-0.4.13 (20 Sep 2009)
+
+  20 Sep 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  pnp4nagios-0.4.13.ebuild, pnp4nagios-0.4.14.ebuild:
+  Import net-analyzer/pnp4nagios from Gentoo's tree and version bumping to
+  the latest 0.4.x release.
+
   20 Sep 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   cacti-spine-0.8.7e-r1.ebuild:
   Commenting out the cli_add_graph patch for now until I can figure out why
