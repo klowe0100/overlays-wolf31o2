@@ -3,6 +3,12 @@
 # $Id$
 
   20 Sep 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  cacti-spine-0.8.7e-r1.ebuild:
+  Commenting out the cli_add_graph patch for now until I can figure out why
+  it doesn't apply cleanly. I wish upstream cacti would learn how to make
+  freakin' patches.
+
+  20 Sep 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   nagios-core-3.2.0-r1.ebuild:
   Marking stable on amd64/x86 for production.
 

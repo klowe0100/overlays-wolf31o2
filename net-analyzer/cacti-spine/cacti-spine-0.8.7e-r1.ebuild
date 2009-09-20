@@ -21,7 +21,7 @@ SRC_URI="${CACTI_BASE_URI}/spine/${P}.tar.gz"
 
 # patches
 if [ "${UPSTREAM_HAS_PATCHES}" == "1" ] ; then
-	UPSTREAM_PATCHES="cli_add_graph snmp_invalid_response template_duplication"
+	UPSTREAM_PATCHES="snmp_invalid_response template_duplication" #cli_add_graph
 	for i in ${UPSTREAM_PATCHES} ; do
 		SRC_URI="${SRC_URI} ${CACTI_BASE_URI}/patches/${PV/_p*}/${i}.patch"
 	done
