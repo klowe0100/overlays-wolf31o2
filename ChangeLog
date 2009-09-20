@@ -2,6 +2,10 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  20 Sep 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  nagios-plugins-snmp-perl-1.1.1-r1.ebuild:
+  Marking stable on amd64/x86 for production.
+
 *pnp4nagios-0.4.14 (20 Sep 2009)
 *pnp4nagios-0.4.13 (20 Sep 2009)
 
