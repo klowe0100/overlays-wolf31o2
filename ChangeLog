@@ -3,6 +3,10 @@
 # $Id$
 
   20 Sep 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  nagios-plugins-snmp-perl-1.1.1.ebuild:
+  Removing older ebuilds.
+
+  20 Sep 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   nagios-plugins-snmp-perl-1.1.1-r1.ebuild:
   Marking stable on amd64/x86 for production.
 
