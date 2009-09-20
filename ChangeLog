@@ -2,6 +2,13 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*pnp4nagios-0.4.14-r1 (20 Sep 2009)
+
+  20 Sep 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  pnp4nagios-0.4.14.ebuild, pnp4nagios-0.4.14-r1.ebuild:
+  Revision bumping so we have a higher revision than a bumped version in
+  Gentoo's tree.
+
   20 Sep 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   nagios-plugins-snmp-perl-1.1.1.ebuild:
   Removing older ebuilds.
