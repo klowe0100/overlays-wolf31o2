@@ -2,6 +2,11 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  20 Sep 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  nagios-core-3.2.0-r1.ebuild:
+  Comment out the nagios3-taccolors patch for the time being, as it doesn't
+  apply cleanly and I need to investigate why.
+
   18 Sep 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   +net-analyzer/nagios-core/files/nagios3-taccolors.patch,
   nagios-core-3.2.0-r1.ebuild:

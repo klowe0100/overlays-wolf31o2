@@ -44,7 +44,7 @@ src_prepare() {
 	# Adds service state colors to status map
 	epatch "${DISTDIR}"/nagios3-statusmap.patch
 	# Adds warning/unknown colors to tac
-	epatch "${FILESDIR}"/nagios3-taccolors.patch
+#	epatch "${FILESDIR}"/nagios3-taccolors.patch
 }
 
 src_configure() {
