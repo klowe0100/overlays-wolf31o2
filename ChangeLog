@@ -2,6 +2,10 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  21 Sep 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  pbzip2-1.0.5-r3.ebuild:
+  Explicitly change to S before trying sed.
+
 *snmptt-1.2-r1 (20 Sep 2009)
 
   20 Sep 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> snmptt-1.2.ebuild,
