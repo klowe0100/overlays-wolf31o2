@@ -2,6 +2,13 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*nagios-core-3.2.0-r2 (22 Sep 2009)
+
+  22 Sep 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  nagios-core-3.2.0-r2.ebuild:
+  Revision bumping net-analyzer/nagios-core to add back in the
+  nagios3-taccolors.patch after switching back to S.
+
 *netops-toolkit-1.8.9 (21 Sep 2009)
 
   21 Sep 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
