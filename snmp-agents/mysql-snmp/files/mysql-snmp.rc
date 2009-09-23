@@ -11,7 +11,7 @@ depend() {
 
 start() {
 	ebegin "Starting MySQL SNMP Agent"
-	start-stop-daemon --start -q --pidfile ${PIDFILE} --exec /usr/sbin/mysql-snmp -d --daemon-pid ${PIDFILE} ${DAEMON_OPTS}
+	start-stop-daemon --start -q --pidfile ${PIDFILE} --exec /usr/sbin/mysql-snmp -- -d --daemon-pid ${PIDFILE} ${DAEMON_OPTS}
 	eend $?
 }
 

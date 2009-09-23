@@ -4,6 +4,10 @@
 
   23 Sep 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   snmp-agents/mysql-snmp/files/mysql-snmp.rc:
+  Add -- to separate start-stop-daemon options from mysql-agent options.
+
+  23 Sep 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  snmp-agents/mysql-snmp/files/mysql-snmp.rc:
   Gentoo uses logger instead of syslog as the service name.
 
   23 Sep 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
