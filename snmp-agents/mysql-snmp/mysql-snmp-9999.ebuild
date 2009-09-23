@@ -31,7 +31,7 @@ RDEPEND="dev-lang/perl
 	>=net-analyzer/net-snmp-5.4.2[perl]
 	dev-perl/DBI
 	dev-perl/Unix-Syslog
-	perl-core/Getopt-Long"
+	virtual/Getopt-Long"
 
 src_unpack() {
 	if [[ ${PV} == 9999* ]] ; then
