@@ -2,6 +2,13 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*mysql-server-9999 (23 Sep 2009)
+
+  23 Sep 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  mysql-server-9999.ebuild:
+  Initial ebuild for MYSQL-SERVER-MIB from masterzen on github. This is used
+  by the mysql-snmp ebuild.
+
   23 Sep 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   catalyst-9999.ebuild:
   Clean up some left-overs from when catalyst was in SVN instead of git.
