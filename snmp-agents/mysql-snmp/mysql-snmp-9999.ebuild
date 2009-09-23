@@ -29,7 +29,9 @@ KEYWORDS="~amd64 ~x86"
 IUSE=""
 
 DEPEND=""
-RDEPEND="net-analyzer/net-snmp[perl]"
+RDEPEND="dev-lang/perl
+	net-analyzer/net-snmp[perl]
+	dev-perl/DBI"
 
 src_unpack() {
 	if [[ ${PV} == 9999* ]] ; then
