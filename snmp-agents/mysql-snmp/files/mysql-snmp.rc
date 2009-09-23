@@ -6,7 +6,7 @@
 PIDFILE=/var/run/mysql-agent.pid
 
 depend() {
-	need mysql snmpd syslog
+	need mysql snmpd logger
 }
 
 start() {
