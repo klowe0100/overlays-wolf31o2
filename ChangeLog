@@ -2,6 +2,12 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  23 Sep 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  -app-misc/screen/files/4.0.2-64bit-time.patch,
+  -app-misc/screen/files/4.0.2-nonblock.patch,
+  -app-misc/screen/files/4.0.2-windowlist-multiuser-fix.patch:
+  Removing patches which aren't used in the ebuild, anymore.
+
 *screen-4.0.3_p20070403-r1 (23 Sep 2009)
 
   23 Sep 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
