@@ -1,6 +1,6 @@
-# Copyright 1999-2009 Gentoo Foundation
+# Copyright 2009-2009 Chris Gianelloni
 # Distributed under the terms of the GNU General Public License v2
-# $Header: $
+# $Id$
 
 DESCRIPTION="Nagios notification MIB"
 HOMEPAGE="http://sourceforge.net/projects/nagiosplug/"
