@@ -3,6 +3,11 @@
 # $Id$
 
   23 Sep 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  mysql-snmp-9999.ebuild, +snmp-agents/mysql-snmp/files/mysql-snmp.confd,
+  +snmp-agents/mysql-snmp/files/mysql-snmp.rc:
+  Adding an init script and default conf.d file.
+
+  23 Sep 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   mysql-snmp-9999.ebuild:
   The subagent requires at least net-snmp 5.4.2 to run properly.
 

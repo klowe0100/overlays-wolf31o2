@@ -5,8 +5,6 @@
 # mysql-snmp-9999       -> latest git
 # mysql-snmp-VER        -> normal MIB release
 
-### TODO: create an init script and configuration file
-
 EAPI=2
 
 if [[ ${PV} == 9999* ]]
@@ -47,5 +45,7 @@ src_unpack() {
 src_install() {
 	# Do not use make install, since it installs the MIB
 	newsbin mysql-agent.pl mysql-agent
+	newinitd "${FILESDIR}"/mysql-agent.rc mysql-snmp
+	newconfd "${FILESDIR}"/mysql-agent.confd mysql-snmp
 	dodoc README
 }
