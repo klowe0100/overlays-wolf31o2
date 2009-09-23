@@ -3,6 +3,10 @@
 # $Id$
 
   23 Sep 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  catalyst-9999.ebuild:
+  Clean up some left-overs from when catalyst was in SVN instead of git.
+
+  23 Sep 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   nagiosmib-1.0.1.ebuild:
   Header cleanup.
 
