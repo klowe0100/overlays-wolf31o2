@@ -3,6 +3,10 @@
 # $Id$
 
   23 Sep 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  screen-4.0.3_p20070403-r1.ebuild, +app-misc/screen/files/screen.sh:
+  Add a file to profile.d to enable hostname in the window title by default.
+
+  23 Sep 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   -app-misc/screen/files/4.0.2-64bit-time.patch,
   -app-misc/screen/files/4.0.2-nonblock.patch,
   -app-misc/screen/files/4.0.2-windowlist-multiuser-fix.patch:

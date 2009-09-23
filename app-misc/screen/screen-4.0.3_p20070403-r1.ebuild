@@ -112,6 +112,8 @@ src_install() {
 	doins utf8encodings/?? || die "doins failed"
 	insinto /etc
 	doins "${FILESDIR}"/screenrc || die "doins failed"
+	insinto /etc/profile.d
+	doins "${FILESDIR}"/screen.sh || die "doins failed"
 
 	pamd_mimic_system screen auth || die "pamd_mimic_system failed"
 
