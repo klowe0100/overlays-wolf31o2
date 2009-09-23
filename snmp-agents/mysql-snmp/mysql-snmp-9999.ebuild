@@ -30,7 +30,7 @@ IUSE=""
 
 DEPEND=""
 RDEPEND="dev-lang/perl
-	net-analyzer/net-snmp[perl]
+	>=net-analyzer/net-snmp-5.4.2[perl]
 	dev-perl/DBI
 	dev-perl/Unix-Syslog
 	perl-core/Getopt-Long"
