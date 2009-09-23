@@ -3,6 +3,10 @@
 # $Id$
 
   23 Sep 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  mysql-snmp-9999.ebuild, snmp-agents/mysql-snmp/files/mysql-snmp.rc:
+  Replace mysql-agent with mysql-snmp.
+
+  23 Sep 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   mysql-snmp-9999.ebuild:
   It helps if I actually use the right package name.
 
