@@ -4,6 +4,11 @@
 
   23 Sep 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   mysql-snmp-9999.ebuild:
+  Adding dev-perl/Unix-Syslog and perl-core/Getopt-Long to the list of
+  dependencies.
+
+  23 Sep 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  mysql-snmp-9999.ebuild:
   Adding dev-lang/perl and dev-perl/DBI to RDEPEND.
 
   23 Sep 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
