@@ -43,4 +43,5 @@ src_unpack() {
 src_install() {
 	# Do not use make install, since it installs the MIB
 	newsbin mysql-agent.pl mysql-agent
+	dodoc README
 }
