@@ -2,6 +2,24 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*screen-4.0.3_p20070403-r1 (23 Sep 2009)
+
+  23 Sep 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  screen-4.0.3_p20070403-r1.ebuild,
+  +app-misc/screen/files/screen-4.0.3-config.h-autoconf-2.62.patch,
+  +app-misc/screen/files/screen-4.0.3-crosscompile.patch,
+  +app-misc/screen/files/screen-4.0.3_p20070403-map.patch,
+  +app-misc/screen/files/4.0.2-64bit-time.patch,
+  +app-misc/screen/files/4.0.2-no-libelf.patch,
+  +app-misc/screen/files/4.0.2-no-pty.patch,
+  +app-misc/screen/files/4.0.2-no-utempter.patch,
+  +app-misc/screen/files/4.0.2-nonblock.patch,
+  +app-misc/screen/files/screen-4.0.1-int-overflow-fix.patch,
+  +app-misc/screen/files/4.0.2-windowlist-multiuser-fix.patch,
+  +app-misc/screen/files/screen-4.0.1-vsprintf.patch,
+  +app-misc/screen/files/screenrc:
+  Import app-misc/screen from Gentoo's tree and add vertical split patch.
+
   23 Sep 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   snmp-agents/mysql-snmp/files/mysql-snmp.rc:
   Add -- to separate start-stop-daemon options from mysql-agent options.
