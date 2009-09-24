@@ -2,6 +2,12 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*ramon-9999 (24 Sep 2009)
+
+  24 Sep 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> ramon-9999.ebuild:
+  Initial creation of an ebuild for Ramon, an open source RMON2 MIB
+  implementation using the AgentX protocol. This is currently untested.
+
   23 Sep 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   screen-4.0.3_p20070403-r1.ebuild, +app-misc/screen/files/screen.sh:
   Add a file to profile.d to enable hostname in the window title by default.
