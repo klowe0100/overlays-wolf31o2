@@ -26,8 +26,10 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE=""
 
-DEPEND="net-analyzer/net-snmp"
-RDEPEND="${DEPEND}"
+RDEPEND="net-analyzer/net-snmp
+	>=net-libs/libpcap-0.7.1"
+DEPEND="${RDEPEND}
+	sys-devel/flex"
 
 src_unpack() {
 	if [[ ${PV} == 9999* ]] ; then
@@ -36,4 +38,9 @@ src_unpack() {
 		unpack ${A}
 		cd "${S}"
 	fi
+}
+
+src_prepare() {
+	# Fix SNMP location
+	sed -i 's:/usr/local/include:/usr/include:' Makefile
 }
