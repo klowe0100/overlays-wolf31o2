@@ -27,9 +27,9 @@ KEYWORDS="~amd64 ~x86"
 IUSE=""
 
 RDEPEND="net-analyzer/net-snmp
-	>=net-libs/libpcap-0.7.1"
-DEPEND="${RDEPEND}
+	>=net-libs/libpcap-0.7.1
 	sys-devel/flex"
+RDEPEND="${DEPEND}"
 
 src_unpack() {
 	if [[ ${PV} == 9999* ]] ; then
