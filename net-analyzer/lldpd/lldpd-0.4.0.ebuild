@@ -16,3 +16,6 @@ IUSE="snmp"
 DEPEND="snmp? ( net-analyzer/net-snmp )"
 RDEPEND="${DEPEND}"
 
+src_configure() {
+	econf $(use_with snmp)
+}
