@@ -41,8 +41,11 @@ src_unpack() {
 }
 
 src_prepare() {
-	# Fix SNMP location
-	sed -i 's:/usr/local/include:/usr/include:' Makefile
+	# Fix SNMP location and Flex link
+	sed -i \
+		-e 's:/usr/local/include:/usr/include:' \
+		-e 's:-ll:-lfl:' \
+		Makefile
 }
 
 src_install() {
