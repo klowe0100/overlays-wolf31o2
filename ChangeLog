@@ -3,6 +3,9 @@
 # $Id$
 
   28 Sep 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> ramon-9999.ebuild:
+  Install the README file.
+
+  28 Sep 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> ramon-9999.ebuild:
   Add some more dependencies, from the README file.
 
   28 Sep 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> lldpd-0.4.0.ebuild:

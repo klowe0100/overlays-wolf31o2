@@ -44,3 +44,8 @@ src_prepare() {
 	# Fix SNMP location
 	sed -i 's:/usr/local/include:/usr/include:' Makefile
 }
+
+src_install() {
+	default
+	dodoc README
+}
