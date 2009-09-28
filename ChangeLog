@@ -3,6 +3,9 @@
 # $Id$
 
   28 Sep 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> ramon-9999.ebuild:
+  Testing a src_install fix.
+
+  28 Sep 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> ramon-9999.ebuild:
   Fix linking with flex.
 
   28 Sep 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> ramon-9999.ebuild:

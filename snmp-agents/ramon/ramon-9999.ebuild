@@ -47,8 +47,3 @@ src_prepare() {
 		-e 's:-ll:-lfl:' \
 		Makefile
 }
-
-src_install() {
-	default
-	dodoc README
-}
