@@ -2,6 +2,11 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*blade-4.7 (29 Sep 2009)
+
+  29 Sep 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> blade-4.7.ebuild:
+  Initial snmp-mibs/blade ebuild for the 4.7 version of the MIB.
+
   29 Sep 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   mysql-snmp-9999.ebuild:
   Adding a couple notes to the mysql-snmp ebuild.
