@@ -26,7 +26,9 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE=""
 
+# We do not need anything to build, since we're just a perl script.
 DEPEND=""
+# We do not need mysql, since we use the perl DBI
 RDEPEND="dev-lang/perl
 	>=net-analyzer/net-snmp-5.4.2[perl]
 	dev-perl/DBI
