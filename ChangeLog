@@ -3,6 +3,9 @@
 # $Id$
 
   29 Sep 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> blade-4.7.ebuild:
+  Marking stable for production. It is just a text file, after all.
+
+  29 Sep 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> blade-4.7.ebuild:
   Rename BLADE.txt to BLADE-MIB.txt to match what GNi is using currently.
 
 *blade-4.7 (29 Sep 2009)
