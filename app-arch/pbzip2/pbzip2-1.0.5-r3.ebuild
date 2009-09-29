@@ -20,7 +20,7 @@ RDEPEND="${DEPEND}"
 
 src_prepare() {
 	cd "${S}"
-	sed -e 's:^CFLAGS = .*$:#&:g' -e 's:g++:$(CXX):g' -i ${P}/Makefile || die
+#	sed -e 's:^CFLAGS = .*$:#&:g' -e 's:g++:$(CXX):g' -i ${P}/Makefile || die
 	epatch "${FILESDIR}"/${P}-ldflags.patch
 }
 

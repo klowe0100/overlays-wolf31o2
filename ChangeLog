@@ -2,6 +2,11 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  29 Sep 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  pbzip2-1.0.5-r3.ebuild:
+  Comment out the sed for now, so we can build the package. I will need to
+  revisit this to clean up the sed and figure out what has changed.
+
   29 Sep 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> blade-4.7.ebuild:
   Marking stable for production. It is just a text file, after all.
 
