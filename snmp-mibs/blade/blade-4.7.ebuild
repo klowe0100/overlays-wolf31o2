@@ -18,5 +18,5 @@ RDEPEND=""
 
 src_install() {
 	insinto /usr/share/snmp/mibs
-	newins mmblade.mib BLADE.txt
+	newins mmblade.mib BLADE-MIB.txt
 }
