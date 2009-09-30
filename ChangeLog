@@ -2,6 +2,14 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*nagios-imagepack-1.0-r101 (30 Sep 2009)
+
+  30 Sep 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  nagios-imagepack-1.0-r101.ebuild:
+  Initial import of net-analyzer/nagios-imagepack from Gentoo's tree. I have
+  added some extra downloads, but have not yet modified the ebuild to
+  install them.
+
   30 Sep 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   nagios-core-3.2.0-r2.ebuild:
   It appears that this patchset is in working order, so marking this stable
