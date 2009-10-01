@@ -2,6 +2,17 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*amavisd-new-2.6.4-r1 (01 Oct 2009)
+
+  01 Oct 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +mail-filter/amavisd-new/files/amavisd-new-2.6.3-amavisd.conf-gentoo.patch
+  , +mail-filter/amavisd-new/files/amavisd-new-2.6.3-dkimconf.patch,
+  amavisd-new-2.6.4-r1.ebuild, +mail-filter/amavisd-new/files/amavisd.rc6,
+  +mail-filter/amavisd-new/files/amavisd-new-dkimconf.patch,
+  profiles/categories:
+  Initial import of mail-filter/amavisd-new from Gentoo's tree. I added
+  USE=snmp support to install the AgentX subagent, and converted to EAPI=2.
+
 *nagios-imagepack-1.0-r101 (30 Sep 2009)
 
   30 Sep 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
