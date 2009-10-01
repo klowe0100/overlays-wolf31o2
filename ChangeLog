@@ -2,6 +2,12 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*amavis-2.6.4 (01 Oct 2009)
+
+  01 Oct 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> amavis-2.6.4.ebuild:
+  Initial ebuild for snmp-mibs/amavis to support the AgentX subagent of my
+  amavisd-new ebuild.
+
 *amavisd-new-2.6.4-r1 (01 Oct 2009)
 
   01 Oct 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
