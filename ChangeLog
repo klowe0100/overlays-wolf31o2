@@ -2,6 +2,13 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  02 Oct 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  nagios-core-3.2.0-r3.ebuild:
+  Adding another animated icon to replace the static Nagios logo. Taken
+  from:
+  http://exchange.nagios.org/directory/Graphics-and-Logos/Images-and-Logos/G
+  IF-Animated-Nagios-Logo/details without modification.
+
 *nagios-core-3.2.0-r3 (02 Oct 2009)
 
   02 Oct 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>

@@ -19,6 +19,7 @@ SRC_URI="mirror://sourceforge/nagios/${MY_P}.tar.gz
 			${EXCH_URI}/attachment.php?link_id=823&cf_id=24 -> comment-ani.gif
 			${EXCH_URI}/attachment.php?link_id=823&cf_id=29 -> delay-ani.gif
 			${EXCH_URI}/attachment.php?link_id=823&cf_id=35 -> downtime-ani.gif
+			${EXCH_URI}/attachment.php?link_id=834&cf_id=24 -> nagios-ani.gif
 		)
 	)"
 
@@ -123,6 +124,9 @@ src_install() {
 			cp -f "${DISTDIR}"/${image}-ani.gif html/images/${image}.gif \
 				|| die "cp $image"
 		done
+		# Animated Nagios logo
+		rm -f html/images/sblogo.png
+		cp -f "${DISTDIR}"/nagios-ani.gif html/images/sblogo.gif
 	fi
 
 	emake DESTDIR="${D}" install
