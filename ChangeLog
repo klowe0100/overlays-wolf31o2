@@ -2,6 +2,11 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  09 Oct 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> npc-2.0.4.ebuild:
+  Adding EAPI=2 to cacti-plugins/npc to allow USE dependencies on
+  dev-lang/php since it requires that options are enabled that the base
+  Cacti does not need.
+
 *npc-2.0.4 (09 Oct 2009)
 
   09 Oct 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> npc-2.0.4.ebuild:

@@ -2,6 +2,8 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Id$
 
+EAPI=2
+
 inherit eutils cacti-plugins
 
 SRC_URI="http://www.constructaegis.com/downloads/${P}.tar.gz"
