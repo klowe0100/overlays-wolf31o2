@@ -4,6 +4,11 @@
 
   12 Oct 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   nagios-plugins-1.4.14-r1.ebuild:
+  Commenting out nagios-plugins-1.4.13-mysqlpass.patch since it is not
+  needed.
+
+  12 Oct 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  nagios-plugins-1.4.14-r1.ebuild:
   Commenting out nagios-plugins-1.4.13-upslogout.patch since it is not
   needed.
 

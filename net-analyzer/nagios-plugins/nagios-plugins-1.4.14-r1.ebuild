@@ -58,7 +58,7 @@ src_unpack() {
 	# This is from Gentoo bug #243384
 #	epatch "${FILESDIR}"/${PN}-1.4.13-upslogout.patch
 	# This is from Gentoo bug #253893
-	epatch "${FILESDIR}"/${PN}-1.4.13-mysqlpass.patch
+#	epatch "${FILESDIR}"/${PN}-1.4.13-mysqlpass.patch
 
 	eautoreconf
 }
