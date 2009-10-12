@@ -2,6 +2,11 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  12 Oct 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  nagios-plugins-1.4.14-r1.ebuild:
+  Commenting out nagios-plugins-1.4.13-upslogout.patch since it is not
+  needed.
+
 *nagios-plugins-1.4.14-r1 (12 Oct 2009)
 
   12 Oct 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
