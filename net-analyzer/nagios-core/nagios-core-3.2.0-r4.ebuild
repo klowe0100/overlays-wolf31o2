@@ -80,7 +80,7 @@ src_configure() {
 	else
 		if use apache2 ; then
 			myconf="${myconf} --with-command-group=apache"
-			myconf="${myconf} --with-httpd-conf=/etc/apache2/conf.d"
+			myconf="${myconf} --with-httpd-conf=/etc/apache2/modules.d"
 		elif use lighttpd ; then
 			myconf="${myconf} --with-command-group=lighttpd"
 		fi

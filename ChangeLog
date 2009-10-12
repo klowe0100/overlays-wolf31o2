@@ -2,6 +2,10 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  12 Oct 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  nagios-core-3.2.0-r4.ebuild:
+  Fixing --with-httpd-conf setting.
+
 *nagios-core-3.2.0-r4 (12 Oct 2009)
 
   12 Oct 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
@@ -13,7 +17,7 @@
   nagios-imagepack-1.0-r101.ebuild:
   Uncomment the imagepak-ubuntu tarball and changing KEYWORDS to keep this
   from being installed on anyone's machines. The NagiosExchange site uses an
-  incorrect mime-type for the tarballs, so tar will not uncommpress them
+  incorrect mime-type for the tarballs, so tar will not uncompress them
   properly, breaking the unpack stage.
 
   11 Oct 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
