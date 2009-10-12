@@ -12,7 +12,7 @@ SRC_URI="mirror://sourceforge/nagiosplug/${P}.tar.gz"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="amd64 x86"
 IUSE="+ssl samba mysql postgres ldap snmp nagios-dns nagios-ntp nagios-ping
 nagios-ssh nagios-game ups ipv6 radius +suid"
 
@@ -55,10 +55,6 @@ src_unpack() {
 
 	epatch "${FILESDIR}"/${PN}-1.4.10-contrib.patch
 	epatch "${FILESDIR}"/${PN}-1.4.12-pgsqlconfigure.patch
-	# This is from Gentoo bug #243384
-#	epatch "${FILESDIR}"/${PN}-1.4.13-upslogout.patch
-	# This is from Gentoo bug #253893
-#	epatch "${FILESDIR}"/${PN}-1.4.13-mysqlpass.patch
 
 	eautoreconf
 }
