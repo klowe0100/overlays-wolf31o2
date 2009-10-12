@@ -16,15 +16,15 @@ SRC_URI="
 	${IMAGE_URI}/imagepak-remus.tar.gz
 	${IMAGE_URI}/imagepak-satrapa.tar.gz
 	${IMAGE_URI}/imagepak-werschler.tar.gz
+	${NAGEXCH_URI}/attachment.php?link_id=845&cf_id=24 -> imagepak-ubuntu.tar.gz
 	${NAGEXCH_URI}/attachment.php?link_id=844&cf_id=24 -> imagepak-squid.tar.gz
 	${NAGEXCH_URI}/attachment.php?link_id=843&cf_id=24 -> imagepak-snort.tar.gz
 	${NAGEXCH_URI}/attachment.php?link_id=832&cf_id=24 -> imagepak-fedora.tar.gz
 	http://dev.gentoo.org/~eldad/distfiles/imagepak-gentoo.tar.bz2"
-#	${NAGEXCH_URI}/attachment.php?link_id=845&cf_id=24 -> imagepak-ubuntu.tar.gz
 
 SLOT="0"
 LICENSE="GPL-2"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS=""
 
 IUSE=""
 
