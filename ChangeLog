@@ -4,6 +4,10 @@
 
   12 Oct 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   nagios-core-3.2.0-r4.ebuild:
+  Adding a note about disabling the embedded perl interface.
+
+  12 Oct 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  nagios-core-3.2.0-r4.ebuild:
   Fixing --with-httpd-conf setting.
 
 *nagios-core-3.2.0-r4 (12 Oct 2009)

@@ -63,6 +63,7 @@ src_configure() {
 	local myconf
 
 	if use perl ; then
+		ewarn "Disabling the embedded perl interface (not recommended)"
 		myconf="${myconf} --enable-embedded-perl --with-perlcache"
 	fi
 
