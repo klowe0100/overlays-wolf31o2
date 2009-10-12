@@ -2,6 +2,13 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*nagios-core-3.2.0-r4 (12 Oct 2009)
+
+  12 Oct 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  nagios-core-3.2.0-r4.ebuild:
+  Revision bumping nagios-core to add an examples USE flag to control the
+  installation of the default example configuration.
+
   12 Oct 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   nagios-imagepack-1.0-r101.ebuild:
   Uncomment the imagepak-ubuntu tarball and changing KEYWORDS to keep this
@@ -11,7 +18,7 @@
 
   11 Oct 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   nagios-imagepack-1.0-r101.ebuild:
-  Comment ububtu images.
+  Comment ubuntu images.
 
 *pnp4nagios-0.4.14-r3 (11 Oct 2009)
 
