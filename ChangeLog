@@ -2,6 +2,12 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*memcached-1.4.2-r1 (13 Oct 2009)
+
+  13 Oct 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  memcached-1.4.2-r1.ebuild:
+  Version bumping net-misc/memcached to the latest release.
+
   13 Oct 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   nagios-core-3.2.0-r4.ebuild, nagios-core-3.2.0-r5.ebuild:
   Only apply the web front-end patches if we're installing it.
