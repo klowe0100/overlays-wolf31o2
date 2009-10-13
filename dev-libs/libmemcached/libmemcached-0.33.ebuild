@@ -20,7 +20,7 @@ src_unpack() {
 	unpack ${A}
 	cd "${S}"
 	epatch "${FILESDIR}"/${PN}-0.28-runtestsasuser.patch
-	epatch "${FILESDIR}"/${PN}-0.28-removebogustest.patch
+#	epatch "${FILESDIR}"/${PN}-0.28-removebogustest.patch
 }
 
 src_compile() {
