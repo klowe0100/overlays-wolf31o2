@@ -3,6 +3,10 @@
 # $Id$
 
   13 Oct 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  nagios-core-3.2.0-r4.ebuild, nagios-core-3.2.0-r5.ebuild:
+  Only apply the web front-end patches if we're installing it.
+
+  13 Oct 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   libmemcached-0.33.ebuild:
   Commenting out the removebogustest.patch, which doesn't apply.
 
