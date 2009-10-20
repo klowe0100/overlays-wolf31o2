@@ -133,8 +133,8 @@ src_install() {
 				|| die "cp $image"
 		done
 		# Animated Nagios logo
-		rm -f html/images/sblogo.png
 		cp -f "${DISTDIR}"/nagios-ani.gif html/images/sblogo.gif
+		sed -i 's/sblogo.png/sblogo.gif/g' html/side.php
 	fi
 
 	emake DESTDIR="${D}" install

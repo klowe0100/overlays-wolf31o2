@@ -2,6 +2,11 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  20 Oct 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  nagios-core-3.2.0-r5.ebuild:
+  If using the animated images, we need to sed side.php to reflect the
+  change.
+
 *memcached-1.4.2-r1 (13 Oct 2009)
 
   13 Oct 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
