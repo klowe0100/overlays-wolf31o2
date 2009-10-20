@@ -26,7 +26,7 @@ S="${WORKDIR}/${MY_P}"
 
 src_prepare() {
 	epatch "${FILESDIR}/${PN}-1.2.2-fbsd.patch"
-	epatch "${FILESDIR}/${PN}-1.3.3-gcc4-slab-fixup.patch"
+#	epatch "${FILESDIR}/${PN}-1.3.3-gcc4-slab-fixup.patch"
 	epatch "${FILESDIR}/${PN}-1.4.0-fix-as-needed-linking.patch"
 	sed -i -e 's,-Werror,,g' configure.ac || die "sed failed"
 	eautoreconf
