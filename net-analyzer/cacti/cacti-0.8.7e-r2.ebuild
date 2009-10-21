@@ -187,10 +187,13 @@ src_install() {
 	webapp_serverowned -R ${MY_HTDOCSDIR}/log
 	webapp_postinst_txt en "${FILESDIR}"/postinstall-en.txt
 
-	dodir /etc/cacti
-	mv "${D}"${MY_HTDOCSDIR}/include/config.php "${D}"/etc/cacti
-	dosym /etc/cacti/config.php ${MY_HTDOCSDIR}/include/config.php
-#	webapp_configfile ${MY_HTDOCSDIR}/include/config.php
+	if use vhosts ; then
+		webapp_configfile ${MY_HTDOCSDIR}/include/config.php
+	else
+		dodir /etc/cacti
+		mv "${D}"${MY_HTDOCSDIR}/include/config.php "${D}"/etc/cacti
+		dosym /etc/cacti/config.php ${MY_HTDOCSDIR}/include/config.php
+	fi
 
 	webapp_src_install
 }

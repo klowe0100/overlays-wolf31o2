@@ -2,6 +2,11 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  21 Oct 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  cacti-0.8.7e-r2.ebuild:
+  Only use the /etc/cacti hack when *not* using USE=vhosts to keep from
+  breaking multi-site installs using webapp-config.
+
 *cacti-0.8.7e-r2 (21 Oct 2009)
 
   21 Oct 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
