@@ -2,6 +2,14 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*cacti-spine-0.8.7e-r2 (21 Oct 2009)
+
+  21 Oct 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  cacti-spine-0.8.7e-r2.ebuild:
+  Revision bumping cacti-spine to include the proper upstream patches.
+  Apparently, when I copied the code from the cacti ebuild, I didn't switch
+  the patches that were being applied. Oops.
+
   21 Oct 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   cacti-0.8.7e-r2.ebuild:
   Only use the /etc/cacti hack when *not* using USE=vhosts to keep from
