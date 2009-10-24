@@ -46,8 +46,8 @@ src_unpack() {
 
 src_install() {
 	# Do not use make install, since it installs the MIB
-	newsbin mysql-agent.pl mysql-snmp
-	newinitd "${FILESDIR}"/mysql-snmp.rc mysql-snmp
-	newconfd "${FILESDIR}"/mysql-snmp.confd mysql-snmp
+	newsbin mysql-agent mysql-snmp || die
+	newinitd "${FILESDIR}"/mysql-snmp.rc mysql-snmp || die
+	newconfd "${FILESDIR}"/mysql-snmp.confd mysql-snmp || die
 	dodoc README
 }
