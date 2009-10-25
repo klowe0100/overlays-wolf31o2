@@ -3,6 +3,9 @@
 # $Id$
 
   25 Oct 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> blade-4.7.ebuild:
+  Install files from DISTDIR, rather than WORKDIR.
+
+  25 Oct 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> blade-4.7.ebuild:
   Setting S=WORKDIR.
 
   24 Oct 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>

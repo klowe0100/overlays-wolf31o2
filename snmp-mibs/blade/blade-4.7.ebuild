@@ -20,5 +20,5 @@ S=${WORKDIR}
 
 src_install() {
 	insinto /usr/share/snmp/mibs
-	newins mmblade.mib BLADE-MIB.txt || die
+	newins "${DISTDIR}"/mmblade.mib BLADE-MIB.txt || die
 }
