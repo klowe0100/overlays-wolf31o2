@@ -5,7 +5,7 @@
 EAPI="2"
 
 CACTI_PLUG_SUPPORTED="yes"
-PLUGIN_NEEDS_SQL="yes"
+#PLUGIN_NEEDS_SQL="yes"
 #MYSQL_SCRIPTS="discover.sql"
 
 inherit eutils cacti-plugins
