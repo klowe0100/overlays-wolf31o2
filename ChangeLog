@@ -2,6 +2,9 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  25 Oct 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> blade-4.7.ebuild:
+  Setting S=WORKDIR.
+
   24 Oct 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   mysql-snmp-9999.ebuild:
   Fix newsbin to match latest git changes.

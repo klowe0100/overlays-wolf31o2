@@ -16,7 +16,9 @@ IUSE=""
 DEPEND=""
 RDEPEND=""
 
+S=${WORKDIR}
+
 src_install() {
 	insinto /usr/share/snmp/mibs
-	newins mmblade.mib BLADE-MIB.txt
+	newins mmblade.mib BLADE-MIB.txt || die
 }
