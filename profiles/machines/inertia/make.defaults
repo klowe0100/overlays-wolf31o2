@@ -32,6 +32,7 @@ PATCH_OVERLAY="/usr/portage/local/patches/"
 PORTAGE_ECLASS_WARNING_ENABLE="0"
 PORTAGE_ELOG_SYSTEM="echo syslog"
 PORTAGE_RSYNC_EXTRA_OPTS="--exclude=.*snapshot --human-readable --verbose"
+PORTDIR="/usr/portage"
 USE="acpi alsa berkdb bluetooth branding bzip2 cairo cdr cracklib crypt cups curl dbus dlloader dvd dvdr dvdread eds encode evo firefox gif gnome gnome-keyring gstreamer gtk hal ipv6 java jpeg ldap libnotify mmx mng mp3 mpeg ncurses nls nocd nptl nptlonly nvidia ogg openal opengl pam pcmcia pda pdf perl pic png pnp ppds python quicktime readline samba snmp spell sse sse2 sse3 ssse3 ssl startup-notification svg tiff truetype trusted udev unicode usb v4l videos vorbis win32codecs wireshark X x264 xml xorg xv xvid zlib -esd -gdbm -gpm -kde -mailwrapper openmp -qt3 -qt3support -qt4 -sdl -tcpd -webkit" # mad
 
 USE="${USE} mmap threads ithreads threadsafe smp xinerama dri ieee1394 ffmpeg gps ipod pcsc-lite smartcard pkcs11 eap-sim eap-tls opensc openssl tpmtok gpg fuse loop-aes dmi smi vim-syntax bash-completion kerberos acl id3tag syslog sqlite sqlite3 cxx dell laptop sasl logrotate gnutls lm_sensors nsplugin applet xscreensaver nvidia nautilus hunspell idn xulrunner rdesktop wifi xcomposite xosd xpm nfs deskbar gnome-print erandom urandom ntp gvfs xft mtrr mmxext pae gio gsm oss cleartype pcap openct libffi xcb"
@@ -54,6 +55,6 @@ USE="${USE} X509 gmplayer dmraid fat tracker freetds odbc geoip galago"
 VIDEO_CARDS="nvidia none vesa"
 WANT_MP="true"
 
-source /usr/local/layman/make.conf
+# source /usr/local/layman/make.conf
 
 # vim: set ts=4 filetype=makeconf

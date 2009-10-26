@@ -4,6 +4,11 @@
 
   26 Oct 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   profiles/machines/inertia/make.defaults:
+  Explicitly adding PORTDIR and commenting out the source line for layman
+  overlays.
+
+  26 Oct 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  profiles/machines/inertia/make.defaults:
   Clean up some quotes/comments and remove the exclusions from
   PORTAGE_RSYNC_EXTRA_OPTS.
 
