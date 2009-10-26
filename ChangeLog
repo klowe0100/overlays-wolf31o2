@@ -3,6 +3,10 @@
 # $Id$
 
   26 Oct 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  profiles/machines/inertia/parent:
+  Updated the parents file to use absolute paths for the Gentoo parents.
+
+  26 Oct 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   profiles/machines/inertia/make.defaults:
   Explicitly adding PORTDIR and commenting out the source line for layman
   overlays.

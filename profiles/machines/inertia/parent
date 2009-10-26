@@ -1,4 +1,5 @@
-../../base
-../../default/linux
-../../arch/x86
-../../targets/desktop
+/usr/portage/profiles/base
+/usr/portage/profiles/default/linux
+/usr/portage/profiles/arch/x86
+/usr/portage/profiles/releases/10.0
+/usr/portage/profiles/targets/desktop
