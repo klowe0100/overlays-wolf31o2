@@ -1,0 +1,13 @@
+diff -urN discovery_v0.9.orig/findhosts.php discovery_v0.9/findhosts.php
+--- discovery_v0.9.orig/findhosts.php	2007-12-23 21:50:51.000000000 -0800
++++ discovery_v0.9/findhosts.php	2009-10-25 12:32:16.000000000 -0700
+@@ -94,7 +94,8 @@
+ 
+ if (read_config_option("discovery_collection_timing") == "disabled") {
+ 	discover_debug("Discovery Polling is set to disabled.\n");
+-	exit;
++	if ($forcerun == FALSE)
++		exit;
+ }
+ 
+ discover_debug("Checking to determine if it's time to run.\n");
