@@ -1,0 +1,22 @@
+>=sys-apps/sed-4 >=app-admin/eselect-python-20090804 >=app-shells/bash-3.2 =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 sys-devel/libtool
+
+0
+http://java.sun.com/javase/6/docs/jre/api/management/JVM-MANAGEMENT-MIB.mib
+
+http://java.sun.com/javase/6/docs/jre/api/management
+BSD
+Software for generating and retrieving SNMP data
+amd64 x86
+autotools base eutils fixheadtails flag-o-matic libtool multilib perl-module portability python toolchain-funcs
+
+
+
+
+1
+
+compile install postinst postrm preinst prerm setup test unpack
+
+
+
+
+

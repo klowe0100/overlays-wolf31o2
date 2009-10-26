@@ -1,0 +1,22 @@
+virtual/libc
+virtual/libc
+0
+mirror://kernel/linux/utils/storage/iscsi/iscsi-initiator-core-tools-2.3.tar.bz2
+
+http://iscsi-initiator-core.org/
+GPL-2
+iscsi-initiator-core is a full featured iSCSI Initiator stack.
+amd64 x86
+eutils flag-o-matic multilib portability toolchain-funcs
+
+
+
+
+
+
+compile install postinst unpack
+
+
+
+
+

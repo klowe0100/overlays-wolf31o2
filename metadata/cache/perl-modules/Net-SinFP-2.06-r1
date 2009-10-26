@@ -1,0 +1,22 @@
+!perl-gcpan/Net-SinFP perl-modules/Class-Gomor perl-modules/Net-Packet-Target >=perl-modules/DBIx-SQLite-Simple-0.34 >=perl-modules/Net-Packet-3.26 dev-lang/perl dev-lang/perl[-build]
+!perl-gcpan/Net-SinFP perl-modules/Class-Gomor perl-modules/Net-Packet-Target >=perl-modules/DBIx-SQLite-Simple-0.34 >=perl-modules/Net-Packet-3.26 dev-lang/perl dev-lang/perl[-build]
+0
+mirror://cpan/authors/id/G/GO/GOMOR/Net-SinFP-2.06.tar.gz
+
+http://search.cpan.org/search?query=Net-SinFP&mode=dist
+|| ( Artistic GPL-2 )
+a full operating system stack fingerprinting suite
+amd64 x86
+base eutils multilib perl-module portability toolchain-funcs
+
+
+
+
+2
+
+compile configure install prepare test unpack
+
+
+
+
+

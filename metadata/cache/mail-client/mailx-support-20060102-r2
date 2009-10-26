@@ -1,0 +1,22 @@
+
+
+0
+mirror://gentoo/mailx-support-20060102.tar.bz2
+
+http://www.openbsd.org/
+BSD
+Provides lockspool utility
+~amd64 ~x86
+eutils flag-o-matic multilib portability toolchain-funcs
+
+
+
+
+
+
+compile install unpack
+
+
+
+
+

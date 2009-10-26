@@ -1,0 +1,22 @@
+>=net-analyzer/cacti-0.8.7d-r2[pluginarch]
+>=net-analyzer/cacti-0.8.7d-r2[pluginarch]
+0
+http://docs.cacti.net/_media/plugin:discovery_v0.9.tar.gz -> discovery-0.9.tar.gz
+primaryuri
+http://docs.cacti.net/plugins
+GPL-2
+Cacti plugin: discovery
+amd64 x86
+cacti-plugins eutils multilib mysql-dbfuncs portability toolchain-funcs webapp
+
+
+
+
+2
+
+install postinst prepare prerm setup
+
+
+
+
+

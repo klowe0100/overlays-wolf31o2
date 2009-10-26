@@ -1,0 +1,22 @@
+!perl-gcpan/Class-Gomor dev-lang/perl dev-lang/perl[-build]
+!perl-gcpan/Class-Gomor dev-lang/perl dev-lang/perl[-build]
+0
+mirror://cpan/authors/id/G/GO/GOMOR/Class-Gomor-1.01.tar.gz
+primaryuri
+http://search.cpan.org/search?query=Class-Gomor&mode=dist
+|| ( Artistic GPL-2 )
+class and object builder
+amd64 x86
+base eutils multilib perl-module portability toolchain-funcs
+
+
+
+
+2
+
+compile configure install prepare test unpack
+
+
+
+
+

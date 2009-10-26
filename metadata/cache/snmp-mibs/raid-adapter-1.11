@@ -1,0 +1,22 @@
+
+
+0
+ftp://ftp.us.dell.com/ide/perc-cerc-apps-6.03-A06.tar.gz
+
+http://linux.dell.com/storage.shtml
+Dell
+MIB for LSI-based SCSI RAID controllers
+amd64 x86
+
+
+
+
+
+
+
+install postinst unpack
+
+
+
+
+

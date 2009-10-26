@@ -1,0 +1,22 @@
+!perl-gcpan/Net-Packet dev-perl/Bit-Vector dev-perl/Socket6 perl-modules/Net-IPv6Addr >=perl-modules/Net-Write-1.04 >=perl-modules/Class-Gomor-1.01 dev-perl/Net-Pcap perl-modules/Net-Libdnet dev-lang/perl dev-lang/perl[-build]
+!perl-gcpan/Net-Packet dev-perl/Bit-Vector dev-perl/Socket6 perl-modules/Net-IPv6Addr >=perl-modules/Net-Write-1.04 >=perl-modules/Class-Gomor-1.01 dev-perl/Net-Pcap perl-modules/Net-Libdnet dev-lang/perl dev-lang/perl[-build]
+0
+mirror://cpan/authors/id/G/GO/GOMOR/Net-Packet-3.26.tar.gz
+primaryuri
+http://search.cpan.org/search?query=Net-Packet&mode=dist
+|| ( Artistic GPL-2 )
+unified framework to send a receive packets
+amd64 x86
+base eutils multilib perl-module portability toolchain-funcs
+
+
+
+
+2
+
+compile configure install prepare test unpack
+
+
+
+
+

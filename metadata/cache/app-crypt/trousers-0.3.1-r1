@@ -1,0 +1,22 @@
+>=dev-libs/glib-2 >=dev-libs/openssl-0.9.7 gtk? ( >=x11-libs/gtk+-2 ) dev-util/pkgconfig =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 sys-devel/libtool
+>=dev-libs/glib-2 >=dev-libs/openssl-0.9.7 gtk? ( >=x11-libs/gtk+-2 )
+0
+mirror://sourceforge/trousers/trousers-0.3.1.tar.gz
+
+http://trousers.sf.net
+CPL-1.0
+open-source TCG Software Stack (TSS) v1.2 implementation
+~amd64 ~x86
+autotools base eutils libtool linux-info multilib portability toolchain-funcs versionator
++gmp +gtk ssl
+
+ssl? ( app-crypt/openssl-tpm-engine )
+
+1
+
+compile install setup unpack
+
+
+
+
+

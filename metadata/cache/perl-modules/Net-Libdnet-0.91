@@ -1,0 +1,22 @@
+perl-modules/Class-Gomor dev-lang/perl dev-libs/libdnet
+perl-modules/Class-Gomor dev-lang/perl dev-libs/libdnet
+0
+mirror://cpan/authors/id/G/GO/GOMOR/Net-Libdnet-0.91.tar.gz
+
+http://search.cpan.org/search?query=Net-Libdnet&mode=dist
+|| ( Artistic GPL-2 )
+bindings for libdnet
+amd64 x86
+base eutils multilib perl-module portability toolchain-funcs
+
+
+
+
+
+
+compile install postinst postrm preinst prerm setup test unpack
+
+
+
+
+

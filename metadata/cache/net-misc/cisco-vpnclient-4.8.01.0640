@@ -1,0 +1,22 @@
+
+~net-misc/cisco-vpnclient-modules-4.8.01.0640
+0
+http://tuxx-home.at/vpn/Linux/vpnclient-linux-x86_64-4.8.01.0640-k9.tar.gz http://longren.org/files/vpnclient-linux-x86_64-4.8.01.0640-k9.tar.gz ftp://ftp.tu-graz.ac.at/vc-graz/vpn/vpnclient-linux-x86_64-4.8.01.0640-k9.tar.gz
+strip
+http://cco.cisco.com/en/US/products/sw/secursw/ps2308/index.html
+cisco-vpn-client
+Cisco VPN Client (3DES)
+-* ~amd64 ~x86
+eutils multilib portability toolchain-funcs
+
+
+
+
+
+
+install
+
+
+
+
+

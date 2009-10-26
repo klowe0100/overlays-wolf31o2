@@ -1,0 +1,22 @@
+
+
+0
+http://www.bayour.com/bind9-snmp/bind9-snmp_1.7.tar.bz2
+
+http://www.bayour.com/bind9-snmp/
+GPL-2
+Bayour.com MIB (Bacula/Bind9)
+amd64 x86
+
+
+
+
+
+
+
+install postinst unpack
+
+
+
+
+

@@ -1,0 +1,22 @@
+dev-lang/perl[-build]
+dev-lang/perl[-build]
+0
+mirror://cpan/authors/id/T/TM/TMONROE/Net-IPv6Addr-0.2.tar.gz
+primaryuri
+http://search.cpan.org/search?query=Net-IPv6Addr&mode=dist
+|| ( Artistic GPL-2 )
+extension for manipulating IPv6 addresses
+amd64 x86
+base eutils multilib perl-module portability toolchain-funcs
+
+
+
+
+2
+
+compile configure install prepare test unpack
+
+
+
+
+

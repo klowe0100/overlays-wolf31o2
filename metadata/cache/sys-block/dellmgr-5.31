@@ -1,0 +1,22 @@
+>=app-arch/rpm2targz-9.0.0.3g
+
+0
+http://ftp.us.dell.com/ide/perc-cerc-apps-6.03-A06.tar.gz
+strip mirror test
+http://linux.dell.com/
+Dell
+Dell PERC 2/3/4 RAID controller management tool
+~x86
+eutils multilib portability rpm toolchain-funcs
+
+
+
+
+
+
+compile install unpack
+
+
+
+
+

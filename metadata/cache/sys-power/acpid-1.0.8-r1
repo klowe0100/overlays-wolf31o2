@@ -1,0 +1,22 @@
+sys-apps/sed
+
+0
+mirror://sourceforge/acpid/acpid-1.0.8.tar.gz
+
+http://acpid.sourceforge.net
+GPL-2
+Daemon for Advanced Configuration and Power Interface
+amd64 x86
+eutils flag-o-matic multilib portability toolchain-funcs
++syslog
+
+
+
+2
+
+compile install postinst unpack
+
+
+
+
+

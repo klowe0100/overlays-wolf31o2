@@ -1,0 +1,22 @@
+kernel_linux? ( virtual/modutils ) sys-apps/sed kernel_linux? ( virtual/linux-sources )
+kernel_linux? ( virtual/modutils )
+0
+http://tuxx-home.at/vpn/Linux/vpnclient-linux-x86_64-4.8.02.0030-k9.tar.gz http://longren.org/files/vpnclient-linux-x86_64-4.8.02.0030-k9.tar.gz ftp://ftp.tu-graz.ac.at/vc-graz/vpn/vpnclient-linux-x86_64-4.8.02.0030-k9.tar.gz
+strip
+http://cco.cisco.com/en/US/products/sw/secursw/ps2308/index.html
+cisco-vpn-client
+Cisco VPN Client modules
+-* ~amd64 ~x86
+eutils linux-info linux-mod multilib portability toolchain-funcs versionator
+kernel_linux
+
+
+
+
+
+compile install postinst postrm preinst setup unpack
+
+
+
+
+

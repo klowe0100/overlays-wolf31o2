@@ -1,0 +1,22 @@
+
+dev-lang/perl virtual/perl-Sys-Syslog net-analyzer/net-snmp[perl] >=net-dns/bind-9.5 mib? ( ~snmp-mibs/durchmesser-bind-1.0 )
+0
+http://svn.durchmesser.ch/trac/bindagentx/changeset/27/tags/bindagentx-1.0?old_path=%2F&format=zip -> bindagentx-1.0.zip
+
+http://svn.durchmesser.ch/trac/bindagentx/
+GPL-2
+Script for BIND 9.5+ SNMP statistics via AgentX protocol
+~amd64 ~x86
+
++mib
+
+
+
+2
+
+install postinst prepare
+
+
+
+
+

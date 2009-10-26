@@ -1,0 +1,22 @@
+!perl-gcpan/CGI-Apache2-Wrapper www-apache/mod_perl www-apache/libapreq2 dev-lang/perl[-build]
+!perl-gcpan/CGI-Apache2-Wrapper www-apache/mod_perl www-apache/libapreq2 dev-lang/perl[-build]
+0
+mirror://cpan/authors/id/R/RK/RKOBES/CGI-Apache2-Wrapper-0.215.tar.gz
+primaryuri
+http://search.cpan.org/search?query=CGI-Apache2-Wrapper&mode=dist
+|| ( Artistic GPL-2 )
+CGI.pm-compatible wrapper for mod_perl
+amd64 x86
+base eutils multilib perl-module portability toolchain-funcs
+
+
+
+
+2
+
+compile configure install prepare test unpack
+
+
+
+
+

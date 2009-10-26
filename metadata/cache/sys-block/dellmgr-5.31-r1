@@ -1,0 +1,22 @@
+>=app-arch/rpm2targz-9.0.0.3g
+snmp? ( net-analyzer/percsnmp )
+0
+http://ftp.us.dell.com/ide/perc-cerc-apps-6.03-A06.tar.gz
+strip mirror test
+http://linux.dell.com/storage.html
+Dell
+Dell PERC 2/3/4 RAID controller management tool
+amd64 x86
+eutils multilib portability rpm toolchain-funcs
+snmp
+
+
+
+
+
+install unpack
+
+
+
+
+

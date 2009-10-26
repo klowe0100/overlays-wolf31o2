@@ -1,0 +1,22 @@
+=sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 sys-devel/libtool
+
+0
+http://people.freebsd.org/~seanc/libmemcache/libmemcache-1.4.0.rc2.tar.bz2
+
+http://people.freebsd.org/~seanc/libmemcache/
+MIT
+C API for memcached
+amd64 x86
+autotools eutils libtool multilib portability toolchain-funcs
+
+
+
+
+
+
+compile install unpack
+
+
+
+
+

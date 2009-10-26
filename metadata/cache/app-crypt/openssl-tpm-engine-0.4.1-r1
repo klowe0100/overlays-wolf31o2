@@ -1,0 +1,22 @@
+>=dev-libs/openssl-0.9.8 >=app-crypt/trousers-0.2.8 =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 sys-devel/libtool
+>=dev-libs/openssl-0.9.8 >=app-crypt/trousers-0.2.8
+0
+mirror://sourceforge/trousers/openssl_tpm_engine-0.4.1.tar.gz
+
+http://trousers.sourceforge.net
+GPL-2
+an OpenSSL engine that uses private keys stored in TPM hardware
+~amd64 ~x86
+autotools eutils libtool multilib portability toolchain-funcs
+
+
+
+
+
+
+compile install unpack
+
+
+
+
+

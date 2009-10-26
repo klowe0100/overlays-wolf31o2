@@ -1,0 +1,22 @@
+>=net-analyzer/cacti-0.8.7d-r2[pluginarch]
+>=net-analyzer/cacti-0.8.7d-r2[pluginarch]
+0
+http://docs.cacti.net/_media/plugin:loginmod-latest.tgz -> loginmod-1.0.tar.gz
+primaryuri
+http://docs.cacti.net/plugins
+GPL-2
+Cacti plugin: loginmod
+-* ~amd64 ~x86
+cacti-plugins eutils multilib mysql-dbfuncs portability toolchain-funcs webapp
+
+
+
+
+2
+
+install postinst prerm setup
+
+
+
+
+

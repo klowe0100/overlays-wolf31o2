@@ -1,0 +1,22 @@
+net-im/pidgin[gtk] >=dev-libs/glib-2 >=x11-libs/gtk+-2 dev-util/pkgconfig
+net-im/pidgin[gtk] >=dev-libs/glib-2 >=x11-libs/gtk+-2
+0
+http://www.cs.hs-rm.de/~ksteb001/stfw/stfw.tar.gz
+
+http://linuxandwhatever.wordpress.com/stfw-pidgin-plugin/
+GPL-2
+provides /stfw or /lmgtfy commands to send lmgtfy links
+~amd64 ~x86
+
+
+
+
+
+2
+
+compile install
+
+
+
+
+

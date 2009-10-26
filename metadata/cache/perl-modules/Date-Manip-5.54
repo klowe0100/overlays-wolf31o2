@@ -1,0 +1,22 @@
+
+
+0
+mirror://cpan/authors/id/S/SB/SBECK/Date-Manip-5.54.tar.gz
+
+http://search.cpan.org/search?query=Date-Manip&mode=dist
+|| ( Artistic GPL-2 )
+Complete date/time manipulation package
+amd64 x86
+base eutils multilib perl-module portability toolchain-funcs
+
+
+
+
+
+
+compile install postinst postrm preinst prerm setup test unpack
+
+
+
+
+

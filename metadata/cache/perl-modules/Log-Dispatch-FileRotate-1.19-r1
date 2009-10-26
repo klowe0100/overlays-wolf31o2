@@ -1,0 +1,22 @@
+!perl-gcpan/Log-Dispatch-FileRotate dev-perl/Params-Validate perl-modules/Date-Manip dev-perl/log-dispatch dev-perl/Log-Log4perl dev-lang/perl dev-lang/perl[-build]
+!perl-gcpan/Log-Dispatch-FileRotate dev-perl/Params-Validate perl-modules/Date-Manip dev-perl/log-dispatch dev-perl/Log-Log4perl dev-lang/perl dev-lang/perl[-build]
+0
+mirror://cpan/authors/id/M/MA/MARKPF/Log-Dispatch-FileRotate-1.19.tar.gz
+primaryuri
+http://search.cpan.org/search?query=Log-Dispatch-FileRotate&mode=dist
+|| ( Artistic GPL-2 )
+log to files which rotate/archive themselves
+amd64 x86
+base eutils multilib perl-module portability toolchain-funcs
+
+
+
+
+2
+
+compile configure install prepare test unpack
+
+
+
+
+

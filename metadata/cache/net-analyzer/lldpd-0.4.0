@@ -1,0 +1,22 @@
+snmp? ( net-analyzer/net-snmp )
+snmp? ( net-analyzer/net-snmp )
+0
+http://www.luffy.cx/lldpd/lldpd-0.4.0.tar.gz
+
+https://trac.luffy.cx/lldpd
+GPL-2
+industry-standard LLDP (802.1ab) daemon
+~amd64 ~x86
+
+snmp
+
+
+
+2
+
+configure
+
+
+
+
+

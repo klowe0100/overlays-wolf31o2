@@ -1,0 +1,22 @@
+virtual/opengl app-arch/unshield
+virtual/opengl
+0
+http://icculus.org/~ravage/mohaa/donotlinktomyfiles/mohaa-lnx-1.11-beta3.run
+strip
+http://icculus.org/betas/mohaa/
+
+Medal of Honor : Allied Assault
+~x86
+base eutils games multilib portability toolchain-funcs
+cdinstall
+
+
+
+
+
+compile install postinst preinst setup unpack
+
+
+
+
+

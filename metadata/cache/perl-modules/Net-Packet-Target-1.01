@@ -1,0 +1,22 @@
+>=perl-modules/Class-Gomor-1.01 >=perl-modules/Net-Packet-3.26 dev-lang/perl
+>=perl-modules/Class-Gomor-1.01 >=perl-modules/Net-Packet-3.26 dev-lang/perl
+0
+mirror://cpan/authors/id/G/GO/GOMOR/Net-Packet-Target-1.01.tar.gz
+
+http://search.cpan.org/search?query=Net-Packet-Target&mode=dist
+|| ( Artistic GPL-2 )
+an object for all network related stuff
+amd64 x86
+base eutils multilib perl-module portability toolchain-funcs
+
+
+
+
+
+
+compile install postinst postrm preinst prerm setup test unpack
+
+
+
+
+

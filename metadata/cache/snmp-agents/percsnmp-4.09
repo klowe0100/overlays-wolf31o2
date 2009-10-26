@@ -1,0 +1,22 @@
+
+net-analyzer/net-snmp !minimal? ( snmp-mibs/raid-adapter )
+0
+ftp://ftp.us.dell.com/ide/perc-cerc-apps-6.03-A06.tar.gz
+
+http://linux.dell.com/storage.shtml
+Dell
+SNMP Agent for LSI-based Dell PERC SCSI/RAID cards
+amd64 x86
+
+minimal
+
+
+
+
+
+install postinst unpack
+
+
+
+
+

@@ -1,0 +1,22 @@
+
+
+0
+qla2xxx-v8.02.14_01-dist.tgz
+
+http://driverdownloads.qlogic.com/QLogicDriverDownloads_UI/default.aspx
+as-is
+drivers for QLogic HBAs
+~amd64 ~x86
+linux-info multilib toolchain-funcs versionator
+
+
+
+
+2
+
+compile prepare setup unpack
+
+
+
+
+

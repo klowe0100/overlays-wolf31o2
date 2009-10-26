@@ -1,0 +1,22 @@
+perl-modules/Class-Gomor dev-perl/DBD-SQLite dev-lang/perl
+perl-modules/Class-Gomor dev-perl/DBD-SQLite dev-lang/perl
+0
+mirror://cpan/authors/id/G/GO/GOMOR/DBIx-SQLite-Simple-0.34.tar.gz
+primaryuri
+http://search.cpan.org/search?query=DBIx-SQLite-Simple&mode=dist
+|| ( Artistic GPL-2 )
+easy access to SQLite databases using objects
+amd64 x86
+base eutils multilib perl-module portability toolchain-funcs
+
+
+
+
+
+
+compile install postinst postrm preinst prerm setup test unpack
+
+
+
+
+

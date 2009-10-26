@@ -1,0 +1,22 @@
+!perl-gcpan/Net-Libdnet perl-modules/Class-Gomor dev-lang/perl dev-libs/libdnet dev-lang/perl[-build]
+!perl-gcpan/Net-Libdnet perl-modules/Class-Gomor dev-lang/perl dev-libs/libdnet dev-lang/perl[-build]
+0
+mirror://cpan/authors/id/G/GO/GOMOR/Net-Libdnet6-0.23.tar.gz
+primaryuri
+http://search.cpan.org/search?query=Net-Libdnet&mode=dist
+|| ( Artistic GPL-2 )
+bindings for libdnet
+amd64 x86
+base eutils multilib perl-module portability toolchain-funcs
+
+
+
+
+2
+
+compile configure install prepare test unpack
+
+
+
+
+

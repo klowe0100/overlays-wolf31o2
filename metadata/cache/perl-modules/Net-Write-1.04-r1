@@ -1,0 +1,22 @@
+!perl-gcpan/Net-Write dev-perl/Socket6 perl-modules/Class-Gomor dev-perl/Net-Pcap dev-lang/perl dev-lang/perl[-build]
+!perl-gcpan/Net-Write dev-perl/Socket6 perl-modules/Class-Gomor dev-perl/Net-Pcap dev-lang/perl dev-lang/perl[-build]
+0
+mirror://cpan/authors/id/G/GO/GOMOR/Net-Write-1.04.tar.gz
+primaryuri
+http://search.cpan.org/search?query=Net-Write&mode=dist
+|| ( Artistic GPL-2 )
+portable interface to open and send raw data to network
+amd64 x86
+base eutils multilib perl-module portability toolchain-funcs
+
+
+
+
+2
+
+compile configure install prepare test unpack
+
+
+
+
+

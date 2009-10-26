@@ -1,0 +1,22 @@
+
+
+0
+mirror://cpan/authors/id/F/FR/FRAJULAC/Net-IPv4Addr-0.10.tar.gz
+
+http://search.cpan.org/search?query=Net-IPv4Addr&mode=dist
+|| ( Artistic GPL-2 )
+extension for manipulating IPv4 addresses
+amd64 x86
+base eutils multilib perl-module portability toolchain-funcs
+
+
+
+
+
+
+compile install postinst postrm preinst prerm setup test unpack
+
+
+
+
+

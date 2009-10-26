@@ -1,0 +1,22 @@
+>=net-analyzer/cacti-0.8.7d-r2[pluginarch]
+>=net-analyzer/cacti-0.8.7d-r2[pluginarch]
+0
+http://docs.cacti.net/_media/plugin:mactrack-latest.tgz -> mactrack-2.0_pre20090601.tar.gz
+primaryuri
+http://docs.cacti.net/plugins
+GPL-2
+Cacti plugin: mactrack
+-* ~amd64 ~x86
+cacti-plugins eutils multilib mysql-dbfuncs portability toolchain-funcs webapp
+
+
+
+
+2
+
+install postinst prerm setup
+
+
+
+
+

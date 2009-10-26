@@ -1,0 +1,22 @@
+net-analyzer/net-snmp >=virtual/mysql-5.0 =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 sys-devel/libtool
+net-analyzer/net-snmp >=virtual/mysql-5.0 >=net-analyzer/cacti-0.8.7c
+0
+http://www.cacti.net/downloads/spine/cacti-spine-0.8.7e.tar.gz http://www.cacti.net/downloads/spine/patches/0.8.7e/snmp_v3_fix.patch http://www.cacti.net/downloads/spine/patches/0.8.7e/mysql_client_reconnect.patch http://www.cacti.net/downloads/spine/patches/0.8.7e/ping_reliability.patch
+
+http://cacti.net/spine_info.php
+GPL-2
+a fast poller for Cacti, written in C
+~amd64 ~x86
+autotools eutils libtool multilib portability toolchain-funcs
+
+
+
+
+2
+
+install postinst prepare
+
+
+
+
+

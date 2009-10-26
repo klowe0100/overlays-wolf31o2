@@ -1,0 +1,22 @@
+>=dev-util/git-1.6
+
+0
+
+
+http://www.nongnu.org/ramon
+GPL-2
+AgentX subagent for net-snmp to get RMON2 statistics
+~amd64 ~x86
+eutils git multilib portability toolchain-funcs
+
+
+
+
+2
+
+prepare unpack
+
+
+
+
+
