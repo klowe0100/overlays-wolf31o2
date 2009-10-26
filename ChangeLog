@@ -3,6 +3,11 @@
 # $Id$
 
   26 Oct 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  profiles/machines/inertia/make.defaults:
+  Clean up some quotes/comments and remove the exclusions from
+  PORTAGE_RSYNC_EXTRA_OPTS.
+
+  26 Oct 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   +metadata/cache/cacti-plugins/mobile-0.1,
   +metadata/cache/cacti-plugins/smokeping-0.1,
   +metadata/cache/net-analyzer/nagtrap-0.1.3,
