@@ -2,6 +2,15 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*cacti-0.8.7e-r3 (27 Oct 2009)
+
+  27 Oct 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  cacti-0.8.7e-r3.ebuild:
+  Remove the sed deletion of line 370 from the Plugin Architecture patch and
+  replacing it with a safer version, since the deletion was for version 2.4
+  and I did not notice when version bumping. The new code checks PIA_V and
+  dies if it is not correct, which makes it safe for newer PIA versions.
+
   26 Oct 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   profiles/machines/inertia/parent:
   Updated the parents file to use absolute paths for the Gentoo parents.
