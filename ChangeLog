@@ -3,6 +3,10 @@
 # $Id$
 
   27 Oct 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +metadata/cache/net-analyzer/cacti-0.8.7e-r3:
+  Updating metadata cache for net-analyzer/cacti-0.8.7e-r3.
+
+  27 Oct 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   net-analyzer/cacti/Manifest:
   Manifest fix.
 
