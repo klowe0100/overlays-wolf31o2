@@ -2,6 +2,14 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*routerconfigs-0.2-r1 (27 Oct 2009)
+
+  27 Oct 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +cacti-plugins/routerconfigs/files/0.2/001_all_reset_running_bug137.patch,
+  routerconfigs-0.2-r1.ebuild:
+  Adding 001_all_reset_running_bug137.patch to solve upstream cactiusers.org
+  bug #137, and fixing the displayed version.
+
   27 Oct 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   +metadata/cache/net-analyzer/cacti-0.8.7e-r3:
   Updating metadata cache for net-analyzer/cacti-0.8.7e-r3.

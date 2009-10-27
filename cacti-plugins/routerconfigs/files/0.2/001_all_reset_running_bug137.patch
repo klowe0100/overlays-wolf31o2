@@ -1,0 +1,12 @@
+diff -urN routerconfigs-0.2.orig/router-download.php routerconfigs-0.2/router-download.php
+--- routerconfigs-0.2.orig/router-download.php	2009-01-10 04:22:53.000000000 -0800
++++ routerconfigs-0.2/router-download.php	2009-10-27 09:04:07.560131688 -0700
+@@ -62,6 +62,8 @@
+ 		sleep(10);
+ 	}
+ } else {
++	/* We need to reset plugin_routerconfigs_running to 0 */
++	db_execute("REPLACE INTO settings (name, value) VALUES ('plugin_routerconfigs_running', 0)");
+ 	return;
+ }
+ $success = count($devices) - count($failed);
