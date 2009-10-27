@@ -2,6 +2,10 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  27 Oct 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  net-analyzer/cacti/Manifest:
+  Manifest fix.
+
 *cacti-0.8.7e-r3 (27 Oct 2009)
 
   27 Oct 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
