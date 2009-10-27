@@ -3,6 +3,9 @@
 # $Id$
 
   27 Oct 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> net-snmp-5.5.ebuild:
+  Adding sctp-mib and etherlike-mib for Linux.
+
+  27 Oct 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> net-snmp-5.5.ebuild:
   Cleaning up the ebuild headers and removing the PowerPC arches, as I have
   no way of currently testing them.
 

@@ -101,7 +101,8 @@ src_compile() {
 	# This should really be default, since it's the RFC MTA MIB
 	use sendmail && mibs="${mibs} mibII/mta_sendmail"
 	# The TUNNEL-MIB only supports Linux and Solaris, but I cannot test Solaris.
-	use kernel_linux && mibs="${mibs} tunnel"
+	# The SCTP-MIB and EtherLike-MIB only support Linux.
+	use kernel_linux && mibs="${mibs} etherlike-mib sctp-mib tunnel"
 	# These two extend functionality of the agent's capabilities
 	use smux && mibs="${mibs} smux"
 	use extensible && mibs="${mibs} ucd-snmp/extensible"
