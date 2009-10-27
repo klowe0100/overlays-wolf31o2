@@ -162,7 +162,7 @@ src_compile() {
 			$(use_with zlib)"
 	fi
 	# These are answers to the questions asked by configure
-	answers="--with-sys-location=Uknown \
+	answers="--with-sys-location=Unknown \
 		--with-sys-contact=root@Unknown \
 		--with-default-snmp-version=3 \
 		--with-logfile=/var/log/net-snmpd.log \
