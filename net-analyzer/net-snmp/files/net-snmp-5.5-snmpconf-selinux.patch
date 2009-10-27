@@ -1,0 +1,12 @@
+Files net-snmp-5.5.orig/.AGENT.txt.swp and net-snmp-5.5/.AGENT.txt.swp differ
+diff -urN net-snmp-5.5.orig/local/snmpconf net-snmp-5.5/local/snmpconf
+--- net-snmp-5.5.orig/local/snmpconf	2005-08-16 08:59:16.000000000 -0700
++++ net-snmp-5.5/local/snmpconf	2009-10-27 14:48:32.203410560 -0700
+@@ -682,6 +682,7 @@
+ 	    }
+ 	}
+ 	close(O);
++	system("restorecon $outputf");
+     }
+ }
+ 

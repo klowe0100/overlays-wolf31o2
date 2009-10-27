@@ -6,18 +6,16 @@ EAPI=1
 
 inherit fixheadtails flag-o-matic perl-module python autotools
 
-JVM_BASE="http://java.sun.com/javase/6/docs/jre/api/management"
-
 DESCRIPTION="Software for generating and retrieving SNMP data"
 HOMEPAGE="http://net-snmp.sourceforge.net/"
 SRC_URI="mirror://sourceforge/${PN}/${P}.tar.gz"
 
 LICENSE="as-is BSD"
 SLOT="0"
-KEYWORDS="amd64 ~ppc ~ppc64 x86"
+KEYWORDS="~amd64 ~ppc ~ppc64 ~x86"
 # Kernel USE-expand, add Solaris and FreeBSD here when adding support
 KERNEL_IUSE="kernel_linux"
-IUSE="${KERNEL_IUSE} +bzip2 +diskio doc elf +extensible ipv6 java kerberos lm_sensors mfd-rewrites minimal perl python rpm selinux +sendmail +smux ssl tcpd X +zlib"
+IUSE="${KERNEL_IUSE} +bzip2 +diskio doc elf +extensible ipv6 kerberos lm_sensors mfd-rewrites minimal perl python rpm selinux +sendmail +smux ssl tcpd X +zlib"
 
 DEPEND="ssl? ( >=dev-libs/openssl-0.9.6d )
 	tcpd? ( >=sys-apps/tcp-wrappers-7.6 )
@@ -52,10 +50,6 @@ DEPEND="${DEPEND}
 	>=sys-apps/sed-4
 	doc? ( app-doc/doxygen )"
 
-# Dependency on virtual/jre due to bug #233546
-RDEPEND="${RDEPEND}
-	java? ( virtual/jre snmp-mibs/jvm-management )"
-
 pkg_setup() {
 	use perl && perlinfo
 	use !ssl && ewarn "AES and encryption support disabled. USE=ssl to enable."
@@ -80,7 +74,7 @@ src_unpack() {
 	fi
 
 	# snmpconf generates config files with proper selinux context
-	use selinux && epatch "${FILESDIR}"/${PN}-5.1.2-snmpconf-selinux.patch
+	use selinux && epatch "${FILESDIR}"/${P}-snmpconf-selinux.patch
 
 	# Fix version number:
 	sed -i -e "s:NetSnmpVersionInfo = \".*\":NetSnmpVersionInfo = \"${PV}\":" \
@@ -118,7 +112,7 @@ src_compile() {
 	# Add dmalloc/efence support
 	# Add PKCS#11 support
 	# Add support for specifying transports
-	# Add support for specifying security modules
+	# Add support for specifying security modules (usm, ksm, tsm)
 	myconf="${myconf} \
 		$(use_with elf) \
 		$(use_with ssl openssl) \
@@ -159,7 +153,7 @@ src_compile() {
 			$(use_with zlib)"
 	fi
 	# These are answers to the questions asked by configure
-	answers="--with-sys-location=Uknown \
+	answers="--with-sys-location=Unknown \
 		--with-sys-contact=root@Unknown \
 		--with-default-snmp-version=3 \
 		--with-logfile=/var/log/net-snmpd.log \

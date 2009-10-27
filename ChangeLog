@@ -2,6 +2,15 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*net-snmp-5.5 (27 Oct 2009)
+
+  27 Oct 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  net-snmp-5.4.1.1-r1.ebuild, net-snmp-5.4.2.1-r1.ebuild,
+  net-snmp-5.5.ebuild,
+  +net-analyzer/net-snmp/files/net-snmp-5.5-snmpconf-selinux.patch:
+  Version bumping net-snmp to the latest version, removing the java USE flag
+  support, forward-porting the snmpconf-selinux patch, and fixing a typo.
+
 *routerconfigs-0.2-r1 (27 Oct 2009)
 
   27 Oct 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
