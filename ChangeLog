@@ -3,6 +3,12 @@
 # $Id$
 
   29 Oct 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  trousers-0.3.2-r1.ebuild,
+  -app-crypt/trousers/files/trousers-0.3.2-nouseradd.patch:
+  Remove qa and gcc patches, switch to bz2 tarball, switch back to 0.2.3
+  nouseradd patch, and delete 0.3.2 nouseradd patch.
+
+  29 Oct 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   +metadata/cache/cacti-plugins/routerconfigs-0.2-r1,
   -metadata/cache/net-analyzer/net-snmp-5.4.1.1-r1,
   -metadata/cache/net-analyzer/net-snmp-5.4.2.1-r1,

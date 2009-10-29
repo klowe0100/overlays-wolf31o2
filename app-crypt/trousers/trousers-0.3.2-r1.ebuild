@@ -2,13 +2,13 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Id$
 
-EAPI=1
+EAPI="1"
 
 inherit autotools base eutils linux-info
 
 DESCRIPTION="open-source TCG Software Stack (TSS) v1.2 implementation"
 HOMEPAGE="http://trousers.sf.net"
-SRC_URI="mirror://sourceforge/trousers/${P}-1.tar.gz"
+SRC_URI="mirror://sourceforge/trousers/${P}.tar.bz2"
 LICENSE="CPL-1.0"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
@@ -23,10 +23,7 @@ DEPEND="${RDEPEND}
 
 PDEPEND="ssl? ( app-crypt/openssl-tpm-engine )"
 
-PATCHES=(
-	"${FILESDIR}/${P}-nouseradd.patch"
-	"${FILESDIR}/${PN}-0.3.1-qa.patch"
-	"${FILESDIR}/${PN}-0.3.1-gcc43.patch"	)
+PATCHES=( "${FILESDIR}/${PN}-0.2.3-nouseradd.patch" )
 
 pkg_setup() {
 	# Check for driver (not sure it can be an rdep, because ot depends on the
