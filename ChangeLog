@@ -3,6 +3,13 @@
 # $Id$
 
   29 Oct 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +metadata/cache/cacti-plugins/routerconfigs-0.2-r1,
+  -metadata/cache/net-analyzer/net-snmp-5.4.1.1-r1,
+  -metadata/cache/net-analyzer/net-snmp-5.4.2.1-r1,
+  +metadata/cache/net-analyzer/net-snmp-5.5:
+  Updating the metadata/cache files.
+
+  29 Oct 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   app-crypt/trousers/files/trousers-0.3.2-nouseradd.patch:
   The patch was reversed, so fixing that.
 
