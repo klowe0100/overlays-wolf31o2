@@ -2,6 +2,10 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  29 Oct 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  app-crypt/trousers/files/trousers-0.3.2-nouseradd.patch:
+  The patch was reversed, so fixing that.
+
   27 Oct 2009; Chris Gianelloni <wolf31o2@wolf31o2.org> net-snmp-5.5.ebuild:
   Adding sctp-mib and etherlike-mib for Linux.
 

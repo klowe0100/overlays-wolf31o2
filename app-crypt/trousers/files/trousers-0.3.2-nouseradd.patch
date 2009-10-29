@@ -1,16 +1,16 @@
 --- dist/Makefile.am.orig	2009-09-01 23:01:45.000000000 +0000
 +++ dist/Makefile.am	2009-09-01 23:02:17.000000000 +0000
-@@ -5,7 +5,13 @@
+@@ -5,13 +5,7 @@
  	/bin/chmod 0600 ${DESTDIR}/@sysconfdir@/tcsd.conf
  
  install-exec-hook:
-+	/usr/sbin/groupadd tss || true
-+	/usr/sbin/useradd -r tss -g tss || true
+-	/usr/sbin/groupadd tss || true
+-	/usr/sbin/useradd -r tss -g tss || true
  	/bin/chown tss:tss ${DESTDIR}/@sbindir@/tcsd
  	/bin/sh -c 'if [ ! -e ${DESTDIR}/@localstatedir@/lib/tpm ];then mkdir -p ${DESTDIR}/@localstatedir@/lib/tpm; fi'
  	/bin/chown tss:tss ${DESTDIR}/@localstatedir@/lib/tpm
  	/bin/chmod 0700 ${DESTDIR}/@localstatedir@/lib/tpm
-+
-+uninstall-hook:
-+	/usr/sbin/userdel tss
-+	/usr/sbin/groupdel tss
+-
+-uninstall-hook:
+-	/usr/sbin/userdel tss
+-	/usr/sbin/groupdel tss
