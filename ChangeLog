@@ -3,6 +3,10 @@
 # $Id$
 
   29 Oct 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  metadata/cache/app-crypt/trousers-0.3.2-r1:
+  Updating metadata/cache.
+
+  29 Oct 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   trousers-0.3.2-r1.ebuild,
   -app-crypt/trousers/files/trousers-0.3.2-nouseradd.patch:
   Remove qa and gcc patches, switch to bz2 tarball, switch back to 0.2.3
