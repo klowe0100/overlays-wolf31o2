@@ -3,6 +3,15 @@
 # $Id$
 
   02 Nov 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  -metadata/cache/gnome-extra/gnome-vfs-obexftp-0.4-r1,
+  gnome-vfs-obexftp-0.4-r1.ebuild, -metadata/cache/gnome-base/gvfs-1.0.3-r1,
+  gvfs-1.0.3-r1.ebuild,
+  -metadata/cache/gnome-extra/evolution-exchange-2.24.1,
+  evolution-exchange-2.24.1.ebuild, profiles/categories:
+  Removing gvfs, gnome-vfs-obexftp, and evolution-exchange, since newer,
+  better versions are in Gentoo's main tree.
+
+  02 Nov 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   -dev-libs/openssl/files/openssl-0.9.7-alpha-default-gcc.patch,
   -dev-libs/openssl/files/openssl-0.9.7e-gentoo.patch,
   -dev-libs/openssl/files/gentoo.config-0.9.8,
