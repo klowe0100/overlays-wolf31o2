@@ -3,6 +3,24 @@
 # $Id$
 
   02 Nov 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  -metadata/cache/x11-drivers/nvidia-drivers-180.22,
+  -x11-drivers/nvidia-drivers/files/NVIDIA_glx-glheader.patch,
+  -x11-drivers/nvidia-drivers/files/eblits/paravirt_check.eblit,
+  -metadata/cache/x11-drivers/nvidia-drivers-185.18.36, profiles/categories,
+  -x11-drivers/nvidia-drivers/files/NVIDIA_glx-defines.patch,
+  -x11-drivers/nvidia-drivers/files/NVIDIA_i2c-hwmon.patch,
+  -x11-drivers/nvidia-drivers/files/eblits/donvidia.eblit,
+  -x11-drivers/nvidia-drivers/files/eblits/mtrr_check.eblit,
+  -x11-drivers/nvidia-drivers/files/eblits/src_install-libs.eblit,
+  -x11-drivers/nvidia-drivers/files/eblits/want_tls.eblit,
+  -x11-drivers/nvidia-drivers/files/libGL.la-r2,
+  -x11-drivers/nvidia-drivers/files/nvidia,
+  -x11-drivers/nvidia-drivers/files/nvidia-169.07,
+  nvidia-drivers-180.22.ebuild, nvidia-drivers-185.18.36.ebuild:
+  Removing x11-drivers/nvidia-drivers since the in-tree version is newer and
+  resolves all of the same issues.
+
+  02 Nov 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   metadata/cache/net-analyzer/net-snmp-5.5, net-snmp-5.5.ebuild:
   Switching ebuild to EAPI=2 and removing eautoreconf call.
 
