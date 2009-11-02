@@ -3,6 +3,29 @@
 # $Id$
 
   02 Nov 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  -dev-libs/openssl/files/openssl-0.9.7-alpha-default-gcc.patch,
+  -dev-libs/openssl/files/openssl-0.9.7e-gentoo.patch,
+  -dev-libs/openssl/files/gentoo.config-0.9.8,
+  -dev-libs/openssl/files/openssl-0.9.8-make-engines-dir.patch,
+  -dev-libs/openssl/files/openssl-0.9.8-makedepend.patch,
+  -dev-libs/openssl/files/openssl-0.9.8-toolchain.patch,
+  -dev-libs/openssl/files/openssl-0.9.8b-doc-updates.patch,
+  -dev-libs/openssl/files/openssl-0.9.8b-parallel-build.patch,
+  -dev-libs/openssl/files/openssl-0.9.8e-PKCS11_engine.patch,
+  -dev-libs/openssl/files/openssl-0.9.8e-bsd-sparc64.patch,
+  -dev-libs/openssl/files/openssl-0.9.8e-make.patch,
+  -dev-libs/openssl/files/openssl-0.9.8g-sslv3-no-tlsext.patch,
+  -dev-libs/openssl/files/openssl-0.9.8h-ldflags.patch,
+  -dev-libs/openssl/files/openssl-0.9.8h-pkcs12.patch,
+  -dev-libs/openssl/files/openssl-0.9.8j-ia64.patch,
+  -dev-libs/openssl/files/openssl-0.9.8j-parallel-build.patch,
+  -metadata/cache/dev-libs/openssl-0.9.8k, openssl-0.9.8k.ebuild,
+  -metadata/cache/dev-libs/openssl-0.9.8k-r1, openssl-0.9.8k-r1.ebuild,
+  -dev-libs/openssl/files/openssl-0.9.8k-toolchain.patch:
+  Removing dev-libs/openssl since the PKCS11 patch was not quite right and
+  there is now a dynamic version of the engine.
+
+  02 Nov 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   -metadata/cache/x11-drivers/nvidia-drivers-180.22,
   -x11-drivers/nvidia-drivers/files/NVIDIA_glx-glheader.patch,
   -x11-drivers/nvidia-drivers/files/eblits/paravirt_check.eblit,
