@@ -2,6 +2,10 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  02 Nov 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  metadata/cache/net-analyzer/net-snmp-5.5, net-snmp-5.5.ebuild:
+  Switching ebuild to EAPI=2 and removing eautoreconf call.
+
   30 Oct 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   +metadata/cache/app-crypt/tpm-tools-1.3.4,
   +metadata/cache/dev-libs/opencryptoki-2.3.0:

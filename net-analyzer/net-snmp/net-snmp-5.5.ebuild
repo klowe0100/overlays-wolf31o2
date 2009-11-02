@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Id$
 
-EAPI="1"
+EAPI="2"
 
 inherit fixheadtails flag-o-matic perl-module python autotools
 
@@ -55,10 +55,7 @@ pkg_setup() {
 	use !ssl && ewarn "AES and encryption support disabled. USE=ssl to enable."
 }
 
-src_unpack() {
-	unpack ${P}.tar.gz
-	cd "${S}"
-
+src_prepare() {
 	# fix access violation in make check
 	sed -i -e 's/\(snmpd.*\)-Lf/\1-l/' testing/eval_tools.sh || \
 		die "sed eval_tools.sh failed"
@@ -80,12 +77,12 @@ src_unpack() {
 	sed -i -e "s:NetSnmpVersionInfo = \".*\":NetSnmpVersionInfo = \"${PV}\":" \
 		snmplib/snmp_version.c
 
-	eautoreconf
+#	eautoreconf
 
 	ht_fix_all
 }
 
-src_compile() {
+src_configure() {
 	local mibs myconf
 
 	strip-flags
@@ -170,7 +167,9 @@ src_compile() {
 		--enable-as-needed \
 		${myconf} \
 		|| die "econf failed"
+}
 
+src_compile() {
 	emake -j1 || die "emake failed"
 
 	if use doc ; then
