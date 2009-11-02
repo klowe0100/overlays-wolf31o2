@@ -3,6 +3,11 @@
 # $Id$
 
   02 Nov 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  -metadata/cache/media-video/totem-2.24.3-r1, totem-2.24.3-r1.ebuild,
+  profiles/categories:
+  Removing totem, since a newer, better version is in Gentoo's tree.
+
+  02 Nov 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   -metadata/cache/gnome-extra/gnome-vfs-obexftp-0.4-r1,
   gnome-vfs-obexftp-0.4-r1.ebuild, -metadata/cache/gnome-base/gvfs-1.0.3-r1,
   gvfs-1.0.3-r1.ebuild,
