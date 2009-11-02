@@ -3,6 +3,21 @@
 # $Id$
 
   02 Nov 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  -metadata/cache/net-wireless/libbtctl-0.10.0-r1,
+  libbtctl-0.10.0-r1.ebuild,
+  -net-wireless/bluez/files/4.18/bluetooth-init.d,
+  -metadata/cache/net-wireless/gnome-bluetooth-0.11.0,
+  gnome-bluetooth-0.11.0.ebuild, -net-wireless/bluez/files/4.18/conf.d-hidd,
+  -net-wireless/bluez/files/bluez-4.18-udev.rules,
+  -net-wireless/bluez/files/bluez-4.18-udev.script,
+  -metadata/cache/net-wireless/bluez-4.25,
+  -net-wireless/bluez/files/4.18/bluetooth-conf.d, bluez-4.25.ebuild,
+  -net-wireless/bluez/files/4.18/cups-location.patch,
+  -net-wireless/bluez/files/4.18/init.d-hidd:
+  Removing bluez, gnome-bluetooth, and libbtctl, since newer, better
+  versions exist in Gentoo's tree.
+
+  02 Nov 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   -metadata/cache/media-video/totem-2.24.3-r1, totem-2.24.3-r1.ebuild,
   profiles/categories:
   Removing totem, since a newer, better version is in Gentoo's tree.
