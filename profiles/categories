@@ -16,6 +16,7 @@ games-strategy
 mail-client
 mail-filter
 media-gfx
+nagios-plugins
 net-analyzer
 net-firewall
 net-libs
