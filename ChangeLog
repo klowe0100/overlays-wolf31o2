@@ -3,6 +3,12 @@
 # $Id$
 
   11 Nov 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  eclass/nagios-plugins.eclass:
+  Adding NAGIOS_PLUGDIR variable, which needs to inherit multilib. Also,
+  adding EXPORT_FUNCTIONS for EAPI=0 1 and EAPI=2, with an appropriate
+  src_configure, src_compile, and src_install suitable for compiled plugins.
+
+  11 Nov 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   +metadata/cache/nagios-plugins/check_hpasm-3.5:
   Adding metadata/cache for nagios-plugins/check_hpasm package.
 
