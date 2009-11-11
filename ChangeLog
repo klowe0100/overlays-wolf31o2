@@ -3,6 +3,10 @@
 # $Id$
 
   11 Nov 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +metadata/cache/nagios-plugins/check_hpasm-3.5:
+  Adding metadata/cache for nagios-plugins/check_hpasm package.
+
+  11 Nov 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   check_hpasm-3.5.ebuild:
   Fixing the HOMEPAGE and SRC_URI and adding nagios-plugins to inherit.
 
