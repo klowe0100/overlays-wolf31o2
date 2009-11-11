@@ -2,12 +2,12 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Id$
 
-inherit eutils
+inherit eutils nagios-plugins
 
 DESCRIPTION="A nagios plugin for checking logfiles"
-HOMEPAGE="http://www.consol.com/opensource/nagios/check-logfiles"
+HOMEPAGE="http://labs.consol.de/lang/en/nagios/check_hpasm/"
 
-SRC_URI="http://www.consol.com/fileadmin/opensource/Nagios/${P}.tar.gz"
+SRC_URI="http://labs.consol.de/wp-content/uploads/2009/09/${P}.tar.gz"
 LICENSE="GPL-3"
 SLOT="0"
 
