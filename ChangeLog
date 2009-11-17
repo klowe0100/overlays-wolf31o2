@@ -2,6 +2,13 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*check_dell_powerconnect-0.1 (17 Nov 2009)
+
+  17 Nov 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  check_dell_powerconnect-0.1.ebuild:
+  Initial ebuild for check_dell_powerconnect, which will need some more work
+  before it gets KEYWORDS for testing.
+
   11 Nov 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   eclass/nagios-plugins.eclass:
   Adding NAGIOS_PLUGDIR variable, which needs to inherit multilib. Also,
