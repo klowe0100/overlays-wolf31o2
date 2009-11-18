@@ -2,6 +2,14 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  18 Nov 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  -metadata/cache/net-analyzer/nagios-plugins-1.4.13-r4,
+  nagios-plugins-1.4.13-r4.ebuild,
+  -net-analyzer/nagios-plugins/files/nagios-plugins-1.4.13-mysqlpass.patch,
+  -net-analyzer/nagios-plugins/files/nagios-plugins-1.4.13-upslogout.patch:
+  Removing the older version of nagios-plugins, since I don't want anybody
+  using them, or I would have to support them.
+
 *nagios-nrpe-2.12-r103 (18 Nov 2009)
 
   18 Nov 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
