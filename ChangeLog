@@ -2,6 +2,10 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  18 Nov 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +metadata/cache/nagios-plugins/check_dell_powerconnect-0.1:
+  Update metadata/cache for nagios-plugins/check_dell_powerconnect.
+
 *check_dell_powerconnect-0.1 (17 Nov 2009)
 
   17 Nov 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
