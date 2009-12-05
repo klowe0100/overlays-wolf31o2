@@ -2,6 +2,16 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*wolf-sources-2.6.32-r1 (05 Dec 2009)
+
+  05 Dec 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +metadata/cache/sys-kernel/wolf-sources-2.6.32-r1,
+  wolf-sources-2.6.32-r1.ebuild, sys-kernel/wolf-sources/Manifest:
+  Adding a new version of wolf-sources, based on gentoo-sources, with minor
+  fixes to be submitted upstream. This revision includes a fix for that
+  localmodconfig and localyesconfig targets to allow it to locate lsmod in
+  /bin.
+
   18 Nov 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   -metadata/cache/net-analyzer/nagios-plugins-1.4.13-r4,
   nagios-plugins-1.4.13-r4.ebuild,
