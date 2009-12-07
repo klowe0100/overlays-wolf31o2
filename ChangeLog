@@ -2,6 +2,20 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*android-sdk-update-manager-4 (07 Dec 2009)
+*android-sdk-update-manager-3-r1 (07 Dec 2009)
+*android-sdk-update-manager-3 (07 Dec 2009)
+
+  07 Dec 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  android-sdk-update-manager-3.ebuild,
+  android-sdk-update-manager-3-r1.ebuild,
+  android-sdk-update-manager-4.ebuild,
+  +dev-util/android-sdk-update-manager/ChangeLog,
+  +dev-util/android-sdk-update-manager/Manifest,
+  +dev-util/android-sdk-update-manager/metadata.xml:
+  Import dev-util/android-sdk-update-manager from Gentoo's tree and version
+  bump it.
+
 *autokernconf-20091120 (07 Dec 2009)
 
   07 Dec 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
