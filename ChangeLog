@@ -2,6 +2,14 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  13 Dec 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  -metadata/cache/dev-util/android-sdk-update-manager-3,
+  android-sdk-update-manager-3.ebuild,
+  -metadata/cache/dev-util/android-sdk-update-manager-3-r1,
+  android-sdk-update-manager-3-r1.ebuild,
+  dev-util/android-sdk-update-manager/Manifest:
+  Removing older versions and updating the metadata cache.
+
   07 Dec 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   +metadata/cache/dev-util/android-sdk-update-manager-3,
   +metadata/cache/dev-util/android-sdk-update-manager-3-r1,
