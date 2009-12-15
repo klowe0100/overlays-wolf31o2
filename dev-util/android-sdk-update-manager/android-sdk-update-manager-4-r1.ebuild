@@ -55,11 +55,11 @@ src_install(){
 	chgrp android "${D}/${destdir}/"{platforms,add-ons,docs,temp}
 	chmod 775 "${D}/${destdir}/"{platforms,add-ons,docs,temp}
 
-	echo "PATH=\"${destdir}/tools" > "${T}/80android-sdk"
-	echo "ROOTPATH=\"${destdir}/tools" >> "${T}/80android-sdk"
+	echo "PATH=\"${destdir}/tools\"" > "${T}/80android-sdk"
+	echo "ROOTPATH=\"${destdir}/tools\"" >> "${T}/80android-sdk"
 #	echo ":${destdir}/platforms/android-${PV/_p*/}/tools\"" >> "${T}/80android"
 	doenvd "${T}/80android-sdk"
-	echo -n "SUBSYSTEMS==\"usb\", ATTRS{idVendor}==\"22b8\", ATTRS{idProduct}==\"41db\", MODE=\"0664\", GROUP=\"android\"" > "${T}"/80-android-sdk.rules
+	echo "SUBSYSTEMS==\"usb\", ATTRS{idVendor}==\"22b8\", ATTRS{idProduct}==\"41db\", MODE=\"0664\", GROUP=\"android\"" > "${T}"/80-android-sdk.rules
 	insinto /etc/udev/rules.d
 	doins "${T}"/80-android-sdk.rules
 }
