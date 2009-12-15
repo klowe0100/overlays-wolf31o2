@@ -9,7 +9,7 @@ inherit versionator eutils
 MY_PN="android-sdk"
 MY_P="${MY_PN}_r0${PV}-linux_86"
 
-DESCRIPTION="Open Handset Alliance's Android SDK/"
+DESCRIPTION="Open Handset Alliance's Android SDK"
 HOMEPAGE="http://developer.android.com"
 SRC_URI="http://dl.google.com/android/${MY_P}.tgz"
 IUSE=""
@@ -17,7 +17,7 @@ RESTRICT="mirror"
 
 LICENSE="android"
 SLOT="0"
-KEYWORDS="~x86 ~amd64"
+KEYWORDS="~amd64 ~x86"
 
 DEPEND="app-arch/tar
 		app-arch/gzip"
