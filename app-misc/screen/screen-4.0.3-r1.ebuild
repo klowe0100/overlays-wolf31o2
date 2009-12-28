@@ -65,10 +65,10 @@ src_unpack() {
 	epatch "${FILESDIR}"/"${P}"-crosscompile.patch
 
 	# Fix some keybindings (###: is this needed?)
-	epatch "${FILESDIR}"/${P}-map.patch
+#	epatch "${FILESDIR}"/${P}-map.patch
 
 	# Add vertical split support
-	epatch "${DISTDIR}"/wrp_vertical_split_0.3_4.0.2.diff
+	epatch "${WORKDIR}"/wrp_vertical_split_0.3_4.0.2.diff
 
 	# Allow for more rendition (color/attribute) changes in status bars
 	sed -i \
