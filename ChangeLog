@@ -3,6 +3,12 @@
 # $Id$
 
   28 Dec 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  gnome-vfs-obexftp-0.4-r1.ebuild, +gnome-extra/gnome-vfs-obexftp/Manifest:
+  Importing gnome-extra/gnome-vfs-obexftp from Gentoo's tree and updating to
+  work with the newer bluez package, and allow both gnome-bluetooth or
+  bluez-gnome to provide the interface.
+
+  28 Dec 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   screen-4.0.3-r1.ebuild, app-misc/screen/Manifest:
   Removing the map patch, since it doesn't apply to this version, and
   changing the location for the vertical split patch to WORKDIR.
