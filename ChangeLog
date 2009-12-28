@@ -2,6 +2,18 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*nm-applet-0.8.0_pre20091105 (28 Dec 2009)
+*nm-applet-0.7.2 (28 Dec 2009)
+
+  28 Dec 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +gnome-extra/nm-applet/files/nm-applet-0.6.5-confchanges.patch,
+  +gnome-extra/nm-applet/files/nm-applet-0.7.0-confchanges.patch,
+  +gnome-extra/nm-applet/files/nm-applet-0.7.1-confchanges.patch,
+  nm-applet-0.7.2.ebuild, nm-applet-0.8.0_pre20091105.ebuild,
+  +gnome-extra/nm-applet/Manifest, profiles/categories:
+  Importing gnome-extra/nm-applet from Gentoo's tree and adding amd64/x86
+  testing KEYWORDS to the 0.8 pre-release snapshot ebuild.
+
 *networkmanager-0.8.0_pre20091105 (28 Dec 2009)
 *networkmanager-0.7.2-r1 (28 Dec 2009)
 
