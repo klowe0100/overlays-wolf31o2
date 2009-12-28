@@ -2,6 +2,15 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*android-sdk-update-manager-4-r2 (28 Dec 2009)
+
+  28 Dec 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  android-sdk-update-manager-4-r2.ebuild,
+  dev-util/android-sdk-update-manager/Manifest,
+  +dev-util/android-sdk-update-manager/files/android.fdi,
+  +dev-util/android-sdk-update-manager/files/android.rules:
+  Adding hal fdi file and revision bumping for testing.
+
   15 Dec 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   android-sdk-update-manager-4-r1.ebuild,
   dev-util/android-sdk-update-manager/Manifest:
