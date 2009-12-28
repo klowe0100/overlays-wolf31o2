@@ -1,5 +1,5 @@
-media-libs/openal media-libs/libsdl games-util/uz2unpack >=app-arch/unshield-0.5-r1 icon? ( media-gfx/imagemagick ) app-arch/tar app-arch/bzip2
-media-libs/openal media-libs/libsdl sys-libs/glibc
+media-libs/openal media-libs/libsdl games-util/uz2unpack >=app-arch/unshield-0.5-r1 icon? ( media-gfx/imagemagick )
+media-libs/openal media-libs/libsdl
 0
 
 strip
@@ -10,11 +10,11 @@ amd64 x86
 base eutils games games-ut2k4mod multilib portability toolchain-funcs
 dynamic icon
 
-games-fps/ut2004 >=games-fps/ut2004-3339
+games-fps/ut2004
 
 
 
-compile install nofetch postinst preinst setup unpack
+compile install postinst preinst setup unpack
 
 
 

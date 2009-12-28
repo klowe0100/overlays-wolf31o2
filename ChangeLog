@@ -3,6 +3,16 @@
 # $Id$
 
   28 Dec 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +metadata/cache/gnome-extra/nm-applet-0.7.2,
+  +metadata/cache/net-misc/networkmanager-0.7.2-r1,
+  +metadata/cache/gnome-extra/nm-applet-0.8.0_pre20091105,
+  +metadata/cache/net-misc/networkmanager-0.8.0_pre20091105,
+  +metadata/cache/dev-util/android-sdk-update-manager-4-r2,
+  metadata/cache/games-fps/ut2004-data-3186-r3,
+  metadata/cache/games-fps/ut2004-data-3186-r4:
+  Update the metadata/cache for new additions.
+
+  28 Dec 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   -gnome-extra/nm-applet/files/nm-applet-0.6.5-confchanges.patch,
   -gnome-extra/nm-applet/files/nm-applet-0.7.0-confchanges.patch,
   -gnome-extra/nm-applet/files/nm-applet-0.7.1-confchanges.patch,
