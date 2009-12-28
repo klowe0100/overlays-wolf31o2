@@ -2,6 +2,21 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*screen-4.0.3-r1 (28 Dec 2009)
+
+  28 Dec 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +metadata/cache/app-misc/screen-4.0.3-r1, screen-4.0.3-r1.ebuild,
+  -metadata/cache/app-misc/screen-4.0.3_p20070403-r1,
+  screen-4.0.3_p20070403-r1.ebuild,
+  +app-misc/screen/files/screen-4.0.3-map.patch,
+  -app-misc/screen/files/screen-4.0.3_p20070403-map.patch,
+  +app-misc/screen/files/4.0.2-64bit-time.patch, app-misc/screen/Manifest,
+  +app-misc/screen/files/4.0.2-nonblock.patch,
+  +app-misc/screen/files/4.0.2-windowlist-multiuser-fix.patch:
+  Upstream (Gentoo) removed the snapshot tarball, so I have to revert back
+  to the 4.0.3 version. As such, I am taking this opportunity to sync back
+  up with Gentoo's ebuild and introduce my changes.
+
   28 Dec 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   +metadata/cache/gnome-extra/nm-applet-0.7.2,
   +metadata/cache/net-misc/networkmanager-0.7.2-r1,

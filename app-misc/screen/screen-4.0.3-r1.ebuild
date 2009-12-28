@@ -1,27 +1,24 @@
-# Copyright 1999-2008 Gentoo Foundation ; 2009-2009 Chris Gianelloni
+# Copyright 1999-2009 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Id$
+# $Header: /var/cvsroot/gentoo-x86/app-misc/screen/screen-4.0.3.ebuild,v 1.20 2009/12/12 19:51:13 swegener Exp $
 
 WANT_AUTOCONF="2.5"
 
 inherit eutils flag-o-matic toolchain-funcs pam autotools
 
-DESCRIPTION="full-screen window manager that multiplexes a physical terminal between several processes"
+DESCRIPTION="Screen - A full-screen window manager that multiplexes physical terminals between several processes"
 HOMEPAGE="http://www.gnu.org/software/screen/"
-SRC_URI="mirror://gentoo/${P}.tar.gz
+SRC_URI="ftp://ftp.uni-erlangen.de/pub/utilities/${PN}/${P}.tar.gz
 	http://vsp4sdl.yuggoth.org/wrp_vertical_split_0.3_4.0.2.diff.bz2"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="~alpha ~amd64 ~arm ~hppa ~ia64 ~m68k ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~sparc-fbsd ~x86 ~x86-fbsd"
+KEYWORDS="alpha amd64 arm hppa ia64 m68k mips ppc ppc64 s390 sh sparc ~sparc-fbsd x86 ~x86-fbsd"
 IUSE="debug nethack pam selinux multiuser"
 
 RDEPEND=">=sys-libs/ncurses-5.2
 	pam? ( virtual/pam )
-	selinux? (
-		sec-policy/selinux-screen
-		>=sec-policy/selinux-base-policy-20050821
-	)"
+	selinux? ( sec-policy/selinux-screen )"
 DEPEND="${RDEPEND}"
 
 pkg_setup() {
@@ -33,13 +30,18 @@ src_unpack() {
 	unpack ${A}
 	cd "${S}"
 
+	# Bug 34599: integer overflow in 4.0.1
+	# (Nov 29 2003 -solar)
+	epatch "${FILESDIR}"/screen-4.0.1-int-overflow-fix.patch
+
+	# Bug 31070: configure problem which affects alpha
+	# (13 Jan 2004 agriffis)
+	epatch "${FILESDIR}"/screen-4.0.1-vsprintf.patch
+
 	# uclibc doesnt have sys/stropts.h
 	if ! (echo '#include <sys/stropts.h>' | $(tc-getCC) -E - &>/dev/null) ; then
 		epatch "${FILESDIR}"/4.0.2-no-pty.patch
 	fi
-
-	# Fix some keybindings
-	epatch "${FILESDIR}"/${P}-map.patch
 
 	# Don't use utempter even if it is found on the system
 	epatch "${FILESDIR}"/4.0.2-no-utempter.patch
@@ -47,8 +49,23 @@ src_unpack() {
 	# Don't link against libelf even if it is found on the system
 	epatch "${FILESDIR}"/4.0.2-no-libelf.patch
 
+	# Patch for time function on 64bit systems
+	epatch "${FILESDIR}"/4.0.2-64bit-time.patch
+
+	# Patch that makes %u work for windowlist -b formats
+	epatch "${FILESDIR}"/4.0.2-windowlist-multiuser-fix.patch
+
+	# Open tty in non-blocking mode
+	epatch "${FILESDIR}"/4.0.2-nonblock.patch
+
 	# compability for sys-devel/autoconf-2.62
 	epatch "${FILESDIR}"/screen-4.0.3-config.h-autoconf-2.62.patch
+
+	# crosscompile patch
+	epatch "${FILESDIR}"/"${P}"-crosscompile.patch
+
+	# Fix some keybindings (###: is this needed?)
+	epatch "${FILESDIR}"/${P}-map.patch
 
 	# Add vertical split support
 	epatch "${DISTDIR}"/wrp_vertical_split_0.3_4.0.2.diff
@@ -69,6 +86,7 @@ src_unpack() {
 		doc/screen.1 \
 		|| die "sed doc/screen.1 failed"
 
+	# reconfigure
 	eautoconf
 }
 
@@ -89,6 +107,9 @@ src_compile() {
 		$(use_enable pam) \
 		|| die "econf failed"
 
+	# Second try to fix bug 12683, this time without changing term.h
+	# The last try seemed to break screen at run-time.
+	# (16 Jan 2003 agriffis)
 	LC_ALL=POSIX make term.h || die "Failed making term.h"
 
 	emake || die "emake failed"
@@ -139,7 +160,4 @@ pkg_postinst() {
 	elog "Some dangerous key bindings have been removed or changed to more safe values."
 	elog "We enable some xterm hacks in our default screenrc, which might break some"
 	elog "applications. Please check /etc/screenrc for information on these changes."
-
-	ewarn "Please terminate your running screen sessions, as screen now uses sockets"
-	ewarn "instead of fifos and the new version can't attach to the old sessions."
 }

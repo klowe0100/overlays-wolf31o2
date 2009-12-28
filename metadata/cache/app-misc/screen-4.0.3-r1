@@ -1,0 +1,22 @@
+>=sys-libs/ncurses-5.2 pam? ( virtual/pam ) selinux? ( sec-policy/selinux-screen ) =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 sys-devel/libtool
+>=sys-libs/ncurses-5.2 pam? ( virtual/pam ) selinux? ( sec-policy/selinux-screen )
+0
+ftp://ftp.uni-erlangen.de/pub/utilities/screen/screen-4.0.3.tar.gz http://vsp4sdl.yuggoth.org/wrp_vertical_split_0.3_4.0.2.diff.bz2
+
+http://www.gnu.org/software/screen/
+GPL-2
+Screen - A full-screen window manager that multiplexes physical terminals between several processes
+alpha amd64 arm hppa ia64 m68k mips ppc ppc64 s390 sh sparc ~sparc-fbsd x86 ~x86-fbsd
+autotools eutils flag-o-matic libtool multilib pam portability toolchain-funcs
+debug nethack pam selinux multiuser
+
+
+
+
+
+compile install postinst setup unpack
+
+
+
+
+
