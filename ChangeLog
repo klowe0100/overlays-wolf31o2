@@ -2,6 +2,13 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  28 Dec 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  -gnome-extra/nm-applet/files/nm-applet-0.6.5-confchanges.patch,
+  -gnome-extra/nm-applet/files/nm-applet-0.7.0-confchanges.patch,
+  -gnome-extra/nm-applet/files/nm-applet-0.7.1-confchanges.patch,
+  gnome-extra/nm-applet/Manifest:
+  Removing unused patches.
+
 *nm-applet-0.8.0_pre20091105 (28 Dec 2009)
 *nm-applet-0.7.2 (28 Dec 2009)
 
