@@ -2,6 +2,14 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*networkmanager-0.8.0_pre20091105 (28 Dec 2009)
+*networkmanager-0.7.2-r1 (28 Dec 2009)
+
+  28 Dec 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  networkmanager-0.7.2-r1.ebuild, networkmanager-0.8.0_pre20091105.ebuild,
+  net-misc/networkmanager/Manifest:
+  Updating networkmanager from Gentoo's tree.
+
 *android-sdk-update-manager-4-r2 (28 Dec 2009)
 
   28 Dec 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
