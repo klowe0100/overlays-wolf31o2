@@ -2,6 +2,16 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  30 Dec 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +metadata/cache/gnome-extra/gnome-vfs-obexftp-0.4-r1,
+  -metadata/cache/net-misc/networkmanager-0.8.0_pre20091105,
+  +metadata/cache/net-misc/networkmanager-0.8.0_pre20091105-r1,
+  +metadata/cache/net-wireless/blueman-1.21-r1,
+  +metadata/cache/net-wireless/bluez-4.59-r1, net-wireless/bluez/Manifest,
+  +net-wireless/bluez/files/4.50-cups-location.patch, bluez-4.59-r1.ebuild:
+  Adding 4.50-cups-locator.patch from Gentoo bug #270859 and updating the
+  metadata/cache entries.
+
 *bluez-4.59-r1 (30 Dec 2009)
 
   30 Dec 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>

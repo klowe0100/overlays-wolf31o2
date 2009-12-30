@@ -45,9 +45,9 @@ src_prepare() {
 		epatch	"${FILESDIR}/bluez-plugdev.patch"
 	fi
 
-#	if use cups; then
-#		epatch "${FILESDIR}/4.18/cups-location.patch"
-#	fi
+	if use cups; then
+		epatch "${FILESDIR}/4.50-cups-location.patch"
+	fi
 
 	# needed for both patches
 	eautoreconf
