@@ -16,7 +16,7 @@ SRC_URI="http://dev.gentoo.org/~dagger/files/${MY_P}.tar.bz2"
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-IUSE="avahi bluetooth doc nss gnutls dhclient dhcpcd resolvconf connection-sharing"
+IUSE="applet avahi bluetooth doc nss gnutls dhclient dhcpcd resolvconf connection-sharing"
 
 RDEPEND=">=sys-apps/dbus-1.2
 	>=dev-libs/dbus-glib-0.75
@@ -29,6 +29,7 @@ RDEPEND=">=sys-apps/dbus-1.2
 	>=net-wireless/wpa_supplicant-0.5.10[dbus]
 	bluetooth? ( net-wireless/bluez )
 	|| ( sys-libs/e2fsprogs-libs <sys-fs/e2fsprogs-1.41.0 )
+	applet? ( gnome-extra/nm-applet )
 	avahi? ( net-dns/avahi[autoipd] )
 	gnutls? (
 		nss? ( >=dev-libs/nss-3.11 )
