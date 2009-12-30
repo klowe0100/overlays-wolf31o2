@@ -102,22 +102,25 @@ src_install() {
 		cd "${S}"
 	fi
 
-	newinitd "${FILESDIR}/4.18/bluetooth-init.d" bluetooth || die
-	newconfd "${FILESDIR}/4.18/bluetooth-conf.d" bluetooth || die
+	newinitd "${FILESDIR}/bluetooth-init.d" bluetooth || die
+	newconfd "${FILESDIR}/bluetooth-conf.d" bluetooth || die
 
 	if use old-daemons; then
-		newconfd "${FILESDIR}/4.18/conf.d-hidd" hidd || die
-		newinitd "${FILESDIR}/4.18/init.d-hidd" hidd || die
+		newconfd "${FILESDIR}/conf.d-hidd" hidd || die
+		newinitd "${FILESDIR}/init.d-hidd" hidd || die
 	fi
 
 	# bug #84431
 	insinto /etc/udev/rules.d/
-	newins "${FILESDIR}/${PN}-4.18-udev.rules" 70-bluetooth.rules || die
-	newins "${S}/scripts/bluetooth.rules" 70-bluetooth-pcmcia.rules || die
-
 	exeinto /$(get_libdir)/udev/
+	newins "${S}/scripts/bluetooth-hid2hci.rules" 70-bluetooth-hid2hci.rules || die
+	newins "${FILESDIR}/${PN}-4.18-udev.rules" 70-bluetooth-gentoo.rules || die
 	newexe "${FILESDIR}/${PN}-4.18-udev.script" bluetooth.sh || die
-	doexe  "${S}/scripts/bluetooth_serial" || die
+	if use pcmcia ; then
+		newins "${S}/scripts/bluetooth-serial.rules" 70-bluetooth-pcmcia.rules || die
+		doexe "${S}/scripts/bluetooth_serial" || die
+	fi
+
 
 	insinto /etc/bluetooth
 	doins \

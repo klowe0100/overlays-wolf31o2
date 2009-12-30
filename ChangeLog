@@ -3,6 +3,20 @@
 # $Id$
 
   30 Dec 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  bluez-4.59-r1.ebuild, net-wireless/bluez/Manifest,
+  -net-wireless/bluez/files/4.18/bluetooth-conf.d,
+  -net-wireless/bluez/files/4.18/bluetooth-init.d,
+  -net-wireless/bluez/files/4.18/conf.d-hidd,
+  -net-wireless/bluez/files/4.18/init.d-hidd,
+  +net-wireless/bluez/files/bluetooth-conf.d,
+  +net-wireless/bluez/files/bluetooth-init.d,
+  +net-wireless/bluez/files/conf.d-hidd,
+  +net-wireless/bluez/files/init.d-hidd:
+  Moving init script/conf.d files into base FILESDIR, removing HID2HCI
+  configuration, since it is now done by the udev rules, wrap the PCMCIA
+  rules in USE=pcmcia, and generally clean up the install section.
+
+  30 Dec 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   dev-util/android-sdk-update-manager/Manifest,
   dev-util/android-sdk-update-manager/files/android.fdi:
   Updating the hal fdi file to support the Motorola Droid in both debug and
