@@ -2,6 +2,14 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*blueman-1.21-r1 (30 Dec 2009)
+
+  30 Dec 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  blueman-1.21-r1.ebuild, +net-wireless/blueman/Manifest,
+  +net-wireless/blueman/metadata.xml:
+  Initial import of net-wireless/blueman from Gentoo's tree, version bumped
+  to 1.21 and adjusted to support the latest NetworkManager pre-releases.
+
   28 Dec 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   gnome-vfs-obexftp-0.4-r1.ebuild, +gnome-extra/gnome-vfs-obexftp/Manifest:
   Importing gnome-extra/gnome-vfs-obexftp from Gentoo's tree and updating to
