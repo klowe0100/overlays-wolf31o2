@@ -9,10 +9,11 @@ depend() {
 }
 
 start() {
-   	ebegin "Starting Bluetooth"
-	local result=0
+	ebegin "Starting Bluetooth"
+	local result
 
-	ebegin "    Starting bluetoothd"
+	eindent
+	ebegin "Starting bluetoothd"
 	# -s enables internal sdp server
 	start-stop-daemon --start \
 		--exec /usr/sbin/bluetoothd
@@ -20,24 +21,23 @@ start() {
 	eend ${result}
 
 	if [ "${HID2HCI_ENABLE}" = "true" -a -x /usr/sbin/hid2hci ]; then
-		ebegin "    Running hid2hci"
-		/usr/sbin/hid2hci --tohci -q    #be quiet
-		[ ${result} == 0 ] && result=$?
-		eend ${result}
+		ebegin "Running hid2hci"
+		/usr/sbin/hid2hci --tohci -q	#be quiet
+		eend $?
 	fi
 
 	if [ "${RFCOMM_ENABLE}" = "true" -a -x /usr/bin/rfcomm ]; then
 		if [ -f "${RFCOMM_CONFIG}" ]; then
-			ebegin "    Starting rfcomm"
+			ebegin "Starting rfcomm"
 			/usr/bin/rfcomm -f "${RFCOMM_CONFIG}" bind all
-			[ ${result} == 0 ] && result=$?
-			eend ${result}
+			eend $?
 		else
 			ewarn "Not enabling rfcomm because RFCOMM_CONFIG does not exists"
 		fi
 	fi
 
-	eend ${result}
+	eoutdent
+	return ${result}
 }
 
 stop() {

@@ -3,6 +3,12 @@
 # $Id$
 
   30 Dec 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  net-wireless/bluez/Manifest,
+  net-wireless/bluez/files/4.18/bluetooth-init.d,
+  net-wireless/bluez/files/4.18/init.d-hidd:
+  Updating init scripts with patches from Gentoo bug #283057.
+
+  30 Dec 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   metadata/cache/net-wireless/bluez-4.59-r1, bluez-4.59-r1.ebuild,
   net-wireless/bluez/Manifest:
   Fix HOMEPAGE, reduce KEYWORDS, add caps and pcmcia USE flags, update

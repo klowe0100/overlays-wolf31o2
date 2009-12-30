@@ -8,12 +8,15 @@ depend() {
 }
 
 start() {
+	local result service
+
 	ebegin "Starting hidd"
 	start-stop-daemon --start --quiet \
 		--exec /usr/bin/hidd -- ${HIDD_OPTIONS} --server
-	local result="$?"
-	local service="/etc/bluetooth/input.service"
-	if [ "${result}" != "0" ] && grep -q "Autostart=true" ${service}; then
+	result=$?
+
+	service="/etc/bluetooth/input.service"
+	if [ ${result} -ne 0 ] && grep -q "Autostart=true" "${service}"; then
 		eerror "You have Autostart=true in ${service}."
 		eerror "Change this to false if you want to use hidd."
 	fi
@@ -26,4 +29,3 @@ stop() {
 	start-stop-daemon --stop --quiet --exec /usr/bin/hidd
 	eend $?
 }
-
