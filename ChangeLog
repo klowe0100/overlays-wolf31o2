@@ -3,6 +3,13 @@
 # $Id$
 
   30 Dec 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  metadata/cache/net-wireless/bluez-4.59-r1, bluez-4.59-r1.ebuild,
+  net-wireless/bluez/Manifest:
+  Fix HOMEPAGE, reduce KEYWORDS, add caps and pcmcia USE flags, update
+  cups-locator patch, remove .la files, fix udevadm call, and switch blank
+  elog lines to einfo. Most of this comes from Gentoo bug #270859.
+
+  30 Dec 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   +metadata/cache/gnome-extra/gnome-vfs-obexftp-0.4-r1,
   -metadata/cache/net-misc/networkmanager-0.8.0_pre20091105,
   +metadata/cache/net-misc/networkmanager-0.8.0_pre20091105-r1,

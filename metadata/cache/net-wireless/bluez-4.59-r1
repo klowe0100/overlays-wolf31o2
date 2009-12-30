@@ -1,14 +1,14 @@
-sys-devel/flex >=dev-util/pkgconfig-0.20 doc? ( dev-util/gtk-doc ) alsa? ( media-libs/alsa-lib ) gstreamer? ( >=media-libs/gstreamer-0.10 >=media-libs/gst-plugins-base-0.10 ) usb? ( dev-libs/libusb ) cups? ( net-print/cups ) sys-fs/udev dev-libs/glib sys-apps/dbus media-libs/libsndfile >=dev-libs/libnl-1.1 !net-wireless/bluez-libs !net-wireless/bluez-utils =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 sys-devel/libtool
-alsa? ( media-libs/alsa-lib ) gstreamer? ( >=media-libs/gstreamer-0.10 >=media-libs/gst-plugins-base-0.10 ) usb? ( dev-libs/libusb ) cups? ( net-print/cups ) sys-fs/udev dev-libs/glib sys-apps/dbus media-libs/libsndfile >=dev-libs/libnl-1.1 !net-wireless/bluez-libs !net-wireless/bluez-utils consolekit? ( sys-auth/pambase[consolekit] )
+alsa? ( media-libs/alsa-lib ) gstreamer? ( >=media-libs/gstreamer-0.10 >=media-libs/gst-plugins-base-0.10 ) usb? ( dev-libs/libusb ) caps? ( >=sys-libs/libcap-ng-0.6.2 ) cups? ( net-print/cups ) sys-fs/udev dev-libs/glib sys-apps/dbus media-libs/libsndfile >=dev-libs/libnl-1.1 !net-wireless/bluez-libs !net-wireless/bluez-utils sys-devel/bison sys-devel/flex >=dev-util/pkgconfig-0.20 =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 sys-devel/libtool
+alsa? ( media-libs/alsa-lib ) gstreamer? ( >=media-libs/gstreamer-0.10 >=media-libs/gst-plugins-base-0.10 ) usb? ( dev-libs/libusb ) caps? ( >=sys-libs/libcap-ng-0.6.2 ) cups? ( net-print/cups ) sys-fs/udev dev-libs/glib sys-apps/dbus media-libs/libsndfile >=dev-libs/libnl-1.1 !net-wireless/bluez-libs !net-wireless/bluez-utils consolekit? ( sys-auth/pambase[consolekit] ) test-programs? ( dev-python/dbus-python dev-python/pygobject )
 0
 mirror://kernel/linux/bluetooth/bluez-4.59.tar.gz
 
-http://bluez.sourceforge.net/
+http://www.bluez.org
 GPL-2 LGPL-2.1
 Bluetooth Tools and System Daemons for Linux
-amd64 arm ~hppa ppc ppc64 x86
+~amd64 ~x86
 autotools eutils libtool multilib portability toolchain-funcs
-alsa +consolekit cups debug doc gstreamer old-daemons test-programs udev usb
+alsa caps +consolekit cups debug doc gstreamer old-daemons pcmcia test-programs udev usb
 
 
 
