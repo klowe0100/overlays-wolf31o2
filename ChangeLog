@@ -3,6 +3,12 @@
 # $Id$
 
   30 Dec 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  dev-util/android-sdk-update-manager/Manifest,
+  dev-util/android-sdk-update-manager/files/android.fdi:
+  Updating the hal fdi file to support the Motorola Droid in both debug and
+  non-debug mode.
+
+  30 Dec 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   bluez-4.59-r1.ebuild, net-wireless/bluez/Manifest,
   net-wireless/bluez/files/4.18/bluetooth-init.d:
   Revert init script changes, remove unused configure options, and add USE
