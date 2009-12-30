@@ -22,7 +22,7 @@ start() {
 
 	if [ "${HID2HCI_ENABLE}" = "true" -a -x /usr/sbin/hid2hci ]; then
 		ebegin "Running hid2hci"
-		/usr/sbin/hid2hci --mode=hci -q	#be quiet
+		/usr/sbin/hid2hci --tohci -q	#be quiet
 		eend $?
 	fi
 

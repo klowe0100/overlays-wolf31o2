@@ -15,12 +15,13 @@ KEYWORDS="~amd64 ~x86"
 
 IUSE="alsa caps +consolekit cups debug doc gstreamer old-daemons pcmcia test-programs udev usb"
 
-CDEPEND="alsa? ( media-libs/alsa-lib )
+CDEPEND="caps? ( >=sys-libs/libcap-ng-0.6.2 )
+	alsa? (
+		media-libs/alsa-lib[alsa_pcm_plugins_extplug,alsa_pcm_plugins_ioplug] )
 	gstreamer? (
 		>=media-libs/gstreamer-0.10
 		>=media-libs/gst-plugins-base-0.10 )
 	usb? ( dev-libs/libusb )
-	caps? ( >=sys-libs/libcap-ng-0.6.2 )
 	cups? ( net-print/cups )
 	sys-fs/udev
 	dev-libs/glib
@@ -66,7 +67,6 @@ src_configure() {
 		$(use_enable alsa) \
 		$(use_enable usb) \
 		$(use_enable pcmcia) \
-		$(use_enable pcmcia pcmciarules) \
 		--enable-netlink \
 		--enable-tools \
 		--enable-bccmd \
@@ -77,9 +77,7 @@ src_configure() {
 		$(use_enable old-daemons dund) \
 		$(use_enable cups) \
 		$(use_enable test-programs test) \
-		--enable-manpages \
 		--enable-configfiles \
-		--disable-initscripts \
 		$(use_enable udev udevrules) \
 		$(use_enable debug) \
 		--localstatedir=/var
