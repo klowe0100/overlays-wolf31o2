@@ -113,21 +113,20 @@ src_install() {
 	# bug #84431
 	insinto /etc/udev/rules.d/
 	exeinto /$(get_libdir)/udev/
-	newins "${S}/scripts/bluetooth-hid2hci.rules" 70-bluetooth-hid2hci.rules || die
+#	newins "${S}/scripts/bluetooth-hid2hci.rules" 70-bluetooth-hid2hci.rules || die
 	newins "${FILESDIR}/${PN}-4.18-udev.rules" 70-bluetooth-gentoo.rules || die
 	newexe "${FILESDIR}/${PN}-4.18-udev.script" bluetooth.sh || die
+	insinto /etc/bluetooth
 	if use pcmcia ; then
-		newins "${S}/scripts/bluetooth-serial.rules" 70-bluetooth-pcmcia.rules || die
+#		newins "${S}/scripts/bluetooth-serial.rules" 70-bluetooth-pcmcia.rules || die
 		doexe "${S}/scripts/bluetooth_serial" || die
+		doins serial/serial.conf
 	fi
 
-
-	insinto /etc/bluetooth
 	doins \
 		input/input.conf \
 		audio/audio.conf \
-		network/network.conf \
-		serial/serial.conf
+		network/network.conf
 }
 
 pkg_postinst() {
