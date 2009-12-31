@@ -2,6 +2,13 @@
 # Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*wolf-sources-2.6.32-r2 (31 Dec 2009)
+
+  31 Dec 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  wolf-sources-2.6.32-r2.ebuild, sys-kernel/wolf-sources/Manifest:
+  Revision bumping wolf-sources to pull in the latest genpatches version
+  from Gentoo.
+
   31 Dec 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   bluez-4.59-r1.ebuild, net-wireless/bluez/Manifest:
   The package now installs its own udev rules via USE=udev, so we do not
