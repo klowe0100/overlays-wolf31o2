@@ -5,6 +5,11 @@
   31 Dec 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
   bluez-4.59-r1.ebuild, net-wireless/bluez/Manifest:
   The package now installs its own udev rules via USE=udev, so we do not
+  need to install them.
+
+  31 Dec 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  bluez-4.59-r1.ebuild, net-wireless/bluez/Manifest:
+  The package now installs its own udev rules via USE=udev, so we do not
   need to install them manually.
 
   30 Dec 2009; Chris Gianelloni <wolf31o2@wolf31o2.org>
