@@ -2,6 +2,17 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*modemmanager-0.2_p20100101-r1 (04 Jan 2010)
+*modemmanager-0.2_p20091123 (04 Jan 2010)
+*modemmanager-0.2_p20091109 (04 Jan 2010)
+
+  04 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  modemmanager-0.2_p20091109.ebuild, modemmanager-0.2_p20091123.ebuild,
+  modemmanager-0.2_p20100101-r1.ebuild, +net-misc/modemmanager/ChangeLog,
+  +net-misc/modemmanager/Manifest, +net-misc/modemmanager/metadata.xml:
+  Importing net-misc/modemmanager from Gentoo's tree and version bumping to
+  a new git snapshot.
+
 *boost-2.5-r1 (04 Jan 2010)
 
   04 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org> boost-2.5-r1.ebuild,
