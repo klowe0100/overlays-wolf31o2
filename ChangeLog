@@ -2,6 +2,13 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  04 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +metadata/cache/net-misc/modemmanager-0.2_p20091109,
+  +metadata/cache/net-misc/modemmanager-0.2_p20091123,
+  +metadata/cache/net-misc/modemmanager-0.2_p20100101-r1,
+  +metadata/cache/cacti-plugins/boost-2.5-r1:
+  Updating metadata/cache entries.
+
 *modemmanager-0.2_p20100101-r1 (04 Jan 2010)
 *modemmanager-0.2_p20091123 (04 Jan 2010)
 *modemmanager-0.2_p20091109 (04 Jan 2010)
