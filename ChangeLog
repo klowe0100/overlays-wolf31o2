@@ -2,6 +2,13 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*obexd-0.21 (04 Jan 2010)
+*obexd-0.18 (04 Jan 2010)
+
+  04 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org> obexd-0.18.ebuild,
+  obexd-0.21.ebuild, +app-mobilephone/obexd/Manifest, profiles/categories:
+  Import obexd from Gentoo's tree and version bump to the latest version.
+
 *arno-iptables-firewall-1.9.2h (04 Jan 2010)
 
   04 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
