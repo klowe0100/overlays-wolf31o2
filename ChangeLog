@@ -3,6 +3,11 @@
 # $Id$
 
   04 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  metadata/cache/cacti-plugins/boost-2.5-r1, boost-2.5-r1.ebuild,
+  cacti-plugins/boost/Manifest:
+  Set IUSE=+memory to match upstream defaults.
+
+  04 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
   +metadata/cache/net-misc/modemmanager-0.2_p20091109,
   +metadata/cache/net-misc/modemmanager-0.2_p20091123,
   +metadata/cache/net-misc/modemmanager-0.2_p20100101-r1,

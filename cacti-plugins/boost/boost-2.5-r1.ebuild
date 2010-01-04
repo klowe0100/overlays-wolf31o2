@@ -11,8 +11,8 @@ inherit eutils cacti-plugins
 SRC_URI="http://docs.cacti.net/_media/plugin:${P}-1.tar.gz -> ${P}-r1.tar.gz"
 
 LICENSE="GPL-2"
-IUSE="memory"
-KEYWORDS="amd64 x86"
+IUSE="+memory"
+KEYWORDS="~amd64 ~x86"
 
 DEPEND="${DEPEND}
 	memory? ( >=virtual/mysql-5 )"
