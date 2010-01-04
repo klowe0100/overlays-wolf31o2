@@ -1,6 +1,20 @@
 # ChangeLog for overlays/wolf31o2
-# Copyright 1999-2009 Chris Gianelloni; Distributed under the GPL v2
+# Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
+
+*networkmanager-0.8.0_pre20100101-r1 (04 Jan 2010)
+*nm-applet-0.8.0_pre20100101-r1 (04 Jan 2010)
+
+  04 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +metadata/cache/gnome-extra/nm-applet-0.8.0_pre20100101-r1,
+  +metadata/cache/net-misc/networkmanager-0.8.0_pre20100101-r1,
+  nm-applet-0.8.0_pre20100101-r1.ebuild,
+  networkmanager-0.8.0_pre20100101-r1.ebuild,
+  +metadata/cache/sys-kernel/wolf-sources-2.6.32-r2,
+  metadata/cache/net-wireless/bluez-4.59-r1, gnome-extra/nm-applet/Manifest,
+  net-misc/networkmanager/Manifest:
+  Version bump gnome-extra/nm-applet and net-misc/networkmanager to a new
+  git snapshot and update metadata/cache entries.
 
 *wolf-sources-2.6.32-r2 (31 Dec 2009)
 
