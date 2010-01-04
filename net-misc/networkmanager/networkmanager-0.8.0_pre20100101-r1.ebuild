@@ -28,7 +28,7 @@ RDEPEND=">=sys-apps/dbus-1.2
 	>=dev-libs/libnl-1.1
 	>=net-misc/modemmanager-0.2
 	>=net-wireless/wpa_supplicant-0.5.10[dbus]
-	bluetooth? ( >=net-wireless/bluez-4.42 >=net-wireless/gnome-bluetooth-2.28 )
+	bluetooth? ( >=net-wireless/bluez-4.42 )
 	|| ( sys-libs/e2fsprogs-libs <sys-fs/e2fsprogs-1.41.0 )
 	applet? ( gnome-extra/nm-applet )
 	avahi? ( net-dns/avahi[autoipd] )
@@ -45,6 +45,7 @@ RDEPEND=">=sys-apps/dbus-1.2
 	connection-sharing? (
 		net-dns/dnsmasq
 		net-firewall/iptables )"
+#	>=net-wireless/gnome-bluetooth-2.28 )
 
 DEPEND="${RDEPEND}
 	dev-util/pkgconfig
