@@ -16,6 +16,7 @@ KEYWORDS="~amd64 ~x86"
 
 DEPEND="${DEPEND}
 	memory? ( >=virtual/mysql-5 )"
-RDEPEND="${DEPEND}"
+RDEPEND="${DEPEND}
+	!<cacti-plugins/boost-2.5"
 
 S=${WORKDIR}/${PN}
