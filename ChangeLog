@@ -2,6 +2,12 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*cacti-0.8.7e-r4 (04 Jan 2010)
+
+  04 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  cacti-0.8.7e-r4.ebuild, net-analyzer/cacti/Manifest:
+  Revision bump cacti to pull in the latest security patch from upstream.
+
 *realtime-0.4.0 (04 Jan 2010)
 
   04 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
