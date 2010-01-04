@@ -2,6 +2,13 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*dsstats-1.1 (04 Jan 2010)
+
+  04 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org> dsstats-1.1.ebuild,
+  +cacti-plugins/dsstats/Manifest:
+  Initial ebuild for the dsstats Cacti plugin. This is untested, so use at
+  your own risk.
+
   04 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
   +metadata/cache/cacti-plugins/realtime-0.4.0,
   +metadata/cache/net-analyzer/cacti-0.8.7e-r4,
