@@ -2,6 +2,12 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*clog-1.3 (04 Jan 2010)
+
+  04 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org> clog-1.3.ebuild,
+  cacti-plugins/clog/Manifest:
+  Version bumping clog to the latest version from upstream.
+
   04 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
   metadata/cache/cacti-plugins/boost-2.5-r1, boost-2.5-r1.ebuild,
   cacti-plugins/boost/Manifest:
