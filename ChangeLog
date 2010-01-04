@@ -2,6 +2,25 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  04 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +metadata/cache/cacti-plugins/notices-0.2c,
+  metadata/cache/gnome-extra/nm-applet-0.8.0_pre20100101-r1,
+  nm-applet-0.8.0_pre20100101-r1.ebuild,
+  +metadata/cache/app-mobilephone/obexd-0.18,
+  +metadata/cache/app-mobilephone/obexd-0.21,
+  +metadata/cache/cacti-plugins/dsstats-1.1,
+  +metadata/cache/net-firewall/arno-iptables-firewall-1.9.2g,
+  +metadata/cache/net-firewall/arno-iptables-firewall-1.9.2h,
+  metadata/cache/sys-kernel/genkernel-3.4.10.901,
+  metadata/cache/sys-kernel/genkernel-3.4.10.902,
+  metadata/cache/sys-kernel/genkernel-3.4.10.903,
+  metadata/cache/sys-kernel/genkernel-3.4.10.904,
+  metadata/cache/sys-kernel/genkernel-3.4.10.905,
+  metadata/cache/sys-kernel/genkernel-3.4.10.906,
+  metadata/cache/sys-kernel/genkernel-9999, gnome-extra/nm-applet/Manifest:
+  Removing (temporarily) the gnome-bluetooth dependency on nm-applet, since
+  it shouldn't be an absolute requirement.
+
 *obexd-0.21 (04 Jan 2010)
 *obexd-0.18 (04 Jan 2010)
 

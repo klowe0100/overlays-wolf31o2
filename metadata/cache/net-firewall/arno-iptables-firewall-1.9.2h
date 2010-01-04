@@ -1,0 +1,22 @@
+
+>=net-firewall/iptables-1.2.5 sys-apps/sed sys-apps/gawk sys-apps/coreutils sys-apps/net-tools sys-apps/module-init-tools sys-process/procps app-arch/gzip
+0
+http://rocky.eld.leidenuniv.nl/arno-iptables-firewall/arno-iptables-firewall_1.9.2h.tar.gz
+
+http://rocky.molphys.leidenuniv.nl/
+GPL-2
+Arno's iptables firewall script
+~amd64 ~x86
+
++plugins
+
+
+
+1
+
+install postinst
+
+
+
+
+

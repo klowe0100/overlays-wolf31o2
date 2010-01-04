@@ -34,8 +34,8 @@ RDEPEND=">=sys-apps/dbus-1.2
 	>=gnome-extra/polkit-gnome-0.92
 	net-misc/mobile-broadband-provider-info
 	bluetooth? (
-		>=net-wireless/gnome-bluetooth-2.27.7
 		>=net-wireless/bluez-4.42 )"
+#		>=net-wireless/gnome-bluetooth-2.27.7
 
 DEPEND="${RDEPEND}
 	dev-util/pkgconfig
