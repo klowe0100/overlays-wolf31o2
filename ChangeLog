@@ -5,6 +5,12 @@
   05 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
   android-sdk-update-manager-4-r2.ebuild,
   dev-util/android-sdk-update-manager/Manifest:
+  I forgot to change the code to use the rules from FILESDIR, versus
+  creating them on-the-fly.
+
+  05 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  android-sdk-update-manager-4-r2.ebuild,
+  dev-util/android-sdk-update-manager/Manifest:
   Uncomment the install of udev rules, which seem to be more useful than the
   hal fdi settings.
 

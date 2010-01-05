@@ -59,9 +59,10 @@ src_install(){
 	echo "ROOTPATH=\"${destdir}/tools:${destdir}/platforms/android-2.0.1/tools\"" >> "${T}/80android-sdk"
 #	echo ":${destdir}/platforms/android-${PV/_p*/}/tools\"" >> "${T}/80android"
 	doenvd "${T}/80android-sdk"
-	echo "SUBSYSTEMS==\"usb\", ATTRS{idVendor}==\"22b8\", ATTRS{idProduct}==\"41db\", MODE=\"0664\", GROUP=\"android\"" > "${T}"/80-android-sdk.rules
+#	echo "SUBSYSTEMS==\"usb\", ATTRS{idVendor}==\"22b8\", ATTRS{idProduct}==\"41db\", MODE=\"0664\", GROUP=\"android\"" > "${T}"/80-android-sdk.rules
 	insinto /etc/udev/rules.d
-	doins "${T}"/80-android-sdk.rules
+#	doins "${T}"/80-android-sdk.rules
+	newins "${FILESDIR}"/android.rules 80-android-sdk.rules
 	insinto /etc/hal/fdi/policy
 	newins "${FILESDIR}"/android.fdi 10-usb-android-sdk.fdi
 }
