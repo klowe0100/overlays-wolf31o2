@@ -2,6 +2,12 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  05 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  android-sdk-update-manager-4-r2.ebuild,
+  dev-util/android-sdk-update-manager/Manifest:
+  Uncomment the install of udev rules, which seem to be more useful than the
+  hal fdi settings.
+
   04 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
   metadata/cache/net-misc/networkmanager-0.8.0_pre20100101-r1,
   networkmanager-0.8.0_pre20100101-r1.ebuild,
