@@ -7,7 +7,7 @@ EAPI="2"
 DESCRIPTION="MySQLTuner is a high-performance MySQL tuning script"
 HOMEPAGE="http://www.mysqltuner.com"
 #SRC_URI="mirror://gentoo/${P}.pl"
-SRC_URI="http://github.com/rackerhacker/MySQLTuner-perl/blob/master/${PN}.pl -> ${P}.pl"
+SRC_URI="http://github.com/rackerhacker/MySQLTuner-perl/raw/master/${PN}.pl -> ${P}.pl"
 
 LICENSE="GPL-3"
 SLOT="0"

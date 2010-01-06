@@ -2,6 +2,12 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  06 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  metadata/cache/dev-db/mysqltuner-1.1.1, mysqltuner-1.1.1.ebuild,
+  dev-db/mysqltuner/Manifest, profiles/package.mask:
+  Switching to the raw output from github, masking version 49 for Gentoo's
+  tree, and updating the metadata/cache entry.
+
 *mysqltuner-1.1.1 (06 Jan 2010)
 
   06 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
