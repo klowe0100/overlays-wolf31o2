@@ -2,6 +2,12 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*routerconfigs-0.2-r2 (06 Jan 2010)
+
+  06 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  routerconfigs-0.2-r2.ebuild, cacti-plugins/routerconfigs/Manifest:
+  Revision bumping routerconfigs to create the backups directory.
+
   05 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
   +metadata/cache/net-wireless/blueman-1.21-r2:
   Updating metadata/cache files.
