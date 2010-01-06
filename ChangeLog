@@ -2,6 +2,14 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*mysqltuner-1.1.1 (06 Jan 2010)
+
+  06 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +metadata/cache/dev-db/mysqltuner-1.1.1, mysqltuner-1.1.1.ebuild,
+  +dev-db/mysqltuner/Manifest:
+  Import dev-db/mysqltuner from Gentoo's tree, version bump to the latest
+  version, and fix the version to be something sensible.
+
   06 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
   +metadata/cache/cacti-plugins/routerconfigs-0.2-r2:
   Updating metadata/cache files.
