@@ -133,6 +133,16 @@ src_prepare() {
 				-e '199 d' \
 				"${S}"/include/global.php
 		fi
+		if [ "${PIA_V}" = "2.6" ]
+		then
+			einfo "DEBUG: lines 198-200 of include/global.php"
+			sed -e '198,+2' "${S}"/include/global.php
+#			sed -i \
+#				-e '198 d' \
+#				-e '199 d' \
+#				-e '200 d' \
+#				"${S}"/include/global.php
+		fi
 	fi
 
 	# Use sed-fu to use the system adodb, rather than the bundled one
