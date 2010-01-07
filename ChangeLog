@@ -3,6 +3,10 @@
 # $Id$
 
   07 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  cacti-0.8.7e-r4.ebuild, net-analyzer/cacti/Manifest:
+  Updating to remove the global.php hack that forces a die.
+
+  07 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
   metadata/cache/net-analyzer/cacti-0.8.7e-r4, cacti-0.8.7e-r4.ebuild,
   net-analyzer/cacti/Manifest:
   Due to the XSS patch for Cacti, the 2.5 Plugin Architecture patch would

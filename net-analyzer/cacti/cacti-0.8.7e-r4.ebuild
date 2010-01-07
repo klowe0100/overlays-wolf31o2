@@ -121,19 +121,18 @@ src_prepare() {
 	if use pluginarch; then
 		cd "${S}"
 		EPATCH_OPTS="-p1 -N -d ${S} -F4" \
-			epatch "${WORKDIR}"/cacti-plugin-${MY_PV}-PA-v${PIA_V}.diff
-		cp -f "${WORKDIR}"/pa.sql "${S}"
+			epatch "${WORKDIR}"/cacti-plugin-arch/cacti-plugin-${MY_PV}-PA-v${PIA_V}.diff
+		cp -f "${WORKDIR}"/cacti-plugin-arch/pa.sql "${S}"
 		# Fix the patch, since this deletes lines, we have to add in some code
 		# to keep this from happening on version bumps.
-		if [ "${PIA_V}" != "2.5" ]
+		if [ "${PIA_V}" = "2.5" ]
 		then
-			die "PIA_V version mismatch! Should be 2.5, but is ${PIA_V}!"
+			sed -i \
+				-e '197 d' \
+				-e '198 d' \
+				-e '199 d' \
+				"${S}"/include/global.php
 		fi
-		sed -i \
-			-e '197 d' \
-			-e '198 d' \
-			-e '199 d' \
-			"${S}"/include/global.php
 	fi
 
 	# Use sed-fu to use the system adodb, rather than the bundled one
