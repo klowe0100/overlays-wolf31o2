@@ -11,7 +11,7 @@ MY_P=${P/_p*/}
 MY_PV=${PV/_p*/}
 
 # This is the Plugin Architecture version
-PIA_V=2.5
+PIA_V=2.6
 
 # Are there any official patches?
 UPSTREAM_HAS_PATCHES=1
