@@ -125,7 +125,7 @@ src_prepare() {
 		cp -f "${WORKDIR}"/cacti-plugin-arch/pa.sql "${S}"
 		# Fix the patch, since this deletes lines, we have to add in some code
 		# to keep this from happening on version bumps.
-		if [ "${PIA_V}" = "2.5" ]
+		if [ "${PIA_V}" == "2.5" ]
 		then
 			sed -i \
 				-e '197 d' \
@@ -133,10 +133,10 @@ src_prepare() {
 				-e '199 d' \
 				"${S}"/include/global.php
 		fi
-		if [ "${PIA_V}" = "2.6" ]
+		if [ "${PIA_V}" == "2.6" ]
 		then
 			einfo "DEBUG: lines 198-200 of include/global.php"
-			sed -e '198,+2' "${S}"/include/global.php
+			sed -e '198,+2p' "${S}"/include/global.php
 #			sed -i \
 #				-e '198 d' \
 #				-e '199 d' \

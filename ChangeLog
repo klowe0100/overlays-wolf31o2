@@ -4,6 +4,10 @@
 
   07 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
   cacti-0.8.7e-r4.ebuild, net-analyzer/cacti/Manifest:
+  Add missing command to sed line.
+
+  07 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  cacti-0.8.7e-r4.ebuild, net-analyzer/cacti/Manifest:
   Adding in some test code to figure out if my sed-fu is correct for
   removing the extra cacti version variable in global.php before potentially
   deleting the wrong lines.
