@@ -3,6 +3,20 @@
 # $Id$
 
   11 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  -net-misc/networkmanager/files/networkmanager-0.7.0-gentoo-dhclient.patch,
+  -metadata/cache/net-misc/networkmanager-0.7.1-r4,
+  networkmanager-0.7.1-r4.ebuild,
+  -net-misc/networkmanager/files/networkmanager-0.7.1-bad-link.patch,
+  -net-misc/networkmanager/files/networkmanager-0.7.1-confchanges.patch,
+  -metadata/cache/net-misc/networkmanager-0.7.2-r1,
+  networkmanager-0.7.2-r1.ebuild,
+  -metadata/cache/net-misc/networkmanager-0.8.0_pre20091105-r1,
+  networkmanager-0.8.0_pre20091105-r1.ebuild,
+  networkmanager-0.8.0_pre20100101-r1.ebuild,
+  net-misc/networkmanager/Manifest:
+  Removing older versions and commenting out some more sections for testing.
+
+  11 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
   networkmanager-0.8.0_pre20100101-r1.ebuild,
   net-misc/networkmanager/Manifest:
   Updating the ebuild to *not* add any plugdev hacks, and removing the
