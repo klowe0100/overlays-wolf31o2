@@ -57,7 +57,7 @@ S=${WORKDIR}/${MY_P}
 
 src_prepare() {
 	# Fix up the dbus conf file to use plugdev group
-	epatch "${FILESDIR}/${PN}-0.7.1-confchanges.patch"
+#	epatch "${FILESDIR}/${PN}-0.7.1-confchanges.patch"
 #	eautoreconf
 	./autogen.sh
 }
@@ -66,7 +66,6 @@ src_configure() {
 	ECONF="--disable-more-warnings
 		--localstatedir=/var
 		--with-distro=gentoo
-		--with-dbus-sys-dir=/etc/dbus-1/system.d
 		--disable-dependency-tracking
 		--disable-maintainer-mode
 		--with-docs
@@ -75,6 +74,7 @@ src_configure() {
 		$(use_with doc docs)
 		$(use_with resolvconf)
 		$(use_with connection-sharing iptables)"
+#		--with-dbus-sys-dir=/etc/dbus-1/system.d
 
 	# default is dhcpcd (if none or both are specified), ISC dchclient otherwise
 	if use dhclient ; then
