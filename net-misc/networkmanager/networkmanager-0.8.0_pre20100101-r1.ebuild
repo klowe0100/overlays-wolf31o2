@@ -56,8 +56,20 @@ DEPEND="${RDEPEND}
 S=${WORKDIR}/${MY_P}
 
 src_prepare() {
+	# upstream's autogen.sh runs:
+	# gtkdocize && autoreconf --install --symlink && intltoolize --force &&
+	# autoreconf && ./configure --enable-maintainer-mode $@
+
+	# gtkdocize doesn't *have* to be installed for this package to work, but I
+	# am being lazy and am forcing it on, since it's available on my laptop.
+	# TODO: make this conditional
+	gtkdocize --copy
+
+	# eautoreconf doesn't run intltool
+	# Should this be using --automake, too?
+	intltoolize --force --copy || die "intltoolize failed"
 	eautoreconf
-#	./autogen.sh
+
 	default_src_prepare
 }
 

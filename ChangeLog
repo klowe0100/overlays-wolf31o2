@@ -5,6 +5,12 @@
   12 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
   networkmanager-0.8.0_pre20100101-r1.ebuild,
   net-misc/networkmanager/Manifest:
+  Apparently, we needed a lot more auto-fu before we are good to go. This is
+  a testing version, so it has some work to go.
+
+  12 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  networkmanager-0.8.0_pre20100101-r1.ebuild,
+  net-misc/networkmanager/Manifest:
   Move default_src_compare to the end of src_prepare.
 
   12 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
