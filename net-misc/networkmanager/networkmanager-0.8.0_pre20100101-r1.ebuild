@@ -1,4 +1,4 @@
-# Copyright 1999-2009 Gentoo Foundation
+# Copyright 1999-2010 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: /var/cvsroot/gentoo-x86/net-misc/networkmanager/networkmanager-0.8.0_pre20091105.ebuild,v 1.2 2009/11/05 15:52:12 dagger Exp $
 
@@ -17,7 +17,7 @@ SRC_URI="http://dev.gentoo.org/~dagger/files/${MY_P}.tar.bz2"
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-IUSE="+applet avahi bluetooth connection-sharing +dhclient dhcpcd doc gnutls nls nss resolvconf"
+IUSE="+applet avahi bluetooth connection-sharing +dhclient dhcpcd doc +gnutls nls nss resolvconf"
 
 RDEPEND=">=sys-apps/dbus-1.2
 	>=dev-libs/dbus-glib-0.75
