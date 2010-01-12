@@ -63,6 +63,9 @@ src_prepare() {
 	# gtkdocize doesn't *have* to be installed for this package to work, but I
 	# am being lazy and am forcing it on, since it's available on my laptop.
 	# TODO: make this conditional
+	# What this does (essentially):
+	# cp -f /usr/share/gtk-doc/data/gtk-doc.make gtk-doc.make
+	# cp -f /usr/share/aclocal/gtk-doc.m4 m4/gtk-doc.m4
 	gtkdocize --copy
 
 	# eautoreconf doesn't run intltool
@@ -77,6 +80,7 @@ src_configure() {
 	ECONF="--disable-more-warnings
 		--localstatedir=/var
 		--with-distro=gentoo
+		--with-dbus-sys-dir=/etc/dbus-1/system.d
 		--disable-dependency-tracking
 		--disable-maintainer-mode
 		$(use_enable doc gtk-doc)
@@ -84,7 +88,6 @@ src_configure() {
 		$(use_enable nls)
 		$(use_with resolvconf)
 		$(use_with connection-sharing iptables)"
-#		--with-dbus-sys-dir=/etc/dbus-1/system.d
 
 	# default is dhcpcd (if none or both are specified), ISC dchclient otherwise
 	if use dhclient ; then
