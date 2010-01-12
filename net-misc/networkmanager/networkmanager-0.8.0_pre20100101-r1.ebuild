@@ -69,10 +69,9 @@ src_configure() {
 		--with-distro=gentoo
 		--disable-dependency-tracking
 		--disable-maintainer-mode
-		--with-docs
 		$(use_enable doc gtk-doc)
-		$(use_enable nls)
 		$(use_with doc docs)
+		$(use_enable nls)
 		$(use_with resolvconf)
 		$(use_with connection-sharing iptables)"
 #		--with-dbus-sys-dir=/etc/dbus-1/system.d
