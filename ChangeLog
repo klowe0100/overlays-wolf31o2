@@ -2,6 +2,12 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  12 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  metadata/cache/gnome-extra/nm-applet-0.8.0_pre20100101-r1,
+  -metadata/cache/app-mobilephone/obexd-0.18,
+  +metadata/cache/app-mobilephone/obexd-0.21-r1:
+  Updating metadata/cache with latest entries.
+
 *obexd-0.21-r1 (12 Jan 2010)
 
   12 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
