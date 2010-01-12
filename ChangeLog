@@ -3,6 +3,12 @@
 # $Id$
 
   12 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  -metadata/cache/gnome-extra/nm-applet-0.7.2, nm-applet-0.7.2.ebuild,
+  -metadata/cache/gnome-extra/nm-applet-0.8.0_pre20091105,
+  nm-applet-0.8.0_pre20091105.ebuild, gnome-extra/nm-applet/Manifest:
+  Removing older nm-applet ebuilds.
+
+  12 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
   metadata/cache/net-misc/networkmanager-0.8.0_pre20100101-r1,
   networkmanager-0.8.0_pre20100101-r1.ebuild,
   net-misc/networkmanager/Manifest:
