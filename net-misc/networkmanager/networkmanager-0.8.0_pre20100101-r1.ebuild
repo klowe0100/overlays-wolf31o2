@@ -56,11 +56,9 @@ DEPEND="${RDEPEND}
 S=${WORKDIR}/${MY_P}
 
 src_prepare() {
-	default_src_prepare
-	# Fix up the dbus conf file to use plugdev group
-#	epatch "${FILESDIR}/${PN}-0.7.1-confchanges.patch"
 	eautoreconf
 #	./autogen.sh
+	default_src_prepare
 }
 
 src_configure() {
