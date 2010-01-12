@@ -36,16 +36,16 @@ RDEPEND=">=sys-apps/dbus-1.2
 		nss? ( >=dev-libs/nss-3.11 )
 		!nss? ( dev-libs/libgcrypt
 			net-libs/gnutls ) )
-	!gnutls? ( >=dev-libs/nss-3.11 )
 	dhclient? (
 		dhcpcd? ( >=net-misc/dhcpcd-4.0.0_rc3 )
 		!dhcpcd? ( >=net-misc/dhcp-3.0.0 ) )
-	!dhclient? ( >=net-misc/dhcpcd-4.0.0_rc3 )
 	resolvconf? ( net-dns/openresolv )
 	connection-sharing? (
 		net-dns/dnsmasq
 		net-firewall/iptables )"
 #	>=net-wireless/gnome-bluetooth-2.28 )
+#	!dhclient? ( >=net-misc/dhcpcd-4.0.0_rc3 )
+#	!gnutls? ( >=dev-libs/nss-3.11 )
 
 DEPEND="${RDEPEND}
 	dev-util/pkgconfig
@@ -93,8 +93,8 @@ src_configure() {
 		else
 			ECONF="${ECONF} --with-dhcp-client=dhclient"
 		fi
-	else
-		ECONF="${ECONF} --with-dhcp-client=dhcpcd"
+#	else
+#		ECONF="${ECONF} --with-dhcp-client=dhcpcd"
 	fi
 
 	# default is NSS (if none or both are specified), GnuTLS otherwise
@@ -104,8 +104,8 @@ src_configure() {
 		else
 			ECONF="${ECONF} --with-crypto=gnutls"
 		fi
-	else
-		ECONF="${ECONF} --with-crypto=nss"
+#	else
+#		ECONF="${ECONF} --with-crypto=nss"
 	fi
 
 	econf ${ECONF}
