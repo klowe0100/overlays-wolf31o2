@@ -2,6 +2,11 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  12 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org> obexd-0.18.ebuild,
+  obexd-0.21.ebuild, app-mobilephone/obexd/Manifest:
+  Removing USE=eds use_enable check and switching it to a static declaration
+  of --with-phonebook=ebook until I get time to revisit it.
+
   12 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
   nm-applet-0.8.0_pre20100101-r1.ebuild, gnome-extra/nm-applet/Manifest:
   Switch away from using the shipped autogen.sh for the autotools eclass

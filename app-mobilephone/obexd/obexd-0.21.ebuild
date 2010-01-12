@@ -24,9 +24,11 @@ DEPEND="${RDEPEND}
 src_configure() {
 	econf \
 		$(use_enable debug) \
-		$(use_enable eds ebook) \
 		--enable-server \
-		--enable-client
+		--enable-client \
+		--with-phonebook=ebook
+	#	$(use_enable eds ebook) \
+	# USE=eds should be --with-phonebook=ebook --with-telephony=ebook
 }
 
 src_install() {
