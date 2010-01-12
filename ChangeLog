@@ -4,6 +4,12 @@
 
   12 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
   networkmanager-0.8.0_pre20100101-r1.ebuild,
+  net-misc/networkmanager/Manifest:
+  Uncomment the --with-dhcp-client and --with-crypto options and set
+  dhclient as the default for DHCP client.
+
+  12 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  networkmanager-0.8.0_pre20100101-r1.ebuild,
   net-misc/networkmanager/Manifest,
   net-misc/networkmanager/files/nm-system-settings.conf:
   Adding back the installation of nm-system-settings.conf keyfile

@@ -89,15 +89,15 @@ src_configure() {
 		$(use_with resolvconf)
 		$(use_with connection-sharing iptables)"
 
-	# default is dhcpcd (if none or both are specified), ISC dchclient otherwise
+	# default is dhclient
 	if use dhclient ; then
 		if use dhcpcd ; then
 			ECONF="${ECONF} --with-dhcp-client=dhcpcd"
 		else
 			ECONF="${ECONF} --with-dhcp-client=dhclient"
 		fi
-#	else
-#		ECONF="${ECONF} --with-dhcp-client=dhcpcd"
+	else
+		ECONF="${ECONF} --with-dhcp-client=dhclient"
 	fi
 
 	# default is NSS (if none or both are specified), GnuTLS otherwise
@@ -107,8 +107,8 @@ src_configure() {
 		else
 			ECONF="${ECONF} --with-crypto=gnutls"
 		fi
-#	else
-#		ECONF="${ECONF} --with-crypto=nss"
+	else
+		ECONF="${ECONF} --with-crypto=nss"
 	fi
 
 	econf ${ECONF}
