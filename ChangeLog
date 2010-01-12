@@ -4,6 +4,13 @@
 
   12 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
   networkmanager-0.8.0_pre20100101-r1.ebuild,
+  net-misc/networkmanager/Manifest,
+  net-misc/networkmanager/files/nm-system-settings.conf:
+  Adding back the installation of nm-system-settings.conf keyfile
+  configuration.
+
+  12 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  networkmanager-0.8.0_pre20100101-r1.ebuild,
   net-misc/networkmanager/Manifest:
   Adding some extra documentation to help me fix some of the hacks and
   adding back the explicit --with-dbus-sys-dir configure option.

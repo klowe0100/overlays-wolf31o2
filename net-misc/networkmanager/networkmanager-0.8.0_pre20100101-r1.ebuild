@@ -128,8 +128,8 @@ src_install() {
 	# Add keyfile plugin support
 	keepdir /etc/NetworkManager/system-connections
 	insinto /etc/NetworkManager
-#	newins "${FILESDIR}/nm-system-settings.conf" nm-system-settings.conf \
-#		|| die "newins failed"
+	newins "${FILESDIR}/nm-system-settings.conf" nm-system-settings.conf \
+		|| die "newins failed"
 #	insinto /etc/udev/rules.d
 #	newins callouts/77-nm-probe-modem-capabilities.rules 77-nm-probe-modem-capabilities.rules
 #	rm -rf "${D}"/lib/udev/rules.d
