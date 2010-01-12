@@ -3,7 +3,7 @@
 # $Header: /var/cvsroot/gentoo-x86/gnome-extra/nm-applet/nm-applet-0.8.0_pre20091105.ebuild,v 1.1 2009/11/05 14:33:36 dagger Exp $
 
 EAPI=2
-inherit gnome2 eutils versionator
+inherit gnome2 eutils versionator autotools
 
 MY_P="${P/nm-applet/network-manager-applet}"
 MYPV_MINOR=$(get_version_component_range)
@@ -54,6 +54,10 @@ pkg_setup () {
 }
 
 src_prepare() {
-	./autogen.sh
-	default
+	# eautoreconf doesn't run intltool
+	# Should this be using --automake, too?
+	intltoolize --force --copy || die "intltoolize failed"
+	eautoreconf
+
+	default_src_prepare
 }
