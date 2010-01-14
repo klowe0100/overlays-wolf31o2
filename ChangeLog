@@ -2,6 +2,11 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  14 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +metadata/cache/net-analyzer/nagstamon-0.8.2-r1,
+  +metadata/cache/net-wireless/bluez-4.60-r1:
+  Updating metadata/cache for new packages.
+
 *nagstamon-0.8.2-r1 (14 Jan 2010)
 
   14 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
