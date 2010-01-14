@@ -2,6 +2,16 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*nagstamon-0.8.2-r1 (14 Jan 2010)
+
+  14 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  nagstamon-0.8.2-r1.ebuild,
+  +net-analyzer/nagstamon/files/nagstamon-0.8.2-sharedir.patch,
+  +net-analyzer/nagstamon/Manifest,
+  +net-analyzer/nagstamon/files/nagstamon.desktop:
+  Initial import of net-analyzer/nagstamon to try to fix it's configuration
+  loading. This is still a work in progress.
+
 *bluez-4.60-r1 (13 Jan 2010)
 
   13 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
