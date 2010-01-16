@@ -26,9 +26,10 @@ SRC_URI="mirror://sourceforge/nagios/${MY_P}.tar.gz
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-IUSE="animated debug lighttpd perl +web vim-syntax"
+IUSE="animated debug examples lighttpd perl +web vim-syntax"
 DEPEND="virtual/mailx
 	web? (
+		net-analyzer/traceroute
 		>=media-libs/gd-1.8.3-r5[jpeg,png]
 		lighttpd? ( www-servers/lighttpd dev-lang/php[cgi] )
 		apache2? ( || ( dev-lang/php[apache2] dev-lang/php[cgi] ) )
@@ -48,21 +49,38 @@ pkg_setup() {
 	enewuser nagios -1 /bin/bash /var/nagios/home nagios
 }
 
+src_unpack() {
+	# Skip unpacking .gif files
+	unpack ${MY_P}.tar.gz
+}
+
 src_prepare() {
 	local strip="$(echo '$(MAKE) strip-post-install')"
 	sed -i -e "s:${strip}::" {cgi,base}/Makefile.in || die "sed failed in Makefile.in"
-	cd "${S}"/cgi
-	# Adds service state colors to status map
-	epatch "${DISTDIR}"/nagios3-statusmap.patch
-	cd "${S}"
-	# Adds warning/unknown colors to tac
-	epatch "${FILESDIR}"/nagios3-taccolors.patch
+	# Fix paths in contributed eventhandlers
+	cd "${S}"/contrib/eventhandlers
+	for f in `find . -type f` ; do
+		sed -i \
+			-e "s=/usr/local/nagios/var/rw/=/var/spool/nagios/=; \
+			s=/usr/local/nagios/libexec/eventhandlers/=/usr/$(get_libdir)/nagios/plugins/eventhandlers=; \
+			s=/usr/local/nagios/test/var=/var/log/nagios=; \
+			s=/usr/local/nagios=/usr/$(get_libdir)/nagios/plugins=" ${f}
+	done
+	if use web ; then
+		cd "${S}"/cgi
+		# Adds service state colors to status map
+		epatch "${DISTDIR}"/nagios3-statusmap.patch
+		cd "${S}"
+		# Adds warning/unknown colors to tac
+		epatch "${FILESDIR}"/nagios3-taccolors.patch
+	fi
 }
 
 src_configure() {
-	local myconf
+	local myconf="--disable-statuswrl --enable-nanosleep --enable-event-broker"
 
 	if use perl ; then
+		ewarn "Disabling the embedded perl interface (not recommended)"
 		myconf="${myconf} --enable-embedded-perl --with-perlcache"
 	fi
 
@@ -80,7 +98,7 @@ src_configure() {
 	else
 		if use apache2 ; then
 			myconf="${myconf} --with-command-group=apache"
-			myconf="${myconf} --with-httpd-conf=/etc/apache2/conf.d"
+			myconf="${myconf} --with-httpd-conf=/etc/apache2/modules.d"
 		elif use lighttpd ; then
 			myconf="${myconf} --with-command-group=lighttpd"
 		fi
@@ -104,6 +122,10 @@ src_compile() {
 		# Only compile the CGI's if "web" useflag is set.
 		emake CC=$(tc-getCC) DESTDIR="${D}" cgis || die
 	fi
+
+	# daemonchk.c
+	cd "${S}"/contrib
+	emake CC=$(tc-getCC) || die "make failed"
 }
 
 src_install() {
@@ -125,13 +147,20 @@ src_install() {
 				|| die "cp $image"
 		done
 		# Animated Nagios logo
-		rm -f html/images/sblogo.png
 		cp -f "${DISTDIR}"/nagios-ani.gif html/images/sblogo.gif
+		sed -i 's/sblogo.png/sblogo.gif/g' html/side.php
 	fi
 
 	emake DESTDIR="${D}" install
-	emake DESTDIR="${D}" install-config
 	emake DESTDIR="${D}" install-commandmode
+	if use examples ; then
+		einfo "Installing example configuration."
+		emake DESTDIR="${D}" install-config
+		# if use web ; then copy htaccess.sample
+	fi
+
+	# contrib and eventhandlers
+	cd "${S}"/contrib
 
 	newinitd "${FILESDIR}"/nagios3 nagios
 	newconfd "${FILESDIR}"/conf.d nagios
@@ -149,9 +178,12 @@ src_install() {
 			ewarn "out-of-the-box. Since you are not using one of them, you"
 			ewarn "have to configure your webserver accordingly yourself."
 		fi
+		# traceroute.cgi should check for USE=perl
+		# p1.pl needs PATH update and USE=perl
 	fi
 
 	for dir in etc/nagios var/nagios ; do
+		mkdir -p "${D}/${dir}"
 		chown -R nagios:nagios "${D}/${dir}" || die "Failed chown of ${D}/${dir}"
 	done
 

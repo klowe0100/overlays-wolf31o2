@@ -2,6 +2,16 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*nagios-core-3.2.0-r6 (16 Jan 2010)
+
+  16 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  nagios-core-3.2.0.ebuild, nagios-core-3.2.0-r1.ebuild,
+  nagios-core-3.2.0-r2.ebuild, nagios-core-3.2.0-r3.ebuild,
+  nagios-core-3.2.0-r4.ebuild, nagios-core-3.2.0-r6.ebuild,
+  net-analyzer/nagios-core/Manifest:
+  Revision bumping to add initial eventhandler support, add some comments to
+  assist with the new capabilities, and remove some older ebuilds.
+
   14 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
   +metadata/cache/net-analyzer/nagstamon-0.8.2-r1,
   +metadata/cache/net-wireless/bluez-4.60-r1:
