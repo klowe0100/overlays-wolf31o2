@@ -38,7 +38,7 @@ src_unpack() {
 src_install() {
 	perl-module_src_install
 	insinto /etc
-	doins sendpage.cf
+	doins sendpage.cf snpp.conf email2page.conf
 	newinitd "${FILESDIR}"/sendpage.initd sendpage
 	diropts -o sendpage -g sms -m0770
 	keepdir /var/spool/sendpage
