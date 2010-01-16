@@ -1,5 +1,5 @@
-virtual/mailx web? ( >=media-libs/gd-1.8.3-r5[jpeg,png] lighttpd? ( www-servers/lighttpd dev-lang/php[cgi] ) apache2? ( || ( dev-lang/php[apache2] dev-lang/php[cgi] ) ) ) perl? ( >=dev-lang/perl-5.6.1-r7 ) apache2? ( =www-servers/apache-2* )
-virtual/mailx web? ( >=media-libs/gd-1.8.3-r5[jpeg,png] lighttpd? ( www-servers/lighttpd dev-lang/php[cgi] ) apache2? ( || ( dev-lang/php[apache2] dev-lang/php[cgi] ) ) ) perl? ( >=dev-lang/perl-5.6.1-r7 ) vim-syntax? ( app-vim/nagios-syntax ) apache2? ( =www-servers/apache-2* )
+virtual/mailx web? ( net-analyzer/traceroute >=media-libs/gd-1.8.3-r5[jpeg,png] lighttpd? ( www-servers/lighttpd dev-lang/php[cgi] ) apache2? ( || ( dev-lang/php[apache2] dev-lang/php[cgi] ) ) ) perl? ( >=dev-lang/perl-5.6.1-r7 ) apache2? ( =www-servers/apache-2* )
+virtual/mailx web? ( net-analyzer/traceroute >=media-libs/gd-1.8.3-r5[jpeg,png] lighttpd? ( www-servers/lighttpd dev-lang/php[cgi] ) apache2? ( || ( dev-lang/php[apache2] dev-lang/php[cgi] ) ) ) perl? ( >=dev-lang/perl-5.6.1-r7 ) vim-syntax? ( app-vim/nagios-syntax ) apache2? ( =www-servers/apache-2* )
 0
 mirror://sourceforge/nagios/nagios-3.2.0.tar.gz web? ( http://exchange.nagios.org/components/com_mtree/attachment.php?link_id=1641&cf_id=24 -> nagios3-statusmap.patch animated? ( http://exchange.nagios.org/components/com_mtree/attachment.php?link_id=823&cf_id=30 -> ack-ani.gif http://exchange.nagios.org/components/com_mtree/attachment.php?link_id=823&cf_id=24 -> comment-ani.gif http://exchange.nagios.org/components/com_mtree/attachment.php?link_id=823&cf_id=29 -> delay-ani.gif http://exchange.nagios.org/components/com_mtree/attachment.php?link_id=823&cf_id=35 -> downtime-ani.gif http://exchange.nagios.org/components/com_mtree/attachment.php?link_id=834&cf_id=24 -> nagios-ani.gif ) )
 
@@ -8,13 +8,13 @@ GPL-2
 Nagios Core - Check daemon, CGIs, docs
 ~amd64 ~x86
 depend.apache eutils multilib portability toolchain-funcs
-animated debug lighttpd perl +web vim-syntax apache2
+animated debug examples lighttpd perl +web vim-syntax apache2
 
 
 
 2
 
-compile configure install postinst prepare setup
+compile configure install postinst prepare setup unpack
 
 
 
