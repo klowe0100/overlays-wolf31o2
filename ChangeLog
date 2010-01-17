@@ -2,6 +2,13 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*pm-utils-1.2.6.1-r1 (17 Jan 2010)
+
+  17 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +sys-power/pm-utils/files/pm-utils-1.2.3-service-status.patch,
+  pm-utils-1.2.6.1-r1.ebuild, +sys-power/pm-utils/Manifest:
+  Import from Gentoo's tree and version bump to the latest upstream release.
+
 *packagekit-0.5.2-r1 (17 Jan 2010)
 
   17 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
