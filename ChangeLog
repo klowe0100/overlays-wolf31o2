@@ -2,6 +2,14 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*packagekit-0.5.2-r1 (17 Jan 2010)
+
+  17 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +metadata/cache/app-portage/packagekit-0.5.2-r1,
+  packagekit-0.5.2-r1.ebuild, +app-portage/packagekit/Manifest,
+  profiles/categories:
+  Pulling PackageKit from the GNOME overlay.
+
   17 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
   metadata/cache/gnome-extra/nm-applet-0.8.0_pre20100101-r1,
   metadata/cache/net-misc/networkmanager-0.8.0_pre20100101-r1,
