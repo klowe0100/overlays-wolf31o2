@@ -16,7 +16,8 @@ SRC_URI="http://dev.gentoo.org/~dagger/files/${MY_P}.tar.bz2"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
+#KEYWORDS="~amd64 ~x86"
+KEYWORDS=""
 IUSE="+applet avahi bluetooth connection-sharing +dhclient dhcpcd doc +gnutls nls nss resolvconf"
 
 RDEPEND=">=sys-apps/dbus-1.2

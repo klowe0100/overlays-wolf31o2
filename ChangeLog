@@ -3,6 +3,15 @@
 # $Id$
 
   17 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  metadata/cache/gnome-extra/nm-applet-0.8.0_pre20100101-r1,
+  metadata/cache/net-misc/networkmanager-0.8.0_pre20100101-r1,
+  nm-applet-0.8.0_pre20100101-r1.ebuild,
+  networkmanager-0.8.0_pre20100101-r1.ebuild,
+  gnome-extra/nm-applet/Manifest, net-misc/networkmanager/Manifest:
+  Dropping KEYWORDS on networkmanager/nm-applet, since the git snapshots
+  don't work properly with the current in-tree versions of several packages.
+
+  17 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
   nagios-plugins-1.4.14-r1.ebuild, net-analyzer/nagios-plugins/Manifest:
   Adding a few extra default configure switches.
 

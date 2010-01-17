@@ -6,7 +6,7 @@ http://dev.gentoo.org/~dagger/files/network-manager-applet-0.8.0_pre20100101.tar
 http://projects.gnome.org/NetworkManager/
 GPL-2
 Gnome applet for NetworkManager.
-~amd64 ~x86
+
 autotools eutils fdo-mime gnome.org gnome2 gnome2-utils libtool multilib portability toolchain-funcs versionator
 bluetooth debug
 
