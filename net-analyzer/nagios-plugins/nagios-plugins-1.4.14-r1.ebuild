@@ -13,8 +13,29 @@ SRC_URI="mirror://sourceforge/nagiosplug/${P}.tar.gz"
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="amd64 x86"
-IUSE="+ssl samba mysql postgres ldap snmp nagios-dns nagios-ntp nagios-ping
-nagios-ssh nagios-game ups ipv6 radius +suid"
+IUSE="+ssl samba mysql postgres ldap snmp nagios-dns nagios-ntp nagios-ping nagios-ssh nagios-game ups ipv6 radius +suid"
+
+# This map is pretty much taken from REQUIREMENTS
+#
+# check_ldaps, check_http, check_tcp, check_smtp: openssl/gnutls
+# check_fping: fping
+# check_game: qstat
+# check_hpjd: net-snmp
+# check_ldap: openldap
+# check_mysql, check_mysql_query: mysql
+# check_pqsql: postgresql-libs
+# check_radius: radiusclient-ng/radiusclient
+# check_snmp: net-snmp
+# check_ifstatus, check_ifoperstatus: Net-SNMP
+# check_nwstat: mrtgext nlm for novell
+# check_nt: nsclient++ on remote
+# check_ups: nut
+# check_ide_smart: smartlinux
+# Class-Accessor-0.31.tar.gz Config-Tiny-2.10.tar.gz Math-Calc-Units-1.06.tar.gz
+# Nagios-Plugin-0.27.tar.gz Params-Validate-0.88.tar.gz Test-Simple-0.70.tar.gz
+# bowen-langley_plugins.tar.gz check_radius.tar.gz fetchlog-0.94.tar.gz
+# check_bgp-1.0.tar.gz check_traffic-0.91b.tar.gz
+
 
 DEPEND="ldap? ( >=net-nds/openldap-2.0.25 )
 	mysql? ( virtual/mysql )

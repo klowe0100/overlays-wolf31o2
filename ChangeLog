@@ -2,6 +2,10 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  17 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  nagios-plugins-1.4.14-r1.ebuild, net-analyzer/nagios-plugins/Manifest:
+  Adding some comments for the upcoming changes.
+
   16 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
   +metadata/cache/net-analyzer/lilac-1.0.3-r1,
   +metadata/cache/net-dialup/sendpage-1.1.1-r1,
