@@ -14,6 +14,7 @@ LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="amd64 x86"
 IUSE="+ssl samba mysql postgres ldap snmp nagios-dns nagios-ntp nagios-ping nagios-ssh nagios-game ups ipv6 radius +suid"
+#nls gnutls
 
 # This map is pretty much taken from REQUIREMENTS
 #
@@ -82,7 +83,7 @@ src_unpack() {
 
 src_compile() {
 
-	local conf
+	local conf="--disable-dependency-tracking --enable-extra-opts --without-world-permissions"
 	if use ssl; then
 		conf="${conf} --with-openssl=/usr"
 	else
