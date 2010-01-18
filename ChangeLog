@@ -4,6 +4,12 @@
 
   18 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
   net-analyzer/nagios-nsca/Manifest,
+  net-analyzer/nagios-nsca/files/nsca-nagios3.rc:
+  Updating init script to use the correct location for the configuration
+  file and also to force it to start before Nagios.
+
+  18 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  net-analyzer/nagios-nsca/Manifest,
   -net-analyzer/nagios-nsca/files/nsca-nagios3,
   +net-analyzer/nagios-nsca/files/nsca-nagios3.rc:
   Fixing the nsca-nagios3.rc file.
