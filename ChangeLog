@@ -3,6 +3,16 @@
 # $Id$
 
   18 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  -net-analyzer/nagios-nrpe/ChangeLog, net-analyzer/nagios-nrpe/Manifest,
+  -net-analyzer/nagios-nrpe/files/nrpe,
+  -net-analyzer/nagios-nrpe/files/nrpe-nagios3,
+  +net-analyzer/nagios-nrpe/files/nrpe-nagios3.rc,
+  nagios-nrpe-2.12-r104.ebuild, -net-analyzer/nagios-nrpe/metadata.xml:
+  Removing Gentoo files (ChangeLog/metadata.xml), adding before nagios to
+  init script, and changing the configuration location to our new
+  subdirectory.
+
+  18 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
   nagios-nrpe-2.12-r104.ebuild, net-analyzer/nagios-nrpe/Manifest:
   Marking net-analyzer/nagios-plugins stable on amd64/x86.
 

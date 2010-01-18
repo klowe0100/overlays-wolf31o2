@@ -4,14 +4,15 @@ opts="${opts} reload"
 
 depend() {
 	need net
+	before nagios
 }
 
 start() {
 	ebegin "Starting nrpe"
 	start-stop-daemon --start --quiet --name nrpe \
-	--startas /usr/nagios/bin/nrpe \
+	--startas /usr/bin/nrpe \
 		-c nagios:nagios \
-		-- -c /etc/nagios/nrpe.cfg \
+		-- -c /etc/nagios/nrpe/nrpe.cfg \
 		--daemon
 	eend $? "Failed to Start nrpe"
 }

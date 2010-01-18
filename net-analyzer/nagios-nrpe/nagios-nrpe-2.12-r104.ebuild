@@ -49,7 +49,7 @@ src_configure() {
 		--prefix=/usr \
 		--libexecdir=/usr/$(get_libdir)/nagios/plugins \
 		--localstatedir=/var/nagios \
-		--sysconfdir=/etc/nagios \
+		--sysconfdir=/etc/nagios/nrpe \
 		--with-nrpe-user=nagios \
 		--with-nrpe-grp=nagios || die "econf failed"
 }
