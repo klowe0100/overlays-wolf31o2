@@ -1,20 +1,20 @@
->=net-analyzer/nagios-plugins-1.3.0 ssl? ( dev-libs/openssl )
->=net-analyzer/nagios-plugins-1.3.0 ssl? ( dev-libs/openssl )
+>=net-analyzer/nagios-plugins-1.4.14-r1 ssl? ( dev-libs/openssl )
+>=net-analyzer/nagios-plugins-1.4.14-r1 ssl? ( dev-libs/openssl )
 0
 mirror://sourceforge/nagios/nrpe-2.12.tar.gz http://altinity.blogs.com/dotorg/nrpe_multiline.patch
 mirror
 http://www.nagios.org/
 GPL-2
 Nagios 2.12 NRPE - Nagios Remote Plugin Executor
-alpha amd64 hppa ppc ppc64 sparc x86
+amd64 x86
 eutils multilib portability toolchain-funcs
-ssl command-args
++ssl command-args
 
 
 
+2
 
-
-compile install postinst setup unpack
+compile configure install postinst prepare setup
 
 
 
