@@ -43,5 +43,5 @@ pkg_postinst() {
 	elog "/usr/share/nagtrap/nagtrap/etc/config.ini.php-sample"
 	elog
 	elog "NagTrap requires snmptt to write traps into a MySQL database."
-	elog "A database schema is available in {$D}usr/share/nagtrap/db"
+	elog "A database schema is available in ${D}usr/share/nagtrap/db"
 }

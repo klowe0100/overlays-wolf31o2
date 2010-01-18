@@ -2,6 +2,14 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*nagtrap-0.1.3-r1 (18 Jan 2010)
+
+  18 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  nagtrap-0.1.3.ebuild, nagtrap-0.1.3-r1.ebuild,
+  net-analyzer/nagtrap/Manifest:
+  Revision bump nagtrap to differentate the version from Gentoo's tree, fix
+  pkg_postinst elog messages to display properly.
+
 *rcpd-1.2 (17 Jan 2010)
 
   17 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org> rcpd-1.2.ebuild,
