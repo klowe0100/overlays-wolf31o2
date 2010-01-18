@@ -38,10 +38,10 @@ src_install() {
 }
 pkg_postinst() {
 	elog "Before running NagTrap for the first time, you will need setup its configuration"
-	elog "/usr/share/nagtrap/nagtrap/etc/config.ini.php"
+	elog "${ROOT}usr/share/nagtrap/nagtrap/etc/config.ini.php"
 	elog "A sample is installed in"
-	elog "/usr/share/nagtrap/nagtrap/etc/config.ini.php-sample"
+	elog "${ROOT}usr/share/nagtrap/nagtrap/etc/config.ini.php-sample"
 	elog
 	elog "NagTrap requires snmptt to write traps into a MySQL database."
-	elog "A database schema is available in ${D}usr/share/nagtrap/db"
+	elog "A database schema is available in ${ROOT}usr/share/nagtrap/db"
 }
