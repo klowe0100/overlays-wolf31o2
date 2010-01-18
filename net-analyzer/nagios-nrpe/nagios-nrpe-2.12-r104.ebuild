@@ -65,10 +65,10 @@ src_install() {
 	dodoc LEGAL Changelog README SECURITY README.SSL \
 		contrib/README.nrpe_check_control
 
-	insinto /etc/nagios
+	insinto /etc/nagios/nrpe
 	newins "${S}"/sample-config/nrpe.cfg nrpe.cfg
-	fowners root:nagios /etc/nagios/nrpe.cfg
-	fperms 0640 /etc/nagios/nrpe.cfg
+	fowners root:nagios /etc/nagios/nrpe/nrpe.cfg
+	fperms 0640 /etc/nagios/nrpe/nrpe.cfg
 
 	exeopts -m0750 -o nagios -g nagios
 	exeinto /usr/bin
@@ -78,20 +78,20 @@ src_install() {
 	exeinto /usr/$(get_libdir)/nagios/plugins
 	doexe src/check_nrpe contrib/nrpe_check_control
 
-	newinitd "${FILESDIR}"/nrpe-nagios3 nrpe
+	newinitd "${FILESDIR}"/nrpe-nagios3.rc nrpe
 
 	# Create pidfile in /var/run/nrpe, bug #233859
 	keepdir /var/run/nrpe
 	fowners nagios:nagios /var/run/nrpe
 	sed -i -e \
 		"s#pid_file=/var/run/nrpe.pid#pid_file=/var/run/nrpe/nrpe.pid#" \
-		"${D}"/etc/nagios/nrpe.cfg || die "sed failed"
+		"${D}"/etc/nagios/nrpe/nrpe.cfg || die "sed failed"
 }
 
 pkg_postinst() {
 	einfo
 	einfo "If you are using the nrpe daemon, remember to edit"
-	einfo "the config file /etc/nagios/nrpe.cfg"
+	einfo "the config file ${ROOT}etc/nagios/nrpe/nrpe.cfg"
 	einfo
 
 	if useq command-args ; then
@@ -99,6 +99,6 @@ pkg_postinst() {
 		ewarn "the ability for clients to supply arguments to commands"
 		ewarn "which should be run. "
 		ewarn "THIS IS CONSIDERED A SECURITY RISK!"
-		ewarn "Please read /usr/share/doc/${PF}/SECURITY.bz2 for more info"
+		ewarn "Please read ${ROOT}usr/share/doc/${PF}/SECURITY.bz2 for more info"
 	fi
 }
