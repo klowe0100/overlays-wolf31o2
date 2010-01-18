@@ -13,7 +13,8 @@ SRC_URI="mirror://sourceforge/nagiosplug/${P}.tar.gz"
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="amd64 x86"
-IUSE="+ssl samba mysql postgres ldap snmp nagios-dns nagios-ntp nagios-ping nagios-ssh nagios-game ups ipv6 radius +suid"
+IUSE="+ssl samba mysql postgres ldap snmp nagios-dns nagios-ntp nagios-ping
+nagios-ssh nagios-game ups ipv6 radius +suid jabber"
 #nls gnutls
 
 # This map is pretty much taken from REQUIREMENTS
@@ -59,7 +60,8 @@ RDEPEND="${DEPEND}
 	nagios-ping? ( >=net-analyzer/fping-2.4_beta2-r1 )
 	nagios-ssh? ( >=net-misc/openssh-3.5_p1 )
 	ups? ( >=sys-power/nut-1.4 )
-	!sparc? ( nagios-game? ( >=games-util/qstat-2.6 ) )"
+	!sparc? ( nagios-game? ( >=games-util/qstat-2.6 ) )
+	jabber? ( >=dev-perl/Net-Jabber-2.0 )"
 
 pkg_setup() {
 	enewgroup nagios
@@ -135,6 +137,11 @@ src_install() {
 	fi
 
 	mv "${S}"/contrib "${D}"/usr/$(get_libdir)/nagios/plugins/contrib
+
+	if ! use jabber ; then
+		rm -f "${D}"usr/$(get_libdir)/nagios/plugins/contrib/nagios_sendim.pl \
+			|| die "Failed to remove XMPP notification addon"
+	fi
 
 	chown -R root:nagios "${D}"/usr/$(get_libdir)/nagios/plugins \
 		|| die "Failed chown of ${D}usr/$(get_libdir)/nagios/plugins"
