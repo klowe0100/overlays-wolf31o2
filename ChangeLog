@@ -3,6 +3,12 @@
 # $Id$
 
   18 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  net-analyzer/nagios-nsca/Manifest,
+  -net-analyzer/nagios-nsca/files/nsca-nagios3,
+  +net-analyzer/nagios-nsca/files/nsca-nagios3.rc:
+  Fixing the nsca-nagios3.rc file.
+
+  18 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
   +metadata/cache/net-analyzer/nagios-nsca-2.7.2-r101:
   Updating metadata/cache for latest ebuilds.
 
