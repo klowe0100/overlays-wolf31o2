@@ -2,6 +2,15 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*nagios-nsca-2.7.2-r101 (18 Jan 2010)
+
+  18 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  nagios-nsca-2.7.2-r101.ebuild, +net-analyzer/nagios-nsca/Manifest,
+  +net-analyzer/nagios-nsca/files/nsca-nagios3:
+  Import nagios-nsca from Gentoo's tree, revision bump it to set ours aside
+  from theirs, add RDEPEND, add USE=crypt (default), switch to using econf,
+  and change output to use ROOT when displaying.
+
   18 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
   nagios-nrpe-2.12-r104.ebuild, net-analyzer/nagios-nrpe/Manifest:
   Update ebuild to use /etc/nagios/nrpe for configuration.
