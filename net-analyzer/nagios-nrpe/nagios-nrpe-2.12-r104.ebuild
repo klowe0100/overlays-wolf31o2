@@ -15,7 +15,7 @@ RESTRICT="mirror"
 LICENSE="GPL-2"
 SLOT="0"
 
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="amd64 x86"
 
 IUSE="+ssl command-args"
 DEPEND=">=net-analyzer/nagios-plugins-1.4.14-r1

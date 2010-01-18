@@ -2,6 +2,10 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  18 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  nagios-nrpe-2.12-r104.ebuild, net-analyzer/nagios-nrpe/Manifest:
+  Marking net-analyzer/nagios-plugins stable on amd64/x86.
+
 *nagios-plugins-1.4.14-r2 (18 Jan 2010)
 
   18 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
