@@ -1,6 +1,8 @@
-# Copyright 1999-2009 Gentoo Foundation
+# Copyright 1999-2009 Gentoo Foundation ; 2009-2010 Chris Gianelloni
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-analyzer/nagios-nrpe/nagios-nrpe-2.12-r102.ebuild,v 1.7 2009/03/18 22:22:03 ranger Exp $
+# $Id$
+
+EAPI=2
 
 inherit eutils toolchain-funcs
 
@@ -13,10 +15,10 @@ RESTRICT="mirror"
 LICENSE="GPL-2"
 SLOT="0"
 
-KEYWORDS="alpha amd64 hppa ppc ppc64 sparc x86"
+KEYWORDS="~amd64 ~x86"
 
 IUSE="ssl command-args"
-DEPEND=">=net-analyzer/nagios-plugins-1.3.0
+DEPEND=">=net-analyzer/nagios-plugins-1.4.14-r1
 	ssl? ( dev-libs/openssl )"
 S="${WORKDIR}/nrpe-${PV}"
 
@@ -25,12 +27,13 @@ pkg_setup() {
 	enewuser nagios -1 /bin/bash /dev/null nagios
 }
 
-src_unpack() {
-	unpack nrpe-${PV}.tar.gz
+src_prepare() {
+	# Add support for large output,
+	# http://opsview-blog.opsera.com/dotorg/2008/08/enhancing-nrpe.html
 	epatch "${DISTDIR}"/nrpe_multiline.patch
 }
 
-src_compile() {
+src_configure() {
 	local myconf
 
 	myconf="${myconf} $(use_enable ssl) \
@@ -49,10 +52,13 @@ src_compile() {
 		--sysconfdir=/etc/nagios \
 		--with-nrpe-user=nagios \
 		--with-nrpe-grp=nagios || die "econf failed"
+}
+
+src_compile() {
 	emake all || die "make failed"
 	# Add nifty nrpe check tool
 	cd contrib
-	$(tc-getCC) ${CFLAGS} -o nrpe_check_control	nrpe_check_control.c
+	$(tc-getCC) ${CFLAGS} ${LDFLAGS} -o nrpe_check_control	nrpe_check_control.c
 }
 
 src_install() {
