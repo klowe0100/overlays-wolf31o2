@@ -3,6 +3,10 @@
 # $Id$
 
   19 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  nagios-core-3.2.0-r6.ebuild, net-analyzer/nagios-core/Manifest:
+  Don't disable the VRML CGI.
+
+  19 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
   ndoutils-1.4_beta8-r1.ebuild, net-analyzer/ndoutils/Manifest:
   Cosmetic cleanup.
 

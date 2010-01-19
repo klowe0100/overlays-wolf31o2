@@ -77,7 +77,8 @@ src_prepare() {
 }
 
 src_configure() {
-	local myconf="--disable-statuswrl --enable-nanosleep --enable-event-broker"
+	local myconf="--enable-nanosleep --enable-event-broker"
+	#--disable-statuswrl
 
 	if use perl ; then
 		ewarn "Disabling the embedded perl interface (not recommended)"
