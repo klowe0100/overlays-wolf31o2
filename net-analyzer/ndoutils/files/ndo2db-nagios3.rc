@@ -11,7 +11,7 @@ depends() {
 start() {
 	ebegin "Starting ndo2db"
 	start-stop-daemon --start --quiet --exec /usr/bin/ndo2db-3x \
-	-- -c /etc/nagios/ndo2db.cfg
+	-- -c /etc/nagios/ndo/ndo2db.cfg
 	eend $?
 }
 

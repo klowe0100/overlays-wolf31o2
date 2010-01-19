@@ -30,7 +30,7 @@ pkg_setup() {
 
 src_compile() {
 	econf \
-		--sysconfdir=/etc/nagios \
+		--sysconfdir=/etc/nagios/ndo \
 		--enable-mysql \
 		--disable-pgsql || die "econf failed"
 
@@ -51,15 +51,15 @@ src_install() {
 
 	sed -i s:socket_name=/usr/local/nagios/var/ndo.sock:socket_name=/var/nagios/ndo.sock:g "${S}"/config/ndo2db.cfg
 
-	insinto /etc/nagios
+	insinto /etc/nagios/ndo
 	doins "${S}"/config/ndo2db.cfg
 	doins "${S}"/config/ndomod.cfg
 
-	newinitd "${FILESDIR}"/ndo2db.init-nagios3 ndo2db
+	newinitd "${FILESDIR}"/ndo2db-nagios3.rc ndo2db
 }
 
 pkg_postinst() {
 	elog "To include NDO in your Nagios setup you'll need to activate the NDO broker module"
-	elog "in /etc/nagios/nagios.cfg:"
+	elog "in /etc/nagios/ndo/nagios.cfg:"
 	elog "\tbroker_module=/usr/bin/ndomod-3x.o config_file=/etc/nagios/ndomod.cfg"
 }

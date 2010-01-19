@@ -2,6 +2,19 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*ndoutils-1.4_beta8-r1 (19 Jan 2010)
+
+  19 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  -metadata/cache/net-analyzer/ndoutils-1.4_beta8,
+  -net-analyzer/ndoutils/files/ndo2db.init-nagios3,
+  ndoutils-1.4_beta8.ebuild,
+  +metadata/cache/net-analyzer/ndoutils-1.4_beta8-r1,
+  ndoutils-1.4_beta8-r1.ebuild, net-analyzer/ndoutils/Manifest,
+  +net-analyzer/ndoutils/files/ndo2db-nagios3.rc:
+  Renaming init script in FILESDIR, revision bumping to differentiate
+  ourselves from Gentoo's ebuild, and moving the configuration under
+  /etc/nagios/ndo.
+
   18 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
   net-analyzer/nagios-nsca/Manifest,
   net-analyzer/nagios-nsca/files/nsca-nagios3.rc:
