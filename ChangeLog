@@ -2,6 +2,11 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  19 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  ndoutils-1.4_beta8-r1.ebuild, net-analyzer/ndoutils/Manifest:
+  Adding --localstatedir and changing a sed to be more inclusive to
+  hopefully catch some of the bad configuration by default.
+
 *ndoutils-1.4_beta8-r1 (19 Jan 2010)
 
   19 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>

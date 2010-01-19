@@ -31,6 +31,7 @@ pkg_setup() {
 src_compile() {
 	econf \
 		--sysconfdir=/etc/nagios/ndo \
+		--localstatedir=/var/nagios \
 		--enable-mysql \
 		--disable-pgsql || die "econf failed"
 
@@ -49,7 +50,10 @@ src_install() {
 
 	dodoc README REQUIREMENTS TODO UPGRADING Changelog "docs/NDOUTILS DB Model.pdf" "docs/NDOUtils Documentation.pdf"
 
-	sed -i s:socket_name=/usr/local/nagios/var/ndo.sock:socket_name=/var/nagios/ndo.sock:g "${S}"/config/ndo2db.cfg
+	sed -i \
+		-e 's:/usr/local/nagios/var/:/var/nagios/:g' \
+		"${S}"/config/ndo2db.cfg \
+		"${S}"/config/ndomod.cfg
 
 	insinto /etc/nagios/ndo
 	doins "${S}"/config/ndo2db.cfg
