@@ -35,7 +35,7 @@ src_compile() {
 		--enable-mysql \
 		--disable-pgsql || die "econf failed"
 
-	emake || die "emake failed"
+	emake -j1 || die "emake failed"
 }
 
 src_install() {
