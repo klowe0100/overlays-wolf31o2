@@ -30,6 +30,9 @@ pkg_setup() {
 
 src_compile() {
 	econf \
+		--bindir=/usr/sbin \
+		--sbindir=/usr/$(get_libdir)/nagios/cgi-bin \
+		--libexecdir=/usr/$(get_libdir)/nagios/plugins \
 		--sysconfdir=/etc/nagios/ndo \
 		--localstatedir=/var/nagios \
 		--enable-mysql \
@@ -64,6 +67,6 @@ src_install() {
 
 pkg_postinst() {
 	elog "To include NDO in your Nagios setup you'll need to activate the NDO broker module"
-	elog "in /etc/nagios/ndo/nagios.cfg:"
-	elog "\tbroker_module=/usr/bin/ndomod-3x.o config_file=/etc/nagios/ndomod.cfg"
+	elog "in ${ROOT}etc/nagios/nagios.cfg:"
+	elog "\tbroker_module=/usr/bin/ndomod-3x.o config_file=${ROOT}/etc/nagios/ndo/ndomod.cfg"
 }
