@@ -68,5 +68,5 @@ src_install() {
 pkg_postinst() {
 	elog "To include NDO in your Nagios setup you'll need to activate the NDO broker module"
 	elog "in ${ROOT}etc/nagios/nagios.cfg:"
-	elog "\tbroker_module=/usr/bin/ndomod-3x.o config_file=${ROOT}/etc/nagios/ndo/ndomod.cfg"
+	elog "\tbroker_module=${ROOT}usr/bin/ndomod-3x.o config_file=${ROOT}etc/nagios/ndo/ndomod.cfg"
 }
