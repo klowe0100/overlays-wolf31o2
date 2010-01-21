@@ -1,4 +1,4 @@
-# Copyright 1999-2009 Gentoo Foundation ; 2009-2009 CHris Gianelloni
+# Copyright 1999-2009 Gentoo Foundation ; 2009-2009 Chris Gianelloni
 # Distributed under the terms of the GNU General Public License v2
 # $Id$
 
@@ -12,7 +12,7 @@ SRC_URI="http://compression.ca/${PN}/${P}.tar.gz"
 
 LICENSE="PBZIP2"
 SLOT="0"
-KEYWORDS="~alpha ~amd64 ~arm ~hppa ~ia64 ~m68k ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86 ~x86-fbsd"
+KEYWORDS="amd64 x86"
 IUSE="static symlink"
 
 DEPEND="app-arch/bzip2"
@@ -20,7 +20,7 @@ RDEPEND="${DEPEND}"
 
 src_prepare() {
 	cd "${S}"
-#	sed -e 's:^CFLAGS = .*$:#&:g' -e 's:g++:$(CXX):g' -i ${P}/Makefile || die
+	sed -e 's:^CFLAGS = .*$:#&:g' -e 's:g++:$(CXX):g' -i Makefile || die
 	epatch "${FILESDIR}"/${P}-ldflags.patch
 }
 

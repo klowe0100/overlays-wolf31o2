@@ -3,6 +3,13 @@
 # $Id$
 
   21 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  app-arch/pbzip2/Manifest, -metadata/cache/app-arch/pbzip2-1.0.3-r1,
+  pbzip2-1.0.3-r1.ebuild, -app-arch/pbzip2/files/pbzip2-1.0.3-uclibc.patch,
+  -metadata/cache/app-arch/pbzip2-1.0.5-r2, pbzip2-1.0.5-r2.ebuild,
+  metadata/cache/app-arch/pbzip2-1.0.5-r3, pbzip2-1.0.5-r3.ebuild:
+  Marking app-arch/pbzip2 stable on amd64/x86.
+
+  21 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
   nagios-core-3.2.0-r7.ebuild, net-analyzer/nagios-core/Manifest:
   Nice. The Makefile is messed up for the contrib stuff, so cd into the
   directory and run make manually.
