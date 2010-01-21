@@ -2,6 +2,16 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*nagios-core-3.2.0-r7 (21 Jan 2010)
+
+  21 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  nagios-core-3.2.0-r7.ebuild, net-analyzer/nagios-core/Manifest:
+  Added USE=contrib and made it default, moved traceroute dependency under
+  contrib, cleaned up the eventhandlers sed-fu, added --datarootdir and
+  --htmldir, fixed some die messages, added html to compilation if USE=web,
+  cleaned up the USE=contrib compilation, and added a section to install
+  contrib and eventhandlers.
+
   19 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
   nagios-core-3.2.0-r6.ebuild, net-analyzer/nagios-core/Manifest:
   Don't disable the VRML CGI.
