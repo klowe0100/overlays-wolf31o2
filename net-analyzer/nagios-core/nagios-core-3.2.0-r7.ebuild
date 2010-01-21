@@ -147,6 +147,8 @@ src_compile() {
 	# daemonchk.c and contrib
 	if use contrib ; then
 		emake CC=$(tc-getCC) DESTDIR="${D}" contrib || die "make contrib failed"
+		cd "${S}"/contrib
+		emake CC=$(tc-getCC) DESTDIR="${D}" all || die "make all (contrib) failed"
 	fi
 }
 
@@ -183,7 +185,7 @@ src_install() {
 
 	# contrib and eventhandlers
 	if use contrib ; then
-		cd "${S}"/contrib
+		cd "${S}"/contrib || die "cd contrib"
 		emake DESTDIR="${D}" install || die "make install (contrib) failed"
 		cp -r eventhandlers "${D}"/usr/$(get_libdir)/nagios || die "copy"
 	fi
