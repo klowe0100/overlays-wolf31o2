@@ -129,7 +129,6 @@ src_configure() {
 		--bindir=/usr/sbin \
 		--sbindir=/usr/$(get_libdir)/nagios/cgi-bin \
 		--datadir=/usr/share/nagios/htdocs \
-		--htmldir=/usr/share/nagios/htdocs \
 		--localstatedir=/var/nagios \
 		--sysconfdir=/etc/nagios \
 		--libexecdir=/usr/$(get_libdir)/nagios/plugins \

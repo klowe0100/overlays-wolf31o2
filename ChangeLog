@@ -3,6 +3,10 @@
 # $Id$
 
   21 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  nagios-core-3.2.0-r7.ebuild, net-analyzer/nagios-core/Manifest:
+  Removing --htmldir, also.
+
+  21 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
   +metadata/cache/net-analyzer/nagios-core-3.2.0-r7:
   Updating metadata/cache with latest entries.
 
