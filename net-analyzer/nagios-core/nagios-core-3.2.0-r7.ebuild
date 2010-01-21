@@ -173,19 +173,19 @@ src_install() {
 		sed -i 's/sblogo.png/sblogo.gif/g' html/side.php
 	fi
 
-	emake DESTDIR="${D}" install
-	emake DESTDIR="${D}" install-commandmode
+	emake DESTDIR="${D}" install || die "make install failed"
+	emake DESTDIR="${D}" install-commandmode || die "make install-commandmode failed"
 	if use examples ; then
 		einfo "Installing example configuration."
-		emake DESTDIR="${D}" install-config
+		emake DESTDIR="${D}" install-config || die "make install-config failed"
 		# if use web ; then copy htaccess.sample
 	fi
 
 	# contrib and eventhandlers
 	if use contrib ; then
 		cd "${S}"/contrib
-		emake DESTDIR="${D}" install
-		cp -r eventhandlers "${D}"/usr/$(get_libdir)/nagios
+		emake DESTDIR="${D}" install || die "make install (contrib) failed"
+		cp -r eventhandlers "${D}"/usr/$(get_libdir)/nagios || die "copy"
 	fi
 
 	newinitd "${FILESDIR}"/nagios3 nagios

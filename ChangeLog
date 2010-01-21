@@ -4,6 +4,10 @@
 
   21 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
   nagios-core-3.2.0-r7.ebuild, net-analyzer/nagios-core/Manifest:
+  Add some extra die statements to try to catch any errors.
+
+  21 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  nagios-core-3.2.0-r7.ebuild, net-analyzer/nagios-core/Manifest:
   Removing --htmldir, also.
 
   21 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
