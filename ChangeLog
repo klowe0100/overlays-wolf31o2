@@ -3,6 +3,11 @@
 # $Id$
 
   28 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  metadata/cache/net-analyzer/nagios-nsca-2.7.2-r101,
+  nagios-nsca-2.7.2-r101.ebuild, net-analyzer/nagios-nsca/Manifest:
+  Marking nagios-nsca r101 ebuild stable on amd64/x86.
+
+  28 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
   metadata/cache/net-analyzer/nagios-core-3.2.0-r7,
   nagios-core-3.2.0-r7.ebuild, net-analyzer/nagios-core/Manifest:
   Marking nagios-core r7 stable on amd64/x86.
