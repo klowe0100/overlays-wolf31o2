@@ -6,7 +6,7 @@ mirror://sourceforge/nagios/nagios-3.2.0.tar.gz web? ( http://exchange.nagios.or
 http://www.nagios.org/
 GPL-2
 Nagios Core - Check daemon, CGIs, docs
-~amd64 ~x86
+amd64 x86
 depend.apache eutils multilib portability toolchain-funcs
 animated +contrib debug examples lighttpd perl +web vim-syntax apache2
 
