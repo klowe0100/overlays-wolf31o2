@@ -188,7 +188,7 @@ src_install() {
 	if use contrib ; then
 		cd "${S}"/contrib || die "cd contrib"
 		emake DESTDIR="${D}" install || die "make install (contrib) failed"
-		cp -r eventhandlers "${D}"/usr/$(get_libdir)/nagios || die "copy"
+		cp -pPR eventhandlers "${D}"/usr/$(get_libdir)/nagios || die "copy"
 	fi
 
 	newinitd "${FILESDIR}"/nagios.rc nagios

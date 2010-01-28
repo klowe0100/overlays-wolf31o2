@@ -3,6 +3,10 @@
 # $Id$
 
   28 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  nagios-core-3.2.0-r8.ebuild, net-analyzer/nagios-core/Manifest:
+  Switch to using cp -pPR rather than cp -r for copying files.
+
+  28 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
   nagios-core-3.2.0-r8.ebuild, net-analyzer/nagios-core/Manifest,
   +net-analyzer/nagios-core/files/nagios.confd,
   +net-analyzer/nagios-core/files/nagios.rc:
