@@ -2,6 +2,19 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*pnp4nagios-0.4.14-r4 (28 Jan 2010)
+
+  28 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +metadata/cache/net-analyzer/pnp4nagios-0.4.14-r4,
+  net-analyzer/pnp4nagios/Manifest,
+  +net-analyzer/pnp4nagios/files/99_nagios.inc.cfg,
+  +net-analyzer/pnp4nagios/files/99_pnp4nagios.conf,
+  +net-analyzer/pnp4nagios/files/pnp4nagios-commands.cfg,
+  pnp4nagios-0.4.14-r4.ebuild:
+  Revision bumping pnp4nagios for testing. It still needs some work, but it
+  will install its own configuration into a default Nagios configuration
+  with no additional work.
+
   28 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
   metadata/cache/net-analyzer/nagios-nsca-2.7.2-r101,
   nagios-nsca-2.7.2-r101.ebuild, net-analyzer/nagios-nsca/Manifest:
