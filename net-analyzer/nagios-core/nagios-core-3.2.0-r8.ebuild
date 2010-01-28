@@ -72,6 +72,7 @@ src_prepare() {
 				-e "s:${odir}/test/var/:/var/log/nagios:" \
 				-e "s:${odir}::" \
 				-e "s:\$nagios/etc/hosts.cfg:/etc/nagios/hosts/host-def.cfg:" \
+				-e "s:${ndir}/plugins/eventhandlers/:${ndir}/eventhandlers/" \
 				${f} || die "sed failed"
 		done
 	fi
@@ -190,8 +191,8 @@ src_install() {
 		cp -r eventhandlers "${D}"/usr/$(get_libdir)/nagios || die "copy"
 	fi
 
-	newinitd "${FILESDIR}"/nagios3 nagios
-	newconfd "${FILESDIR}"/conf.d nagios
+	newinitd "${FILESDIR}"/nagios.rc nagios
+	newconfd "${FILESDIR}"/nagios.confd nagios
 
 	# Apache Module
 	if use web ; then

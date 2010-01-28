@@ -2,6 +2,14 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  28 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  nagios-core-3.2.0-r8.ebuild, net-analyzer/nagios-core/Manifest,
+  +net-analyzer/nagios-core/files/nagios.confd,
+  +net-analyzer/nagios-core/files/nagios.rc:
+  Copying files/conf.d to files/nagios.confd and files/nagios3 to
+  files/nagios.rc, add more sed-fu to catch improper eventhandlers location,
+  and install our new conf.d/init script.
+
 *pnp4nagios-0.4.14-r4 (28 Jan 2010)
 
   28 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
