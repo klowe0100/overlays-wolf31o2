@@ -5,6 +5,13 @@
   28 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
   net-analyzer/nagios-core/Manifest,
   net-analyzer/nagios-core/files/nagios.rc:
+  Remove hard-coded file names and pull the actual names from the nagios.cfg
+  file, so we're accurate even if the user has chosen different names from
+  the defaults.
+
+  28 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  net-analyzer/nagios-core/Manifest,
+  net-analyzer/nagios-core/files/nagios.rc:
   Change the status.sav to status.dat to match Nagios default and add a
   process_nsca function, to dump the contents of a nsca.dump file into the
   command file.

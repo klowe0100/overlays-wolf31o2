@@ -5,6 +5,8 @@
 
 opts="${opts} reload checkconfig"
 
+config_file="/etc/nagios/nagios.cfg"
+
 depend() {
 	need net
 	use dns logger firewall
@@ -21,11 +23,22 @@ reload()
 
 checkconfig() {
 	# Silent Check
-	/usr/sbin/nagios -v /etc/nagios/nagios.cfg &>/dev/null && return 0
+	/usr/sbin/nagios -v ${config_file} &>/dev/null && return 0
 
 	# Now we know there's problem - run again and display errors
-	/usr/sbin/nagios -v /etc/nagios/nagios.cfg
+	/usr/sbin/nagios -v ${config_file}
 	eend $? "Configuration Error. Please fix your configfile"
+}
+
+getconfig() {
+	# Grabs some config options used in the init script, versus hard-coding them
+	log_file=$(eval grep -i log_file= ${config_file} | cut -d = -f 2-)
+	status_file=$(eval grep -i status_file= ${config_file} | cut -d = -f 2-)
+	command_file=$(eval grep -i command_file= ${config_file} | cut -d = -f 2-)
+	lock_file=$(eval grep -i lock_file= ${config_file} | cut -d = -f 2-)
+	temp_file=$(eval grep -i temp_file= ${config_file} | cut -d = -f 2-)
+	nagios_user=$(eval grep -i nagios_user= ${config_file} | cut -d = -f 2-)
+	nagios_group=$(eval grep -i nagios_group= ${config_file} | cut -d = -f 2-)
 }
 
 process_nsca() {
@@ -38,25 +51,28 @@ process_nsca() {
 
 start() {
 	checkconfig || return 1
+	getconfig || return 1
 	ebegin "Starting nagios"
-	touch /var/nagios/nagios.log /var/nagios/status.dat
-	chown nagios:nagios /var/nagios/nagios.log /var/nagios/status.dat
-	rm -f /var/nagios/rw/nagios.cmd
+	touch ${log_file} ${status_file} ${temp_file}
+	chown ${nagios_user}:${nagios_group} ${log_file} ${status_file} ${temp_file}
+	rm -f ${command_file}
 	start-stop-daemon --quiet --start --startas /usr/sbin/nagios \
-		-e HOME="/var/nagios/home" --pidfile /var/nagios/nagios.lock \
-		-- -d /etc/nagios/nagios.cfg
+		-e HOME="/var/nagios/home" --pidfile ${lock_file} \
+		-- -d ${config_file}
 	eend $?
 }
 
 stop() {
 	ebegin "Stopping nagios"
-	start-stop-daemon --quiet --stop --pidfile /var/nagios/nagios.lock
-	rm -f /var/nagios/status.log /var/nagios/nagios.tmp /var/nagios/nagios.lock /var/nagios/rw/nagios.cmd
+	getconfig || return 1
+	start-stop-daemon --quiet --stop --pidfile ${lock_file}
+	rm -f ${status_file} ${lock_file} ${command_file} ${temp_file}
 	eend $?
 }
 
 svc_restart() {
 	checkconfig || return 1
+	getconfig || return 1
 	ebegin "Restarting nagios"
 	svc_stop
 	svc_start
