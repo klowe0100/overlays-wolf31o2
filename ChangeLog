@@ -4,6 +4,10 @@
 
   28 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
   nagios-core-3.2.0-r8.ebuild, net-analyzer/nagios-core/Manifest:
+  Fix the location of the send_nsca.cfg to match where our ebuild puts it.
+
+  28 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  nagios-core-3.2.0-r8.ebuild, net-analyzer/nagios-core/Manifest:
   Add a little sed-fu to create eventhandlers to enable/disable active host
   checks.
 

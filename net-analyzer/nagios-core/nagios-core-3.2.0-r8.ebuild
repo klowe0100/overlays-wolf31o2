@@ -72,7 +72,8 @@ src_prepare() {
 				-e "s:${odir}/test/var/:/var/log/nagios:" \
 				-e "s:${odir}::" \
 				-e "s:\$nagios/etc/hosts.cfg:/etc/nagios/hosts/host-def.cfg:" \
-				-e "s:${ndir}/plugins/eventhandlers/:${ndir}/eventhandlers/" \
+				-e "s:${ndir}/plugins/eventhandlers/:${ndir}/eventhandlers/:" \
+				-e "s:/etc/send_nsca.cfg:/etc/nagios/nsca/send_nsca.cfg:" \
 				${f} || die "sed failed"
 		done
 	fi
