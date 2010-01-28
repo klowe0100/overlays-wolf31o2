@@ -2,6 +2,11 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  28 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  -metadata/cache/net-analyzer/lilac-1.0.2,
+  +metadata/cache/net-analyzer/lilac-1.0.2-r1:
+  Updating metadata/cache for new lilac ebuild.
+
 *lilac-1.0.2-r1 (28 Jan 2010)
 
   28 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org> lilac-1.0.2.ebuild,
