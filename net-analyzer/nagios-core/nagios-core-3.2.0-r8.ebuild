@@ -188,6 +188,12 @@ src_install() {
 	if use contrib ; then
 		cd "${S}"/contrib || die "cd contrib"
 		emake DESTDIR="${D}" install || die "make install (contrib) failed"
+		# Create a couple new eventhandlers based on existing ones
+		for i in disable enable ; do
+			sed -e "s:_SVC_:_HOST_:" \
+				eventhandlers/${i}_active_service_checks > \
+				eventhandlers/${i}_active_host_checks || die "sed ${i}"
+		done
 		cp -pPR eventhandlers "${D}"/usr/$(get_libdir)/nagios || die "copy"
 	fi
 
