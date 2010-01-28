@@ -28,11 +28,19 @@ checkconfig() {
 	eend $? "Configuration Error. Please fix your configfile"
 }
 
+process_nsca() {
+	# See if we have an nsca.dump file, and dump it into the command file
+	if [ -e /var/nagios/nsca.dump ] ; then
+		cat /var/nagios/nsca.dump > /var/nagios/rw/nagios.cmd
+		rm -f /var/nagios/nsca.dump
+	fi
+}
+
 start() {
 	checkconfig || return 1
 	ebegin "Starting nagios"
-	touch /var/nagios/nagios.log /var/nagios/status.sav
-	chown nagios:nagios /var/nagios/nagios.log /var/nagios/status.sav
+	touch /var/nagios/nagios.log /var/nagios/status.dat
+	chown nagios:nagios /var/nagios/nagios.log /var/nagios/status.dat
 	rm -f /var/nagios/rw/nagios.cmd
 	start-stop-daemon --quiet --start --startas /usr/sbin/nagios \
 		-e HOME="/var/nagios/home" --pidfile /var/nagios/nagios.lock \

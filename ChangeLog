@@ -3,6 +3,13 @@
 # $Id$
 
   28 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  net-analyzer/nagios-core/Manifest,
+  net-analyzer/nagios-core/files/nagios.rc:
+  Change the status.sav to status.dat to match Nagios default and add a
+  process_nsca function, to dump the contents of a nsca.dump file into the
+  command file.
+
+  28 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
   nagios-core-3.2.0-r8.ebuild, net-analyzer/nagios-core/Manifest:
   Fix the location of the send_nsca.cfg to match where our ebuild puts it.
 
