@@ -2,6 +2,13 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*nagios-core-3.2.0-r8 (28 Jan 2010)
+
+  28 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +metadata/cache/net-analyzer/nagios-core-3.2.0-r8,
+  nagios-core-3.2.0-r8.ebuild, net-analyzer/nagios-core/Manifest:
+  Copying the nagios-core r7 ebuild to r8 for development, with no changes.
+
   28 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
   -metadata/cache/net-analyzer/lilac-1.0.2,
   +metadata/cache/net-analyzer/lilac-1.0.2-r1:
