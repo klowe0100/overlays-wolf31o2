@@ -2,6 +2,13 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*lilac-1.0.2-r1 (28 Jan 2010)
+
+  28 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org> lilac-1.0.2.ebuild,
+  lilac-1.0.2-r1.ebuild, net-analyzer/lilac/Manifest:
+  Revision bump lilac 1.0.2 ebuild (no changes) to differentiate it from the
+  ebuild in Gentoo's tree.
+
 *ndoutils-1.4_beta8-r2 (27 Jan 2010)
 
   27 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
