@@ -2,6 +2,17 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*libp11-0.2.7-r1 (03 Feb 2010)
+
+  03 Feb 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +dev-libs/libp11/Manifest, +metadata/cache/dev-libs/libp11-0.2.7-r1,
+  libp11-0.2.7-r1.ebuild:
+  Revision bumping libp11 to set the doc USE flag to be enabled by default.
+  The doc use flag is only supposed to be used when document generation
+  either pulls in additional dependencies, or requires significant
+  generation time. Copying HTML files doesn't qualify. Users wishing to not
+  get documentation should try FEATURES=nodoc, instead. Thanks.
+
   28 Jan 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
   net-analyzer/nagios-core/Manifest,
   net-analyzer/nagios-core/files/nagios.rc:
