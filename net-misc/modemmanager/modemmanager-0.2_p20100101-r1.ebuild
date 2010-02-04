@@ -1,6 +1,6 @@
-# Copyright 1999-2009 Gentoo Foundation
+# Copyright 1999-2009 Gentoo Foundation ; 2010-2010 Chris Gianelloni
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-misc/modemmanager/modemmanager-0.2_p20091123.ebuild,v 1.1 2009/11/23 15:34:50 dagger Exp $
+# $Id$
 
 EAPI=2
 
@@ -11,16 +11,18 @@ MY_P=${P/modemmanager/ModemManager}
 
 DESCRIPTION="Modem and mobile broadband management libraries"
 HOMEPAGE="http://mail.gnome.org/archives/networkmanager-list/2008-July/msg00274.html"
-SRC_URI="http://dev.gentoo.org/~dagger/files/${MY_P}.tar.bz2"
+SRC_URI="http://wolf31o2.org/sources/snapshots/${MY_P}.tar.bz2"
 
 LICENSE="LGPL-2.1"
 SLOT="0"
 KEYWORDS="~amd64 ~arm ~x86"
+RESTRICT="primaryuri"
 IUSE=""
 
 RDEPEND="net-dialup/ppp"
 
 DEPEND=">=sys-fs/udev-145[extras]
+	dev-libs/dbus-glib
 	dev-util/pkgconfig
 	dev-util/intltool"
 

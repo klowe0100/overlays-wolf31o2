@@ -1,4 +1,4 @@
->=sys-fs/udev-145[extras] dev-util/pkgconfig dev-util/intltool
+>=sys-fs/udev-145[extras] dev-libs/dbus-glib dev-util/pkgconfig dev-util/intltool
 net-dialup/ppp
 0
 http://dev.gentoo.org/~dagger/files/ModemManager-0.2_p20091123.tar.bz2

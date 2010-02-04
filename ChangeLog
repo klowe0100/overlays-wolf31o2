@@ -2,6 +2,17 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  04 Feb 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  metadata/cache/net-misc/modemmanager-0.2_p20091109,
+  modemmanager-0.2_p20091109.ebuild,
+  metadata/cache/net-misc/modemmanager-0.2_p20091123,
+  modemmanager-0.2_p20091123.ebuild,
+  metadata/cache/net-misc/modemmanager-0.2_p20100101-r1,
+  modemmanager-0.2_p20100101-r1.ebuild, net-misc/modemmanager/Manifest:
+  Adding dev-libs/dbus-glib to DEPEND. Thanks to Ronald
+  <ronald645@gmail.com> for pointing out my omission and for enjoying my
+  overlay.
+
 *libp11-0.2.7-r1 (03 Feb 2010)
 
   03 Feb 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
