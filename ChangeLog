@@ -2,6 +2,17 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*seamonkey-bin-2.0.2 (05 Feb 2010)
+
+  05 Feb 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  seamonkey-bin-2.0.2.ebuild, profiles/categories,
+  +www-client/seamonkey-bin/Manifest,
+  +www-client/seamonkey-bin/files/10seamonkey-bin,
+  +www-client/seamonkey-bin/files/icon/seamonkey-bin.desktop,
+  +www-client/seamonkey-bin/files/icon/seamonkey-bin.png:
+  Import www-client/seamonkey-bin from Gentoo's tree and version bump it to
+  the latest upstream release.
+
   04 Feb 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
   metadata/cache/net-misc/modemmanager-0.2_p20091109,
   modemmanager-0.2_p20091109.ebuild,

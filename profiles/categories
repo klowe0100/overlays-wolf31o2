@@ -36,6 +36,7 @@ sys-fs
 sys-kernel
 sys-power
 www-apps
+www-client
 x11-apps
 x11-misc
 x11-plugins
