@@ -1,5 +1,5 @@
->=dev-libs/libmemcache-1.4.0_rc2 >=app-admin/eselect-python-20090804 >=app-shells/bash-3.2 virtual/python
->=dev-libs/libmemcache-1.4.0_rc2 virtual/python
+>=dev-libs/libmemcache-1.4.0_rc2 >=app-admin/eselect-python-20090804 virtual/python
+>=dev-libs/libmemcache-1.4.0_rc2 >=app-admin/eselect-python-20090804 virtual/python
 0
 http://gijsbert.org/downloads/cmemcache/cmemcache-0.95.tar.bz2
 
@@ -7,7 +7,7 @@ http://gijsbert.org/cmemcache/
 GPL-2
 extension for libmemcache (C API to memcached)
 amd64 x86
-distutils eutils multilib portability python toolchain-funcs
+distutils multilib python toolchain-funcs
 
 
 
