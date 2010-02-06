@@ -1,0 +1,22 @@
+!build? ( sys-apps/sed >=sys-devel/binutils-2.11.90.0.31 )
+perl? ( dev-lang/perl ) !build? ( >=sys-libs/ncurses-5.2 sys-devel/make )
+2.6.32-r3
+mirror://kernel/linux/kernel/v2.6/linux-2.6.32.tar.bz2 mirror://gentoo/genpatches-2.6.32-4.base.tar.bz2 mirror://gentoo/genpatches-2.6.32-4.extras.tar.bz2
+binchecks strip
+http://dev.gentoo.org/~dsd/genpatches
+GPL-2
+Full sources including the Gentoo patchset and patches from wolf31o2 for the 2.6 kernel tree
+~amd64 ~x86
+eutils kernel-2 multilib portability toolchain-funcs versionator
++perl symlink build
+
+!build? ( virtual/dev-manager )
+virtual/linux-sources virtual/alsa
+2
+
+compile install postinst preinst prepare setup unpack
+
+
+
+
+

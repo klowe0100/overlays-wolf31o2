@@ -2,6 +2,14 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*wolf-sources-2.6.32-r3 (06 Feb 2010)
+
+  06 Feb 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +metadata/cache/sys-kernel/wolf-sources-2.6.32-r3,
+  wolf-sources-2.6.32-r3.ebuild, sys-kernel/wolf-sources/Manifest:
+  Revision bumping wolf-sources to bring it up to the latest genpatches
+  version.
+
   05 Feb 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
   metadata/cache/app-portage/packagekit-0.5.2-r1,
   metadata/cache/net-analyzer/nagstamon-0.8.2-r1,
