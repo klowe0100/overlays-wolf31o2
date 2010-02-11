@@ -2,6 +2,16 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*wolf-sources-2.6.32-r4 (11 Feb 2010)
+
+  11 Feb 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  wolf-sources-2.6.28-r2.ebuild, wolf-sources-2.6.28-r3.ebuild,
+  wolf-sources-2.6.32-r1.ebuild, wolf-sources-2.6.32-r2.ebuild,
+  wolf-sources-2.6.32-r3.ebuild, wolf-sources-2.6.32-r4.ebuild,
+  sys-kernel/wolf-sources/Manifest:
+  Revision bumping wolf-sources to pull in the latest patches from Gentoo
+  and the upstream kernel.
+
 *wolf-sources-2.6.32-r3 (06 Feb 2010)
 
   06 Feb 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>

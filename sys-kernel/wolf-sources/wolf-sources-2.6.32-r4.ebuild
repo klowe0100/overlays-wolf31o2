@@ -6,7 +6,7 @@ EAPI="2"
 
 ETYPE="sources"
 K_WANT_GENPATCHES="base extras"
-K_GENPATCHES_VER="1"
+K_GENPATCHES_VER="6"
 inherit kernel-2
 detect_version
 detect_arch
@@ -15,8 +15,8 @@ KEYWORDS="~amd64 ~x86"
 IUSE="+perl"
 HOMEPAGE="http://dev.gentoo.org/~dsd/genpatches"
 
-DESCRIPTION="Full sources including the Gentoo patchset and patches from
-wolf31o2 for the ${KV_MAJOR}.${KV_MINOR} kernel tree"
+DESCRIPTION="Gentoo patchset w/ patches from wolf31o2"
+
 SRC_URI="${KERNEL_URI} ${GENPATCHES_URI} ${ARCH_URI}"
 
 RDEPEND="${RDEPEND}
