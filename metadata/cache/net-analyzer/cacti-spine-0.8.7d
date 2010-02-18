@@ -1,4 +1,4 @@
-net-analyzer/net-snmp >=virtual/mysql-5.0 =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 sys-devel/libtool
+net-analyzer/net-snmp >=virtual/mysql-5.0 =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b
 net-analyzer/net-snmp >=virtual/mysql-5.0 >=net-analyzer/cacti-0.8.7c
 0
 http://forums.cacti.net/download.php?id=17107 -> cacti-spine-0.8.7d.tar.gz
