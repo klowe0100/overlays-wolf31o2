@@ -2,6 +2,20 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*mail-notification-5.4-r2 (26 Feb 2010)
+
+  26 Feb 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +metadata/cache/mail-client/mail-notification-5.4-r2,
+  mail-notification-5.4-r2.ebuild,
+  +mail-client/mail-notification/files/mail-notification-5.4-dont-update-cac
+  he.patch,
+  +mail-client/mail-notification/files/mail-notification-5.4-e-d-s-2.24.patc
+  h,
+  +mail-client/mail-notification/files/mail-notification-5.4-remove-ubuntu-s
+  pecial-case.patch, +mail-client/mail-notification/Manifest:
+  Importing mail-client/mail-notification from the Gentoo tree and revision
+  bumping it to add error checking.
+
   18 Feb 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
   metadata/cache/dev-libs/libusb-0.1.12-r6,
   metadata/cache/net-misc/modemmanager-0.2_p20100101-r1,
