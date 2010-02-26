@@ -3,6 +3,10 @@
 # $Id$
 
   26 Feb 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  apcupsd-3.14.8-r1.ebuild, sys-power/apcupsd/Manifest:
+  Split snmp/net-snmp USE.
+
+  26 Feb 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
   metadata/cache/app-portage/packagekit-0.5.2-r1,
   metadata/cache/net-analyzer/nagstamon-0.8.2-r1,
   metadata/cache/dev-python/cmemcache-0.91,

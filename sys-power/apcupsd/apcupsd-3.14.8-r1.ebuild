@@ -13,7 +13,7 @@ SRC_URI="mirror://sourceforge/apcupsd/${P}.tar.gz"
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~alpha ~amd64 ~ppc ~sparc ~x86 ~x86-fbsd"
-IUSE="snmp usb cgi gnome kernel_linux"
+IUSE="snmp usb cgi gnome net-snmp kernel_linux"
 
 DEPEND="
 	cgi? ( >=media-libs/gd-1.8.4
@@ -61,7 +61,7 @@ src_compile() {
 		--enable-net --enable-pcnet \
 		--with-distname=gentoo \
 		$(use_enable snmp) \
-		$(use_enable snmp net-snmp) \
+		$(use_enable net-snmp) \
 		$(use_enable gnome gapcmon) \
 		${myconf} \
 		APCUPSD_MAIL=/bin/mail \
@@ -93,7 +93,7 @@ src_install() {
 
 	use cgi && webapp_src_install
 
-	if use snmp ; then
+	if use net-snmp ; then
 		dodoc src/drivers/snmp/README.MIBS
 		insinto /usr/share/snmp/mibs
 		newins src/drivers/snmp/mibs/PowerNet-3.3.0.mib PowerNet-MIB.txt
