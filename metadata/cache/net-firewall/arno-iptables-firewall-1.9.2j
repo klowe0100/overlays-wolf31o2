@@ -1,7 +1,7 @@
 
 >=net-firewall/iptables-1.2.5 sys-apps/sed sys-apps/gawk sys-apps/coreutils sys-apps/net-tools sys-apps/module-init-tools sys-process/procps app-arch/gzip
 0
-http://rocky.eld.leidenuniv.nl/iptables-firewall/arno-iptables-firewall_1.9.0b.tar.gz
+http://rocky.eld.leidenuniv.nl/arno-iptables-firewall/arno-iptables-firewall_1.9.2j.tar.gz
 
 http://rocky.molphys.leidenuniv.nl/
 GPL-2

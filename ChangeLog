@@ -3,6 +3,23 @@
 # $Id$
 
   26 Feb 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  metadata/cache/app-portage/packagekit-0.5.2-r1,
+  metadata/cache/net-analyzer/nagstamon-0.8.2-r1,
+  metadata/cache/dev-python/cmemcache-0.91,
+  metadata/cache/dev-python/cmemcache-0.95,
+  -metadata/cache/net-firewall/arno-iptables-firewall-1.9.0b,
+  +metadata/cache/net-firewall/arno-iptables-firewall-1.9.2j,
+  metadata/cache/net-wireless/blueman-1.21-r1,
+  metadata/cache/net-wireless/blueman-1.21-r2,
+  metadata/cache/snmp-mibs/jvm-management-1.32,
+  metadata/cache/dev-python/python-memcached-1.44,
+  +metadata/cache/sys-power/apcupsd-3.14.8-r1,
+  metadata/cache/net-analyzer/net-snmp-5.4.2.1-r2,
+  metadata/cache/net-analyzer/net-snmp-5.5,
+  +metadata/cache/net-analyzer/net-snmp-5.5-r1:
+  Updating metadata/cache with the latest entries.
+
+  26 Feb 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
   apcupsd-3.14.8-r1.ebuild, sys-power/apcupsd/Manifest:
   Uncomment code to install MIBs with USE=snmp.
 
