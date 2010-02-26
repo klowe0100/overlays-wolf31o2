@@ -6,7 +6,7 @@ EAPI=1
 MY_PV=${PV/_beta/-beta}
 
 DESCRIPTION="Arno's iptables firewall script"
-HOMEPAGE="http://rocky.eld.leidenuniv.nl/joomla/index.php?option=com_content&view=article&id=45&Itemid=63"
+HOMEPAGE="http://rocky.molphys.leidenuniv.nl/"
 SRC_URI="http://rocky.eld.leidenuniv.nl/${PN}/${PN}_${MY_PV}.tar.gz"
 
 LICENSE="GPL-2"
@@ -37,6 +37,7 @@ src_install() {
 		"${T}"/arno-iptables-firewall.confd
 	newconfd "${T}"/arno-iptables-firewall.confd arno-iptables-firewall
 	newinitd contrib/Gentoo/rc.firewall arno-iptables-firewall
+	rm -rf contrib
 
 	dobin bin/arno-fwfilter
 	dosbin bin/arno-iptables-firewall
@@ -44,21 +45,25 @@ src_install() {
 	insinto /usr/share/arno-iptables-firewall
 	doins share/arno-iptables-firewall/environment
 
+	dodoc CHANGELOG README
+
+	doman share/man/arno-fwfilter.1 share/man/arno-iptables-firewall.8
+
 	if use plugins
 	then
 		insinto /etc/arno-iptables-firewall/plugins
 		doins etc/arno-iptables-firewall/plugins/*
 
 		insinto /usr/share/arno-iptables-firewall/plugins
-		doins usr/share/arno-iptables-firewall/plugins/*.plugin
+		doins share/arno-iptables-firewall/plugins/*.plugin
+		doins share/arno-iptables-firewall/plugins/traffic-accounting-helper
+		doins share/arno-iptables-firewall/plugins/traffic-accounting-log-rotate
+		doins share/arno-iptables-firewall/plugins/traffic-accounting-show
+		doins share/arno-iptables-firewall/plugins/dyndns-host-open-helper
 
 		docinto plugins
-		dodoc usr/share/arno-iptables-firewall/plugins/*.CHANGELOG
+		dodoc share/arno-iptables-firewall/plugins/*.CHANGELOG
 	fi
-
-	dodoc CHANGELOG README
-
-	doman share/man/arno-fwfilter.1 share/man/arno-iptables-firewall.8
 }
 
 pkg_postinst () {

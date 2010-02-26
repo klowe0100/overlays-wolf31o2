@@ -2,6 +2,12 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  26 Feb 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  arno-iptables-firewall-1.9.2h.ebuild,
+  arno-iptables-firewall-1.9.2j.ebuild,
+  net-firewall/arno-iptables-firewall/Manifest:
+  Fix plugins PATH and install helpers.
+
 *arno-iptables-firewall-1.9.2j (26 Feb 2010)
 
   26 Feb 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
