@@ -3,6 +3,11 @@
 # $Id$
 
   26 Feb 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  arno-iptables-firewall-1.9.0b.ebuild,
+  net-firewall/arno-iptables-firewall/Manifest:
+  Removing 1.9.0b version.
+
+  26 Feb 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
   net-snmp-5.5-r1.ebuild, net-analyzer/net-snmp/Manifest:
   Adding a one-line sed to allow us to use the experimental lm_sensors-3
   support.
