@@ -31,7 +31,7 @@ pkg_setup() {
 	if use kernel_linux &&
 		use usb &&
 		linux_config_exists &&
-		!linux_chkconfig_present USB_HIDDEV; then
+		! linux_chkconfig_present USB_HIDDEV; then
 		ewarn "Note: to be able to use the USB support for ${PN} you're going to need"
 		ewarn "the CONFIG_USB_HIDDEV option enabled in your kernel."
 		ewarn "The option hasn't been found enabled, do so before trying to use"
