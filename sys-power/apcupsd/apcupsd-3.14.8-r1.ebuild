@@ -86,8 +86,6 @@ src_install() {
 	dodoc ChangeLog* ReleaseNotes
 	doman doc/*.8 doc/*.5 || die "doman failed"
 
-#	use snmp && dodoc src/drivers/snmp/README.MIBS
-
 #	examples/index.php examples/nagios_plugin_check_apcupsd.c
 #	examples/offbattery.cpufreq examples/onbattery.cpufreq
 
@@ -95,10 +93,12 @@ src_install() {
 
 	use cgi && webapp_src_install
 
-## TODO
-#	insinto /usr/share/snmp/mibs
-#	newins src/drivers/snmp/mibs/PowerNet-3.3.0.mib PowerNet-MIB.txt
-#	newins src/drivers/snmp/mibs/rfc1628.mib RFC1628-MIB.txt
+	if use snmp ; then
+		dodoc src/drivers/snmp/README.MIBS
+		insinto /usr/share/snmp/mibs
+		newins src/drivers/snmp/mibs/PowerNet-3.3.0.mib PowerNet-MIB.txt
+		newins src/drivers/snmp/mibs/rfc1628.mib UPS.txt
+	fi
 
 	rm "${D}"/etc/init.d/apcupsd
 	newinitd "${FILESDIR}/${PN}.init" "${PN}" || die "newinitd failed"
