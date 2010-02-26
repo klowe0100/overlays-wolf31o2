@@ -37,6 +37,7 @@ src_install() {
 		"${T}"/arno-iptables-firewall.confd
 	newconfd "${T}"/arno-iptables-firewall.confd arno-iptables-firewall
 	newinitd contrib/Gentoo/rc.firewall arno-iptables-firewall
+	dobin contrib/adsl-failover
 	rm -rf contrib
 
 	dobin bin/arno-fwfilter

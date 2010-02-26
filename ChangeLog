@@ -3,6 +3,11 @@
 # $Id$
 
   26 Feb 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  arno-iptables-firewall-1.9.2j.ebuild,
+  net-firewall/arno-iptables-firewall/Manifest:
+  Installing the adsl-failover contrib script.
+
+  26 Feb 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
   arno-iptables-firewall-1.9.2h.ebuild,
   arno-iptables-firewall-1.9.2j.ebuild,
   net-firewall/arno-iptables-firewall/Manifest:
