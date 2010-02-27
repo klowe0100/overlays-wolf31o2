@@ -2,6 +2,10 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  27 Feb 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +metadata/cache/www-apps/racktables-0.17.9:
+  Updating metadata/cache to current.
+
 *racktables-0.17.9 (27 Feb 2010)
 
   27 Feb 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
