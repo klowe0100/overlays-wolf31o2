@@ -8,7 +8,7 @@ GPL-2
 APC UPS daemon with integrated tcp/ip remote shutdown
 ~alpha ~amd64 ~ppc ~sparc ~x86 ~x86-fbsd
 eutils linux-info multilib portability toolchain-funcs versionator webapp
-snmp usb cgi gnome kernel_linux
+snmp usb cgi gnome net-snmp kernel_linux
 
 
 

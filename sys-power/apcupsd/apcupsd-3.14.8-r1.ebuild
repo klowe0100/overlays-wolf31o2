@@ -97,7 +97,7 @@ src_install() {
 		dodoc src/drivers/snmp/README.MIBS
 		insinto /usr/share/snmp/mibs
 		newins src/drivers/snmp/mibs/PowerNet-3.3.0.mib PowerNet-MIB.txt
-		newins src/drivers/snmp/mibs/rfc1628.mib UPS.txt
+		newins src/drivers/snmp/mibs/rfc1628.mib UPS-MIB.txt
 	fi
 
 	rm "${D}"/etc/init.d/apcupsd
