@@ -2,6 +2,13 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*racktables-0.17.9 (27 Feb 2010)
+
+  27 Feb 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  racktables-0.17.9.ebuild, www-apps/racktables/Manifest:
+  Version bumping racktables. I still need to test it, but this will remind
+  me.
+
   27 Feb 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
   metadata/cache/sys-power/apcupsd-3.14.8-r1, apcupsd-3.14.8-r1.ebuild,
   sys-power/apcupsd/Manifest:
