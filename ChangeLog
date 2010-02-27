@@ -2,6 +2,12 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*mysql-snmp-1.0 (27 Feb 2010)
+
+  27 Feb 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  mysql-snmp-1.0.ebuild, snmp-agents/mysql-snmp/Manifest:
+  Upstream made a 1.0 release, so let's make an ebuild for it.
+
   27 Feb 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
   +metadata/cache/www-apps/racktables-0.17.9:
   Updating metadata/cache to current.
