@@ -43,7 +43,7 @@ src_compile() {
 	local myconf
 	use cgi && myconf="${myconf} --enable-cgi --with-cgi-bin=${MY_CGIBINDIR}"
 	if use usb; then
-		myconf="${myconf} --with-upstype=usb --with-upscable=usb --enable-usb --without-dev"
+		myconf="${myconf} --with-upstype=usb --with-upscable=usb --enable-usb --with-dev="
 	else
 		myconf="${myconf} --with-upstype=apcsmart --with-upscable=smart --disable-usb"
 	fi
