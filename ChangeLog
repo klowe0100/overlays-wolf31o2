@@ -2,6 +2,12 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*wolf-sources-2.6.33 (09 Mar 2010)
+
+  09 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  wolf-sources-2.6.33.ebuild, sys-kernel/wolf-sources/Manifest:
+  Version bump to 2.6.33 tracking gentoo-sources.
+
   02 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
   apcupsd-3.14.8-r1.ebuild, sys-power/apcupsd/Manifest:
   Switch to --with-dev= from --without-dev.
