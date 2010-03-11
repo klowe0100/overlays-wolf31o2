@@ -2,6 +2,17 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  11 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  metadata/cache/net-analyzer/nagstamon-0.8.2-r1,
+  metadata/cache/dev-python/cmemcache-0.91,
+  metadata/cache/dev-python/cmemcache-0.95,
+  +metadata/cache/snmp-agents/mysql-snmp-1.0,
+  +metadata/cache/net-firewall/arno-iptables-firewall-1.9.2j-r1,
+  metadata/cache/dev-python/python-memcached-1.44,
+  +metadata/cache/www-apps/websvn-2.3.0,
+  +metadata/cache/sys-kernel/wolf-sources-2.6.33:
+  Updating metadata/cache with the latest entries.
+
 *websvn-2.3.0 (11 Mar 2010)
 
   11 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org> websvn-2.3.0.ebuild,

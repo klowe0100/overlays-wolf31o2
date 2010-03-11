@@ -1,0 +1,22 @@
+
+dev-lang/perl >=net-analyzer/net-snmp-5.4.2[perl] dev-perl/DBI dev-perl/DBD-mysql dev-perl/Unix-Syslog virtual/perl-Getopt-Long
+0
+http://wolf31o2.org/sources/mysql-snmp/mysql-snmp-1.0.tar.bz2
+
+http://github.com/masterzen/mysql-snmp
+GPL-2
+AgentX subagent for net-snmp to get MySQL statistics
+~amd64 ~x86
+eutils multilib portability toolchain-funcs
+
+
+
+
+2
+
+install unpack
+
+
+
+
+
