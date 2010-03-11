@@ -3,6 +3,11 @@
 # $Id$
 
   11 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  racktables-0.17.9.ebuild, www-apps/racktables/Manifest:
+  Adding pdo to require_php_with_use. Thanks to Homer Parker
+  <hparker@gentoo.org> for pointing it out.
+
+  11 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
   metadata/cache/net-analyzer/nagstamon-0.8.2-r1,
   metadata/cache/dev-python/cmemcache-0.91,
   metadata/cache/dev-python/cmemcache-0.95,

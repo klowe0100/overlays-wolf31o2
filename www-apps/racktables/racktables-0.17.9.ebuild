@@ -27,7 +27,7 @@ pkg_setup() {
 	if [[ ${PHP_VERSION} == "4" ]] ; then
 		require_php_with_use expat
 	else
-		require_php_with_use mysql
+		require_php_with_use mysql pdo
 	fi
 }
 
