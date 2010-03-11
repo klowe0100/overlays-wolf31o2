@@ -23,6 +23,7 @@ RDEPEND=">=net-firewall/iptables-1.2.5
 	sys-apps/net-tools
 	sys-apps/module-init-tools
 	sys-process/procps
+	sys-apps/util-linux
 	app-arch/gzip"
 # However, we will assume that our PM can unpack a tarball... ;]
 DEPEND=""

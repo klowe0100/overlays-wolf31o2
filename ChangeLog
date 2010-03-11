@@ -3,6 +3,13 @@
 # $Id$
 
   11 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  metadata/cache/net-firewall/arno-iptables-firewall-1.9.2j-r1,
+  arno-iptables-firewall-1.9.2j-r1.ebuild,
+  net-firewall/arno-iptables-firewall/Manifest:
+  Adding sys-apps/util-linux to RDEPEND for arno-iptables-firewall, since it
+  uses the logger command to send messages to syslog.
+
+  11 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
   racktables-0.17.9.ebuild, www-apps/racktables/Manifest:
   Adding pdo to require_php_with_use. Thanks to Homer Parker
   <hparker@gentoo.org> for pointing it out.
