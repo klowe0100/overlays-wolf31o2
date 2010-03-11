@@ -3,6 +3,12 @@
 # $Id$
 
   11 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  arno-iptables-firewall-1.9.2j-r1.ebuild,
+  net-firewall/arno-iptables-firewall/Manifest:
+  Adding comment about net-dns/bind-tools being needed for resolving IP
+  addresses.
+
+  11 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
   metadata/cache/net-firewall/arno-iptables-firewall-1.9.2j-r1,
   arno-iptables-firewall-1.9.2j-r1.ebuild,
   net-firewall/arno-iptables-firewall/Manifest:

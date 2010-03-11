@@ -25,6 +25,8 @@ RDEPEND=">=net-firewall/iptables-1.2.5
 	sys-process/procps
 	sys-apps/util-linux
 	app-arch/gzip"
+# net-dns/bind-tools may be needed for dig/nslookup
+
 # However, we will assume that our PM can unpack a tarball... ;]
 DEPEND=""
 
