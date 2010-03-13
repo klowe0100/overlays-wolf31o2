@@ -2,6 +2,12 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*nectar-0.22 (13 Mar 2010)
+
+  13 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org> nectar-0.22.ebuild,
+  +cacti-plugins/nectar/Manifest:
+  Initial ebuild for nectar plugin, copied from aggregate.
+
   13 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org> boost-3.0.ebuild,
   cacti-plugins/boost/Manifest:
   Removing the version stamp from S variable.
