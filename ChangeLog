@@ -2,6 +2,13 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*autom8-0.33 (13 Mar 2010)
+
+  13 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +cacti-plugins/autom8/Manifest, autom8-0.33.ebuild:
+  Initial ebuild for the autom8 plugin, based on the aggregate ebuild. This
+  needs testing.
+
 *aggregate-0.73 (13 Mar 2010)
 
   13 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
