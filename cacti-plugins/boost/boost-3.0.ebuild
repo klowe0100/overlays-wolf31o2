@@ -18,7 +18,7 @@ DEPEND="${DEPEND}
 	memory? ( >=virtual/mysql-5 )"
 RDEPEND="${DEPEND}"
 
-S=${WORKDIR}/${PN}/v${PV}
+S=${WORKDIR}/${PN}
 
 pkg_preinst() {
 	if [ -e "${CACTI_PLUG_HOME}/${CACTI_PLUG_NAME}" ]
