@@ -61,7 +61,8 @@ mysql-dbfuncs_load_sql() {
 		mysql-dbfuncs_check_auth
 		for sql in ${MYSQL_SCRIPTS} ; do
 			einfo "Installing ${sql} into ${MYSQL_DBNAME}"
-			mysql ${MYSQL_AUTH} ${MYSQL_DBNAME} < $sql
+			mysql ${MYSQL_AUTH} ${MYSQL_DBNAME} < $sql || \
+				die "Failed loading ${sql} into ${MYSQL_DBNAME}"
 		done
 	fi
 }

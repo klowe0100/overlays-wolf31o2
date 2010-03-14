@@ -2,6 +2,10 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  14 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  eclass/mysql-dbfuncs.eclass:
+  Error check the SQL loading.
+
   14 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org> update-0.4.ebuild,
   cacti-plugins/update/Manifest:
   Setting S so we install into the right place.
