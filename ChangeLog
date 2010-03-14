@@ -2,6 +2,15 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*libdlna-0.2.3-r1 (14 Mar 2010)
+
+  14 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  libdlna-0.2.3-r1.ebuild,
+  +media-libs/libdlna/files/libdlna-0.2.3-libavcodec-libavformat-include-pat
+  hs.patch, +media-libs/libdlna/Manifest, profiles/categories:
+  Import media-libs/libdlna from Gentoo's tree, add multilib to inherit, and
+  add --libdir to the configure call.
+
   14 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org> tools-0.3.ebuild,
   cacti-plugins/tools/Manifest:
   Setting S so we install into the right place.
