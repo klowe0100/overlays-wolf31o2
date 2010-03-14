@@ -51,7 +51,7 @@ RDEPEND="${DEPEND}"
 
 cacti-plugins_cleanup_php_adodb_includes() {
 	## TODO:  check if we have options passed
-	einfo "Switching to system ADOdb"
+	#einfo "Switching to system ADOdb"
 	sed -i -e \
 		's:$config\["library_path"\] . "/adodb/adodb.inc.php":"adodb/adodb.inc.php":' \
 		"$@" || die "Failed sed for adodb"
@@ -59,7 +59,7 @@ cacti-plugins_cleanup_php_adodb_includes() {
 
 cacti-plugins_cleanup_php_config_includes() {
 	## TODO:  check if we have options passed
-	einfo "Switching from config.php to global.php"
+	#einfo "Switching from config.php to global.php"
 	sed -i -e \
 		's:/include/config.php:/include/global.php:' \
 		"$@" || die "Failed sed for config.php"
@@ -71,7 +71,7 @@ cacti-plugins_cleanup_php_eol_style() {
 }
 
 cacti-plugins_cleanup_svn_leftovers() {
-	einfo "Removing useless .svn directories."
+	#einfo "Removing useless .svn directories."
 	__svndirs=`find "${D}" -type d -name .svn`
 	rm -rf ${__svndirs} || die "Cannot clean .svn directories"
 }

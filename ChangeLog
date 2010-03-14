@@ -3,6 +3,10 @@
 # $Id$
 
   14 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  eclass/cacti-plugins.eclass:
+  Commenting the einfo displays.
+
+  14 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
   eclass/mysql-dbfuncs.eclass:
   Error check the SQL loading.
 
