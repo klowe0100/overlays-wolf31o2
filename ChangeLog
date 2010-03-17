@@ -2,6 +2,15 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*tsclient-2.0.1-r1 (17 Mar 2010)
+
+  17 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  tsclient-2.0.1-r1.ebuild,
+  +net-misc/tsclient/files/tsclient-2.0.1-no-networkmanager.patch,
+  +net-misc/tsclient/Manifest:
+  Import net-misc/tsclient from Gentoo's tree, and fixing NetworkManager
+  support.
+
 *bluez-4.62-r1 (17 Mar 2010)
 
   17 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
