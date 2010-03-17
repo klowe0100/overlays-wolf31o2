@@ -2,6 +2,14 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  17 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +metadata/cache/net-misc/statsproxy-1.0,
+  +metadata/cache/dev-libs/libnl-1.1-r3,
+  +metadata/cache/net-misc/tsclient-2.0.1-r1,
+  -metadata/cache/cacti-plugins/boost-2.4-r3,
+  +metadata/cache/net-wireless/bluez-4.62-r1:
+  Updating metadata/cache with the latest entries.
+
   17 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org> boost-2.4-r3.ebuild,
   boost-2.4-r4.ebuild, boost-2.5-r1.ebuild, boost-3.0.ebuild,
   cacti-plugins/boost/Manifest, cacti-plugins/boost/files/cacti-boost.confd,
