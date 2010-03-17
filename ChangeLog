@@ -2,6 +2,16 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*bluez-4.62-r1 (17 Mar 2010)
+
+  17 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  bluez-4.62-r1.ebuild, net-wireless/bluez/Manifest,
+  +net-wireless/bluez/files/4.60/cups-location.patch,
+  +net-wireless/bluez/files/bluez-alsa_location.patch,
+  net-wireless/bluez/files/bluez-plugdev.patch:
+  Version bumping to 4.62, adding --enable-pnat, and resync with Gentoo
+  patches.
+
 *libnl-1.1-r3 (17 Mar 2010)
 
   17 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
