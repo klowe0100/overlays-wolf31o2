@@ -8,7 +8,7 @@
 opts="flush"
 
 depend() {
-	after mysql
+	need mysql
 	before apache2
 	use logger
 }
@@ -42,11 +42,11 @@ start() {
 	checkconfig || return $?
 	ebegin "Starting Cacti Boost Server"
 	# Check if boost is currently running/processing
-	if [ -e /var/lock/subsys/boost_server.php ] ; then
+	if [ -e ${CACTI_BOOST_LOCKFILE} ] ; then
 		eerror "Cacti Boost is currently processing, Aborting"
 		eend 1
 	else
-		start-stop-daemon --start --background --pidfile /var/run/cacti/boost_server.pid --make-pidfile --exec /usr/bin/php -- -q ${CACTI_BOOST_HOME}/boost_server.php > ${CACTI_BOOST_LOG} 2>&1
+		start-stop-daemon --start --background --pidfile /var/run/cacti/boost_server.pid --make-pidfile --exec /usr/bin/php -- -q ${CACTI_BOOST_HOME}/boost_server.php >> ${CACTI_BOOST_LOG} 2>&1
 		ret=$?
 	fi
 	eend $ret
