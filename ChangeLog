@@ -2,6 +2,24 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*libnl-1.1-r3 (17 Mar 2010)
+
+  17 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +dev-libs/libnl/files/libnl-1.0-pre5-debuginfo.patch,
+  +dev-libs/libnl/files/libnl-1.0-pre5-static.patch,
+  +dev-libs/libnl/files/libnl-1.0-pre8-more-build-output.patch,
+  +dev-libs/libnl/files/libnl-1.0-pre8-use-vasprintf-retval.patch,
+  libnl-1.1-r3.ebuild, +dev-libs/libnl/files/libnl-1.1-doc-inlinesrc.patch,
+  +dev-libs/libnl/files/libnl-1.1-flags.patch,
+  +dev-libs/libnl/files/libnl-1.1-flags2.patch,
+  +dev-libs/libnl/files/libnl-1.1-glibc-2.8-ULONG_MAX.patch,
+  +dev-libs/libnl/files/libnl-1.1-include-limits-h.patch,
+  +dev-libs/libnl/files/libnl-1.1-minor-leaks.patch,
+  +dev-libs/libnl/files/libnl-1.1-no-extern-inline.patch,
+  +dev-libs/libnl/files/libnl-1.1-vlan-header.patch,
+  +dev-libs/libnl/files/libnl-1.pc, +dev-libs/libnl/Manifest:
+  Importing dev-libs/libnl from Gentoo and adding patches from Fedora.
+
   14 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
   +metadata/cache/media-libs/libdlna-0.2.3-r1:
   Updating metadata/cache with the latest entries.

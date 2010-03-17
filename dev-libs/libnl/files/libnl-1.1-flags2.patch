@@ -1,0 +1,11 @@
+--- lib/Makefile.orig	2010-03-17 01:38:42.020557348 +0000
++++ lib/Makefile	2010-03-17 01:39:45.271559070 +0000
+@@ -48,7 +48,7 @@
+ 	$(MAKE) $(OUT_AR)
+ 
+ $(OUT_SLIB): ../Makefile.opts $(OBJ)
+-	$(CC) -shared -Wl,-soname,libnl.so.1 -o $(OUT_SLIB) $(OBJ) $(LIBNL_LIB) -lc
++	$(CC) $(CFLAGS) $(LDFLAGS) -shared -Wl,-soname,libnl.so.1 -o $(OUT_SLIB) $(OBJ) $(LIBNL_LIB) -lc
+ 	rm -f $(LN1_SLIB) ; $(LN) -s $(OUT_SLIB) $(LN1_SLIB)
+ 	rm -f $(LN_SLIB) ; $(LN) -s $(LN1_SLIB) $(LN_SLIB)
+ 
