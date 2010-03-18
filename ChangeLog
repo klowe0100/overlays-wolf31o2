@@ -4,6 +4,10 @@
 
   18 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
   cacti-0.8.7e-r5.ebuild, net-analyzer/cacti/Manifest:
+  Add in some more debugging.
+
+  18 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  cacti-0.8.7e-r5.ebuild, net-analyzer/cacti/Manifest:
   Modify debugging output to show our final result.
 
   18 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>

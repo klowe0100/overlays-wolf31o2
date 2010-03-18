@@ -190,15 +190,15 @@ src_install() {
 	webapp_src_preinst
 	dodir ${MY_HTDOCSDIR}
 
-	rm LICENSE README
-	dodoc docs/{CHANGELOG,CONTRIB,INSTALL,README,REQUIREMENTS,UPGRADE,text/manual.txt}
+	rm -f LICENSE README
+	dodoc docs/{CHANGELOG,CONTRIB,README,text/manual.txt}
 	if use doc ; then
 		einfo "Installing HTML Cacti manual into ${MY_HTDOCSDIR}/manual"
 		docinto ${MY_HTDOCSDIR}/manual
+		dohtml -r docs/html/*
 	fi
-	dohtml -r docs/html/*
 	rm -rf docs
-	rm -rf lib/adodb
+#	rm -rf lib/adodb
 
 	edos2unix `find -type f -name '*.php'`
 
