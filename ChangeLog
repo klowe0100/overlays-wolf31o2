@@ -2,6 +2,10 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  18 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +metadata/cache/dev-php/adodb-5.10:
+  Adding metadata/cache for the latest updates.
+
 *adodb-5.10 (18 Mar 2010)
 
   18 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org> adodb-5.10.ebuild,
