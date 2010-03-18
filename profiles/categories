@@ -10,6 +10,7 @@ cacti-plugins
 dev-db
 dev-java
 dev-libs
+dev-php
 dev-php5
 dev-python
 dev-util

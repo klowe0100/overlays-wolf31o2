@@ -2,6 +2,13 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*adodb-5.10 (18 Mar 2010)
+
+  18 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org> adodb-5.10.ebuild,
+  +dev-php/adodb/Manifest, profiles/categories:
+  Importing dev-php/adodb from the Gentoo tree and version bumping it to the
+  latest upstream release.
+
   18 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
   -metadata/cache/cacti-plugins/weathermap-0.95b, weathermap-0.95b.ebuild,
   weathermap-0.96a.ebuild, cacti-plugins/weathermap/Manifest:
