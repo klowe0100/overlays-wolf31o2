@@ -2,6 +2,17 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  18 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  rrdcollect-0.2.4.ebuild, +metadata/cache/net-analyzer/rrdcollect-0.2.8,
+  +metadata/cache/net-analyzer/cacti-0.8.7e-r5,
+  metadata/cache/dev-util/catalyst-9999,
+  metadata/cache/snmp-agents/mysql-snmp-9999,
+  metadata/cache/snmp-agents/ramon-9999,
+  metadata/cache/snmp-mibs/mysql-server-9999,
+  metadata/cache/sys-kernel/genkernel-9999,
+  net-analyzer/rrdcollect/Manifest:
+  Removing older version of rrdcollect and regenerating metadata/cache.
+
 *cacti-0.8.7e-r5 (18 Mar 2010)
 
   18 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>

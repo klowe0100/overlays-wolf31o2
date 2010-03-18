@@ -1,0 +1,22 @@
+virtual/php || ( virtual/httpd-cgi virtual/httpd-fastcgi ) virtual/httpd-php >=app-admin/webapp-config-1.50.15
+dev-php/adodb net-analyzer/rrdtool snmp? ( net-analyzer/net-snmp ) ldap? ( net-nds/openldap ) virtual/mysql virtual/cron >=app-admin/webapp-config-1.50.15
+0.8.7e-r5
+http://www.cacti.net/downloads/cacti-0.8.7e.tar.gz pluginarch? ( http://mirror.cactiusers.org/downloads/plugins/cacti-plugin-0.8.7e-PA-v2.6.zip ) http://www.cacti.net/downloads/patches/0.8.7e/cli_add_graph.patch http://www.cacti.net/downloads/patches/0.8.7e/snmp_invalid_response.patch http://www.cacti.net/downloads/patches/0.8.7e/template_duplication.patch http://www.cacti.net/downloads/patches/0.8.7e/fix_icmp_on_windows_iis_servers.patch http://www.cacti.net/downloads/patches/0.8.7e/cross_site_fix.patch
+
+http://www.cacti.net/
+GPL-2
+a complete frontend to rrdtool
+~amd64 ~x86
+depend.php eutils multilib phpconfutils portability toolchain-funcs webapp
+doc ldap +pluginarch +snmp vhosts
+
+
+
+2
+
+install postinst prepare prerm setup unpack
+
+
+
+
+
