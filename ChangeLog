@@ -2,6 +2,15 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*rrdcollect-0.2.8 (18 Mar 2010)
+*rrdcollect-0.2.4 (18 Mar 2010)
+
+  18 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  rrdcollect-0.2.4.ebuild, rrdcollect-0.2.8.ebuild,
+  +net-analyzer/rrdcollect/Manifest:
+  Importing net-analyzer/rrdcollect from the Gentoo tree and version bumping
+  it to the latest upstream release.
+
   18 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
   +metadata/cache/dev-php/adodb-5.10:
   Adding metadata/cache for the latest updates.
