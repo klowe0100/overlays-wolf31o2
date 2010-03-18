@@ -2,6 +2,16 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*cacti-0.8.7e-r5 (18 Mar 2010)
+
+  18 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  cacti-0.8.7e-r5.ebuild,
+  +net-analyzer/cacti/files/cacti-0.8.7e-rrdtool14.patch,
+  net-analyzer/cacti/Manifest:
+  Revision bumping net-analyzer/cacti to add a small patch to add rrdtool
+  1.4 support to cacti. This resolves Gentoo bug #384583 with an actual
+  solution, rather than masking a perfectly working rrdtool version.
+
 *rrdcollect-0.2.8 (18 Mar 2010)
 *rrdcollect-0.2.4 (18 Mar 2010)
 
