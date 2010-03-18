@@ -3,6 +3,10 @@
 # $Id$
 
   18 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  cacti-0.8.7e-r5.ebuild, net-analyzer/cacti/Manifest:
+  Modify debugging output to show our final result.
+
+  18 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
   -metadata/cache/net-analyzer/cacti-0.8.7d-r4, cacti-0.8.7d-r4.ebuild,
   -metadata/cache/net-analyzer/cacti-0.8.7e, cacti-0.8.7e.ebuild,
   -metadata/cache/net-analyzer/cacti-0.8.7e-r1, cacti-0.8.7e-r1.ebuild,

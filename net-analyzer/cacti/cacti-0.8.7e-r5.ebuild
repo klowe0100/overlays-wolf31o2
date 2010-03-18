@@ -137,8 +137,9 @@ src_prepare() {
 		fi
 		if [ "${PIA_V}" == "2.6" ]
 		then
-			einfo "DEBUG: lines 198-200 of include/global.php"
-			sed -e '198,+2p' "${S}"/include/global.php
+			einfo "DEBUG: lines 198-200 of include/global.php removed"
+#			sed -e '198,+2p' "${S}"/include/global.php
+			sed -e '198,+2d' "${S}"/include/global.php
 #			sed -i \
 #				-e '198 d' \
 #				-e '199 d' \
