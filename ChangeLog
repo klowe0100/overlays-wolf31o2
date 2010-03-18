@@ -2,6 +2,11 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  18 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  -metadata/cache/cacti-plugins/weathermap-0.95b, weathermap-0.95b.ebuild,
+  weathermap-0.96a.ebuild, cacti-plugins/weathermap/Manifest:
+  Fixing S for weathermap plugin.
+
   17 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
   +metadata/cache/net-misc/statsproxy-1.0,
   +metadata/cache/dev-libs/libnl-1.1-r3,
