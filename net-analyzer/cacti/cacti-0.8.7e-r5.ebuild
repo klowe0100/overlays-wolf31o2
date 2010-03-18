@@ -191,7 +191,7 @@ src_install() {
 	dodir ${MY_HTDOCSDIR}
 
 	rm -f LICENSE README
-	dodoc docs/{CHANGELOG,CONTRIB,README,text/manual.txt}
+	dodoc docs/{CHANGELOG,CONTRIB,README,txt/manual.txt}
 	if use doc ; then
 		einfo "Installing HTML Cacti manual into ${MY_HTDOCSDIR}/manual"
 		docinto ${MY_HTDOCSDIR}/manual
