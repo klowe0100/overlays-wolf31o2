@@ -2,6 +2,18 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  18 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  -metadata/cache/net-analyzer/cacti-0.8.7d-r4, cacti-0.8.7d-r4.ebuild,
+  -metadata/cache/net-analyzer/cacti-0.8.7e, cacti-0.8.7e.ebuild,
+  -metadata/cache/net-analyzer/cacti-0.8.7e-r1, cacti-0.8.7e-r1.ebuild,
+  -metadata/cache/net-analyzer/cacti-0.8.7e-r2, cacti-0.8.7e-r2.ebuild,
+  -metadata/cache/net-analyzer/cacti-0.8.7e-r3, cacti-0.8.7e-r3.ebuild,
+  cacti-0.8.7e-r4.ebuild, cacti-0.8.7e-r5.ebuild,
+  net-analyzer/cacti/Manifest, +net-analyzer/cacti/files/cacti.confd,
+  -net-analyzer/cacti/files/cacti.envd:
+  Move the env.d file to conf.d until I can make the time to move it to the
+  eclass and switch over the ebuilds.
+
 *gallery-2.3.1 (18 Mar 2010)
 *gallery-2.3-r1 (18 Mar 2010)
 

@@ -202,7 +202,7 @@ src_install() {
 	edos2unix `find -type f -name '*.php'`
 
 	newcrond "${FILESDIR}"/cacti-poller.crond cacti-poller
-	newenvd "${FILESDIR}"/cacti.envd 01cacti
+	newconfd "${FILESDIR}"/cacti.confd cacti
 	cp -r . "${D}"${MY_HTDOCSDIR}
 
 	webapp_serverowned -R ${MY_HTDOCSDIR}/rra
