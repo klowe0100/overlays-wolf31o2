@@ -2,6 +2,12 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*weathermap-0.97 (19 Mar 2010)
+
+  19 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  weathermap-0.97.ebuild, cacti-plugins/weathermap/Manifest:
+  Version bumping to 0.97 and adding explicit testing KEYWORDS.
+
   19 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
   realtime-0.4.0.ebuild, cacti-plugins/realtime/Manifest:
   Adding explicit testing KEYWORDS.
