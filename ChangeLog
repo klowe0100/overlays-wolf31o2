@@ -2,6 +2,10 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  19 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  transporter-0.2.ebuild, cacti-plugins/transporter/Manifest:
+  Fixing SRC_URI.
+
   19 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org> ssh-1.0.ebuild,
   cacti-plugins/ssh/Manifest:
   Adding S explicitly.
