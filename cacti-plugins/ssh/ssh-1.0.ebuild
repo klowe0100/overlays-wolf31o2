@@ -8,3 +8,4 @@ inherit eutils cacti-plugins
 
 SRC_URI="http://forums.cacti.net/download.php?id=11871 -> ${P}.tar.gz"
 # http://docs.cacti.net/_media/plugin:${PN}-latest.tgz -> ${P}.tar.gz"
+S=${WORKDIR}/${PN}
