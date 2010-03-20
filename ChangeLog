@@ -2,6 +2,10 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  20 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  cacti-0.8.7e-r6.ebuild, net-analyzer/cacti/Manifest:
+  Adding unpack for autom8 plugin distribution.
+
   20 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org> boost-3.0.ebuild,
   cacti-plugins/boost/Manifest:
   Fix boost path.

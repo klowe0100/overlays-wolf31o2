@@ -107,6 +107,7 @@ src_unpack() {
 	unpack ${MY_P}.tar.gz
 	if use pluginarch; then
 		unpack cacti-plugin-${MY_PV}-PA-v${PIA_V}.zip
+		unpack autom8-0.33.tar.gz
 	fi
 }
 
@@ -150,7 +151,7 @@ src_prepare() {
 #				"${S}"/include/global.php
 		fi
 		einfo "Adding autom8 patches"
-		epatch "${WORKDIR}"/autom8/patches-087e/*.patch
+		epatch "${WORKDIR}"/autom8/patches-087e
 	fi
 
 	# Use sed-fu to use the system adodb, rather than the bundled one
