@@ -6,6 +6,7 @@ EAPI=2
 
 inherit eutils cacti-plugins
 
+HOMEPAGE="http://trac2.assembla.com/npc"
 SRC_URI="http://www.constructaegis.com/downloads/${P}.tar.gz"
 S=${WORKDIR}/${PN}
 
@@ -15,5 +16,5 @@ KEYWORDS="~amd64 ~x86"
 # Requires Nagios and NDOUtils
 RDEPEND="${RDEPEND}
 	dev-lang/php[json,pdo]
-	net-analyzer/nagios
-	net-analyzer/ndoutils"
+	>=net-analyzer/nagios-3.0
+	>=net-analyzer/ndoutils-1.4_beta7"
