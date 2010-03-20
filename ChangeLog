@@ -2,6 +2,13 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*xdg-user-dirs-0.12 (20 Mar 2010)
+
+  20 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +x11-misc/xdg-user-dirs/Manifest, xdg-user-dirs-0.12.ebuild:
+  Import xdg-user-dirs from Gentoo's tree and version bump to the latest
+  version.
+
   20 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
   manage-0.6.1-r1.ebuild, cacti-plugins/manage/Manifest:
   Add dependency on cacti-plugins/settings.
