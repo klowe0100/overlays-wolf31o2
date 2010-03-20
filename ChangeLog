@@ -2,6 +2,11 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  20 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  x11-misc/xdg-user-dirs/Manifest, xdg-user-dirs-0.12.ebuild,
+  +x11-misc/xdg-user-dirs/files/xdg-user-dirs-0.12-memleak-fix.patch:
+  Add a memory leak patch from upstream.
+
 *xdg-user-dirs-0.12 (20 Mar 2010)
 
   20 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>

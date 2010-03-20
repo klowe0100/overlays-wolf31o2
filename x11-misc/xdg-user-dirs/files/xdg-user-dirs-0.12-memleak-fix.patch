@@ -1,0 +1,23 @@
+From d8eebde4dcfb01f69457f0a27072f791a13b8ecb Mon Sep 17 00:00:00 2001
+From: Alexander Larsson <alexl@redhat.com>
+Date: Mon, 11 Jan 2010 12:17:06 +0000
+Subject: Fix free of NULL and memleak
+
+Pointed out by Francisco DOS SANTOS
+---
+diff --git a/xdg-user-dirs-update.c b/xdg-user-dirs-update.c
+index 07e8f11..9e00e5b 100644
+--- a/xdg-user-dirs-update.c
++++ b/xdg-user-dirs-update.c
+@@ -936,8 +936,8 @@ create_dirs (int force)
+ 	      path_name = concat_strings (get_home_dir (), "/", compat_dir->path, NULL);
+ 	      if (!is_directory (path_name))
+ 		{
+-		  path_name = NULL;
+ 		  free (path_name);
++		  path_name = NULL;
+ 		}
+ 	      else
+ 		relative_path_name = strdup (compat_dir->path);
+--
+cgit v0.8.3-6-g21f6

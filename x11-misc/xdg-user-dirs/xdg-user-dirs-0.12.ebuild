@@ -20,6 +20,7 @@ DEPEND="${RDEPEND}
 
 
 src_configure() {
+	epatch "${FILESDIR}"/${P}-memleak-fix.patch
 	econf \
 		--disable-dependency-tracking \
 		$(use_enable nls)
