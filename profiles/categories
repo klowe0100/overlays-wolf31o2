@@ -6,6 +6,7 @@ app-misc
 app-mobilephone
 app-office
 app-portage
+app-shells
 cacti-plugins
 dev-db
 dev-java

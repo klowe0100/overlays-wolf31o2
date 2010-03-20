@@ -2,6 +2,20 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*pdsh-2.18 (20 Mar 2010)
+*pdsh-2.17 (20 Mar 2010)
+*pdsh-2.16 (20 Mar 2010)
+*pdsh-2.14 (20 Mar 2010)
+
+  20 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org> pdsh-2.14.ebuild,
+  +app-shells/pdsh/files/pdsh-2.14-gcc-4.3-unistd.h.patch,
+  +app-shells/pdsh/files/pdsh-2.14-glibc-2.8-ARG_MAX.patch,
+  pdsh-2.16.ebuild, pdsh-2.17.ebuild, pdsh-2.18.ebuild,
+  +app-shells/pdsh/ChangeLog, +app-shells/pdsh/Manifest,
+  +app-shells/pdsh/metadata.xml, profiles/categories:
+  Importing app-shells/pdsh from Gentoo's tree to save it in case of
+  removal.
+
   20 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
   x11-misc/xdg-user-dirs/Manifest, xdg-user-dirs-0.12.ebuild,
   +x11-misc/xdg-user-dirs/files/xdg-user-dirs-0.12-memleak-fix.patch:
