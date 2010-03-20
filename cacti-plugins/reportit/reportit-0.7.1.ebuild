@@ -6,6 +6,7 @@ EAPI="2"
 
 inherit eutils cacti-plugins
 
-SRC_URI="mirror://sourceforge/cacti-reportit/reportit_0.7.1.tar.gz"
+HOMEPAGE="http://sourceforge.net/projects/cacti-reportit/"
+SRC_URI="mirror://sourceforge/cacti-reportit/${P/-/_}.tar.gz"
 S=${WORKDIR}/${PV}
 KEYWORDS="amd64 x86"
