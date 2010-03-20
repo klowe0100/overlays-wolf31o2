@@ -23,11 +23,12 @@ S=${WORKDIR}/${PN}
 pkg_preinst() {
 	if [ -e "${CACTI_PLUG_HOME}/${CACTI_PLUG_NAME}" ]
 	then
-		ebegin "Flushing Boost Poller Tables"
-		/usr/bin/php -q \
-			${CACTI_PLUG_BASE}/${CACTI_PLUG_NAME}/poller_boost.php -f > \
-			/dev/null 2>&1
-		eend $?
+		#ebegin "Flushing Boost Poller Tables"
+		#/usr/bin/php -q \
+		#	${CACTI_PLUG_BASE}/${CACTI_PLUG_NAME}/poller_boost.php -f > \
+		#	/dev/null 2>&1
+		#eend $?
+		/etc/init.d/cacti-boost flush || die "flushing tables"
 	fi
 }
 
@@ -43,8 +44,8 @@ pkg_postinst() {
 	fi
 }
 
-src_unpack() {
-	default_src_unpack
+src_prepare() {
+	default_src_prepare
 #	epatch "${FILESDIR}"/${P}-defaults.patch
 	# Typo fix
 	sed -i \
@@ -64,10 +65,10 @@ src_install() {
 	keepdir "${_lockdir}" || die "keepdir"
 	newinitd "${FILESDIR}"/cacti-boost.rc cacti-boost || die "newinitd"
 	newconfd "${FILESDIR}"/cacti-boost.confd cacti-boost || die "newconfd"
+	cacti-plugins_src_install
 	for i in boost_rrdupdate.php boost_server.php poller_boost.php ; do
-		fperms 755 $i || die "fperms $i"
+		fperms 755 ${D}/${PN}/$i || die "fperms $i"
 		# Boost README tells us to do this... yeah, right
 		#fperms 4755 boost/$i
 	done
-	cacti-plugins_src_install
 }
