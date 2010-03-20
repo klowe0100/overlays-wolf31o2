@@ -67,7 +67,7 @@ src_install() {
 	newconfd "${FILESDIR}"/cacti-boost.confd cacti-boost || die "newconfd"
 	cacti-plugins_src_install
 	for i in boost_rrdupdate.php boost_server.php poller_boost.php ; do
-		fperms 755 ${D}/${PN}/$i || die "fperms $i"
+		fperms 755 ${D}/${CACTI_HOME}/plugins/${PN}/$i || die "fperms $i"
 		# Boost README tells us to do this... yeah, right
 		#fperms 4755 boost/$i
 	done
