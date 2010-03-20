@@ -144,11 +144,6 @@ src_prepare() {
 			elog "DEBUG: lines 198-200 of include/global.php removed"
 #			sed -e '198,+2p' "${S}"/include/global.php
 			sed -e '198,+2d' "${S}"/include/global.php
-#			sed -i \
-#				-e '198 d' \
-#				-e '199 d' \
-#				-e '200 d' \
-#				"${S}"/include/global.php
 		fi
 		einfo "Adding autom8 patches"
 		epatch "${WORKDIR}"/autom8/patches-087e
@@ -158,6 +153,7 @@ src_prepare() {
 	sed -i -e \
 		's:$config\["library_path"\] . "/adodb/adodb.inc.php":"adodb/adodb.inc.php":' \
 		"${S}"/include/global.php
+	rm -rf "${S}/lib/adodb"
 }
 
 pkg_setup() {
