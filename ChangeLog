@@ -2,6 +2,14 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*cacti-0.8.7e-r6 (20 Mar 2010)
+
+  20 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +metadata/cache/net-analyzer/cacti-0.8.7e-r6, cacti-0.8.7e-r6.ebuild,
+  net-analyzer/cacti/Manifest:
+  Revision bump cacti ebuild to pull in SRC_URI for autom8 plugin, since it
+  requires patching some cacti files.
+
   20 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
   +metadata/cache/cacti-plugins/hostinfo-0.2,
   +metadata/cache/cacti-plugins/passwd-0.2,
