@@ -10,6 +10,8 @@ SRC_URI="http://gilles.boulon.free.fr/manage/${P}.zip"
 HOMEPAGE="http://gilles.boulon.free.fr/manage/"
 LICENSE="GPL-2"
 
+RDEPEND="${RDEPEND} cacti-plugins/settings"
+
 src_prepare() {
 	default
 	mv "patch architecture" patch_architecture
