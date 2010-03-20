@@ -140,7 +140,7 @@ src_prepare() {
 		fi
 		if [ "${PIA_V}" == "2.6" ]
 		then
-			einfo "DEBUG: lines 198-200 of include/global.php removed"
+			elog "DEBUG: lines 198-200 of include/global.php removed"
 #			sed -e '198,+2p' "${S}"/include/global.php
 			sed -e '198,+2d' "${S}"/include/global.php
 #			sed -i \
@@ -149,6 +149,8 @@ src_prepare() {
 #				-e '200 d' \
 #				"${S}"/include/global.php
 		fi
+		einfo "Adding autom8 patches"
+		epatch "${WORKDIR}"/autom8/patches-087e/*.patch
 	fi
 
 	# Use sed-fu to use the system adodb, rather than the bundled one
