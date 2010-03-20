@@ -1,5 +1,5 @@
 >=net-analyzer/cacti-0.8.7d-r2[pluginarch]
->=net-analyzer/cacti-0.8.7d-r2[pluginarch]
+cacti-plugins/settings >=net-analyzer/cacti-0.8.7d-r2[pluginarch]
 0
 http://gilles.boulon.free.fr/manage/manage-0.6.1.zip
 primaryuri

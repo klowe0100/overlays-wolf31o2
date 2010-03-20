@@ -3,6 +3,25 @@
 # $Id$
 
   20 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +metadata/cache/cacti-plugins/hostinfo-0.2,
+  +metadata/cache/cacti-plugins/passwd-0.2,
+  metadata/cache/cacti-plugins/transporter-0.2,
+  metadata/cache/cacti-plugins/realtime-0.4.0,
+  metadata/cache/cacti-plugins/manage-0.6.1-r1,
+  metadata/cache/cacti-plugins/reportit-0.7.1,
+  +metadata/cache/x11-misc/xdg-user-dirs-0.12,
+  +metadata/cache/cacti-plugins/weathermap-0.97,
+  metadata/cache/cacti-plugins/clog-1.3,
+  -metadata/cache/cacti-plugins/clog-1.21,
+  metadata/cache/cacti-plugins/npc-2.0.4,
+  +metadata/cache/app-shells/pdsh-2.14,
+  +metadata/cache/app-shells/pdsh-2.16,
+  +metadata/cache/app-shells/pdsh-2.17,
+  +metadata/cache/app-shells/pdsh-2.18,
+  metadata/cache/cacti-plugins/boost-3.0:
+  Updating metadata/cache with the latest entries.
+
+  20 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
   reportit-0.7.1.ebuild, cacti-plugins/reportit/Manifest:
   Update HOMEPAGE and use variable for SRC_URI.
 

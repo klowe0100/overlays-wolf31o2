@@ -6,7 +6,7 @@ primaryuri
 http://docs.cacti.net/plugins
 GPL-2
 Cacti plugin: realtime
--* ~amd64 ~x86
+~amd64 ~x86
 cacti-plugins eutils multilib mysql-dbfuncs portability toolchain-funcs webapp
 
 

@@ -14,7 +14,7 @@ cacti-plugins eutils multilib mysql-dbfuncs portability toolchain-funcs webapp
 
 2
 
-install postinst preinst prerm setup unpack
+install postinst preinst prepare prerm setup
 
 
 
