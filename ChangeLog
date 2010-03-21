@@ -2,6 +2,14 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*pecl-pam-1.0.3 (21 Mar 2010)
+
+  21 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +dev-php5/pecl-pam/Manifest, +metadata/cache/dev-php5/pecl-pam-1.0.3,
+  pecl-pam-1.0.3.ebuild:
+  Importing dev-php5/pecl-pam from Gentoo's tree and version bumping to the
+  latest upstream release.
+
 *pecl-memcached-1.0.1 (21 Mar 2010)
 
   21 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
