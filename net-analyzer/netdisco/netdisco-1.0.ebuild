@@ -15,5 +15,6 @@ IUSE=""
 
 DEPEND="dev-lang/perl
 	net-analyzer/net-snmp[perl]"
-RDEPEND="${DEPEND}"
+RDEPEND="${DEPEND}
+	snmp-mibs/netdisco-mibs"
 

@@ -2,6 +2,11 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  21 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  metadata/cache/net-analyzer/netdisco-1.0, netdisco-1.0.ebuild,
+  net-analyzer/netdisco/Manifest:
+  Adding netdisco-mibs to RDEPEND.
+
 *netdisco-mibs-0.7 (21 Mar 2010)
 
   21 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>

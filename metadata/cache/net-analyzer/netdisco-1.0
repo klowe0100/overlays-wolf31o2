@@ -1,5 +1,5 @@
 dev-lang/perl net-analyzer/net-snmp[perl]
-dev-lang/perl net-analyzer/net-snmp[perl]
+dev-lang/perl net-analyzer/net-snmp[perl] snmp-mibs/netdisco-mibs
 0
 mirror://sourceforge/netdisco/netdisco-1.0.tar.gz
 
