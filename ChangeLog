@@ -2,6 +2,14 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*tpmmanager-0.8 (21 Mar 2010)
+
+  21 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +metadata/cache/app-crypt/tpmmanager-0.8, tpmmanager-0.8.ebuild,
+  +app-crypt/tpmmanager/Manifest:
+  Initial import of a tpmmanager ebuild. This doesn't work, yet, but it
+  won't need too much work.
+
   21 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org> boost-3.0.ebuild,
   cacti-plugins/boost/Manifest:
   Try changing the path, again.
