@@ -4,6 +4,10 @@
 
   21 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org> boost-3.0.ebuild,
   cacti-plugins/boost/Manifest:
+  One more try.
+
+  21 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org> boost-3.0.ebuild,
+  cacti-plugins/boost/Manifest:
   Removing D, since fperms already sets it.
 
 *pecl-http-1.6.6 (21 Mar 2010)
