@@ -30,8 +30,7 @@ src_install() {
 #	dosbin cachefilesd
 #	insinto /etc
 #	doins cachefilesd.conf || die "conf"
-	mkdir -p ${D}/var/fscache
-	keepdir "${D}"/var/fscache
+	keepdir /var/fscache
 	dodoc README howto.txt move-cache.txt
 }
 
