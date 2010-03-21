@@ -2,6 +2,13 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*netdisco-mibs-0.7 (21 Mar 2010)
+
+  21 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +metadata/cache/snmp-mibs/netdisco-mibs-0.7, netdisco-mibs-0.7.ebuild,
+  +snmp-mibs/netdisco-mibs/Manifest:
+  Initial ebuild for netdisco-mibs, which is needed by netdisco.
+
 *netdisco-1.0 (21 Mar 2010)
 
   21 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
