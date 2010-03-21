@@ -2,6 +2,15 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*pecl-memcached-1.0.1 (21 Mar 2010)
+
+  21 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +dev-php5/pecl-memcached/Manifest,
+  +metadata/cache/dev-php5/pecl-memcached-1.0.1,
+  pecl-memcached-1.0.1.ebuild:
+  Importing dev-php5/pecl-memcached from Gentoo's tree and version bumping
+  to the latest upstream release.
+
   21 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
   metadata/cache/net-analyzer/netdisco-1.0, netdisco-1.0.ebuild,
   net-analyzer/netdisco/Manifest:
