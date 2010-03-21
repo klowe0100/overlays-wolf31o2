@@ -2,6 +2,14 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*pecl-http-1.6.6 (21 Mar 2010)
+
+  21 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +dev-php5/pecl-http/Manifest, +metadata/cache/dev-php5/pecl-http-1.6.6,
+  pecl-http-1.6.6.ebuild:
+  Importing dev-php5/pecl-http from Gentoo's tree and version bumping to the
+  latest upstream release.
+
 *pecl-pam-1.0.3 (21 Mar 2010)
 
   21 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
