@@ -2,6 +2,13 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*netdisco-1.0 (21 Mar 2010)
+
+  21 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +metadata/cache/net-analyzer/netdisco-1.0, netdisco-1.0.ebuild,
+  +net-analyzer/netdisco/Manifest:
+  Initial ebuild for netdisco, a perl-based network management tool.
+
 *phpwapmail-0.9.3 (21 Mar 2010)
 
   21 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
