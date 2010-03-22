@@ -2,6 +2,13 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*etckeeper-0.43 (22 Mar 2010)
+
+  22 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  etckeeper-0.43.ebuild, +app-admin/etckeeper/Manifest:
+  Initial ebuild for app-admin/etckeeper, converted to an ebuild from the
+  Fedora spec.
+
   22 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
   metadata/cache/net-misc/distcache-1.4.5, distcache-1.4.5.ebuild,
   net-misc/distcache/Manifest:
