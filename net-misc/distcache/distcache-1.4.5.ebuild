@@ -30,6 +30,10 @@ src_prepare() {
 	default
 }
 
+src_configure() {
+	econf --enable-shared || die "fucked"
+}
+
 ### TODO: init scripts
 #   Each instance of "dc_client" would be started as;
 #     # dc_client -listen UNIX:/tmp/dc_client \
