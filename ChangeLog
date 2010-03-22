@@ -3,6 +3,20 @@
 # $Id$
 
   22 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  metadata/cache/snmp-mibs/netdisco-mibs-0.7,
+  -metadata/cache/app-crypt/distcache-1.4.5,
+  +metadata/cache/net-misc/distcache-1.4.5, distcache-1.4.5.ebuild,
+  -app-crypt/distcache/files/distcache-1.4.5-libdeps.patch,
+  +net-misc/distcache/files/distcache-1.4.5-libdeps.patch,
+  -app-crypt/distcache/files/distcache-1.4.5-limits.patch,
+  +net-misc/distcache/files/distcache-1.4.5-limits.patch,
+  -app-crypt/distcache/files/distcache-1.4.5-setuid.patch,
+  +net-misc/distcache/files/distcache-1.4.5-setuid.patch,
+  -app-crypt/distcache/Manifest, +net-misc/distcache/Manifest:
+  Moving distcache package from app-crypt to net-misc, since it can be used
+  as more than just an SSL cache.
+
+  22 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
   netdisco-mibs-0.7.ebuild, snmp-mibs/netdisco-mibs/Manifest:
   Removing the old bits from the original ebuild and add vendors under
   NETDISCO_MIB_VENDORS.
