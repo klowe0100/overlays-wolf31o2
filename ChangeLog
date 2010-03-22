@@ -2,6 +2,15 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*halevt-0.1.6 (22 Mar 2010)
+
+  22 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +metadata/cache/sys-apps/halevt-0.1.6, halevt-0.1.6.ebuild,
+  +metadata/cache/app-admin/etckeeper-0.43, +sys-apps/halevt/Manifest,
+  +sys-apps/halevt/files/halevt:
+  Importing sys-apps/halevt from Gentoo's tree and version bumping it to the
+  latest upstream release.
+
 *etckeeper-0.43 (22 Mar 2010)
 
   22 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
