@@ -41,7 +41,7 @@ src_prepare() {
 src_install() {
 	rm -f INSTALL LICENSE
 	dodoc README ANNOUNCE CHANGES BUGS FAQ
-	dodoc -r doc
+	# dodoc -r doc
 	emake DESTDIR="${D}" install || die "emake install"
 	emake -C ssl DESTDIR="${D}" install || die "emake install"
 }
