@@ -30,6 +30,14 @@ src_prepare() {
 	default
 }
 
+### TODO: init scripts
+#   Each instance of "dc_client" would be started as;
+#     # dc_client -listen UNIX:/tmp/dc_client \
+#                 -server IP:cache.localnet:9001 [-daemon]
+#   The instance of "dc_server" would be started as;
+#     # dc_server -listen IP:cache.localnet:9001 [-daemon]
+
+
 src_install() {
 	rm -f INSTALL LICENSE
 	dodoc README ANNOUNCE CHANGES BUGS FAQ
