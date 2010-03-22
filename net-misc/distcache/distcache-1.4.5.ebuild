@@ -48,5 +48,5 @@ src_install() {
 
 pkg_preinst() {
 	enewgroup distcache 94
-	enewuser distcache 94
+	enewuser distcache 94 -1 /var/www/localhost 94
 }
