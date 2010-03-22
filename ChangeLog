@@ -3,6 +3,11 @@
 # $Id$
 
   22 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  metadata/cache/net-misc/distcache-1.4.5, distcache-1.4.5.ebuild,
+  net-misc/distcache/Manifest:
+  Adding src_install section to distcache, so it will install correctly.
+
+  22 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
   metadata/cache/snmp-mibs/netdisco-mibs-0.7,
   -metadata/cache/app-crypt/distcache-1.4.5,
   +metadata/cache/net-misc/distcache-1.4.5, distcache-1.4.5.ebuild,

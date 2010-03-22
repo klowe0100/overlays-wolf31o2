@@ -27,3 +27,9 @@ src_prepare() {
 	default
 }
 
+src_install() {
+	rm -f INSTALL LICENSE
+	dodoc README ANNOUNCE CHANGES BUGS FAQ
+	dodoc -r doc
+	emake DESTDIR="${D}" install || die "emake install"
+}
