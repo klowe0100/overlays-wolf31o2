@@ -2,6 +2,11 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  22 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  netdisco-mibs-0.7.ebuild, snmp-mibs/netdisco-mibs/Manifest:
+  Removing the old bits from the original ebuild and add vendors under
+  NETDISCO_MIB_VENDORS.
+
   21 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
   cachefilesd-0.9.ebuild, sys-fs/cachefilesd/Manifest:
   Fixing mkdir/keepdir invocation, since keepdir already sets D.
