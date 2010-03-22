@@ -2,6 +2,12 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  22 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  metadata/cache/net-misc/distcache-1.4.5, distcache-1.4.5.ebuild,
+  net-misc/distcache/Manifest:
+  Add eautoreconf to src_prepare, add emake install -C ssl to src_install,
+  and add user and group in pkg_preinst.
+
 *halevt-0.1.6 (22 Mar 2010)
 
   22 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>

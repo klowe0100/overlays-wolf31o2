@@ -4,6 +4,8 @@
 
 EAPI=3
 
+inherit eutils autotools
+
 DESCRIPTION="Distributed SSL Session Cache"
 HOMEPAGE="http://www.distcache.org/"
 SRC_URI="mirror://sourceforge/distcache/${P}.tar.bz2"
@@ -24,6 +26,7 @@ src_prepare() {
 	epatch "${FILESDIR}"/${P}-setuid.patch \
 		"${FILESDIR}"/${P}-libdeps.patch \
 		"${FILESDIR}"/${P}-limits.patch
+	eautoreconf
 	default
 }
 
@@ -32,4 +35,10 @@ src_install() {
 	dodoc README ANNOUNCE CHANGES BUGS FAQ
 	dodoc -r doc
 	emake DESTDIR="${D}" install || die "emake install"
+	emake -C ssl DESTDIR="${D}" install || die "emake install"
+}
+
+pkg_preinst() {
+	enewgroup distcache 94
+	enewuser distcache 94
 }
