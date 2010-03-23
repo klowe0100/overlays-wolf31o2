@@ -2,6 +2,18 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*gnbd-2.03.10 (23 Mar 2010)
+
+  23 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +sys-cluster/gnbd/files/gnbd-client-2.0x.conf,
+  +sys-cluster/gnbd/files/gnbd-srv-2.0x.conf,
+  +sys-cluster/gnbd/files/gnbd-client-2.0x.rc,
+  +sys-cluster/gnbd/files/gnbd-srv-2.0x.rc,
+  +metadata/cache/sys-cluster/gnbd-2.03.10, gnbd-2.03.10.ebuild,
+  +sys-cluster/gnbd/Manifest, +sys-cluster/gnbd/files/gnbdtab:
+  Resurrect sys-cluster/gnbd from Gentoo's Attic, version bump to the latest
+  upstream release, and add multilib support.
+
 *rgmanager-2.03.10 (23 Mar 2010)
 
   23 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
