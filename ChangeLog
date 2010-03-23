@@ -3,6 +3,12 @@
 # $Id$
 
   23 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  metadata/cache/app-crypt/tpmmanager-0.8, tpmmanager-0.8.ebuild,
+  app-crypt/tpmmanager/Manifest:
+  Remove left-over code from ebuild creation, switch to EAPI=2, setup
+  dependencies, and install binary and README.
+
+  23 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
   metadata/cache/app-crypt/trousers-0.3.2-r1, trousers-0.3.2-r1.ebuild,
   app-crypt/trousers/Manifest:
   Switch to EAPI=2, remove base eclass, move sed to src_prepare, and move
