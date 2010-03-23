@@ -2,6 +2,15 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*mysql-server-1.0 (23 Mar 2010)
+
+  23 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +metadata/cache/snmp-mibs/mysql-server-1.0, mysql-server-1.0.ebuild,
+  metadata/cache/snmp-mibs/mysql-server-9999, mysql-server-9999.ebuild,
+  snmp-mibs/mysql-server/Manifest:
+  Creating a 1.0 version of snmp-mibs/mysql-server and removing KEYWORDS
+  from the 9999 (live) version.
+
   23 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
   metadata/cache/net-misc/distcache-1.4.5,
   metadata/cache/snmp-agents/mysql-snmp-9999:

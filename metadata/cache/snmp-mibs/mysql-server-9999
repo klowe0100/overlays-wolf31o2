@@ -6,7 +6,7 @@
 http://github.com/masterzen/mysql-snmp
 GPL-2
 MIB for MySQL statistics
-~amd64 ~x86
+
 eutils git multilib portability toolchain-funcs
 
 

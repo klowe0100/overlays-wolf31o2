@@ -1,0 +1,22 @@
+
+
+0
+http://wolf31o2.org/sources/mysql-snmp/mysql-snmp-1.0.tar.bz2
+
+http://github.com/masterzen/mysql-snmp
+GPL-2
+MIB for MySQL statistics
+~amd64 ~x86
+eutils multilib portability toolchain-funcs
+
+
+
+
+
+
+install unpack
+
+
+
+
+
