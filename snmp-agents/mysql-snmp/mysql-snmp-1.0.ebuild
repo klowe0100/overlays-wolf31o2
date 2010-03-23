@@ -1,4 +1,4 @@
-# Copyright 2009-2009 Chris Gianelloni
+# Copyright 2009-2010 Chris Gianelloni
 # Distributed under the terms of the GNU General Public License v2
 # $Id$
 

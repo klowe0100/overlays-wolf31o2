@@ -1,2 +1,8 @@
+# User name to use for mysql login
+MYSQL_SNMP_USER="root"
+
+# Password for the given user, leave blank to not use a password
+MYSQL_SNMP_PASS="1234"
+
 # Specify any additional options that you may need
 DAEMON_OPTS=""

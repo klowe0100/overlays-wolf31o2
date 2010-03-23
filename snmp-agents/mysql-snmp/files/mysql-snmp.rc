@@ -6,12 +6,13 @@
 PIDFILE=/var/run/mysql-agent.pid
 
 depend() {
-	need mysql snmpd logger
+	after mysql
+	need snmpd logger
 }
 
 start() {
 	ebegin "Starting MySQL SNMP Agent"
-	start-stop-daemon --start -q --pidfile ${PIDFILE} --exec /usr/sbin/mysql-snmp -- -d --daemon-pid ${PIDFILE} ${DAEMON_OPTS}
+	start-stop-daemon --start -q --pidfile ${PIDFILE} --exec /usr/sbin/mysql-snmp -- --daemon-pid ${PIDFILE} ${DAEMON_OPTS}
 	eend $?
 }
 

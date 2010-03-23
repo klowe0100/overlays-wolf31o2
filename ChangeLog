@@ -2,6 +2,14 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  23 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  mysql-snmp-9999.ebuild, snmp-agents/mysql-snmp/Manifest,
+  snmp-agents/mysql-snmp/files/mysql-snmp.confd,
+  snmp-agents/mysql-snmp/files/mysql-snmp.rc:
+  Removing KEYWORDS from the 9999 (live git) version of the mysql-snmp
+  ebuild, remove -d from command line in init script, and add
+  MYSQL_SNMP_USER and MYSQL_SNMP_PASS for future authentication.
+
   22 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
   distcache-1.4.5.ebuild, net-misc/distcache/Manifest:
   Enable building of shared libraries.
