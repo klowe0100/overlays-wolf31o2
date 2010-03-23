@@ -2,6 +2,14 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*dlm-2.03.10 (23 Mar 2010)
+
+  23 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +metadata/cache/sys-cluster/dlm-2.03.10, dlm-2.03.10.ebuild,
+  +sys-cluster/dlm/Manifest, +sys-cluster/dlm/files/dlm.rc:
+  Import sys-cluster/dlm from Gentoo's tree, version bump to the latest
+  upstream release, and add multilib support.
+
 *cman-2.03.10 (23 Mar 2010)
 
   23 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
