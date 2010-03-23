@@ -1,5 +1,5 @@
 >=dev-vcs/git-1.6
-dev-lang/perl >=net-analyzer/net-snmp-5.4.2[perl] dev-perl/DBI dev-perl/Unix-Syslog virtual/perl-Getopt-Long
+dev-lang/perl >=net-analyzer/net-snmp-5.4.2[perl] dev-perl/DBI dev-perl/Unix-Syslog virtual/perl-Getopt-Long virtual/perl-Math-BigInt-FastCalc
 0
 
 

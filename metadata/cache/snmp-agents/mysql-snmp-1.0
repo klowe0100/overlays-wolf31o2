@@ -1,5 +1,5 @@
 
-dev-lang/perl >=net-analyzer/net-snmp-5.4.2[perl] dev-perl/DBI dev-perl/DBD-mysql dev-perl/Unix-Syslog virtual/perl-Getopt-Long
+dev-lang/perl >=net-analyzer/net-snmp-5.4.2[perl] dev-perl/DBI dev-perl/Unix-Syslog virtual/perl-Getopt-Long virtual/perl-Math-BigInt-FastCalc
 0
 http://wolf31o2.org/sources/mysql-snmp/mysql-snmp-1.0.tar.bz2
 

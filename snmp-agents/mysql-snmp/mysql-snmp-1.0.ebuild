@@ -13,9 +13,11 @@ then
 	inherit git eutils multilib
 	SRC_URI=""
 	S=${WORKDIR}/${PN}
+	KEYWORDS=""
 else
 	inherit eutils multilib
 	SRC_URI="http://wolf31o2.org/sources/${PN}/${P}.tar.bz2"
+	KEYWORDS="~amd64 ~x86"
 fi
 
 DESCRIPTION="AgentX subagent for net-snmp to get MySQL statistics"
@@ -23,7 +25,6 @@ HOMEPAGE="http://github.com/masterzen/mysql-snmp"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
 IUSE=""
 
 # We do not need anything to build, since we're just a perl script.
@@ -32,9 +33,9 @@ DEPEND=""
 RDEPEND="dev-lang/perl
 	>=net-analyzer/net-snmp-5.4.2[perl]
 	dev-perl/DBI
-	dev-perl/DBD-mysql
 	dev-perl/Unix-Syslog
-	virtual/perl-Getopt-Long"
+	virtual/perl-Getopt-Long
+	virtual/perl-Math-BigInt-FastCalc"
 
 src_unpack() {
 	if [[ ${PV} == 9999* ]] ; then
