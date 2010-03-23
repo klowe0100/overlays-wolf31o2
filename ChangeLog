@@ -2,6 +2,15 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*sqlitecachec-1.1.4 (23 Mar 2010)
+
+  23 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +metadata/cache/dev-python/sqlitecachec-1.1.4, sqlitecachec-1.1.4.ebuild,
+  +dev-python/sqlitecachec/Manifest:
+  Import dev-python/sqlitecachec from Gentoo's tree and version bump to the
+  latest upstream release. This package is also known as
+  yum-metadata-parser.
+
   23 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
   metadata/cache/snmp-agents/mysql-snmp-1.0, mysql-snmp-1.0.ebuild,
   metadata/cache/snmp-agents/mysql-snmp-9999, mysql-snmp-9999.ebuild,
