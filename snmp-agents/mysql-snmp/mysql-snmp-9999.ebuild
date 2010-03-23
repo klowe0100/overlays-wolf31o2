@@ -25,7 +25,7 @@ HOMEPAGE="http://github.com/masterzen/mysql-snmp"
 
 LICENSE="GPL-2"
 SLOT="0"
-IUSE=""
+IUSE="gmp"
 
 # We do not need anything to build, since we're just a perl script.
 DEPEND=""
@@ -35,7 +35,9 @@ RDEPEND="dev-lang/perl
 	dev-perl/DBI
 	dev-perl/Unix-Syslog
 	virtual/perl-Getopt-Long
-	virtual/perl-Math-BigInt-FastCalc"
+	virtual/perl-Math-BigInt
+	virtual/perl-Math-BigInt-FastCalc
+	gmp? ( dev-perl/Math-BigInt-GMP )"
 
 src_unpack() {
 	if [[ ${PV} == 9999* ]] ; then

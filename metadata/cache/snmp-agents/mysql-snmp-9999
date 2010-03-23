@@ -1,5 +1,5 @@
 >=dev-vcs/git-1.6
-dev-lang/perl >=net-analyzer/net-snmp-5.4.2[perl] dev-perl/DBI dev-perl/Unix-Syslog virtual/perl-Getopt-Long virtual/perl-Math-BigInt-FastCalc
+dev-lang/perl >=net-analyzer/net-snmp-5.4.2[perl] dev-perl/DBI dev-perl/Unix-Syslog virtual/perl-Getopt-Long virtual/perl-Math-BigInt virtual/perl-Math-BigInt-FastCalc gmp? ( dev-perl/Math-BigInt-GMP )
 0
 
 
@@ -8,7 +8,7 @@ GPL-2
 AgentX subagent for net-snmp to get MySQL statistics
 
 eutils git multilib portability toolchain-funcs
-
+gmp
 
 
 

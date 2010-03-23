@@ -1,5 +1,5 @@
 
-dev-lang/perl >=net-analyzer/net-snmp-5.4.2[perl] dev-perl/DBI dev-perl/Unix-Syslog virtual/perl-Getopt-Long virtual/perl-Math-BigInt-FastCalc
+dev-lang/perl >=net-analyzer/net-snmp-5.4.2[perl] dev-perl/DBI dev-perl/Unix-Syslog virtual/perl-Getopt-Long virtual/perl-Math-BigInt virtual/perl-Math-BigInt-FastCalc gmp? ( dev-perl/Math-BigInt-GMP )
 0
 http://wolf31o2.org/sources/mysql-snmp/mysql-snmp-1.0.tar.bz2
 
@@ -8,7 +8,7 @@ GPL-2
 AgentX subagent for net-snmp to get MySQL statistics
 ~amd64 ~x86
 eutils multilib portability toolchain-funcs
-
+gmp
 
 
 

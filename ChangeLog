@@ -3,6 +3,13 @@
 # $Id$
 
   23 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  metadata/cache/snmp-agents/mysql-snmp-1.0, mysql-snmp-1.0.ebuild,
+  metadata/cache/snmp-agents/mysql-snmp-9999, mysql-snmp-9999.ebuild,
+  snmp-agents/mysql-snmp/Manifest:
+  Adding gmp to IUSE to pull in dev-perl/perl-Math-BigInt-GMP for faster
+  math functions.
+
+  23 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
   mysql-server-1.0.ebuild, mysql-server-9999.ebuild,
   snmp-mibs/mysql-server/Manifest:
   Set S to point to the correct location.
