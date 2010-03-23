@@ -6,7 +6,7 @@ dev-lang/perl >=net-analyzer/net-snmp-5.4.2[perl] dev-perl/DBI dev-perl/Unix-Sys
 http://github.com/masterzen/mysql-snmp
 GPL-2
 AgentX subagent for net-snmp to get MySQL statistics
-~amd64 ~x86
+
 eutils git multilib portability toolchain-funcs
 
 

@@ -3,6 +3,11 @@
 # $Id$
 
   23 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  metadata/cache/net-misc/distcache-1.4.5,
+  metadata/cache/snmp-agents/mysql-snmp-9999:
+  Updating metadata/cache for the latest changes.
+
+  23 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
   mysql-snmp-9999.ebuild, snmp-agents/mysql-snmp/Manifest,
   snmp-agents/mysql-snmp/files/mysql-snmp.confd,
   snmp-agents/mysql-snmp/files/mysql-snmp.rc:
