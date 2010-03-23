@@ -2,6 +2,14 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*fence-2.03.10 (23 Mar 2010)
+
+  23 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +metadata/cache/sys-cluster/fence-2.03.10, fence-2.03.10.ebuild,
+  sys-cluster/fence/Manifest:
+  Version bump sys-cluster/fence to the latest upstream release and add
+  multilib support.
+
 *dlm-lib-2.03.10 (23 Mar 2010)
 
   23 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
