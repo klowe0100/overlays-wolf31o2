@@ -7,14 +7,14 @@ http://trousers.sf.net
 CPL-1.0
 open-source TCG Software Stack (TSS) v1.2 implementation
 ~amd64 ~x86
-autotools base eutils libtool linux-info multilib portability toolchain-funcs versionator
+autotools eutils libtool linux-info multilib portability toolchain-funcs versionator
 +gtk ssl
 
 ssl? ( app-crypt/openssl-tpm-engine )
 
-1
+2
 
-compile install setup unpack
+configure install prepare setup
 
 
 

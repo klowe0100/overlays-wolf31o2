@@ -2,9 +2,9 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Id$
 
-EAPI="1"
+EAPI="2"
 
-inherit autotools base eutils linux-info
+inherit autotools eutils linux-info
 
 DESCRIPTION="open-source TCG Software Stack (TSS) v1.2 implementation"
 HOMEPAGE="http://trousers.sf.net"
@@ -62,19 +62,19 @@ pkg_setup() {
 	enewuser tss -1 -1 /var/lib/tpm tss
 }
 
-src_unpack() {
-	base_src_unpack
-
-	sed -e "s/-Werror //" -i configure.in
+src_prepare() {
+	default
+	sed -i \
+		-e "s/-Werror //" \
+		configure.in || die "sed configure.in failed"
 	eautoreconf
 }
 
-src_compile() {
+src_configure() {
 	if ! use gtk ; then
 		__myconf="${__myconf} --with-gui=none"
 	fi
 	econf ${__myconf} || die "econf failed"
-	emake || die "emake failed"
 }
 
 src_install() {
