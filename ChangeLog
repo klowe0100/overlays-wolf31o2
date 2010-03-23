@@ -2,6 +2,15 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*openais-0.80.6 (23 Mar 2010)
+
+  23 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +metadata/cache/sys-cluster/openais-0.80.6, openais-0.80.6.ebuild,
+  -metadata/cache/sys-cluster/openais-0.82, openais-0.82.ebuild,
+  sys-cluster/openais/Manifest:
+  Version bumping sys-cluster/openais to the latest upstream release and
+  adding multilib eclass support.
+
 *ccs-2.03.10 (23 Mar 2010)
 
   23 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
