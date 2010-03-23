@@ -2,6 +2,16 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*squirrelmail-1.4.20 (23 Mar 2010)
+
+  23 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +mail-client/squirrelmail/files/ldapuserdata-0.4-gentoo.patch,
+  +metadata/cache/mail-client/squirrelmail-1.4.20,
+  squirrelmail-1.4.20.ebuild, +mail-client/squirrelmail/Manifest,
+  +mail-client/squirrelmail/files/postinstall-en.txt:
+  Import mail-client/squirrelmail from Gentoo's tree and version bump it to
+  the latest upstream release.
+
   23 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
   metadata/cache/app-crypt/tpmmanager-0.8, tpmmanager-0.8.ebuild,
   app-crypt/tpmmanager/Manifest:
