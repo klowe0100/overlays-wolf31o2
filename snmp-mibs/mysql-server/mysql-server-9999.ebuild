@@ -12,12 +12,13 @@ then
 	EGIT_REPO_URI="git://github.com/masterzen/mysql-snmp.git"
 	inherit git eutils multilib
 	SRC_URI=""
-	S=${WORKDIR}/${PN}
+	S=${WORKDIR}/${MY_PN}
 	KEYWORDS=""
 else
 	inherit eutils multilib
 	SRC_URI="http://wolf31o2.org/sources/${MY_PN}/${MY_PN}-${PV}.tar.bz2"
 	KEYWORDS="~amd64 ~x86"
+	S=${MY_PN}-${PV}
 fi
 
 DESCRIPTION="MIB for MySQL statistics"
