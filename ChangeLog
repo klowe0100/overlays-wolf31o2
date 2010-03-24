@@ -2,6 +2,11 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  24 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  cachefilesd-0.9.ebuild, sys-fs/cachefilesd/Manifest,
+  +sys-fs/cachefilesd/files/cachefilesd.rc:
+  Adding cachefilesd.rc init script.
+
 *gnbd-kernel-2.03.10 (23 Mar 2010)
 
   23 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>

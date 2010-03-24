@@ -16,7 +16,7 @@ IUSE=""
 DEPEND=""
 RDEPEND=""
 # Needs dnotify proc and xattrs in kernel
-# stats in /proc/fs/cachefiles
+# stats in /proc/fs/fscache
 # dir_index should be on fs
 # /etc/cachefilesd.conf is configuration file
 # /sbin/cachefilesd [-d]* [-s] [-n] [-f <configfile>]
@@ -26,11 +26,12 @@ RDEPEND=""
 # cache default is in /var/fscache
 
 src_install() {
-	emake DESTDIR="${D}" install
+	emake DESTDIR="${D}" install || die "install"
 #	dosbin cachefilesd
 #	insinto /etc
 #	doins cachefilesd.conf || die "conf"
+	newinitd "${FILESDIR}"/cachefilesd.rc cachefilesd || die "init.d"
 	keepdir /var/fscache
-	dodoc README howto.txt move-cache.txt
+	dodoc README howto.txt move-cache.txt || die "dodoc"
 }
 
