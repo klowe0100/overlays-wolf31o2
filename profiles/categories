@@ -39,6 +39,7 @@ sys-cluster
 sys-fs
 sys-kernel
 sys-power
+www-apache
 www-apps
 www-client
 x11-apps

@@ -2,6 +2,21 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*anyterm-1.1.29-r1 (24 Mar 2010)
+
+  24 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +www-apache/anyterm/files/anyterm-1.1.28-respect-LDFLAGS.patch,
+  +metadata/cache/www-apache/anyterm-1.1.29-r1, anyterm-1.1.29-r1.ebuild,
+  +www-apache/anyterm/files/anyterm-1.1.29-gcc-4.4.patch,
+  profiles/categories, +www-apache/anyterm/Manifest,
+  +www-apache/anyterm/files/99_anyterm.conf,
+  +www-apache/anyterm/files/anyterm.conf.d,
+  +www-apache/anyterm/files/anyterm.init.d,
+  +www-apache/anyterm/files/apache2.confd-defaults,
+  +www-apache/anyterm/files/apache2.confd-proxy:
+  Import www-apache/anyterm from Gentoo's tree and revision bump to
+  differentiate our version from theirs.
+
   24 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
   cachefilesd-0.9.ebuild, sys-fs/cachefilesd/Manifest,
   +sys-fs/cachefilesd/files/cachefilesd.rc:

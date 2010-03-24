@@ -1,0 +1,23 @@
+<VirtualHost *:443>  # HTTPS port
+	ServerName example.com
+
+	<Location /anyterm>
+		# When someone visits /anyterm they'll be proxied to
+		# Anyterm on port 7676.
+		ProxyPass http://localhost:7676 ttl=60
+		# There are various parameters that can appear at the end of the
+		# ProxyPass directive to control the maximum number of connections
+		# and so on.  See the Apache documentation.
+		ProxyPassReverse http://localhost:7676
+
+		# Allow only authorised users
+		AuthType Basic
+		AuthName "example.com"
+		# More Auth directives, depending on where your
+		# usernames & passwords are stored.
+		require valid-user
+	</Location>
+
+	SSLEngine on
+	SSLCertificateFile /etc/apache2/ssl/example.com.pem
+</VirtualHost>
