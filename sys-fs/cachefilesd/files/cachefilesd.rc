@@ -6,6 +6,7 @@
 
 MODPROBE=/sbin/modprobe
 MODPROBE_ARGS=""
+PIDFILE=/var/run/cachefilesd.pid
 PROG="cachefilesd"
 
 depend() {
@@ -32,7 +33,7 @@ start() {
 	checkconfig || return 1
 	ebegin "Starting ${PROG}"
 	start-stop-daemon --start --exec "/sbin/${PROG}" \
-		-- -f /etc/${PROG}.conf
+		-- -f /etc/${PROG}.conf -p ${PIDFILE}
 	eend $?
 }
 
