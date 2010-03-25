@@ -2,6 +2,11 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  25 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  sys-fs/cachefilesd/Manifest, sys-fs/cachefilesd/files/cachefilesd.rc:
+  I forgot to add an opening brace to the stop function in the cachefiles
+  init script. I'm surprised it worked, at all.
+
   24 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
   sys-fs/cachefilesd/Manifest, sys-fs/cachefilesd/files/cachefilesd.rc:
   Adding PIDFILE and -p to command line.

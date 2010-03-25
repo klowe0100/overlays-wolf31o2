@@ -37,7 +37,7 @@ start() {
 	eend $?
 }
 
-stop()
+stop() {
 	checkconfig || return 1
 	ebegin "Stopping ${PROG}"
 	start-stop-daemon --stop --exec "/sbin/${PROG}"
