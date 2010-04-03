@@ -4,7 +4,7 @@ perl? ( dev-lang/perl ) !build? ( >=sys-libs/ncurses-5.2 sys-devel/make )
 mirror://kernel/linux/kernel/v2.6/linux-2.6.32.tar.bz2 mirror://gentoo/genpatches-2.6.32-6.base.tar.bz2 mirror://gentoo/genpatches-2.6.32-6.extras.tar.bz2
 binchecks strip
 http://dev.gentoo.org/~dsd/genpatches
-GPL-2
+GPL-2 freedist
 Gentoo patchset w/ patches from wolf31o2
 ~amd64 ~x86
 eutils kernel-2 multilib portability toolchain-funcs versionator

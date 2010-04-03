@@ -2,6 +2,60 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  03 Apr 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  metadata/cache/dev-libs/libusb-0.1.12-r6,
+  metadata/cache/net-misc/modemmanager-0.2_p20100101-r1,
+  metadata/cache/app-crypt/trousers-0.3.1-r1,
+  metadata/cache/app-crypt/trousers-0.3.2-r1,
+  metadata/cache/app-crypt/openssl-tpm-engine-0.4.1-r1,
+  metadata/cache/net-analyzer/nagios-plugins-snmp-0.6.0-r2,
+  metadata/cache/gnome-extra/nm-applet-0.8.0_pre20100101-r1,
+  metadata/cache/net-misc/networkmanager-0.8.0_pre20100101-r1,
+  metadata/cache/net-analyzer/cacti-spine-0.8.7d,
+  metadata/cache/net-analyzer/cacti-spine-0.8.7e,
+  metadata/cache/net-analyzer/cacti-spine-0.8.7e-r1,
+  metadata/cache/net-analyzer/cacti-spine-0.8.7e-r2,
+  metadata/cache/app-office/planner-0.14.3-r1,
+  metadata/cache/app-office/planner-0.14.3-r2, mysql-server-1.0.ebuild,
+  metadata/cache/net-libs/libpcap-1.0.0-r2,
+  metadata/cache/dev-php5/pecl-memcached-1.0.1,
+  metadata/cache/dev-php5/pecl-pam-1.0.3,
+  metadata/cache/net-misc/memcached-1.2.6-r1,
+  metadata/cache/sys-power/pm-utils-1.2.6.1-r1,
+  metadata/cache/x11-misc/synergy-1.3.1-r1,
+  metadata/cache/app-crypt/tpm-tools-1.3.4,
+  metadata/cache/dev-libs/libmemcache-1.4.0_rc2-r1,
+  metadata/cache/net-misc/memcached-1.4.0-r1,
+  metadata/cache/net-misc/memcached-1.4.1-r1,
+  metadata/cache/net-misc/memcached-1.4.2-r1,
+  metadata/cache/net-misc/distcache-1.4.5,
+  metadata/cache/net-analyzer/nagios-plugins-1.4.14-r2,
+  metadata/cache/dev-php5/pecl-http-1.6.6,
+  metadata/cache/snmp-mibs/jvm-management-1.32,
+  metadata/cache/net-misc/tsclient-2.0.1-r1,
+  metadata/cache/dev-php5/pecl-memcache-2.0.4,
+  metadata/cache/dev-php5/pecl-memcache-2.2.4,
+  metadata/cache/dev-libs/opencryptoki-2.2.6,
+  metadata/cache/dev-libs/opencryptoki-2.2.8,
+  metadata/cache/dev-libs/opencryptoki-2.3.0,
+  metadata/cache/x11-plugins/purple-plugin_pack-2.6.2-r1,
+  metadata/cache/sys-kernel/wolf-sources-2.6.28-r4,
+  metadata/cache/sys-kernel/wolf-sources-2.6.32-r4,
+  metadata/cache/sys-kernel/wolf-sources-2.6.33,
+  metadata/cache/dev-php5/pecl-memcache-3.0.2,
+  metadata/cache/dev-php5/pecl-memcache-3.0.4,
+  metadata/cache/app-misc/screen-4.0.3-r1,
+  metadata/cache/net-wireless/bluez-4.59-r1,
+  metadata/cache/net-wireless/bluez-4.60-r1,
+  metadata/cache/net-wireless/bluez-4.62-r1,
+  metadata/cache/net-analyzer/net-snmp-5.4.2.1-r2,
+  metadata/cache/net-analyzer/net-snmp-5.5,
+  metadata/cache/net-analyzer/net-snmp-5.5-r1,
+  metadata/cache/dev-php5/adodb-ext-504, mysql-server-9999.ebuild,
+  snmp-mibs/mysql-server/Manifest:
+  Adding error checking to mysql-server ebuild and updating metadata/cache
+  with latest entries.
+
   25 Mar 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
   sys-fs/cachefilesd/Manifest, sys-fs/cachefilesd/files/cachefilesd.rc:
   I forgot to add an opening brace to the stop function in the cachefiles

@@ -1,4 +1,4 @@
->=dev-libs/libevent-1.4 dev-lang/perl test? ( virtual/perl-Test-Harness >=dev-perl/Cache-Memcached-1.24 ) =sys-devel/automake-1.10* >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b
+>=dev-libs/libevent-1.4 dev-lang/perl test? ( virtual/perl-Test-Harness >=dev-perl/Cache-Memcached-1.24 ) || ( =sys-devel/automake-1.11* =sys-devel/automake-1.10* ) >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b
 >=dev-libs/libevent-1.4 dev-lang/perl
 0
 http://www.danga.com/memcached/dist/memcached-1.2.6.tar.gz repcached? ( mirror://sourceforge/repcached/repcached-2.1-1.2.6.patch.gz )

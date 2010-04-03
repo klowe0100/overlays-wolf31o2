@@ -42,5 +42,5 @@ src_unpack() {
 
 src_install() {
 	insinto /usr/share/snmp/mibs
-	doins MYSQL-SERVER-MIB.txt
+	doins MYSQL-SERVER-MIB.txt || die
 }
