@@ -4,7 +4,7 @@
 
 # cachefilesd    Start up and shut down the cachefilesd daemon
 
-MODPROBE=/sbin/modprobe
+MODPROBE=`which modprobe`
 MODPROBE_ARGS=""
 PIDFILE=/var/run/cachefilesd.pid
 PROG="cachefilesd"
@@ -23,7 +23,7 @@ checkconfig() {
 	[ -r /proc/fs/fscache ] && return 0
 	# Load the cachefiles module if needed
 	[ -x "${MODPROBE}" ] && {
-		if ! /sbin/lsmod | grep cachefiles > /dev/null ; then
+		if ! lsmod | grep cachefiles > /dev/null ; then
 			 ${MODPROBE} cachefiles ${MODPROBE_ARGS} || return 1
 		fi
 	}
