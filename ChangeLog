@@ -3,6 +3,10 @@
 # $Id$
 
   01 May 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  net-misc/cisco-vpnclient/Manifest:
+  Manifest fix on net-misc/cisco-vpnclient.
+
+  01 May 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
   sys-fs/dmraid/Manifest:
   Manifest fix on sys-fs/dmraid.
 
