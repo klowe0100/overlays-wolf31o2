@@ -2,6 +2,12 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  01 May 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  metadata/cache/sys-kernel/wolf-sources-2.6.28-r4,
+  metadata/cache/sys-kernel/wolf-sources-2.6.32-r4,
+  metadata/cache/sys-kernel/wolf-sources-2.6.33:
+  Updating metadata/cache for wolf-sources.
+
 *cacti-0.8.7e-r7 (01 May 2010)
 
   01 May 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
