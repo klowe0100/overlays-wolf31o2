@@ -12,6 +12,7 @@ LICENSE="GPL-2"
 
 # PLUGIN_NEEDS_CONFIG="yes"
 
+S=${WORKDIR}/${PN}
 #src_install() {
 #	local _cachedir=${CACTI_PLUG_HOME}/content
 #	dodir "${_cachedir}" || die "dodir"

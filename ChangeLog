@@ -2,6 +2,10 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  01 May 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  titlechanger-0.1.ebuild:
+  Adding explicit S setting to cacti-plugins/titlechanger ebuild.
+
 *titlechanger-0.1 (01 May 2010)
 
   01 May 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
