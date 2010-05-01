@@ -3,6 +3,10 @@
 # $Id$
 
   01 May 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  sys-fs/dmraid/Manifest:
+  Manifest fix on sys-fs/dmraid.
+
+  01 May 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
   metadata/cache/sys-kernel/wolf-sources-2.6.28-r4,
   metadata/cache/sys-kernel/wolf-sources-2.6.32-r4,
   metadata/cache/sys-kernel/wolf-sources-2.6.33:
