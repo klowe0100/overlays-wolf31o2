@@ -2,6 +2,9 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  01 May 2010; Chris Gianelloni <wolf31o2@wolf31o2.org> jinzora-2.8.ebuild:
+  Adding code from configure.sh script to jinzora.
+
   01 May 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
   titlechanger-0.1.ebuild:
   Adding explicit S setting to cacti-plugins/titlechanger ebuild.

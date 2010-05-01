@@ -37,10 +37,12 @@ src_install() {
 	insinto "${MY_HTDOCSDIR}"
 	doins -r .
 
-#	webapp_configfile "${MY_HTDOCSDIR}"/include/config.php
-#	webapp_configfile "${MY_HTDOCSDIR}"/wsvn.php
+	touch "${MY_HTDOCSDIR}"/settings.php
 
-#	webapp_serverowned "${MY_HTDOCSDIR}"/cache
+	webapp_configfile "${MY_HTDOCSDIR}"/settings.php
+	webapp_configfile "${MY_HTDOCSDIR}"/jukebox/settings.php
+	webapp_serverowned "${MY_HTDOCSDIR}"/data
+	webapp_serverowned "${MY_HTDOCSDIR}"/temp
 
 	webapp_src_install
 }
