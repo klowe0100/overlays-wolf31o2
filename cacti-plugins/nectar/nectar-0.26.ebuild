@@ -10,3 +10,8 @@ inherit eutils cacti-plugins
 
 SRC_URI="http://docs.cacti.net/_media/plugin:${PN}-v${PV}.tgz -> ${P}.tar.gz"
 S=${WORKDIR}/${PN}
+
+### TODO:
+# - Requires PHP w/ gd
+# - Requires patching settings plugin
+# - Requires patching cacti
