@@ -2,6 +2,12 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*dsstats-1.2 (01 May 2010)
+
+  01 May 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +metadata/cache/cacti-plugins/dsstats-1.2, dsstats-1.2.ebuild:
+  Version bumping cacti-plugins/dsstats to the 1.2 upstream release.
+
 *boost-3.1 (01 May 2010)
 
   01 May 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
