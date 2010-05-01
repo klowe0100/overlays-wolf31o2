@@ -2,6 +2,12 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*weathermap-0.97a (01 May 2010)
+
+  01 May 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +metadata/cache/cacti-plugins/weathermap-0.97a, weathermap-0.97a.ebuild:
+  Version bumping cacti-plugins/weathermap to the 0.97a upstream release.
+
   01 May 2010; Chris Gianelloni <wolf31o2@wolf31o2.org> nectar-0.26.ebuild:
   Add some notes for TODO on cacti-plugins/nectar.
 
