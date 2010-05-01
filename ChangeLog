@@ -2,6 +2,12 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*titlechanger-0.1 (01 May 2010)
+
+  01 May 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +metadata/cache/cacti-plugins/titlechanger-0.1, titlechanger-0.1.ebuild:
+  Initial ebuild for titlechanger cacti plugin.
+
 *mactrack-2.6 (01 May 2010)
 
   01 May 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
