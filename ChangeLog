@@ -2,6 +2,13 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*mobile-0.1-r1 (01 May 2010)
+
+  01 May 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +metadata/cache/cacti-plugins/mobile-0.1-r1, mobile-0.1-r1.ebuild:
+  Revision bumping cacti-plugins/mobile to add cacti-plugins/thold to its
+  dependencies, since it pulls data from the thold tables unconditionally.
+
 *dsstats-1.2 (01 May 2010)
 
   01 May 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>

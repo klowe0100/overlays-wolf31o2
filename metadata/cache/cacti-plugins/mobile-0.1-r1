@@ -1,0 +1,22 @@
+>=net-analyzer/cacti-0.8.7d-r2[pluginarch]
+cacti-plugins/thold >=net-analyzer/cacti-0.8.7d-r2[pluginarch]
+0
+http://docs.cacti.net/_media/plugin:mobile-latest.tgz -> mobile-0.1.tar.gz
+primaryuri
+http://docs.cacti.net/plugins
+GPL-2
+Cacti plugin: mobile
+-* ~amd64 ~x86
+cacti-plugins eutils multilib mysql-dbfuncs portability toolchain-funcs webapp
+
+
+
+
+2
+
+install postinst prerm setup
+
+
+
+
+
