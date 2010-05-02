@@ -2,6 +2,10 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  02 May 2010; Chris Gianelloni <wolf31o2@wolf31o2.org> jinzora-2.8.ebuild:
+  Set S to the correct location, change serverowned to be recursive, and
+  touch settings.php before copying it to the target.
+
   01 May 2010; Chris Gianelloni <wolf31o2@wolf31o2.org> jinzora-2.8.ebuild:
   Adding code from configure.sh script to jinzora.
 

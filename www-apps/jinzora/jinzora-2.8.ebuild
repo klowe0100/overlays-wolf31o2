@@ -1,6 +1,6 @@
-# Copyright 1999-2010 Gentoo Foundation
+# Copyright 1999-2010 Gentoo Foundation ; 2010-2010 Chris Gianelloni
 # Distributed under the terms of the GNU General Public License v2
-# $Header: $
+# $Id$
 
 EAPI=3
 
@@ -22,6 +22,8 @@ need_php_httpd
 
 # S=${WORKDIR}/${MY_PN}-${PV}
 
+S=${WORKDIR}/${PN}2
+
 pkg_setup() {
 	webapp_pkg_setup
 	has_php
@@ -30,19 +32,15 @@ pkg_setup() {
 
 src_install() {
 	webapp_src_preinst
-	dodir ${MY_HTDOCSDIR}
-
-	cp -r . "${D}"${MY_HTDOCSDIR}
 
 	insinto "${MY_HTDOCSDIR}"
+	touch settings.php
 	doins -r .
-
-	touch "${MY_HTDOCSDIR}"/settings.php
 
 	webapp_configfile "${MY_HTDOCSDIR}"/settings.php
 	webapp_configfile "${MY_HTDOCSDIR}"/jukebox/settings.php
-	webapp_serverowned "${MY_HTDOCSDIR}"/data
-	webapp_serverowned "${MY_HTDOCSDIR}"/temp
+	webapp_serverowned -R "${MY_HTDOCSDIR}"/data
+	webapp_serverowned -R "${MY_HTDOCSDIR}"/temp
 
 	webapp_src_install
 }
