@@ -20,7 +20,8 @@ IUSE=""
 need_httpd_cgi
 need_php_httpd
 
-# S=${WORKDIR}/${MY_PN}-${PV}
+RDEPEND="${RDEPEND}
+	media-sound/lame"
 
 S=${WORKDIR}/${PN}2
 
