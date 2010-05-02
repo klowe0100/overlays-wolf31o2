@@ -39,6 +39,9 @@ src_install() {
 
 	webapp_configfile "${MY_HTDOCSDIR}"/settings.php
 	webapp_configfile "${MY_HTDOCSDIR}"/jukebox/settings.php
+
+	webapp_serverowned "${MY_HTDOCSDIR}"/settings.php
+	webapp_serverowned "${MY_HTDOCSDIR}"/jukebox/settings.php
 	webapp_serverowned -R "${MY_HTDOCSDIR}"/data
 	webapp_serverowned -R "${MY_HTDOCSDIR}"/temp
 

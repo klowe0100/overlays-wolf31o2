@@ -2,6 +2,10 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  02 May 2010; Chris Gianelloni <wolf31o2@wolf31o2.org> jinzora-2.8.ebuild,
+  www-apps/jinzora/Manifest:
+  Make sure the configuration is owned by the web server user.
+
   02 May 2010; Chris Gianelloni <wolf31o2@wolf31o2.org> jinzora-2.8.ebuild:
   Set S to the correct location, change serverowned to be recursive, and
   touch settings.php before copying it to the target.
