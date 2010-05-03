@@ -5,6 +5,7 @@
 EAPI=3
 
 MY_PV=${PV/./}0
+DB_IUSE="mssql mysql postgres sqlite"
 
 inherit depend.php webapp
 
@@ -15,18 +16,19 @@ SRC_URI="mirror://sourceforge/jinzora/jz${MY_PV}.tar.gz"
 RESTRICT=""
 LICENSE="GPL-2"
 KEYWORDS="~amd64 ~x86"
-
-DB_IUSE="mssql mysql postgres sqlite"
-
 IUSE="${DB_IUSE}"
 
-RDEPEND="${RDEPEND}
-	media-sound/lame"
+DEPEND="mysql? ( dev-db/mysql )
+	postgres? ( dev-db/postgresql )
+	sqlite? ( dev-db/sqlite )"
 
 need_httpd_cgi
 need_php_httpd
 
-S=${WORKDIR}/${PN}2
+RDEPEND="${RDEPEND}
+	media-sound/lame"
+
+S=${WORKDIR}/${PN}
 
 pkg_setup() {
 	webapp_pkg_setup
