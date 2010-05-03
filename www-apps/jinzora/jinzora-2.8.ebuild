@@ -15,7 +15,10 @@ SRC_URI="mirror://sourceforge/jinzora/jz${MY_PV}.tar.gz"
 RESTRICT=""
 LICENSE="GPL-2"
 KEYWORDS="~amd64 ~x86"
-IUSE=""
+
+DB_IUSE="mssql mysql postgres sqlite"
+
+IUSE="${DB_IUSE}"
 
 need_httpd_cgi
 need_php_httpd
@@ -28,7 +31,17 @@ S=${WORKDIR}/${PN}2
 pkg_setup() {
 	webapp_pkg_setup
 	has_php
-	require_php_with_use mysql
+	require_php_with_use session
+	for db in ${DB_IUSE} ; do
+		use ${db} && require_php_with_use ${db}
+	done
+	# - Requires register globals off
+	# - gd iconv pdf multibyte-char are optional, as are the db backends
+	# - max_execution_time = 300+
+	# - memory_limit = 32M+
+	# - post_max_size = 32M+
+	# - file_uploads = on
+	# - upload_max_filesize = 32M+
 }
 
 src_install() {
