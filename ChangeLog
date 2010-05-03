@@ -5,6 +5,13 @@
   03 May 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
   metadata/cache/www-apps/jinzora-2.8, jinzora-2.8.ebuild,
   www-apps/jinzora/Manifest:
+  Remove Gentoo Foundation from header, move need_* calls after *DEPEND
+  section, and switch to using more than one target for webapp_configfile
+  and webapp_serverowned calls.
+
+  03 May 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  metadata/cache/www-apps/jinzora-2.8, jinzora-2.8.ebuild,
+  www-apps/jinzora/Manifest:
   Add DB_IUSE for optional database support, require PHP is built with
   session support, and add some notes for the rest of the requirements.
 

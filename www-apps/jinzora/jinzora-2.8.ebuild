@@ -1,4 +1,4 @@
-# Copyright 1999-2010 Gentoo Foundation ; 2010-2010 Chris Gianelloni
+# Copyright 2010-2010 Chris Gianelloni
 # Distributed under the terms of the GNU General Public License v2
 # $Id$
 
@@ -20,11 +20,11 @@ DB_IUSE="mssql mysql postgres sqlite"
 
 IUSE="${DB_IUSE}"
 
-need_httpd_cgi
-need_php_httpd
-
 RDEPEND="${RDEPEND}
 	media-sound/lame"
+
+need_httpd_cgi
+need_php_httpd
 
 S=${WORKDIR}/${PN}2
 
@@ -51,13 +51,10 @@ src_install() {
 	touch settings.php
 	doins -r .
 
-	webapp_configfile "${MY_HTDOCSDIR}"/settings.php
-	webapp_configfile "${MY_HTDOCSDIR}"/jukebox/settings.php
+	webapp_configfile "${MY_HTDOCSDIR}"/settings.php "${MY_HTDOCSDIR}"/jukebox/settings.php
 
-	webapp_serverowned "${MY_HTDOCSDIR}"/settings.php
-	webapp_serverowned "${MY_HTDOCSDIR}"/jukebox/settings.php
-	webapp_serverowned -R "${MY_HTDOCSDIR}"/data
-	webapp_serverowned -R "${MY_HTDOCSDIR}"/temp
+	webapp_serverowned "${MY_HTDOCSDIR}"/settings.php "${MY_HTDOCSDIR}"/jukebox/settings.php
+	webapp_serverowned -R "${MY_HTDOCSDIR}"/data "${MY_HTDOCSDIR}"/temp
 
 	webapp_src_install
 }
