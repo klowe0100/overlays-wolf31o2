@@ -3,6 +3,10 @@
 # $Id$
 
   04 May 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  cacti-plugins/boost/Manifest, cacti-plugins/boost/files/cacti-boost.rc:
+  Fixing the boost_server.php startup.
+
+  04 May 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
   -metadata/cache/www-apps/phpsysinfo-2.5.4, phpsysinfo-2.5.4.ebuild,
   phpsysinfo-3.0.4.ebuild, www-apps/phpsysinfo/Manifest:
   Removing 2.x ebuild and cleaning up the 3.x ebuild.
