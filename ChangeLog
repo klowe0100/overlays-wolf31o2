@@ -2,6 +2,13 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*nagios-3.2.1-r1 (04 May 2010)
+
+  04 May 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +metadata/cache/net-analyzer/nagios-3.2.1-r1, nagios-3.2.1-r1.ebuild,
+  net-analyzer/nagios/Manifest:
+  Version bumping net-analyzer/nagios to 3.2.1 upstream release.
+
 *nagios-core-3.2.1-r1 (04 May 2010)
 
   04 May 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
