@@ -25,10 +25,11 @@ pkg_setup() {
 src_install() {
 	webapp_src_preinst
 
-	dodoc README
+	dodoc README* ChangeLog
+	rm -f README* ChangeLog
 
 	insinto "${MY_HTDOCSDIR}"
-	doins -r [:dit:]*
+	doins -r *
 	newins config.php{.new,}
 
 	webapp_configfile "${MY_HTDOCSDIR}"/config.php
