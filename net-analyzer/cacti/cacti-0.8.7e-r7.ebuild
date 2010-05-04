@@ -142,9 +142,9 @@ src_prepare() {
 		fi
 		if [ "${PIA_V}" == "2.6" ]
 		then
-			elog "DEBUG: lines 198-200 of include/global.php removed"
+#			elog "DEBUG: lines 198-200 of include/global.php removed"
 #			sed -e '198,+2p' "${S}"/include/global.php
-			sed -e '198,+2d' "${S}"/include/global.php
+			sed -i -e '198,+2d' "${S}"/include/global.php
 		fi
 		einfo "Adding autom8 patches"
 		epatch "${WORKDIR}"/autom8/patches-087e
@@ -195,11 +195,13 @@ src_install() {
 
 	rm -f LICENSE README
 	dodoc docs/{CHANGELOG,CONTRIB,README,txt/manual.txt}
-	if use doc ; then
-		einfo "Installing HTML Cacti manual into ${MY_HTDOCSDIR}/manual"
-		docinto ${MY_HTDOCSDIR}/manual
-		dohtml -r docs/html/*
-	fi
+#	if use doc ; then
+#		einfo "Installing HTML Cacti manual into ${MY_HTDOCSDIR}/manual"
+#		docinto ${MY_HTDOCSDIR}/manual
+#		dohtml -r docs/html/*
+#	fi
+
+	mv docs/html manual
 	rm -rf docs
 #	rm -rf lib/adodb
 

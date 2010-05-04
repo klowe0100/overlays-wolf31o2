@@ -3,6 +3,11 @@
 # $Id$
 
   04 May 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  cacti-0.8.7e-r7.ebuild, net-analyzer/cacti/Manifest:
+  Removing the debugging and actually making our global.php changes, and
+  installing the manual under the htdocs directory.
+
+  04 May 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
   cacti-plugins/boost/Manifest, cacti-plugins/boost/files/cacti-boost.rc:
   Fixing the boost_server.php startup.
 
