@@ -40,7 +40,10 @@ pkg_postinst() {
 	fi
 
 	if [ -n "${MYSQL_PASS}" ] ; then
+		/etc/init.d/cacti-boost stop || die "stopping boost"
+		/etc/init.d/cacti-boost flush || die "flushing tables"
 		cacti-plugins_pkg_postinst
+		/etc/init.d/cacti-boost start || die "stopping boost"
 	fi
 }
 

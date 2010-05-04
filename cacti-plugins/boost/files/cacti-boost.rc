@@ -17,9 +17,9 @@ checkconfig() {
 	if [ ! -e ${CACTI_BOOST_HOME} ] ; then
 		eerror "You need to set CACTI_BOOST_HOME in /etc/conf.d/cacti-boost"
 		return 1
-	elif [ ! -x ${CACTI_BOOST_HOME}/boost_server.php ] ; then
-		eerror "Cannot execute boost_server.php, Aborting"
-		return 1
+#	elif [ ! -x ${CACTI_BOOST_HOME}/boost_server.php ] ; then
+#		eerror "Cannot execute boost_server.php, Aborting"
+#		return 1
 	elif [ ! -w ${CACTI_BOOST_LOG} ] ; then
 		eerror "Boost log is not writeable"
 		return 1
