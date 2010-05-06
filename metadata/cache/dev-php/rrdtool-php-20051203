@@ -1,0 +1,22 @@
+net-analyzer/rrdtool dev-lang/php || ( =sys-devel/automake-1.11* =sys-devel/automake-1.10* ) >=sys-devel/autoconf-2.61 >=sys-devel/libtool-2.2.6b >=sys-devel/m4-1.4.3 >=sys-devel/libtool-1.5.18
+net-analyzer/rrdtool dev-lang/php
+0
+http://oss.oetiker.ch/rrdtool/pub/contrib/php_rrdtool.tar.gz http://oss.oetiker.ch/rrdtool/pub/contrib/php_rrdtool.txt
+
+http://oss.oetiker.ch/rrdtool/
+GPL-2
+PHP extension providing bindings for rrdtool
+~amd64 ~x86
+autotools depend.php eutils flag-o-matic libtool multilib php-ext-base-r1 php-ext-source-r1 phpconfutils portability toolchain-funcs
+
+
+
+
+
+
+compile install unpack
+
+
+
+
+
