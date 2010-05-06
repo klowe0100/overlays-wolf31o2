@@ -2,6 +2,14 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*pecl-memcached-1.0.2 (06 May 2010)
+
+  06 May 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  dev-php5/pecl-memcached/Manifest,
+  +metadata/cache/dev-php5/pecl-memcached-1.0.2,
+  pecl-memcached-1.0.2.ebuild:
+  Version bumping dev-php5/pecl-memcached to the 1.0.2 upstream release.
+
 *rrdtool-php-20051203 (06 May 2010)
 
   06 May 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
