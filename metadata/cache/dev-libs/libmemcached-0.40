@@ -1,0 +1,22 @@
+net-misc/memcached
+net-misc/memcached
+0
+http://launchpad.net/libmemcached/1.0/0.40/+download/libmemcached-0.40.tar.gz
+
+http://libmemcached.org/libMemcached.html
+BSD
+a C client library to the memcached server
+~amd64 ~x86
+eutils multilib portability toolchain-funcs
+debug hsieh
+
+
+
+
+
+compile install test
+
+
+
+
+

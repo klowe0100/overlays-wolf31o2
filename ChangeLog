@@ -2,6 +2,16 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  07 May 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  -dev-libs/libmemcached/files/libmemcached-0.28-removebogustest.patch,
+  -dev-libs/libmemcached/files/libmemcached-0.28-runtestsasuser.patch,
+  -metadata/cache/dev-libs/libmemcached-0.30, libmemcached-0.30.ebuild,
+  -metadata/cache/dev-libs/libmemcached-0.31, libmemcached-0.31.ebuild,
+  -metadata/cache/dev-libs/libmemcached-0.33, libmemcached-0.33.ebuild,
+  libmemcached-0.38.ebuild, +metadata/cache/dev-libs/libmemcached-0.40,
+  dev-libs/libmemcached/Manifest:
+  Removing older versions of dev-libs/libmemcached and adding metadata.
+
 *libmemcached-0.40 (07 May 2010)
 *libmemcached-0.38 (07 May 2010)
 
