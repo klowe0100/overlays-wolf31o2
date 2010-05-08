@@ -2,6 +2,17 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*wolf-sources-2.6.33-r2 (08 May 2010)
+*wolf-sources-2.6.33-r1 (08 May 2010)
+
+  08 May 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +metadata/cache/sys-kernel/wolf-sources-2.6.33-r1,
+  wolf-sources-2.6.33-r1.ebuild,
+  +metadata/cache/sys-kernel/wolf-sources-2.6.33-r2,
+  wolf-sources-2.6.33-r2.ebuild, sys-kernel/wolf-sources/Manifest:
+  Version bump sys-kernel/wolf-sources to sync it with the gentoo-sources
+  patchset.
+
   08 May 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
   dev-php5/pecl-memcached/Manifest, pecl-memcached-1.0.2.ebuild:
   Fix up the dev-php5/pecl-memcached ebuild to setup the default ini file
