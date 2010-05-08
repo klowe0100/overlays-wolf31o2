@@ -1,12 +1,12 @@
-# Copyright 1999-2009 Gentoo Foundation
+# Copyright 1999-2010 Gentoo Foundation ; 2010-2010 Chris Gianelloni
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-php5/pecl-memcached/pecl-memcached-1.0.0.ebuild,v 1.1 2009/11/30 07:55:11 robbat2 Exp $
+# $Id$
 
 EAPI="1"
 PHP_EXT_NAME="memcached"
 PHP_EXT_INI="yes"
 PHP_EXT_ZENDEXT="no"
-DOCS="README.markdown memcached-api.php"
+DOCS="README.markdown memcached-api.php memcached.ini ChangeLog CREDITS"
 
 inherit php-ext-pecl-r1 php-ext-base-r1
 
@@ -37,5 +37,12 @@ src_compile() {
 src_install() {
 	php-ext-pecl-r1_src_install
 
-	#php-ext-base-r1_addtoinifiles "memcached...." "..."
+	# php-ext-base-r1_addtoinifiles "memcached...." "..."
+	php-ext-base-r1_addtoinifiles "memcached.sess_locking" "on"
+	php-ext-base-r1_addtoinifiles "memcached.sess_lock_wait" "15000"
+	php-ext-base-r1_addtoinifiles "memcached.sess_prefix" "memc.sess.key."
+	php-ext-base-r1_addtoinifiles "memcached.compression_type" "fastlz"
+	php-ext-base-r1_addtoinifiles "memcached.compression_factor" "1.3"
+	php-ext-base-r1_addtoinifiles "memcached.compression_threshold" "2000"
+	php-ext-base-r1_addtoinifiles "memcached.serializer" "igbinary"
 }

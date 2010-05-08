@@ -2,6 +2,11 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  08 May 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  dev-php5/pecl-memcached/Manifest, pecl-memcached-1.0.2.ebuild:
+  Fix up the dev-php5/pecl-memcached ebuild to setup the default ini file
+  settings.
+
   07 May 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
   -dev-libs/libmemcached/files/libmemcached-0.28-removebogustest.patch,
   -dev-libs/libmemcached/files/libmemcached-0.28-runtestsasuser.patch,
