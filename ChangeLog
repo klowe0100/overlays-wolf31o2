@@ -2,6 +2,15 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*cacti-0.8.7e-r8 (12 May 2010)
+
+  12 May 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +metadata/cache/net-analyzer/cacti-0.8.7e-r8, cacti-0.8.7e-r8.ebuild,
+  net-analyzer/cacti/Manifest:
+  Revision bumping net-analyzer/cacti to do some cleanups of unused code,
+  adding app-arch/unzip to DEPEND, fixing the autom8 patches, and commenting
+  the removal of the shipped adodb.
+
   08 May 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
   net-analyzer/cacti/files/cacti-0.8.7e-rrdtool14.patch,
   net-analyzer/cacti/Manifest:
