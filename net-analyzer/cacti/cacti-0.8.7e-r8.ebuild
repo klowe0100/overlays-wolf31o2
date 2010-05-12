@@ -157,8 +157,9 @@ src_prepare() {
 	# Use sed-fu to use the system adodb, rather than the bundled one
 	sed -i -e \
 		's:$config\["library_path"\] . "/adodb/adodb.inc.php":"adodb/adodb.inc.php":' \
-		"${S}"/include/global.php
+		"${S}"/include/global.php || die "failed sed for adodb"
 #	rm -rf "${S}/lib/adodb"
+	epatch "${FILESDIR}"/${P}-undefined-multi-output.patch
 }
 
 pkg_setup() {
@@ -190,7 +191,7 @@ pkg_setup() {
 	fi
 
 	# Now, check if our PHP has everything that it needs
-	require_php_with_use $_default_php_flags $__extra_php_flags
+	require_php_with_use $__default_php_flags $__extra_php_flags
 }
 
 src_install() {

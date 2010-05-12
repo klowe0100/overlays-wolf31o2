@@ -180,7 +180,7 @@ pkg_setup() {
 	fi
 
 	# Now, check if our PHP has everything that it needs
-	require_php_with_use $_default_php_flags $__extra_php_flags
+	require_php_with_use $__default_php_flags $__extra_php_flags
 }
 
 src_install() {

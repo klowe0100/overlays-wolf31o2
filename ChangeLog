@@ -2,6 +2,14 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  12 May 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  cacti-0.8.7e-r4.ebuild, cacti-0.8.7e-r5.ebuild, cacti-0.8.7e-r6.ebuild,
+  cacti-0.8.7e-r7.ebuild, cacti-0.8.7e-r8.ebuild,
+  +net-analyzer/cacti/files/cacti-0.8.7e-undefined-multi-output.patch,
+  net-analyzer/cacti/Manifest:
+  Adding undefined-multi-output patch, from cacti upstream svn, and fixing
+  the require_php_with_use call in all revisions.
+
 *cacti-0.8.7e-r8 (12 May 2010)
 
   12 May 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
