@@ -4,6 +4,12 @@
 
   15 May 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
   cacti-0.8.7e-r8.ebuild,
+  +net-analyzer/cacti/files/cacti-0.8.7e-lossless-reindexing.sql,
+  net-analyzer/cacti/Manifest:
+  Add the lossless reindexing sql file to import.
+
+  15 May 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  cacti-0.8.7e-r8.ebuild,
   +net-analyzer/cacti/files/cacti-0.8.7e-logintitle.patch,
   +net-analyzer/cacti/files/cacti-0.8.7e-lossless-reindexing.patch,
   net-analyzer/cacti/Manifest:

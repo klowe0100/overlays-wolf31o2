@@ -163,7 +163,6 @@ src_prepare() {
 	sed -i -e \
 		's:$config\["library_path"\] . "/adodb/adodb.inc.php":"adodb/adodb.inc.php":' \
 		"${S}"/include/global.php || die "failed sed for adodb"
-#	rm -rf "${S}/lib/adodb"
 }
 
 pkg_setup() {
@@ -218,6 +217,7 @@ src_install() {
 
 	newcrond "${FILESDIR}"/cacti-poller.crond cacti-poller
 	newconfd "${FILESDIR}"/cacti.confd cacti
+	cp "${FILESDIR}"/${P}-lossless-reindex.sql "${D}"${MY_HTDOCSDIR}
 	cp -r . "${D}"${MY_HTDOCSDIR}
 
 	webapp_serverowned -R ${MY_HTDOCSDIR}/rra
