@@ -152,6 +152,11 @@ src_prepare() {
 		for p in ${AUTOM8_PATCHES} ; do
 			epatch "${WORKDIR}"/autom8/patches-087e/${p}.patch
 		done
+		# Patches from TheWitness in Cacti upstream SVN
+		epatch "${FILESDIR}"/${P}-undefined-multi-output.patch "${FILESDIR}"/${P}-lossless-reindexing.patch
+		# Patch from Howie from Cacti forums:
+		# http://forums.cacti.net/about33620.html
+		epatch "${FILESDIR}"/${P}-logintitle.patch
 	fi
 
 	# Use sed-fu to use the system adodb, rather than the bundled one
@@ -159,7 +164,6 @@ src_prepare() {
 		's:$config\["library_path"\] . "/adodb/adodb.inc.php":"adodb/adodb.inc.php":' \
 		"${S}"/include/global.php || die "failed sed for adodb"
 #	rm -rf "${S}/lib/adodb"
-	epatch "${FILESDIR}"/${P}-undefined-multi-output.patch
 }
 
 pkg_setup() {

@@ -2,6 +2,14 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  15 May 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  cacti-0.8.7e-r8.ebuild,
+  +net-analyzer/cacti/files/cacti-0.8.7e-logintitle.patch,
+  +net-analyzer/cacti/files/cacti-0.8.7e-lossless-reindexing.patch,
+  net-analyzer/cacti/Manifest:
+  Adding lossles reindexing patch from upstream svn and a small patch to add
+  an api call to the login page for the page title.
+
   12 May 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
   cacti-0.8.7e-r4.ebuild, cacti-0.8.7e-r5.ebuild, cacti-0.8.7e-r6.ebuild,
   cacti-0.8.7e-r7.ebuild, cacti-0.8.7e-r8.ebuild,

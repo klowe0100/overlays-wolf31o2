@@ -1,0 +1,15 @@
+diff -urN cacti-0.8.7e.pia26.orig/auth_login.php cacti-0.8.7e.pia26/auth_login.php
+--- cacti-0.8.7e.pia26.orig/auth_login.php	2010-05-11 21:38:06.241422566 -0700
++++ cacti-0.8.7e.pia26/auth_login.php	2010-05-15 00:37:57.459331208 -0700
+@@ -250,7 +250,10 @@
+ 
+ <html>
+ <head>
+-	<title>Login to Cacti</title>
++<?php 
++$page_title = api_plugin_hook_function('page_title', 'Login to Cacti'); 
++?>
++	<title><?php echo $page_title; ?></title>
+ 	<STYLE TYPE="text/css">
+ 	<!--
+ 		BODY, TABLE, TR, TD {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px;}
