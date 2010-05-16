@@ -2,6 +2,14 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*reportit-0.7.1-r1 (16 May 2010)
+
+  16 May 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +metadata/cache/cacti-plugins/reportit-0.7.1-r1, reportit-0.7.1-r1.ebuild,
+  cacti-plugins/reportit/Manifest:
+  Revsion bumping cacti-plugins/reportit to add dev-php/rrdtool-php to
+  RDEPEND, since the full plugin functionality requires it.
+
 *adodb-5.11-r1 (16 May 2010)
 
   16 May 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
