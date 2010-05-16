@@ -2,6 +2,14 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*settings-0.6-r1 (16 May 2010)
+
+  16 May 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +metadata/cache/cacti-plugins/settings-0.6-r1, settings-0.6-r1.ebuild,
+  +cacti-plugins/settings/files/settings-0.6-nectar-0.26-include_functions.p
+  hp.patch, cacti-plugins/settings/Manifest:
+  Revision bumping cacti-plugins/settings to add a patch from nectar plugin.
+
 *nectar-0.26-r1 (16 May 2010)
 
   16 May 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
