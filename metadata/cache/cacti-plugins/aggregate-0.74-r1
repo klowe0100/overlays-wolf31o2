@@ -1,0 +1,22 @@
+>=net-analyzer/cacti-0.8.7d-r2[pluginarch]
+>=net-analyzer/cacti-0.8.7d-r2[pluginarch]
+0
+http://docs.cacti.net/_media/plugin:aggregate-v0.74.tgz -> aggregate-0.74.tar.gz
+primaryuri
+http://docs.cacti.net/plugins
+GPL-2
+Cacti plugin: aggregate
+-* ~amd64 ~x86
+cacti-plugins eutils multilib mysql-dbfuncs portability toolchain-funcs webapp
+
+
+
+
+2
+
+install postinst prepare prerm setup
+
+
+
+
+

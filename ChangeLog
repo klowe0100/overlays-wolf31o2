@@ -2,6 +2,15 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*aggregate-0.74-r1 (16 May 2010)
+
+  16 May 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +metadata/cache/cacti-plugins/aggregate-0.74-r1, aggregate-0.74-r1.ebuild,
+  +cacti-plugins/aggregate/files/aggregate-0.74-undef-index.patch,
+  cacti-plugins/aggregate/Manifest:
+  Revsion bumping cacti-plugins/reportit to add dev-php/rrdtool-php to
+  RDEPEND, since the full plugin functionality requires it.
+
 *reportit-0.7.1-r1 (16 May 2010)
 
   16 May 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>

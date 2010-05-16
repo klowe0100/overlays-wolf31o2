@@ -1,0 +1,20 @@
+diff -urN aggregate-0.74.orig/color_templates_items.php aggregate/color_templates_items.php
+--- aggregate-0.74.orig/color_templates_items.php	2010-04-02 13:16:32.000000000 -0700
++++ aggregate/color_templates_items.php	2010-05-16 14:07:20.848611096 -0700
+@@ -223,11 +223,12 @@
+ 
+ 	html_end_box();
+ 
+-	form_hidden_box("color_template_item_id", (isset($template_item) ? $template_item["color_template_item_id"] : "0"), "");
++	# Fix these lines: http://forums.cacti.net/about36871.html
++	form_hidden_box("color_template_item_id", (array_key_exists("color_template_item_id", $template_item) ? $template_item["color_template_item_id"] : "0"), "");
+ 	form_hidden_box("color_template_id", $_GET["color_template_id"], "0");
+-	form_hidden_box("sequence", (isset($template_item) ? $template_item["sequence"] : "0"), "");
++	form_hidden_box("sequence", (array_key_exists("sequence", $template_item) ? $template_item["sequence"] : "0"), "");
+ 	form_hidden_box("save_component_item", "1", "");
+ 
+ 	form_save_button(htmlspecialchars("color_templates.php?action=template_edit&color_template_id=" . $_GET["color_template_id"]), "", "color_template_item_id");
+ }
+-?>
+\ No newline at end of file
++?>
