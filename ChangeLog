@@ -2,6 +2,15 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*adodb-5.11-r1 (16 May 2010)
+
+  16 May 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  -metadata/cache/dev-php/adodb-5.10, adodb-5.10.ebuild,
+  +metadata/cache/dev-php/adodb-5.11-r1, adodb-5.11-r1.ebuild,
+  dev-php/adodb/Manifest:
+  Version bumping dev-php/adodb to 5.11 upstream release and adding
+  IUSE=+extension to pull in the compiled extension, by default.
+
   15 May 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
   cacti-0.8.7e-r8.ebuild,
   +net-analyzer/cacti/files/cacti-0.8.7e-lossless-reindexing.sql,

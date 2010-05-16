@@ -1,8 +1,8 @@
-# Copyright 1999-2009 Gentoo Foundation
+# Copyright 1999-2010 Gentoo Foundation ; 2010-2010 Chris Gianelloni
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-php/adodb/adodb-5.09a.ebuild,v 1.1 2009/06/28 20:01:04 pva Exp $
+# $Id$
 
-EAPI="2"
+EAPI=2
 
 inherit php-lib-r1 versionator
 
@@ -14,10 +14,10 @@ MY_PV=$(delete_all_version_separators "${PV}" )
 SRC_URI="mirror://sourceforge/adodb/${PN}${MY_PV}.tgz"
 LICENSE="LGPL-2.1"
 SLOT="0"
-IUSE=""
+IUSE="+extension"
 
 DEPEND=""
-RDEPEND=""
+RDEPEND="extension? ( dev-php5/adodb-ext )"
 
 S=${WORKDIR}/${PN}$(get_major_version)
 
