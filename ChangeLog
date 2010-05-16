@@ -8,8 +8,8 @@
   +metadata/cache/cacti-plugins/aggregate-0.74-r1, aggregate-0.74-r1.ebuild,
   +cacti-plugins/aggregate/files/aggregate-0.74-undef-index.patch,
   cacti-plugins/aggregate/Manifest:
-  Revsion bumping cacti-plugins/reportit to add dev-php/rrdtool-php to
-  RDEPEND, since the full plugin functionality requires it.
+  Revsion bumping cacti-plugins/aggregate to add a patch to fix the undefined
+  index errors from PHP.
 
 *reportit-0.7.1-r1 (16 May 2010)
 
