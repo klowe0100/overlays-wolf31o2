@@ -133,14 +133,10 @@ src_prepare() {
 		cp -f "${WORKDIR}"/cacti-plugin-arch/pa.sql "${S}"
 		# Fix the patch, since this deletes lines, we have to add in some code
 		# to keep this from happening on version bumps.
-		if [ "${PIA_V}" == "2.5" ]
-		then
-			sed -i -e '197,+2d' "${S}"/include/global.php
-		fi
-		if [ "${PIA_V}" == "2.6" ]
-		then
-			sed -i -e '198,+2d' "${S}"/include/global.php
-		fi
+		case ${PIA_V} in
+			2.5) sed -i -e '197,+2d' "${S}"/include/global.php ;;
+			2.6) sed -i -e '198,+2d' "${S}"/include/global.php ;;
+		esac
 
 		AUTOM8_PATCHES="cli
 			lib_api_automation_tools.php
@@ -152,8 +148,13 @@ src_prepare() {
 		for p in ${AUTOM8_PATCHES} ; do
 			epatch "${WORKDIR}"/autom8/patches-087e/${p}.patch
 		done
+		# Patch from nectar plugin
+		epatch "${FILESDIR}"/${P}-nectar-0.26-lib-html_utility.patch
 		# Patches from TheWitness in Cacti upstream SVN
-		epatch "${FILESDIR}"/${P}-undefined-multi-output.patch "${FILESDIR}"/${P}-lossless-reindexing.patch
+		epatch \
+			"${FILESDIR}"/${P}-lossless-reindexing.patch \
+			"${FILESDIR}"/${P}-multithreaded-host.patch \
+			"${FILESDIR}"/${P}-undefined-multi-output.patch
 		# Patch from Howie from Cacti forums:
 		# http://forums.cacti.net/about33620.html
 		epatch "${FILESDIR}"/${P}-logintitle.patch

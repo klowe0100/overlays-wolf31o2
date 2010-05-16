@@ -1,0 +1,129 @@
+diff -urN cacti-0.8.7e.pia26.orig/cli/add_device.php cacti-0.8.7e.pia26/cli/add_device.php
+--- cacti-0.8.7e.pia26.orig/cli/add_device.php	2009-06-28 09:07:11.000000000 -0700
++++ cacti-0.8.7e.pia26/cli/add_device.php	2010-05-15 14:38:05.560084279 -0700
+@@ -64,12 +64,13 @@
+ 	$snmp_port            = read_config_option("snmp_port");
+ 	$snmp_timeout         = read_config_option("snmp_timeout");
+ 
+-	$avail        = 1;
+-	$ping_method  = read_config_option("ping_method");
+-	$ping_port    = read_config_option("ping_port");
+-	$ping_timeout = read_config_option("ping_timeout");
+-	$ping_retries = read_config_option("ping_retries");
+-	$max_oids     = read_config_option("max_get_size");
++	$avail          = 1;
++	$ping_method    = read_config_option("ping_method");
++	$ping_port      = read_config_option("ping_port");
++	$ping_timeout   = read_config_option("ping_timeout");
++	$ping_retries   = read_config_option("ping_retries");
++	$max_oids       = read_config_option("max_get_size");
++	$device_threads = 1;
+ 
+ 	$displayHostTemplates = FALSE;
+ 	$displayCommunities   = FALSE;
+diff -urN cacti-0.8.7e.pia26.orig/host.php cacti-0.8.7e.pia26/host.php
+--- cacti-0.8.7e.pia26.orig/host.php	2010-05-11 21:38:06.306536229 -0700
++++ cacti-0.8.7e.pia26/host.php	2010-05-15 14:38:17.166471429 -0700
+@@ -157,7 +157,7 @@
+ 				$_POST["ping_port"], $_POST["ping_timeout"],
+ 				$_POST["ping_retries"], $_POST["notes"],
+ 				$_POST["snmp_auth_protocol"], $_POST["snmp_priv_passphrase"],
+-				$_POST["snmp_priv_protocol"], $_POST["snmp_context"], $_POST["max_oids"]);
++				$_POST["snmp_priv_protocol"], $_POST["snmp_context"], $_POST["max_oids"], $_POST["device_threads"]);
+ 		}
+ 
+ 		if ((is_error_message()) || ($_POST["host_template_id"] != $_POST["_host_template_id"])) {
+diff -urN cacti-0.8.7e.pia26.orig/include/global_arrays.php cacti-0.8.7e.pia26/include/global_arrays.php
+--- cacti-0.8.7e.pia26.orig/include/global_arrays.php	2010-05-11 21:38:06.310326732 -0700
++++ cacti-0.8.7e.pia26/include/global_arrays.php	2010-05-15 14:38:26.452614165 -0700
+@@ -217,6 +217,15 @@
+ 	60 => "Every Minute",
+ 	300 => "Every 5 Minutes");
+ 
++$device_threads = array(
++	1 => "1 Thread (default)",
++	2 => "2 Threads",
++	3 => "3 Threads",
++	4 => "4 Threads",
++	5 => "5 Threads",
++	6 => "6 Threads"
++	);
++
+ $cron_intervals = array(
+ 	60 => "Every Minute",
+ 	300 => "Every 5 Minutes");
+@@ -265,10 +274,17 @@
+ 	"ucd-snmp" => "UCD-SNMP 4.x",
+ 	"net-snmp" => "NET-SNMP 5.x");
+ 
+-$rrdtool_versions = array(
+-	"rrd-1.0.x" => "RRDTool 1.0.x",
+-	"rrd-1.2.x" => "RRDTool 1.2.x",
+-	"rrd-1.3.x" => "RRDTool 1.3.x");
++if ($config["cacti_server_os"] != "win32") {
++	$rrdtool_versions = array(
++		"rrd-1.0.x" => "RRDTool 1.0.x",
++		"rrd-1.2.x" => "RRDTool 1.2.x",
++		"rrd-1.3.x" => "RRDTool 1.3.x",
++		"rrd-1.4.x" => "RRDTool 1.4.x");
++}else{
++	$rrdtool_versions = array(
++		"rrd-1.0.x" => "RRDTool 1.0.x",
++		"rrd-1.2.x" => "RRDTool 1.2.x");
++}
+ 
+ $cdef_item_types = array(
+ 	1 => "Function",
+@@ -550,6 +566,7 @@
+ 	"snmp_port",
+ 	"snmp_timeout",
+ 	"max_oids",
++	"device_threads",
+ 	"availability_method",
+ 	"ping_method",
+ 	"ping_port",
+diff -urN cacti-0.8.7e.pia26.orig/include/global_form.php cacti-0.8.7e.pia26/include/global_form.php
+--- cacti-0.8.7e.pia26.orig/include/global_form.php	2010-05-11 21:38:06.323703828 -0700
++++ cacti-0.8.7e.pia26/include/global_form.php	2010-05-15 14:38:26.475455510 -0700
+@@ -670,6 +670,14 @@
+ 		"none_value" => "None",
+ 		"sql" => "select id,name from host_template order by name",
+ 		),
++	"device_threads" => array(
++		"method" => "drop_array",
++		"friendly_name" => __("Number of Collection Threads"),
++		"description" => __("The number of concurrent threads to use for polling this device.  This applies to the Spine poller only."),
++		"value" => "|arg1:device_threads|",
++		"default" => "1",
++		"array" => $device_threads
++		),
+ 	"disabled" => array(
+ 		"method" => "checkbox",
+ 		"friendly_name" => "Disable Host",
+diff -urN cacti-0.8.7e.pia26.orig/lib/api_device.php cacti-0.8.7e.pia26/lib/api_device.php
+--- cacti-0.8.7e.pia26.orig/lib/api_device.php	2010-05-11 21:38:06.343578967 -0700
++++ cacti-0.8.7e.pia26/lib/api_device.php	2010-05-15 14:38:34.801452158 -0700
+@@ -94,7 +94,7 @@
+ function api_device_save($id, $host_template_id, $description, $hostname, $snmp_community, $snmp_version,
+ 	$snmp_username, $snmp_password, $snmp_port, $snmp_timeout, $disabled,
+ 	$availability_method, $ping_method, $ping_port, $ping_timeout, $ping_retries,
+-	$notes, $snmp_auth_protocol, $snmp_priv_passphrase, $snmp_priv_protocol, $snmp_context, $max_oids) {
++	$notes, $snmp_auth_protocol, $snmp_priv_passphrase, $snmp_priv_protocol, $snmp_context, $max_oids, $device_threads) {
+ 	global $config;
+ 
+ 	/* fetch some cache variables */
+@@ -136,6 +136,7 @@
+ 	$save["ping_timeout"]         = form_input_validate($ping_timeout, "ping_timeout", "^[0-9]+$", true, 3);
+ 	$save["ping_retries"]         = form_input_validate($ping_retries, "ping_retries", "^[0-9]+$", true, 3);
+ 	$save["max_oids"]             = form_input_validate($max_oids, "max_oids", "^[0-9]+$", true, 3);
++	$save["device_threads"]       = form_input_validate($device_threads, "device_threads", "^[0-9]+$", true, 3);
+ 
+ 	$save = api_plugin_hook_function('api_device_save', $save);
+ 
+@@ -186,4 +187,4 @@
+ 	return $host_id;
+ }
+ 
+-?>
++?>
+\ No newline at end of file

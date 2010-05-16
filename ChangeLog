@@ -2,6 +2,14 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  16 May 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  cacti-0.8.7e-r8.ebuild,
+  +net-analyzer/cacti/files/cacti-0.8.7e-multithreaded-host.patch,
+  +net-analyzer/cacti/files/cacti-0.8.7e-nectar-0.26-lib-html_utility.patch,
+  net-analyzer/cacti/Manifest:
+  Change PIA_V check to a case statement, add a patch from the nectar
+  plugin, and add the multithreaded host from upstream svn repository.
+
 *aggregate-0.74-r1 (16 May 2010)
 
   16 May 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
