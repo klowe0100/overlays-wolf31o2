@@ -164,6 +164,14 @@ src_prepare() {
 	sed -i -e \
 		's:$config\["library_path"\] . "/adodb/adodb.inc.php":"adodb/adodb.inc.php":' \
 		"${S}"/include/global.php || die "failed sed for adodb"
+
+	__phpfiles=`find -type f -name '*.php'`
+
+	edos2unix ${__phpfiles}
+
+	sed -i -e \
+		's:mysql_error:adodb_error:' \
+		${__phpfiles} || die "failed sed for mysql_error"
 }
 
 pkg_setup() {
@@ -213,8 +221,6 @@ src_install() {
 	mv docs/html manual
 	rm -rf docs
 #	rm -rf lib/adodb
-
-	edos2unix `find -type f -name '*.php'`
 
 	newcrond "${FILESDIR}"/cacti-poller.crond cacti-poller
 	newconfd "${FILESDIR}"/cacti.confd cacti
