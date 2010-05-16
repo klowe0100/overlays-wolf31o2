@@ -1,0 +1,22 @@
+>=net-analyzer/cacti-0.8.7d-r2[pluginarch]
+>=net-analyzer/cacti-0.8.7d-r2[pluginarch]
+0
+http://docs.cacti.net/_media/plugin:nectar-v0.26.tgz -> nectar-0.26.tar.gz http://forums.cacti.net/download.php?id=19995 -> nectar-0.26-functions-fix.patch
+primaryuri
+http://docs.cacti.net/plugins
+GPL-2
+Cacti plugin: nectar
+-* ~amd64 ~x86
+cacti-plugins eutils multilib mysql-dbfuncs portability toolchain-funcs webapp
+
+
+
+
+2
+
+install postinst prepare prerm setup
+
+
+
+
+
