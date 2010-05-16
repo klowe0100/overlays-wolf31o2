@@ -218,7 +218,10 @@ src_install() {
 
 	newcrond "${FILESDIR}"/cacti-poller.crond cacti-poller
 	newconfd "${FILESDIR}"/cacti.confd cacti
-	cp "${FILESDIR}"/${P}-lossless-reindex.sql "${D}"${MY_HTDOCSDIR}
+	cp -f \
+		"${FILESDIR}"/${P}-lossless-reindexing.sql \
+		"${FILESDIR}"/${P}-multithreaded-host.sql \
+		"${D}"${MY_HTDOCSDIR}
 	cp -r . "${D}"${MY_HTDOCSDIR}
 
 	webapp_serverowned -R ${MY_HTDOCSDIR}/rra
