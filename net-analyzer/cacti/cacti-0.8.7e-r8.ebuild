@@ -160,6 +160,7 @@ src_prepare() {
 		epatch "${FILESDIR}"/${P}-logintitle.patch
 	fi
 
+	rm -rf lib/adodb
 	# Use sed-fu to use the system adodb, rather than the bundled one
 	sed -i -e \
 		's:$config\["library_path"\] . "/adodb/adodb.inc.php":"adodb/adodb.inc.php":' \
@@ -220,7 +221,6 @@ src_install() {
 
 	mv docs/html manual
 	rm -rf docs
-#	rm -rf lib/adodb
 
 	newcrond "${FILESDIR}"/cacti-poller.crond cacti-poller
 	newconfd "${FILESDIR}"/cacti.confd cacti

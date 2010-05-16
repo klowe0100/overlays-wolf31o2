@@ -4,6 +4,10 @@
 
   16 May 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
   cacti-0.8.7e-r8.ebuild, net-analyzer/cacti/Manifest:
+  Move removal of adodb to src_prepare and uncomment.
+
+  16 May 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  cacti-0.8.7e-r8.ebuild, net-analyzer/cacti/Manifest:
   Store find output in a variable, move edos2unix call to src_prepare, and
   sed any mysql_error calls to adodb_error.
 
