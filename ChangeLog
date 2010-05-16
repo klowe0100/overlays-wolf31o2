@@ -3,6 +3,10 @@
 # $Id$
 
   16 May 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  aggregate-0.74-r1.ebuild, cacti-plugins/aggregate/Manifest:
+  Fixing the patch name.
+
+  16 May 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
   cacti-0.8.7e-r8.ebuild, net-analyzer/cacti/Manifest:
   Move removal of adodb to src_prepare and uncomment.
 

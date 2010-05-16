@@ -13,5 +13,5 @@ S=${WORKDIR}/${PN}
 
 src_prepare() {
 	default
-	epatch "${FILESDIR}"/${P}-undef-fix.patch
+	epatch "${FILESDIR}"/${P}-undef-index.patch
 }
