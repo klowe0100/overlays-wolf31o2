@@ -1,0 +1,22 @@
+app-arch/unzip virtual/php || ( virtual/httpd-cgi virtual/httpd-fastcgi ) virtual/httpd-php >=app-admin/webapp-config-1.50.15
+dev-php/adodb net-analyzer/rrdtool snmp? ( net-analyzer/net-snmp ) ldap? ( net-nds/openldap ) virtual/mysql virtual/cron >=app-admin/webapp-config-1.50.15
+0.8.7g_beta1
+http://www.cacti.net/downloads/beta/cacti-0.8.7g-beta1.tar.gz pluginarch? ( http://www.cacti.net/downloads/beta/cacti-plugin-0.8.7g-beta1-PA-v2.8.tar.gz ) http://docs.cacti.net/_media/plugin:autom8-v0.33.tgz -> autom8-0.33.tar.gz
+primaryuri
+http://www.cacti.net/
+GPL-2
+a complete frontend to rrdtool
+
+depend.php eutils multilib phpconfutils portability toolchain-funcs webapp
+doc ldap +pluginarch +snmp vhosts
+
+
+
+2
+
+install postinst prepare prerm setup unpack
+
+
+
+
+

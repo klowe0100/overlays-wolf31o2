@@ -2,6 +2,19 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*cacti-0.8.7g_beta1 (12 Jun 2010)
+*cacti-0.8.7f-r1 (12 Jun 2010)
+
+  12 Jun 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +metadata/cache/net-analyzer/cacti-0.8.7f-r1, cacti-0.8.7f-r1.ebuild,
+  +metadata/cache/net-analyzer/cacti-0.8.7g_beta1,
+  cacti-0.8.7g_beta1.ebuild, net-analyzer/cacti/Manifest:
+  Version bumping to the latest 0.8.7g_beta1 upstream release. I have also
+  added a 0.8.7f ebuild, using the tarball from 0.8.7e as a distfile, so it
+  will fail for people who actually have the file available and -* for
+  KEYWORDS. The beta has unset KEYWORDS, so it'll require manual
+  intervention to install.
+
 *boost-4.0-r2 (12 Jun 2010)
 *boost-4.0 (12 Jun 2010)
 
