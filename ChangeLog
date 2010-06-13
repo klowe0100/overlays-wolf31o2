@@ -2,6 +2,11 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  13 Jun 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  discovery-0.9-r3.ebuild, cacti-plugins/discovery/Manifest:
+  Uncomment PLUGIN_NEEDS_SQL and MYSQL_SCRIPTS variables, as they are still
+  necessary.
+
 *cacti-spine-0.8.7g_beta1 (12 Jun 2010)
 *cacti-spine-0.8.7f (12 Jun 2010)
 
