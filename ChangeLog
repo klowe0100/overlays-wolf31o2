@@ -2,6 +2,13 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*phpsysinfo-3.0.5 (17 Jun 2010)
+
+  17 Jun 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +metadata/cache/www-apps/phpsysinfo-3.0.5, phpsysinfo-3.0.5.ebuild,
+  www-apps/phpsysinfo/Manifest:
+  Version bumping www-apps/phpsysinfo to the latest 3.0.5 upstream release.
+
 *racktables-0.17.11 (17 Jun 2010)
 
   17 Jun 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
