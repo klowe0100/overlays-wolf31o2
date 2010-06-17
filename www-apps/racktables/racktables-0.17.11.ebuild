@@ -11,10 +11,10 @@ HOMEPAGE="http://www.racktables.org/"
 #SRC_URI="http://www.racktables.org/files/${MY_PN}-${PV}.tar.gz"
 SRC_URI="mirror://sourceforge/racktables/${MY_PN}-${PV}.tar.gz"
 
-RESTRICT="primaryuri"
+RESTRICT=""
 LICENSE="GPL-2"
 IUSE=""
-KEYWORDS="amd64 x86"
+KEYWORDS="~amd64 ~x86"
 
 need_httpd_cgi
 need_php_httpd

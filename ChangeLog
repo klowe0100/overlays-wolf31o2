@@ -2,6 +2,15 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*racktables-0.17.11 (17 Jun 2010)
+
+  17 Jun 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  metadata/cache/www-apps/racktables-0.17.9, racktables-0.17.9.ebuild,
+  +metadata/cache/www-apps/racktables-0.17.11, racktables-0.17.11.ebuild,
+  www-apps/racktables/Manifest:
+  Version bumping www-apps/racktables to the 0.17.11 upstream release and
+  marking 0.17.9 stable.
+
   13 Jun 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
   discovery-0.9-r3.ebuild, cacti-plugins/discovery/Manifest:
   Uncomment PLUGIN_NEEDS_SQL and MYSQL_SCRIPTS variables, as they are still

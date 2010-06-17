@@ -1,12 +1,12 @@
 || ( virtual/httpd-cgi virtual/httpd-fastcgi ) virtual/httpd-php >=app-admin/webapp-config-1.50.15
 virtual/httpd-php >=app-admin/webapp-config-1.50.15
-0.17.9
-mirror://sourceforge/racktables/RackTables-0.17.9.tar.gz
-primaryuri
+0.17.11
+mirror://sourceforge/racktables/RackTables-0.17.11.tar.gz
+
 http://www.racktables.org/
 GPL-2
 datacenter and server room asset management
-amd64 x86
+~amd64 ~x86
 depend.php eutils multilib phpconfutils portability toolchain-funcs webapp
 vhosts
 
