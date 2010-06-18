@@ -2,6 +2,14 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*disco-0.3 (18 Jun 2010)
+
+  18 Jun 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +metadata/cache/sys-cluster/disco-0.3, disco-0.3.ebuild,
+  +sys-cluster/disco/Manifest:
+  Initial import of sys-cluster/disco ebuild from Gentoo bug #323723. This
+  ebuild is written by Tim Cera <timcera@earthlink.net>.
+
 *apache-pig-0.6.0 (18 Jun 2010)
 
   18 Jun 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
