@@ -2,6 +2,14 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*apache-hbase-0.20.3 (18 Jun 2010)
+
+  18 Jun 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +metadata/cache/dev-db/apache-hbase-0.20.3, apache-hbase-0.20.3.ebuild,
+  +dev-db/apache-hbase/Manifest:
+  Initial import of dev-db/apache-hbase ebuild from Gentoo bug #318085. This
+  ebuild is written by Tim Cera <timcera@earthlink.net>.
+
 *apache-hadoop-common-0.20.2 (18 Jun 2010)
 
   18 Jun 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
