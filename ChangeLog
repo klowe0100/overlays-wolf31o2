@@ -2,6 +2,14 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*apache-zookeeper-3.3.0 (18 Jun 2010)
+
+  18 Jun 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +metadata/cache/sys-cluster/apache-zookeeper-3.3.0,
+  apache-zookeeper-3.3.0.ebuild, +sys-cluster/apache-zookeeper/Manifest:
+  Initial import of sys-cluster/apache-zookeeper ebuild from Gentoo bug
+  #318029. This ebuild is written by Tim Cera <timcera@earthlink.net>.
+
 *apache-hbase-0.20.3 (18 Jun 2010)
 
   18 Jun 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
