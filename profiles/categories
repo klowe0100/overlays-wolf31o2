@@ -10,6 +10,7 @@ app-shells
 cacti-plugins
 dev-db
 dev-java
+dev-lang
 dev-libs
 dev-php
 dev-php5
