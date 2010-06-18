@@ -2,6 +2,21 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*pdsh-2.18-r1 (18 Jun 2010)
+
+  18 Jun 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  -metadata/cache/app-shells/pdsh-2.14, pdsh-2.14.ebuild,
+  -app-shells/pdsh/files/pdsh-2.14-gcc-4.3-unistd.h.patch,
+  -app-shells/pdsh/files/pdsh-2.14-glibc-2.8-ARG_MAX.patch,
+  -metadata/cache/app-shells/pdsh-2.16, pdsh-2.16.ebuild,
+  -metadata/cache/app-shells/pdsh-2.17, pdsh-2.17.ebuild,
+  -metadata/cache/app-shells/pdsh-2.18, pdsh-2.18.ebuild,
+  +metadata/cache/app-shells/pdsh-2.18-r1, pdsh-2.18-r1.ebuild,
+  -app-shells/pdsh/ChangeLog, app-shells/pdsh/Manifest,
+  -app-shells/pdsh/metadata.xml:
+  Revision bumping app-shells/pdsh to differentiate my version from
+  Gentoo's.
+
 *discodb-0.3 (18 Jun 2010)
 
   18 Jun 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
