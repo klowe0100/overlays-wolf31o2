@@ -2,6 +2,13 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*apache-pig-0.7.0 (19 Jun 2010)
+
+  19 Jun 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +metadata/cache/dev-lang/apache-pig-0.7.0, apache-pig-0.7.0.ebuild,
+  dev-lang/apache-pig/Manifest:
+  Version bumping dev-lang/apache-pig to 0.7.0 upstream release.
+
 *pdsh-2.18-r1 (18 Jun 2010)
 
   18 Jun 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
