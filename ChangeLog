@@ -2,6 +2,13 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*apache-chukwa-0.4.0 (23 Jun 2010)
+
+  23 Jun 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +metadata/cache/sys-cluster/apache-chukwa-0.4.0,
+  apache-chukwa-0.4.0.ebuild, +sys-cluster/apache-chukwa/Manifest:
+  Initial import of sys-cluster/apache-chukwa ebuild, written by me.
+
 *apache-zookeeper-3.3.1 (23 Jun 2010)
 
   23 Jun 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
