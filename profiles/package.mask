@@ -1,6 +1,7 @@
-# Jeremy Olexa <darkside@gentoo.org> (14 Apr 2009)
-# Masked for removal in 60 days. Security issues that warrant removal.
-# Non-vulnerable version exist, just needs a maintainer. bug 261507
+# Unmasking this so it can be used, even with Gentoo: bug 261507
 -net-firewall/arno-iptables-firewall
 
+# Force the "lower" 1.0 version
 >=dev-db/mysqltuner-49
+
+# Unmask libjingle

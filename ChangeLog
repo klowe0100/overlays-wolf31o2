@@ -2,6 +2,19 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*libjingle-0.3.12 (27 Jun 2010)
+*libjingle-0.3.11-r1 (27 Jun 2010)
+
+  27 Jun 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  libjingle-0.3.11-r1.ebuild,
+  +net-libs/libjingle/files/libjingle-0.3.11-gcc43.patch,
+  libjingle-0.3.12.ebuild,
+  +net-libs/libjingle/files/libjingle-0.3.12-asneeded.patch,
+  +net-libs/libjingle/files/libjingle-0.3.12-gcc44.patch,
+  +net-libs/libjingle/ChangeLog, +net-libs/libjingle/Manifest,
+  +net-libs/libjingle/metadata.xml, profiles/package.mask:
+  Importing net-libs/libjingle from Gentoo's tree to save it from removal.
+
 *apache-hbase-0.20.4 (23 Jun 2010)
 
   23 Jun 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
