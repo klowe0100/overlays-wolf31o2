@@ -2,6 +2,11 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  18 Jul 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  +metadata/cache/dev-python/pygoogle-0.5.3,
+  +metadata/cache/dev-python/pygoogle-0.6:
+  Updating metadata/cache for the latest packages.
+
 *pygoogle-0.6 (18 Jul 2010)
 *pygoogle-0.5.3 (18 Jul 2010)
 
