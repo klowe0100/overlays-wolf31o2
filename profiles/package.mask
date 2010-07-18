@@ -5,3 +5,13 @@
 >=dev-db/mysqltuner-49
 
 # Unmask libjingle
+
+# Arfrever Frehtes Taifersar Arahesis <arfrever@gentoo.org> (14 Jul 2010)
+# No longer working. Masked for deletion in 30 days (bug #322069).
+-dev-python/pygoogle
+
+# Jeroen Roovers <jer@gentoo.org> (13 Jul 2010)
+# The ebuild still needs work, but if you can help testing
+# it, then please unmask (bug #317325)
+-=net-analyzer/net-snmp-5.5*
+

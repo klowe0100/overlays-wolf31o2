@@ -2,6 +2,15 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+*pygoogle-0.6 (18 Jul 2010)
+*pygoogle-0.5.3 (18 Jul 2010)
+
+  18 Jul 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  pygoogle-0.5.3.ebuild, pygoogle-0.6.ebuild,
+  +dev-python/pygoogle/ChangeLog, +dev-python/pygoogle/Manifest,
+  +dev-python/pygoogle/metadata.xml, profiles/package.mask:
+  Importing dev-python/pygoogle from Gentoo to save it from obscurity.
+
   27 Jun 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
   +metadata/cache/net-libs/libjingle-0.3.11-r1,
   +metadata/cache/net-libs/libjingle-0.3.12:
