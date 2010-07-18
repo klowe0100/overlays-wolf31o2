@@ -3,6 +3,11 @@
 # $Id$
 
   18 Jul 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  metadata/cache/app-crypt/php-ca-1.1, php-ca-1.1.ebuild,
+  app-crypt/php-ca/Manifest:
+  Subversion is now under dev-vcs, so update the ebuild.
+
+  18 Jul 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
   +metadata/cache/dev-python/pygoogle-0.5.3,
   +metadata/cache/dev-python/pygoogle-0.6:
   Updating metadata/cache for the latest packages.

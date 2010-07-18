@@ -29,7 +29,7 @@ IUSE="spkac"
 
 ##### OLD EBUILD BELOW
 
-RDEPEND="dev-util/subversion
+RDEPEND="dev-vcs/subversion
 	enscript? ( app-text/enscript )"
 
 need_httpd_cgi
