@@ -2,6 +2,16 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  25 Jul 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  -games-fps/ut2004-data/Manifest,
+  -metadata/cache/games-fps/ut2004-data-3186-r3, ut2004-data-3186-r3.ebuild,
+  -games-fps/ut2004/Manifest, -metadata/cache/games-fps/ut2004-data-3186-r4,
+  ut2004-data-3186-r4.ebuild, ut2004-3369-r4.ebuild,
+  -metadata/cache/games-fps/ut2004-3369-r5,
+  -games-fps/ut2004/files/ut2004.xml,
+  -metadata/cache/games-fps/ut2004-3369-r4, ut2004-3369-r5.ebuild:
+  Removing my copies of games-fps/ut2004 ebuilds.
+
   18 Jul 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
   metadata/cache/app-crypt/php-ca-1.1, php-ca-1.1.ebuild,
   app-crypt/php-ca/Manifest:
