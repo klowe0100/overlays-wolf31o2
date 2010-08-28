@@ -2,6 +2,11 @@
 # Copyright 1999-2010 Chris Gianelloni; Distributed under the GPL v2
 # $Id$
 
+  28 Aug 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
+  dev-java/jdbc-oracle-bin/Manifest, net-misc/cisco-vpnclient/Manifest,
+  sys-fs/dmraid/Manifest:
+  Manifest fixes.
+
   25 Jul 2010; Chris Gianelloni <wolf31o2@wolf31o2.org>
   -games-fps/ut2004-data/Manifest,
   -metadata/cache/games-fps/ut2004-data-3186-r3, ut2004-data-3186-r3.ebuild,
